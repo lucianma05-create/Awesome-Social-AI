@@ -1,4 +1,4 @@
-# ED-未提及-2025-Chain_of_Strategy_Optimization_Makes_Large_Language_Models_Better Emotional Supporter
+# ED-emnlp-2025-Chain_of_Strategy_Optimization_Makes_Large_Language_Models_Better Emotional Supporter
 
 *论文下载地址（可选）：[https://arxiv.org/abs/2503.05362](https://arxiv.org/abs/2503.05362)*
 

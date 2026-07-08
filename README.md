@@ -55,6 +55,7 @@
 | 2025 | arXiv | SAGE- Steering and Refining Dialog Generation with State-Action Augmentation | [查看](https://arxiv.org/abs/2503.03040) | [摘要](paper/ED-arXiv-2025-SAGE-%20Steering%20and%20Refining%20Dialog%20Generation%20with%20State-Action%20Augmentation.md) | [代码](https://github.com/apple/ml-sage-dialog-gen) |
 | 2025 | ACL | Beyond Verbal Cues: Emotional Contagion Graph Network for Causal Emotion Entailment | [查看](-) | [摘要](paper/ED-ACL-2025-Beyond%20Verbal%20Cues%3A%20Emotional%20Contagion%20Graph%20Network%20for%20Causal%20Emotion%20Entailment.md) | - |
 | 2026 | arXiv | Affective Flow Language Model for Emotional Support Conversation | [查看](https://arxiv.org/abs/2602.08826v1) | [摘要](paper/ED-arXiv-2026-Affective%20Flow%20Language%20Model%20for%20Emotional%20Support%20Conversation.md) | [代码](https://github.com/chzou25-lgtm/AffectiveFlow) |
+| 2025 | EMNLP | Chain_of_Strategy_Optimization_Makes_Large_Language_Models_Better Emotional Supporter | [查看](https://arxiv.org/abs/2503.05362) | [摘要](paper/ED-emnlp-2025-Chain_of_Strategy_Optimization_Makes_Large_Language_Models_Better Emotional Supporter.md) | [代码](https://github.com/XingYuSSS/CSO) |
 ### Memory：Agent Memory
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -68,6 +69,7 @@
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
 | 2025 | arxiv | Chain-of-Agents: End-to-End Agent Foundation Models | [查看](https://arxiv.org/pdf/2508.13167) | [摘要](paper/Planing-arxiv-2025-Chain-of-Agents%3A%20End-to-End%20Agent%20Foundation%20Models.md) | [代码](https://github.com/OPPO-PersonalAI/Agent_Foundation_Models) |
+| 2026 | ICLR | TURN-LEVEL TRAJECTORY OPTIMIZATION FOR ROBUST MULTI-TURN LLM REASONING | [查看](-) | [摘要](paper/Planing-ICLR-2026-TURN-LEVEL TRAJECTORY OPTIMIZATION FOR ROBUST MULTI-TURN LLM REASONING.md) | - |
 ### PD：Persuasive Dialogue Systems
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -106,6 +108,7 @@
 | 2026 | CSUR | Must Read- A Comprehensive Survey of Computational Persuasion | [查看](https://dl.acm.org/doi/10.1145/3800687) | [摘要](paper/PD-CSUR-2026-Must%20Read-%20A%20Comprehensive%20Survey%20of%20Computational%20Persuasion.md) | [代码](https://github.com/beyzabozdag/PersuasionSurvey) |
 | 2026 | ICLR | RebuttalAgent: Strategic Persuasion in Academic Rebuttal via Theory of Mind | [查看](https://arxiv.org/abs/2601.15715) | [摘要](paper/PD-ICLR-2026-RebuttalAgent%3A%20Strategic%20Persuasion%20in%20Academic%20Rebuttal%20via%20Theory%20of%20Mind.md) | [代码](https://github.com/Zhitao-He/RebuttalAgent) |
 | 2026 | ICLR | Towards Strategic Persuasion with Language Models | [查看](https://arxiv.org/abs/2509.22989v2) | [摘要](paper/PD-ICLR-2026-Towards%20Strategic%20Persuasion%20with%20Language%20Models.md) | - |
+| 2026 | ICLR | TreeSearch for LLM Agent Reinforcement Learning | [查看](https://arxiv.org/abs/2509.21240) | [摘要](paper/PD-ICLR-2026-TreeSearch for LLM Agent Reinforcement Learning.md) | [代码](https://github.com/AMAP-ML/Tree-GRPO) |
 ### Recommend：Recommender Systems
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -170,6 +173,7 @@
 | 2026 | arXiv | UserHarness- Harnessing User Minds for Stronger Agent Theory-of-Mind | [查看](https://arxiv.org/abs/2605.27721) | [摘要](paper/ToM-arXiv-2026-UserHarness-%20Harnessing%20User%20Minds%20for%20Stronger%20Agent%20Theory-of-Mind.md) | - |
 | 2026 | CVPR | Video-Only ToM- Enhancing Theory of Mind in Multimodal Large Language Models | [查看](https://arxiv.org/abs/2603.24484) | [摘要](paper/ToM-CVPR-2026-Video-Only%20ToM-%20Enhancing%20Theory%20of%20Mind%20in%20Multimodal%20Large%20Language%20Models.md) | [代码](https://founce.github.io/VisionToM/) |
 | 2026 | EACL | Let's Put Ourselves in Sally's Shoes: Shoes of Others Prefilling Improves Theory of Mind in LLMs | [查看](https://aclanthology.org/2026.findings-eacl.6/) | [摘要](paper/ToM-EACL-2026-Lets-Put-Ourselves-in-Sallys-Shoes-Shoes-of-Others-Prefilling-Improves-Theory-of-Mind-in-LLMs.md) | - |
+| 2026 | AAAI | RecToM- A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems | [查看](https://arxiv.org/pdf/2511.22275) | [摘要](paper/ToM+Recommend+Data-AAAI-2026-RecToM- A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems.md) | [代码](https://github.com/CGCL-codes/RecToM) |
 ### US：User Simulator
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
