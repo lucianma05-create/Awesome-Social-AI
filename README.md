@@ -8,43 +8,76 @@
 [![Views](https://komarev.com/ghpvc/?username=lucianma05-create&repo=Social-AI-Group&label=Views&color=orange&style=for-the-badge)](https://github.com/lucianma05-create/Social-AI-Group)
 </div>
 
-## 📚 现有方向及文章
+## 📊 方向概览
 
-### DWM：Dialogue World Model
+| 方向 | 论文数 | 核心主题 |
+| --- | --- | --- |
+| [PD：Persuasion & Negotiation](#pd) | 35 | 说服、谈判等非合作对话的策略规划与优化 |
+| [ED：Empathetic Dialogue Systems](#ed) | 13 | 共情对话、情感支持与心理辅导 |
+| [Recommend：Recommender Systems](#recommend) | 18 | 对话式推荐系统 |
+| [ToM：Theory of Mind](#tom) | 18 | 心智建模、意图与信念推理 |
+| [Memory：Agent Memory](#memory) | 6 | 智能体长期记忆与经验演化 |
+| [US：User Simulator](#us) | 11 | 用户模拟、交互环境与仿真 |
+| [RLHF：RL & Alignment](#rlhf) | 12 | 强化学习训练与对齐方法 |
+| [Data：Benchmark & Evaluation](#data) | 12 | 基准测试、数据集与评测 |
+| **总计** | **125** | |
+
+## 📚 论文列表
+
+<a id="pd"></a>
+### PD：Persuasion & Negotiation
+
+<details>
+<summary>📖 展开论文列表(35 篇)</summary>
+
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
-| 2006 | KER | A Survey of Statistical User Simulation Techniques for RL Dialogue Management | [查看](https://doi.org/10.1017/S0269888906000944) | [摘要](paper/DMW-KER-2006-A-Survey-of-Statistical-User-Simulation-Techniques-for-RL-Dialogue-Management.md) | - |
+| 2008 | PERSUASIVE | A Systematic Framework for Designing and Evaluating Persuasive Systems | [查看](https://doi.org/10.1007/978-3-319-58071-5_50) | [摘要](paper/PD-PERSUASIVE-2008-A%20Systematic%20Framework%20for%20Designing%20and%20Evaluating%20Persuasive%20Systems.md) | - |
+| 2008 | - | Measure Of Belief Change as an Evaluation of Persuasion | [查看](https://www.researchgate.net/publication/228964262_Measure_Of_Belief_Change_as_an_Evaluation_of_Persuasion) | [摘要](paper/PD-%E6%9C%AA%E6%8F%90%E5%8F%8A-2008-Measure%20Of%20Belief%20Change%20as%20an%20Evaluation%20of%20Persuasion.md) | - |
+| 2014 | COLING | Reinforcement Learning of Cooperative Persuasive Dialogue Policies using Framing | [查看](-) | [摘要](paper/PD-COLING-2014-Reinforcement-Learning-of-Cooperative-Persuasive-Dialogue-Policies-using-Framing.md) | - |
+| 2017 | HCI | Persuasive Argumentation and Emotions- An Empirical Evaluation with Users | [查看](https://doi.org/10.1007/978-3-319-58071-5_50) | [摘要](paper/PD-HCI-2017-Persuasive%20Argumentation%20and%20Emotions-%20An%20Empirical%20Evaluation%20with%20Users.md) | - |
+| 2023 | ArgComp | Strategic argumentation dialogues for persuasion- Framework and experiments based on modelling the beliefs and concerns of the persuadee | [查看](https://doi.org/10.3233/AAC-210005) | [摘要](paper/PD-ArgComp-2023-Strategic%20argumentation%20dialogues%20for%20persuasion-%20Framework%20and%20experiments%20based%20on%20modelling%20the%20beliefs%20and%20concerns%20of%20the%20persuadee.md) | - |
 | 2023 | arXiv | Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback | [查看](-) | [摘要](paper/PD+RLHF-arXiv-2023-Improving-Language-Model-Negotiation-with-Self-Play-and-In-Context-Learning-from-AI-Feedback.md) | - |
 | 2024 | ICLR | Plug-and-Play Policy Planner for LLM-Powered Dialogue Agents | [查看](https://arxiv.org/pdf/2311.00262.pdf) | [摘要](paper/DWM-ICLR-2024-Plug-and-Play%20Policy%20Planner%20for%20LLM-Powered%20Dialogue%20Agents.md) | [代码](https://github.com/dengyang17/PPDPP) |
-| 2024 | arXiv | Strength Lies in Differences! Improving Strategy Planning for Non-collaborative Dialogues via Diversified User Simulation | [查看](https://arxiv.org/pdf/2403.06769v3.pdf) | [摘要](paper/DWM-arXiv-2024-Strength%20Lies%20in%20Differences!%20Improving%20Strategy%20Planning%20for%20Non-collaborative%20Dialogues%20via%20Diversified%20User%20Simulation.md) | - |
-| 2025 | Nature | AMIE: Towards Conversational Diagnostic Artificial Intelligence | [查看](https://www.nature.com/articles/s41586-025-08866-7) | [摘要](paper/DWM-Nature-2025-AMIE%3A%20Towards%20Conversational%20Diagnostic%20Artificial%20Intelligence.md) | - |
-| 2025 | COLING | MCA-Model-Based Causal RL for Efficient Dialogue Policy | [查看](https://aclanthology.org/2025.coling-main.490/) | [摘要](paper/DWM-COLING-2025-MCA-Model-Based-Causal-RL-for-Efficient-Dialogue-Policy.md) | - |
-| 2025 | NeurIPS | World Models Should Prioritize the Unification of Physical and Social Dynamics | [查看](https://arxiv.org/pdf/2510.21219/) | [摘要](paper/DWM-NeurIPS-2025-World-Models-Should-Prioritize-the-Unification-of-Physical-and-Social-Dynamics.md) | - |
-| 2025 | EMNLP | Dream to Chat: Model-based Reinforcement Learning on Dialogues with User Belief Modeling | [查看](https://arxiv.org/abs/2508.16876) | [摘要](paper/DWM-arxiv-2025-Dream%20to%20Chat%3A%20Model-based%20Reinforcement%20Learning%20on%20Dialogues%20with%20User%20Belief%20Modeling.md) | - |
-| 2025 | arxiv | Enhancing User Engagement in Socially-Driven Dialogue through Interactive LLM Alignments | [查看](https://arxiv.org/abs/2506.21497v1) | [摘要](paper/DWM-ARXIV-2025-Enhancing-User-Engagement-in-Socially-Driven-Dialogue-through-Interactive-LLM-Alignments.md) | - |
+| 2025 | Science | Durably reducing conspiracy beliefs through dialogues with AI | [查看](https://www.science.org/doi/10.1126/science.adq1814) | [摘要](paper/PD-Science-2025-Durably%20reducing%20conspiracy%20beliefs%20through%20dialogues%20with%20AI.md) | - |
+| 2025 | Science | The Levers of Political Persuasion | [查看](https://www.science.org/doi/10.1126/science.aea3884) | [摘要](paper/PD-Science-2025-The%20Levers%20of%20Political%20Persuasion.md) | [代码](https://github.com/kobihackenburg/scaling-conversational-AI) |
+| 2025 | ACL | Battling against Tough Resister- Strategy Planning with Adversarial Game for Non-collaborative Dialogues | [查看](-) | [摘要](paper/PD-ACL-2025-Battling%20against%20Tough%20Resister-%20Strategy%20Planning%20with%20Adversarial%20Game%20for%20Non-collaborative%20Dialogues.md) | - |
+| 2025 | TACL | Human Choice Prediction in Language-based Persuasion Games- Simulation-based Off-Policy Evaluation | [查看](https://doi.org/10.1162/TACL.a.16) | [摘要](paper/PD-TACL-2025-Human%20Choice%20Prediction%20in%20Language-based%20Persuasion%20Games-%20Simulation-based%20Off-Policy%20Evaluation.md) | [代码](https://github.com/eilamshapira/HumanChoicePrediction) |
+| 2025 | EMNLP | Enhancing LLM-Based Persuasion Simulations with Cultural and Speaker-Specific Information | [查看](https://aclanthology.org/2025.findings-emnlp.808) | [摘要](paper/PD-EMNLP-2025-Enhancing%20LLM-Based%20Persuasion%20Simulations%20with%20Cultural%20and%20Speaker-Specific%20Information.md) | [代码](https://github.com/HF-heaven/Cross-Cultural-Persuasion-Simulations) |
+| 2025 | ACL | Enhancing Persuasive Dialogue Agents by Synthesizing Cross-Disciplinary Communication Strategies | [查看](https://arxiv.org/abs/2602.22696) | [摘要](paper/PD-ACL-2025-Enhancing%20Persuasive%20Dialogue%20Agents%20by%20Synthesizing%20Cross-Disciplinary%20Communication%20Strategies.md) | - |
+| 2025 | ACL | Teaching models to balance resisting and accepting persuasion | [查看](-) | [摘要](paper/PD-ACL-2025-Teaching%20models%20to%20balance%20resisting%20and%20accepting%20persuasion.md) | - |
+| 2025 | arXiv | LLM Can be a Dangerous Persuader- Empirical Study of Persuasion Safety in Large Language Models | [查看](https://arxiv.org/abs/2504.10430) | [摘要](paper/PD-arXiv-2025-LLM%20Can%20be%20a%20Dangerous%20Persuader-%20Empirical%20Study%20of%20Persuasion%20Safety%20in%20Large%20Language%20Models.md) | [代码](https://github.com/PLUM-Lab/PersuSafety) |
+| 2025 | EMNLP | PRINCIPLES- Synthetic Strategy Memory for Proactive Dialogue Agents | [查看](https://arxiv.org/abs/2509.17459) | [摘要](paper/PD-EMNLP-2025-PRINCIPLES-%20Synthetic%20Strategy%20Memory%20for%20Proactive%20Dialogue%20Agents.md) | [代码](https://huggingface.co/spaces/kimnamssya/Principles) |
+| 2025 | NeurIPS | Persuade Me if You Can- A Framework for Evaluating Persuasion Effectiveness and Susceptibility Among Large Language Models | [查看](https://arxiv.org/abs/2503.01829) | [摘要](paper/PD-NeurIPS-2025-Persuade%20Me%20if%20You%20Can-%20A%20Framework%20for%20Evaluating%20Persuasion%20Effectiveness%20and%20Susceptibility%20Among%20Large%20Language%20Models.md) | [代码](https://beyzabozdag.github.io/PMIYC/) |
+| 2025 | AAAI | Simulation-free hierarchical latent policy planning for proactive dialogues | [查看](https://arxiv.org/abs/2412.14584) | [摘要](paper/PD-AAAI-2025-Simulation-free%20hierarchical%20latent%20policy%20planning%20for%20proactive%20dialogues.md) | - |
+| 2025 | arXiv | ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind | [查看](https://arxiv.org/abs/2505.22961) | [摘要](paper/PD-arXiv-2025-ToMAP%3A%20Training%20Opponent-Aware%20LLM%20Persuaders%20with%20Theory%20of%20Mind.md) | [代码](https://github.com/ulab-uiuc/ToMAP) |
+| 2025 | ACL | EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via RL | [查看](https://arxiv.org/abs/2602.22696) | [摘要](paper/PD-ACL-2025-EPO-Explicit-Policy-Optimization-for-Strategic-Reasoning-in-LLMs-via-RL.md) | - |
+| 2025 | arXiv | Disagreements in Reasoning: How a Model's Thinking Process Dictates Persuasion in Multi-Agent Systems | [查看](https://arxiv.org/abs/2503.09999) | [摘要](paper/PD-arXiv-2025-Disagreements-in-Reasoning-How-a-Model%E2%80%99s-Thinking-Process-Dictates-Persuasion-in-Multi-Agent-Systems.md) | - |
+| 2025 | arXiv | EvoEmo: Evolved Emotional Policies for Adversarial LLM Agents in Multi-Turn Price Negotiation | [查看](https://arxiv.org/abs/2502.07483) | [摘要](paper/PD-arXiv-2025-EvoEmo-Evolved-Emotional-Policies-for-Adversarial-LLM-Agents-in-Multi-Turn-Price-Negotiation.md) | - |
+| 2025 | arXiv | From Simulation to Strategy: Automating Personalized Interaction Planning for Conversational Agents | [查看](https://arxiv.org/abs/2502.13289) | [摘要](paper/PD-arXiv-2025-From-Simulation-to-Strategy-Automating-Personalized-Interaction-Planning-for-Conversational-Agents.md) | - |
+| 2025 | arXiv | Persuasion Should be Double-Blind: A Multi-Domain Dialogue Dataset With Faithfulness Based on Causal Theory of Mind | [查看](https://arxiv.org/abs/2501.10832) | [摘要](paper/PD-arXiv-2025-Persuasion-Should-be-Double-Blind-A-Multi-Domain-Dialogue-Dataset-With-Faithfulness-Based-on-Causal-Theory-of-Mind.md) | - |
+| 2025 | arXiv | Verbalized Bayesian Persuasion | [查看](https://arxiv.org/abs/2503.15477) | [摘要](paper/PD-arXiv-2025-Verbalized-Bayesian-Persuasion.md) | - |
+| 2025 | EMNLP | Persuasion-Dynamics in LLMs: Investigating Robustness and Adaptability in Knowledge and Safety with DuET-PD | [查看](https://arxiv.org/abs/2501.01234) | [摘要](paper/PD-EMNLP-2025-Persuasion-Dynamics-in-LLMs-Investigating-Robustness-and-Adaptability-in-Knowledge-and-Safety-with-DuET-PD.md) | - |
+| 2025 | EMNLP | Profiling LLM Copyright Infringement Risks under Adversarial Persuasive Prompting | [查看](https://arxiv.org/abs/2501.10234) | [摘要](paper/PD-EMNLP-2025-Profiling-LLM-Copyright-Infringement-Risks-under-Adversarial-Persuasive-Prompting.md) | - |
+| 2025 | CSUR | Persuasive Conversational Agents for Environmental Sustainability: A Survey | [查看](https://doi.org/10.1145/3774751) | [摘要](paper/PD-CSUR-2025-Persuasive-Conversational-Agents-for-Environmental-Sustainability-A-Survey.md) | - |
 | 2025 | ACL | ASTRO: Automatic Strategy Optimization For Non-Cooperative Dialogues | [查看](https://aclanthology.org/2025.findings-acl.22.pdf) | [摘要](paper/DWM-ACL-2025-ASTRO:%20Automatic%20Strategy%20Optimization%20For%20Non-Cooperative%20Dialogues.md) | [代码](https://github.com/SCUNLP/ASTRO) |
-| 2026 | arXiv | Better LLM Reasoning via Dual-Play | [查看](https://arxiv.org/abs/2511.11881v3) | [摘要](paper/DWM-arXiv-2026-Better%20LLM%20Reasoning%20via%20Dual-Play.md) | [代码](https://hcy123902.github.io/PasoDoble/) |
+| 2026 | arXiv | OMAR: One Model All Roles - Multi-Turn Multi-Agent Self-Play RL for Conversational Social Intelligence | [查看](https://arxiv.org/) | [摘要](paper/PD-arXiv-2026-OMAR-One-Model-All-Roles-Multi-Turn-Multi-Agent-Self-Play-RL-for-Conversational-Social-Intelligence.md) | - |
+| 2026 | arXiv | Personality-Aware Reinforcement Learning for Persuasive Dialogue with LLM-Driven Simulation | [查看](-) | [摘要](paper/PD-arXiv-2026-Personality-Aware-Reinforcement-Learning-for-Persuasive-Dialogue-with-LLM-Driven-Simulation.md) | - |
+| 2026 | CSUR | Must Read- A Comprehensive Survey of Computational Persuasion | [查看](https://dl.acm.org/doi/10.1145/3800687) | [摘要](paper/PD-CSUR-2026-Must%20Read-%20A%20Comprehensive%20Survey%20of%20Computational%20Persuasion.md) | [代码](https://github.com/beyzabozdag/PersuasionSurvey) |
+| 2026 | ICLR | RebuttalAgent: Strategic Persuasion in Academic Rebuttal via Theory of Mind | [查看](https://arxiv.org/abs/2601.15715) | [摘要](paper/PD-ICLR-2026-RebuttalAgent%3A%20Strategic%20Persuasion%20in%20Academic%20Rebuttal%20via%20Theory%20of%20Mind.md) | [代码](https://github.com/Zhitao-He/RebuttalAgent) |
+| 2026 | ICLR | Towards Strategic Persuasion with Language Models | [查看](https://arxiv.org/abs/2509.22989v2) | [摘要](paper/PD-ICLR-2026-Towards%20Strategic%20Persuasion%20with%20Language%20Models.md) | - |
 | 2026 | arXiv | METRO: Towards Strategy Induction from Expert Dialogue Transcripts for Non-collaborative Dialogues | [查看](https://arxiv.org/pdf/2604.11427v3.pdf) | [摘要](paper/DWM-arXiv-2026-METRO:%20Towards%20Strategy%20Induction%20from%20Expert%20Dialogue%20Transcripts%20for%20Non-collaborative%20Dialogues.md) | [代码](https://github.com/Humphrey-0125/METRO) |
-### Data：Benchmark for LLM Agents
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2024 | ACL | Evaluating Intention Detection Capability of Large Language Models in Persuasive Dialogues | [查看](https://aclanthology.org/2024.acl-long.90.pdf) | [摘要](paper/ToM+Data-ACL-2024-Evaluating%20Intention%20Detection%20Capability%20of%20Large%20Language%20Models%20in%20Persuasive%20Dialogues.md) | [代码](https://github.com/Syuko4omi/LLM_intention_detection_public) |
-| 2024 | ICML | Agent-as-a-Judge- Evaluate Agents with Agents | [查看](https://arxiv.org/abs/2410.10934) | [摘要](paper/Data-ICML-2024-Agent-as-a-Judge-%20Evaluate%20Agents%20with%20Agents.md) | [代码](https://github.com/metauto-ai/agent-as-a-judge) |
-| 2025 | AAAI | MuMA-ToM- Multi-modal Multi-Agent Theory of Mind | [查看](https://arxiv.org/abs/2408.12574) | [摘要](paper/ToM+Data-AAAI-2025-MuMA-ToM-%20Multi-modal%20Multi-Agent%20Theory%20of%20Mind.md) | [代码](https://scai.cs.jhu.edu/projects/MuMA-ToM/) |
-| 2025 | AAAI | ToMATO: Verbalizing the Mental States of Role-Playing LLMs for Benchmarking Theory of Mind | [查看](https://arxiv.org/abs/2501.08838) | [摘要](paper/ToM+Data-AAAI-2025-ToMATO-%20Verbalizing%20the%20Mental%20States%20of%20Role-Playing%20LLMs%20for%20Benchmarking%20Theory%20of%20Mind.md) | [代码](https://github.com/nttmdlab-nlp/ToMATO) |
-| 2025 | ACL | Beyond Verbal Cues: Emotional Contagion Graph Network for Causal Emotion Entailment | [查看](-) | [摘要](paper/Data-ACL-2025-Beyond%20Verbal%20Cues%3A%20Emotional%20Contagion%20Graph%20Network%20for%20Causal%20Emotion%20Entailment.md) | - |
-| 2025 | ACL | Towards Dynamic Theory of Mind- Evaluating LLM Adaptation to Temporal Evolution of Human States | [查看](https://arxiv.org/abs/2505.17663) | [摘要](paper/ToM+Data-ACL-2025-Towards%20Dynamic%20Theory%20of%20Mind-%20Evaluating%20LLM%20Adaptation%20to%20Temporal%20Evolution%20of%20Human%20States.md) | [代码](https://github.com/GAIR-NLP/DynToM) |
-| 2025 | EMNLP | MOMENT S- A Comprehensive Multimodal Benchmark for Theory of Mind | [查看](https://aclanthology.org/2025.findings-emnlp.1230.pdf) | [摘要](paper/ToM+Data-EMNLP-2025-MOMENT%20S-%20A%20Comprehensive%20Multimodal%20Benchmark%20for%20Theory%20of%20Mind.md) | [代码](https://github.com/villacu/MoMentS) |
-| 2025 | ICLR | Explore theory of mind: program-guided adversarial data generation for theory of mind reasoning | [查看](https://arxiv.org/abs/2412.12175) | [摘要](paper/ToM+Data-ICLR-2025-Explore%20Theory%20of%20Mind-%20PROGRAM-GUIDED%20ADVERSARIAL%20DATA%20GENERATION%20FOR%20THEORY%20OF%20MIND%20REASONING.md) | [代码](https://github.com/facebookresearch/exploretom) |
-| 2025 | NAACL | Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLM Communication | [查看](https://aclanthology.org/2025.naacl-main.287/) | [摘要](paper/Data-NAACL-2025-Communication%20Makes%20Perfect%3A%20Persuasion%20Dataset%20Construction%20via%20Multi-LLM%20Communication.md) | [代码](https://github.com/HF-heaven/LLM-based_persuasion_simulator) |
-| 2026 | AAAI | RecToM: A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems | [查看](https://arxiv.org/abs/2511.22275) | [摘要](paper/ToM+Data-AAAI-2026-RecToM-%20A%20Benchmark%20for%20Evaluating%20Machine%20Theory%20of%20Mind%20in%20LLM-based%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/CGCL-codes/RecToM) |
-| 2026 | arXiv | EnactToM- An Evolving Benchmark for Functional Theory of Mind in Embodied Agents | [查看](https://arxiv.org/abs/2605.09826) | [摘要](paper/ToM+Data-arXiv-2026-EnactToM-%20An%20Evolving%20Benchmark%20for%20Functional%20Theory%20of%20Mind%20in%20Embodied%20Agents.md) | [代码](https://enact-tom.github.io/) |
-| 2026 | arXiv | Large language model psychometrics- A systematic review of evaluation, validation, and enhancement | [查看](https://arxiv.org/abs/2505.08245) | [摘要](paper/Data-arXiv-2026-Large%20language%20model%20psychometrics-%20A%20systematic%20review%20of%20evaluation%2C%20validation%2C%20and%20enhancement.md) | [代码](https://github.com/valuebyte-ai/Awesome-LLM-Psychometrics) |
-| 2026 | WWW | ES-MemEval- Benchmarking Conversational Agents on Personalized Long-Term Emotional Support | [查看](https://doi.org/10.1145/3774904.3792143) | [摘要](paper/Data-WWW-2026-ES-MemEval-%20Benchmarking%20Conversational%20Agents%20on%20Personalized%20Long-Term%20Emotional%20Support.md) | [代码](https://github.com/slptongji/ES-MemEval) |
+
+</details>
+
+<a id="ed"></a>
 ### ED：Empathetic Dialogue Systems
+
+<details>
+<summary>📖 展开论文列表(13 篇)</summary>
+
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
-| 2019 | COBS | Theory of Mind as Inverse Reinforcement Learning | [查看](https://arxiv.org/) | [摘要](paper/ED-COBS-2019-Theory-of-Mind-as-Inverse-Reinforcement-Learning.md.md) | - |
 | 2023 | arXiv | CharacterChat- Learning towards Conversational AI with Personalized Social Support | [查看](https://arxiv.org/abs/2308.10278) | [摘要](paper/ED-arXiv-2023-CharacterChat-%20Learning%20towards%20Conversational%20AI%20with%20Personalized%20Social%20Support.md) | [代码](https://github.com/morecry/CharacterChat) |
 | 2023 | EMNLP | SoulChat- Improving LLMs’ Empathy, Listening, and Comfort Abilities through Fine-tuning with Multi | [查看](https://aclanthology.org/2023.findings-emnlp.83.pdf) | [摘要](paper/ED-EMNLP-2023-SoulChat-%20Improving%20LLMs%E2%80%99%20Empathy%2C%20Listening%2C%20and%20Comfort%20Abilities%20through%20Fine-tuning%20with%20Multi.md) | [代码](https://github.com/scutcyr/SoulChat) |
 | 2024 | ACL | EmoBench- Evaluating the Emotional Intelligence of Large Language Models | [查看](https://github.com/Sahandfer/EmoBench) | [摘要](paper/ED-ACL-2024-EmoBench-%20Evaluating%20the%20Emotional%20Intelligence%20of%20Large%20Language%20Models.md) | [代码](https://github.com/Sahandfer/EmoBench) |
@@ -54,62 +87,19 @@
 | 2025 | arXiv | Reinforcement Learning with Verifiable Emotion Rewards for Empathetic Agents | [查看](https://arxiv.org/abs/2507.03112v1) | [摘要](paper/ED-arXiv-2025-Reinforcement%20Learning%20with%20Verifiable%20Emotion%20Rewards%20for%20Empathetic%20Agents.md) | [代码](https://github.com/Tencent/DigitalHuman/tree/main/RLVER) |
 | 2025 | arXiv | SAGE- Steering and Refining Dialog Generation with State-Action Augmentation | [查看](https://arxiv.org/abs/2503.03040) | [摘要](paper/ED-arXiv-2025-SAGE-%20Steering%20and%20Refining%20Dialog%20Generation%20with%20State-Action%20Augmentation.md) | [代码](https://github.com/apple/ml-sage-dialog-gen) |
 | 2025 | ACL | Beyond Verbal Cues: Emotional Contagion Graph Network for Causal Emotion Entailment | [查看](-) | [摘要](paper/ED-ACL-2025-Beyond%20Verbal%20Cues%3A%20Emotional%20Contagion%20Graph%20Network%20for%20Causal%20Emotion%20Entailment.md) | - |
-| 2026 | arXiv | Affective Flow Language Model for Emotional Support Conversation | [查看](https://arxiv.org/abs/2602.08826v1) | [摘要](paper/ED-arXiv-2026-Affective%20Flow%20Language%20Model%20for%20Emotional%20Support%20Conversation.md) | [代码](https://github.com/chzou25-lgtm/AffectiveFlow) |
-| 2025 | EMNLP | Chain of Strategy Optimization Makes Large Language Models Better Emotional Supporter | [查看](https://arxiv.org/abs/2503.05362) | [摘要](paper/ED-emnlp-2025-Chain_of_Strategy_Optimization_Makes_Large_Language_Models_Better%20Emotional%20Supporter.md) | [代码](https://github.com/XingYuSSS/CSO) |
-### Memory：Agent Memory
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2023 | UIST | Generative Agents- Interactive Simulacra of Human Behavior | [查看](https://doi.org/10.1145/3586183.3606763) | [摘要](paper/Memory-UIST-2023-Generative%20Agents-%20Interactive%20Simulacra%20of%20Human%20Behavior.md) | [代码](https://github.com/joonspk-research/generative_agents) |
-| 2025 | arXiv | A-Mem: Agentic Memory for LLM Agents | [查看](https://arxiv.org/abs/2502.12110) | [摘要](https://github.com/lucianma05-create/Social-AI-Group/blob/main/paper/Memory-arXiv-2025-A-Mem%3A%20Agentic%20Memory%20for%20LLM%20Agents.md) | [代码](https://github.com/WujiangXu/AgenticMemory) |
-| 2025 | arXiv | Evo-Memory- Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory | [查看](https://arxiv.org/abs/2511.20857) | [摘要](paper/Memory-arXiv-2025-Evo-Memory-%20Benchmarking%20LLM%20Agent%20Test-time%20Learning%20with%20Self-Evolving%20Memory.md) | [代码](https://github.com/WujiangXu/AgenticMemory) |
-| 2025 | arXiv | ReasoningBank-Scaling Agent Self-Evolving with Reasoning Memory | [查看](https://arxiv.org/abs/2509.25140) | [摘要](https://github.com/lucianma05-create/Social-AI-Group/blob/main/paper/Memory-arXiv-2025-ReasoningBank%20-%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md) | - |
-| 2025 | arXiv | Remember Me, Refine Me- A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution | [查看](https://arxiv.org/abs/2512.10696) | [摘要](https://github.com/lucianma05-create/Social-AI-Group/blob/main/paper/Memory-arXiv-2025-Remember%20Me%2C%20Refine%20Me-%20A%20Dynamic%20Procedural%20Memory%20Framework%20for%20Experience-Driven%20Agent%20Evolution.md) | [代码](https://github.com/agentscope-ai/ReMe) |
-| 2026 | ICLR | MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent | [查看](https://arxiv.org/abs/2507.02259) | [摘要](paper/Memory-ICLR-2026-MemAgent%3A%20Reshaping%20Long-Context%20LLM%20with%20Multi-Conv%20RL-based%20Memory%20Agent.md) | - |
-### Planing：Agent Planning
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2025 | arxiv | Chain-of-Agents: End-to-End Agent Foundation Models | [查看](https://arxiv.org/pdf/2508.13167) | [摘要](paper/Planing-arxiv-2025-Chain-of-Agents%3A%20End-to-End%20Agent%20Foundation%20Models.md) | [代码](https://github.com/OPPO-PersonalAI/Agent_Foundation_Models) |
-| 2026 | ICLR | TURN-LEVEL TRAJECTORY OPTIMIZATION FOR ROBUST MULTI-TURN LLM REASONING | [查看](-) | [摘要](paper/Planing-ICLR-2026-TURN-LEVEL%20TRAJECTORY%20OPTIMIZATION%20FOR%20ROBUST%20MULTI-TURN%20LLM%20REASONING.md) | - |
-### PD：Persuasive Dialogue Systems
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2008 | PERSUASIVE | A Systematic Framework for Designing and Evaluating Persuasive Systems | [查看](https://doi.org/10.1007/978-3-319-58071-5_50) | [摘要](paper/PD-PERSUASIVE-2008-A%20Systematic%20Framework%20for%20Designing%20and%20Evaluating%20Persuasive%20Systems.md) | - |
-| 2008 | 未提及 | Measure Of Belief Change as an Evaluation of Persuasion | [查看](https://www.researchgate.net/publication/228964262_Measure_Of_Belief_Change_as_an_Evaluation_of_Persuasion) | [摘要](paper/PD-%E6%9C%AA%E6%8F%90%E5%8F%8A-2008-Measure%20Of%20Belief%20Change%20as%20an%20Evaluation%20of%20Persuasion.md) | - |
-| 2014 | COLING | Reinforcement Learning of Cooperative Persuasive Dialogue Policies using Framing | [查看](-) | [摘要](paper/PD-COLING-2014-Reinforcement-Learning-of-Cooperative-Persuasive-Dialogue-Policies-using-Framing.md) | - |
-| 2017 | HCI | Persuasive Argumentation and Emotions- An Empirical Evaluation with Users | [查看](https://doi.org/10.1007/978-3-319-58071-5_50) | [摘要](paper/PD-HCI-2017-Persuasive%20Argumentation%20and%20Emotions-%20An%20Empirical%20Evaluation%20with%20Users.md) | - |
-| 2023 | ArgComp | Strategic argumentation dialogues for persuasion- Framework and experiments based on modelling the beliefs and concerns of the persuadee | [查看](https://doi.org/10.3233/AAC-210005) | [摘要](paper/PD-ArgComp-2023-Strategic%20argumentation%20dialogues%20for%20persuasion-%20Framework%20and%20experiments%20based%20on%20modelling%20the%20beliefs%20and%20concerns%20of%20the%20persuadee.md) | - |
-| 2025 | Science | Durably reducing conspiracy beliefs through dialogues with AI | [查看](https://www.science.org/doi/10.1126/science.adq1814) | [摘要](paper/PD-Science-2025-Durably%20reducing%20conspiracy%20beliefs%20through%20dialogues%20with%20AI.md) | - |
-| 2025 | Science | The Levers of Political Persuasion | [查看](https://www.science.org/doi/10.1126/science.aea3884) | [摘要](paper/PD-Science-2025-The%20Levers%20of%20Political%20Persuasion.md) | [代码](https://github.com/kobihackenburg/scaling-conversational-AI) |
-| 2025 | ACL | Battling against Tough Resister- Strategy Planning with Adversarial Game for Non-collaborative Dialogues | [查看](-) | [摘要](paper/PD-ACL-2025-Battling%20against%20Tough%20Resister-%20Strategy%20Planning%20with%20Adversarial%20Game%20for%20Non-collaborative%20Dialogues.md) | - |
-| 2025 | TACL | Human Choice Prediction in Language-based Persuasion Games- Simulation-based Off-Policy Evaluation | [查看](https://doi.org/10.1162/TACL.a.16) | [摘要](paper/PD-TACL-2025-Human%20Choice%20Prediction%20in%20Language-based%20Persuasion%20Games-%20Simulation-based%20Off-Policy%20Evaluation.md) | [代码](https://github.com/eilamshapira/HumanChoicePrediction) |
-| 2025 | EMNLP | Enhancing LLM-Based Persuasion Simulations with Cultural and Speaker-Specific Information | [查看](https://aclanthology.org/2025.findings-emnlp.808) | [摘要](paper/PD-EMNLP-2025-Enhancing%20LLM-Based%20Persuasion%20Simulations%20with%20Cultural%20and%20Speaker-Specific%20Information.md) | [代码](https://github.com/HF-heaven/Cross-Cultural-Persuasion-Simulations) |
-| 2025 | ACL | Enhancing Persuasive Dialogue Agents by Synthesizing Cross-Disciplinary Communication Strategies | [查看](https://arxiv.org/abs/2602.22696) | [摘要](paper/PD-ACL-2025-Enhancing%20Persuasive%20Dialogue%20Agents%20by%20Synthesizing%20Cross-Disciplinary%20Communication%20Strategies.md) | - |
-| 2025 | ACL | Teaching models to balance resisting and accepting persuasion | [查看](-) | [摘要](paper/PD-ACL-2025-Teaching%20models%20to%20balance%20resisting%20and%20accepting%20persuasion.md) | - |
-| 2025 | arXiv | Enhancing User Engagement in Socially-Driven Dialogue through Interactive LLM Alignments | [查看](https://arxiv.org/abs/2506.21497v1) | [摘要](paper/PD-arXiv-2025-Enhancing%20User%20Engagement%20in%20Socially-Driven%20Dialogue%20through%20Interactive%20LLM%20Alignments.md) | - |
-| 2025 | arXiv | LLM Can be a Dangerous Persuader- Empirical Study of Persuasion Safety in Large Language Models | [查看](https://arxiv.org/abs/2504.10430) | [摘要](paper/PD-arXiv-2025-LLM%20Can%20be%20a%20Dangerous%20Persuader-%20Empirical%20Study%20of%20Persuasion%20Safety%20in%20Large%20Language%20Models.md) | [代码](https://github.com/PLUM-Lab/PersuSafety) |
-| 2025 | arxiv | MAPO: Mixed Advantage Policy Optimization for Long-Horizon Multi-Turn Dialogue | [查看](https://arxiv.org/pdf/2603.06194) | [摘要](paper/PD-arxiv-2025-MAPO%3A%20Mixed%20Advantage%20Policy%20Optimization%20for%20Long-Horizon%20Multi-Turn%20Dialogue.md) | - |
-| 2025 | EMNLP | PRINCIPLES- Synthetic Strategy Memory for Proactive Dialogue Agents | [查看](https://arxiv.org/abs/2509.17459) | [摘要](paper/PD-EMNLP-2025-PRINCIPLES-%20Synthetic%20Strategy%20Memory%20for%20Proactive%20Dialogue%20Agents.md) | [代码](https://huggingface.co/spaces/kimnamssya/Principles) |
-| 2025 | NeurIPS | Persuade Me if You Can- A Framework for Evaluating Persuasion Effectiveness and Susceptibility Among Large Language Models | [查看](https://arxiv.org/abs/2503.01829) | [摘要](paper/PD-NeurIPS-2025-Persuade%20Me%20if%20You%20Can-%20A%20Framework%20for%20Evaluating%20Persuasion%20Effectiveness%20and%20Susceptibility%20Among%20Large%20Language%20Models.md) | [代码](https://beyzabozdag.github.io/PMIYC/) |
-| 2025 | AAAI | Simulation-free hierarchical latent policy planning for proactive dialogues | [查看](https://arxiv.org/abs/2412.14584) | [摘要](paper/PD-AAAI-2025-Simulation-free%20hierarchical%20latent%20policy%20planning%20for%20proactive%20dialogues.md) | - |
-| 2025 | arXiv | ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind | [查看](https://arxiv.org/abs/2505.22961) | [摘要](paper/PD-arXiv-2025-ToMAP%3A%20Training%20Opponent-Aware%20LLM%20Persuaders%20with%20Theory%20of%20Mind.md) | [代码](https://github.com/ulab-uiuc/ToMAP) |
-| 2025 | ACL | EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via RL | [查看](https://arxiv.org/abs/2602.22696) | [摘要](paper/PD-ACL-2025-EPO-Explicit-Policy-Optimization-for-Strategic-Reasoning-in-LLMs-via-RL.md) | - |
-| 2025 | arXiv | Disagreements in Reasoning: How a Model's Thinking Process Dictates Persuasion in Multi-Agent Systems | [查看](https://arxiv.org/abs/2503.09999) | [摘要](paper/PD-arXiv-2025-Disagreements-in-Reasoning-How-a-Model%E2%80%99s-Thinking-Process-Dictates-Persuasion-in-Multi-Agent-Systems.md) | - |
-| 2025 | arXiv | EvoEmo: Evolved Emotional Policies for Adversarial LLM Agents in Multi-Turn Price Negotiation | [查看](https://arxiv.org/abs/2502.07483) | [摘要](paper/PD-arXiv-2025-EvoEmo-Evolved-Emotional-Policies-for-Adversarial-LLM-Agents-in-Multi-Turn-Price-Negotiation.md) | - |
-| 2025 | arXiv | From Simulation to Strategy: Automating Personalized Interaction Planning for Conversational Agents | [查看](https://arxiv.org/abs/2502.13289) | [摘要](paper/PD-arXiv-2025-From-Simulation-to-Strategy-Automating-Personalized-Interaction-Planning-for-Conversational-Agents.md) | - |
 | 2025 | arXiv | PSYDEFCONV: Detecting Psychological Defense Levels in Supportive Conversations | [查看](https://arxiv.org/) | [摘要](paper/PD-arXiv-2025-PSYDEFCONV-Detecting-Psychological-Defense-Levels-in-Supportive-Conversations.md) | - |
-| 2025 | arXiv | Persuasion Should be Double-Blind: A Multi-Domain Dialogue Dataset With Faithfulness Based on Causal Theory of Mind | [查看](https://arxiv.org/abs/2501.10832) | [摘要](paper/PD-arXiv-2025-Persuasion-Should-be-Double-Blind-A-Multi-Domain-Dialogue-Dataset-With-Faithfulness-Based-on-Causal-Theory-of-Mind.md) | - |
-| 2025 | arXiv | Verbalized Bayesian Persuasion | [查看](https://arxiv.org/abs/2503.15477) | [摘要](paper/PD-arXiv-2025-Verbalized-Bayesian-Persuasion.md) | - |
-| 2025 | EMNLP | Persuasion-Dynamics in LLMs: Investigating Robustness and Adaptability in Knowledge and Safety with DuET-PD | [查看](https://arxiv.org/abs/2501.01234) | [摘要](paper/PD-EMNLP-2025-Persuasion-Dynamics-in-LLMs-Investigating-Robustness-and-Adaptability-in-Knowledge-and-Safety-with-DuET-PD.md) | - |
-| 2025 | EMNLP | Profiling LLM Copyright Infringement Risks under Adversarial Persuasive Prompting | [查看](https://arxiv.org/abs/2501.10234) | [摘要](paper/PD-EMNLP-2025-Profiling-LLM-Copyright-Infringement-Risks-under-Adversarial-Persuasive-Prompting.md) | - |
-| 2025 | CSUR | Persuasive Conversational Agents for Environmental Sustainability: A Survey | [查看](https://doi.org/10.1145/3774751) | [摘要](paper/PD-CSUR-2025-Persuasive-Conversational-Agents-for-Environmental-Sustainability-A-Survey.md) | - |
-| 2026 | arXiv | OMAR: One Model All Roles - Multi-Turn Multi-Agent Self-Play RL for Conversational Social Intelligence | [查看](https://arxiv.org/) | [摘要](paper/PD-arXiv-2026-OMAR-One-Model-All-Roles-Multi-Turn-Multi-Agent-Self-Play-RL-for-Conversational-Social-Intelligence.md) | - |
-| 2026 | arXiv | Personality-Aware Reinforcement Learning for Persuasive Dialogue with LLM-Driven Simulation | [查看](-) | [摘要](paper/PD-arXiv-2026-Personality-Aware-Reinforcement-Learning-for-Persuasive-Dialogue-with-LLM-Driven-Simulation.md) | - |
+| 2025 | EMNLP | Chain of Strategy Optimization Makes Large Language Models Better Emotional Supporter | [查看](https://arxiv.org/abs/2503.05362) | [摘要](paper/ED-emnlp-2025-Chain_of_Strategy_Optimization_Makes_Large_Language_Models_Better%20Emotional%20Supporter.md) | [代码](https://github.com/XingYuSSS/CSO) |
+| 2026 | arXiv | Affective Flow Language Model for Emotional Support Conversation | [查看](https://arxiv.org/abs/2602.08826v1) | [摘要](paper/ED-arXiv-2026-Affective%20Flow%20Language%20Model%20for%20Emotional%20Support%20Conversation.md) | [代码](https://github.com/chzou25-lgtm/AffectiveFlow) |
 | 2026 | arxiv | EMPA: Evaluating Persona-Aligned Empathy as a Process | [查看](https://arxiv.org/abs/2603.00552) | [摘要](paper/PD-arxiv-2026-EMPA%3A%20Evaluating%20Persona-Aligned%20Empathy%20as%20a%20Process.md) | [代码](https://github.com/KAYA-HAI/EMPA-Benchmark-EPMSandbox) |
-| 2026 | CSUR | Must Read- A Comprehensive Survey of Computational Persuasion | [查看](https://dl.acm.org/doi/10.1145/3800687) | [摘要](paper/PD-CSUR-2026-Must%20Read-%20A%20Comprehensive%20Survey%20of%20Computational%20Persuasion.md) | [代码](https://github.com/beyzabozdag/PersuasionSurvey) |
-| 2026 | ICLR | RebuttalAgent: Strategic Persuasion in Academic Rebuttal via Theory of Mind | [查看](https://arxiv.org/abs/2601.15715) | [摘要](paper/PD-ICLR-2026-RebuttalAgent%3A%20Strategic%20Persuasion%20in%20Academic%20Rebuttal%20via%20Theory%20of%20Mind.md) | [代码](https://github.com/Zhitao-He/RebuttalAgent) |
-| 2026 | ICLR | Towards Strategic Persuasion with Language Models | [查看](https://arxiv.org/abs/2509.22989v2) | [摘要](paper/PD-ICLR-2026-Towards%20Strategic%20Persuasion%20with%20Language%20Models.md) | - |
-| 2026 | ICLR | TreeSearch for LLM Agent Reinforcement Learning | [查看](https://arxiv.org/abs/2509.21240) | [摘要](paper/PD-ICLR-2026-TreeSearch%20for%20LLM%20Agent%20Reinforcement%20Learning.md) | [代码](https://github.com/AMAP-ML/Tree-GRPO) |
+
+</details>
+
+<a id="recommend"></a>
 ### Recommend：Recommender Systems
+
+<details>
+<summary>📖 展开论文列表(18 篇)</summary>
+
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
 | 2020 | ACL | Towards Conversational Recommendation over Multi-Type Dialogs | [查看](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial) | [摘要](paper/Recommned-ACL-2020-Towards%20Conversational%20Recommendation%20over%20Multi-Type%20Dialogs.md) | [代码](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial) |
@@ -130,62 +120,123 @@
 | 2026 | WWW | Not All Information Brings Benefits- Personalization-Driven Agent Debate for Conversational Recommendation | [查看](https://doi.org/10.1145/3774904.3792152) | [摘要](paper/Recommend-WWW-2026-Not%20All%20Information%20Brings%20Benefits-%20Personalization-Driven%20Agent%20Debate%20for%20Conversational%20Recommendation.md) | - |
 | 2026 | WWW | Optimizing Multi-Turn Interactive Recommendation Agents via Generative Intrinsic Motivation | [查看](https://doi.org/10.1145/3774904.3792209) | [摘要](paper/Recommend-WWW-2026-Optimizing%20Multi-Turn%20Interactive%20Recommendation%20Agents%20via%20Generative%20Intrinsic%20Motivation.md) | [代码](https://github.com/XueyangFeng/GIMO) |
 | 2026 | arxiv | User Simulator-Guided Multi-Turn Preference Optimization for Reasoning LLM-based Conversational Recommendation | [查看](-) | [摘要](paper/Recommend-arxiv-2026-User%20Simulator-Guided%20Multi-Turn%20Preference%20Optimization%20for%20Reasoning%20LLM-based%20Conversational%20Recommendation.md) | - |
-### SN：Social Network
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2024 | AAAI | Adversarial Socialbots Modeling Based on Structural Information Principles | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/27793) | [摘要](paper/SN-AAAI-2024-Adversarial%20Socialbots%20Modeling%20Based%20on%20Structural%20Information%20Principles.md) | [代码](https://github.com/SELGroup/SIASM) |
-### RLHF：Reinforcement Learning from Human Feedback
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2023 | NIPS | Direct Preference Optimization- Your Language Model is Secretly a Reward Model | [查看](https://arxiv.org/abs/2305.18290) | [摘要](paper/RLHF-NIPS-2023-Direct%20Preference%20Optimization-%20Your%20Language%20Model%20is%20Secretly%20a%20Reward%20Model.md) | - |
-| 2024 | arXiv | DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models | [查看](https://arxiv.org/abs/2402.03300v3) | [摘要](paper/RLHF-arXiv-2024-DeepSeekMath-%20Pushing%20the%20Limits%20of%20Mathematical%20Reasoning%20in%20Open%20Language%20Models.md) | [代码](https://github.com/deepseek-ai/DeepSeek-Math) |
-| 2024 | ICML | RLAIF vs. RLHF- Scaling Reinforcement Learning from Human Feedback with AI Feed | [查看](https://arxiv.org/abs/2309.00267v3) | [摘要](paper/RLHF-ICML-2024-RLAIF%20vs.%20RLHF-%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feed.md) | - |
-| 2025 | arXiv | DCPO- Dynamic Clipping Policy Optimization | [查看](https://arxiv.org/abs/2509.02333v2) | [摘要](paper/RLHF-arXiv-2025-DCPO-%20Dynamic%20Clipping%20Policy%20Optimization.md) | [代码](https://github.com/lime-RL/DCPO) |
-| 2025 | arXiv | DeepSeek-V3 Technical Report | [查看](https://arxiv.org/abs/2412.19437v2) | [摘要](paper/RLHF-arXiv-2025-DeepSeek-V3%20Technical%20Report.md) | [代码](https://github.com/deepseek-ai/DeepSeek-V3) |
-| 2025 | arXiv | Group Sequence Policy Optimization | [查看](https://arxiv.org/abs/2507.18071v2) | [摘要](paper/RLHF-arXiv-2025-Group%20Sequence%20Policy%20Optimization.md) | - |
-| 2026 | ICLR | Toward Evaluative Thinking: Meta-Policy Optimization with Evolving Reward Models | [查看](https://arxiv.org/pdf/2504.20157) | [摘要](paper/RLHF-ICLR-2026-Toward-Evaluative-Thinking-Meta-Policy-Optimization-with-Evolving-Reward-Models.md) | - |
 
+</details>
+
+<a id="tom"></a>
 ### ToM：Theory of Mind
+
+<details>
+<summary>📖 展开论文列表(18 篇)</summary>
+
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
 | 2011 | CogSci | Bayesian Theory of Mind- Modeling Joint Belief-Desire Attribution | [查看](https://www.semanticscholar.org/paper/Explore-Theory-of-Mind%3A-Program-guided-adversarial-Sclar-Yu/3c52a1e1c3dc0ef5e1e638e11bbc3a2f09900dc6) | [摘要](paper/ToM-CogSci-2011-Bayesian%20Theory%20of%20Mind-%20Modeling%20Joint%20Belief-Desire%20Attribution.md) | - |
-| 2024 | ACL | Evaluating Intention Detection Capability of Large Language Models in Persuasive Dialogues | [查看](https://aclanthology.org/2024.acl-long.90.pdf) | [摘要](paper/ToM+Data-ACL-2024-Evaluating%20Intention%20Detection%20Capability%20of%20Large%20Language%20Models%20in%20Persuasive%20Dialogues.md) | [代码](https://github.com/Syuko4omi/LLM_intention_detection_public) |
-| 2025 | AAAI | MuMA-ToM- Multi-modal Multi-Agent Theory of Mind | [查看](https://arxiv.org/abs/2408.12574) | [摘要](paper/ToM+Data-AAAI-2025-MuMA-ToM-%20Multi-modal%20Multi-Agent%20Theory%20of%20Mind.md) | [代码](https://scai.cs.jhu.edu/projects/MuMA-ToM/) |
-| 2025 | AAAI | ToMATO: Verbalizing the Mental States of Role-Playing LLMs for Benchmarking Theory of Mind | [查看](https://arxiv.org/abs/2501.08838) | [摘要](paper/ToM+Data-AAAI-2025-ToMATO-%20Verbalizing%20the%20Mental%20States%20of%20Role-Playing%20LLMs%20for%20Benchmarking%20Theory%20of%20Mind.md) | [代码](https://github.com/nttmdlab-nlp/ToMATO) |
+| 2019 | COBS | Theory of Mind as Inverse Reinforcement Learning | [查看](https://arxiv.org/) | [摘要](paper/ED-COBS-2019-Theory-of-Mind-as-Inverse-Reinforcement-Learning.md.md) | - |
 | 2025 | ACL | Machine Theory of Mind Needs Machine Validation | [查看](https://aclanthology.org/2025.findings-acl.951.pdf) | [摘要](paper/ToM-ACL-2025-Machine%20Theory%20of%20Mind%20Needs%20Machine%20Validation.md) | - |
 | 2025 | ACL | Theory of Mind in Large Language Models- Assessment and Enhancement | [查看](https://aclanthology.org/2025.acl-long.1522.pdf) | [摘要](paper/ToM-ACL-2025-Theory%20of%20Mind%20in%20Large%20Language%20Models-%20Assessment%20and%20Enhancement.md) | - |
-| 2025 | ACL | Towards Dynamic Theory of Mind- Evaluating LLM Adaptation to Temporal Evolution of Human States | [查看](https://arxiv.org/abs/2505.17663) | [摘要](paper/ToM+Data-ACL-2025-Towards%20Dynamic%20Theory%20of%20Mind-%20Evaluating%20LLM%20Adaptation%20to%20Temporal%20Evolution%20of%20Human%20States.md) | [代码](https://github.com/GAIR-NLP/DynToM) |
 | 2025 | arXiv | MINDGAMES: Do Large Language Models Have a Planning Theory of Mind? | [查看](https://arxiv.org/pdf/2507.16196v1.pdf) | [摘要](paper/TOM+PD-arXiv-2025-MINDGAMES:%20Do%20Large%20Language%20Models%20Have%20a%20Planning%20Theory%20of%20Mind?.md) | [代码](https://github.com/jlcmoore/mindgames) |
 | 2025 | arXiv | Modeling the Mental World for Embodied AI- A Comprehensive Review | [查看](https://arxiv.org/pdf/2601.02378) | [摘要](paper/ToM-arXiv-2025-Modeling%20the%20Mental%20World%20for%20Embodied%20AI-%20A%20Comprehensive%20Review.md) | - |
 | 2025 | arXiv | ToM-agent: Large Language Models as Theory of Mind Aware Generative Agents with Counterfactual Reflection | [查看](https://arxiv.org/abs/2501.15355) | [摘要](paper/ToM-arxiv-2025-ToM-agent-%20Large%20Language%20Models%20as%20Theory%20of%20Mind%20Aware%20Generative%20Agents%20with%20Counterfactual%20Reflection.md) | - |
 | 2025 | arXiv | ToM-RL: Reinforcement Learning Unlocks Theory of Mind in Small LLMs | [查看](https://arxiv.org/abs/2504.01698) | [摘要](paper/ToM-arXiv-2025-ToM-RL-Reinforcement-Learning-Unlocks-Theory-of-Mind-in-Small-LLMs.md) | [代码](https://github.com/bigai-ai/ToM-R) |
-| 2025 | EMNLP | MOMENT S- A Comprehensive Multimodal Benchmark for Theory of Mind | [查看](https://aclanthology.org/2025.findings-emnlp.1230.pdf) | [摘要](paper/ToM+Data-EMNLP-2025-MOMENT%20S-%20A%20Comprehensive%20Multimodal%20Benchmark%20for%20Theory%20of%20Mind.md) | [代码](https://github.com/villacu/MoMentS) |
-| 2025 | ICLR | Explore theory of mind: program-guided adversarial data generation for theory of mind reasoning | [查看](https://arxiv.org/abs/2412.12175) | [摘要](paper/ToM+Data-ICLR-2025-Explore%20Theory%20of%20Mind-%20PROGRAM-GUIDED%20ADVERSARIAL%20DATA%20GENERATION%20FOR%20THEORY%20OF%20MIND%20REASONING.md) | [代码](https://github.com/facebookresearch/exploretom) |
 | 2025 | ICML | Overcoming Multi-step Complexity in Multimodal Theory-of-Mind Reasoning- A Scalable Bayesian Planner | [查看](https://arxiv.org/abs/2506.01301) | [摘要](paper/ToM-ICML-2025-Overcoming%20Multi-step%20Complexity%20in%20Multimodal%20Theory-of-Mind%20Reasoning-%20A%20Scalable%20Bayesian%20Planner.md) | - |
 | 2025 | NeurIPS | AutoToM- Scaling Model-based Mental Inference via Automated Agent Modeling | [查看](https://arxiv.org/abs/2502.15676) | [摘要](paper/ToM-NeurIPS-2025-AutoToM-%20Scaling%20Model-based%20Mental%20Inference%20via%20Automated%20Agent%20Modeling.md) | - |
 | 2025 | NeurIPS | MetaMind- Modeling Human Social Thoughts with Metacognitive Multi-Agent Systems | [查看](https://arxiv.org/abs/2505.18943) | [摘要](paper/ToM-NeurIPS-2025-MetaMind-%20Modeling%20Human%20Social%20Thoughts%20with%20Metacognitive%20Multi-Agent%20Systems.md) | [代码](https://github.com/XMZhangAI/MetaMind) |
 | 2026 | AAAI | Reality vs Counterfactual- Multi-World Contrastive Reinforcement Learning for Enhancing MLLM’s Theory of Mind in Egocentric Videos | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/37162) | [摘要](paper/ToM-AAAI-2026-Reality%20vs%20Counterfactual-%20Multi-World%20Contrastive%20Reinforcement%20Learning%20for%20Enhancing%20MLLM%E2%80%99s%20Theory%20of%20Mind%20in%20Egocentric%20Videos.md) | - |
-| 2026 | AAAI | RecToM: A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems | [查看](https://arxiv.org/abs/2511.22275) | [摘要](paper/ToM+Data-AAAI-2026-RecToM-%20A%20Benchmark%20for%20Evaluating%20Machine%20Theory%20of%20Mind%20in%20LLM-based%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/CGCL-codes/RecToM) |
-| 2026 | arXiv | EnactToM- An Evolving Benchmark for Functional Theory of Mind in Embodied Agents | [查看](https://arxiv.org/abs/2605.09826) | [摘要](paper/ToM+Data-arXiv-2026-EnactToM-%20An%20Evolving%20Benchmark%20for%20Functional%20Theory%20of%20Mind%20in%20Embodied%20Agents.md) | [代码](https://enact-tom.github.io/) |
 | 2026 | arXiv | Infusing Theory of Mind into Socially Intelligent LLM Agents | [查看](https://arxiv.org/abs/2509.22887) | [摘要](paper/ToM-arxiv-2026-Infusing%20Theory%20of%20Mind%20into%20Socially%20Intelligent%20LLM%20Agents.md) | [代码](https://github.com/eujhwang/toma) |
 | 2026 | arXiv | MetaMind- General and Cognitive World Models in Multi-Agent Systems by Meta-Theory of Mind | [查看](https://arxiv.org/abs/2603.00808) | [摘要](paper/ToM-arXiv-2026-MetaMind-%20General%20and%20Cognitive%20World%20Models%20in%20Multi-Agent%20Systems%20by%20Meta-Theory%20of%20Mind.md) | - |
 | 2026 | arXiv | MindClaw- Closed-Loop Embodied Mental-State Reasoning for Precision Intervention | [查看](https://arxiv.org/abs/2606.01063) | [摘要](paper/ToM-arXiv-2026-MindClaw-%20Closed-Loop%20Embodied%20Mental-State%20Reasoning%20for%20Precision%20Intervention.md) | - |
 | 2026 | arXiv | UserHarness- Harnessing User Minds for Stronger Agent Theory-of-Mind | [查看](https://arxiv.org/abs/2605.27721) | [摘要](paper/ToM-arXiv-2026-UserHarness-%20Harnessing%20User%20Minds%20for%20Stronger%20Agent%20Theory-of-Mind.md) | - |
 | 2026 | CVPR | Video-Only ToM- Enhancing Theory of Mind in Multimodal Large Language Models | [查看](https://arxiv.org/abs/2603.24484) | [摘要](paper/ToM-CVPR-2026-Video-Only%20ToM-%20Enhancing%20Theory%20of%20Mind%20in%20Multimodal%20Large%20Language%20Models.md) | [代码](https://founce.github.io/VisionToM/) |
 | 2026 | EACL | Let's Put Ourselves in Sally's Shoes: Shoes of Others Prefilling Improves Theory of Mind in LLMs | [查看](https://aclanthology.org/2026.findings-eacl.6/) | [摘要](paper/ToM-EACL-2026-Lets-Put-Ourselves-in-Sallys-Shoes-Shoes-of-Others-Prefilling-Improves-Theory-of-Mind-in-LLMs.md) | - |
-| 2026 | AAAI | RecToM- A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems | [查看](https://arxiv.org/pdf/2511.22275) | [摘要](paper/ToM+Recommend+Data-AAAI-2026-RecToM-%20A%20Benchmark%20for%20Evaluating%20Machine%20Theory%20of%20Mind%20in%20LLM-based%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/CGCL-codes/RecToM) |
-### US：User Simulator
+
+</details>
+
+<a id="memory"></a>
+### Memory：Agent Memory
+
+<details>
+<summary>📖 展开论文列表(6 篇)</summary>
+
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
+| 2023 | UIST | Generative Agents- Interactive Simulacra of Human Behavior | [查看](https://doi.org/10.1145/3586183.3606763) | [摘要](paper/Memory-UIST-2023-Generative%20Agents-%20Interactive%20Simulacra%20of%20Human%20Behavior.md) | [代码](https://github.com/joonspk-research/generative_agents) |
+| 2025 | arXiv | A-Mem: Agentic Memory for LLM Agents | [查看](https://arxiv.org/abs/2502.12110) | [摘要](https://github.com/lucianma05-create/Social-AI-Group/blob/main/paper/Memory-arXiv-2025-A-Mem%3A%20Agentic%20Memory%20for%20LLM%20Agents.md) | [代码](https://github.com/WujiangXu/AgenticMemory) |
+| 2025 | arXiv | Evo-Memory- Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory | [查看](https://arxiv.org/abs/2511.20857) | [摘要](paper/Memory-arXiv-2025-Evo-Memory-%20Benchmarking%20LLM%20Agent%20Test-time%20Learning%20with%20Self-Evolving%20Memory.md) | [代码](https://github.com/WujiangXu/AgenticMemory) |
+| 2025 | arXiv | ReasoningBank-Scaling Agent Self-Evolving with Reasoning Memory | [查看](https://arxiv.org/abs/2509.25140) | [摘要](https://github.com/lucianma05-create/Social-AI-Group/blob/main/paper/Memory-arXiv-2025-ReasoningBank%20-%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md) | - |
+| 2025 | arXiv | Remember Me, Refine Me- A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution | [查看](https://arxiv.org/abs/2512.10696) | [摘要](https://github.com/lucianma05-create/Social-AI-Group/blob/main/paper/Memory-arXiv-2025-Remember%20Me%2C%20Refine%20Me-%20A%20Dynamic%20Procedural%20Memory%20Framework%20for%20Experience-Driven%20Agent%20Evolution.md) | [代码](https://github.com/agentscope-ai/ReMe) |
+| 2026 | ICLR | MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent | [查看](https://arxiv.org/abs/2507.02259) | [摘要](paper/Memory-ICLR-2026-MemAgent%3A%20Reshaping%20Long-Context%20LLM%20with%20Multi-Conv%20RL-based%20Memory%20Agent.md) | - |
+
+</details>
+
+<a id="us"></a>
+### US：User Simulator
+
+<details>
+<summary>📖 展开论文列表(11 篇)</summary>
+
+| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
+| --- | --- | --- | --- | --- | --- |
+| 2006 | KER | A Survey of Statistical User Simulation Techniques for RL Dialogue Management | [查看](https://doi.org/10.1017/S0269888906000944) | [摘要](paper/DMW-KER-2006-A-Survey-of-Statistical-User-Simulation-Techniques-for-RL-Dialogue-Management.md) | - |
 | 2023 | TOIS | Metaphorical User Simulators for Evaluating Task-oriented Dialogue Systems | [查看](https://doi.org/10.1145/3596510) | [摘要](paper/US-TOIS-2023-Metaphorical%20User%20Simulators%20for%20Evaluating%20Task-oriented%20Dialogue%20Systems.md) | [代码](http://github.com/sunnweiwei/MetaSim); [代码](https://github.com/Superbooming/simtester) |
 | 2024 | ICLR | SOTOPIA- Interactive Evaluation for Social Intelligence in Language Agents | [查看](https://arxiv.org/abs/2310.11667) | [摘要](paper/US-ICLR-2024-SOTOPIA-%20Interactive%20Evaluation%20for%20Social%20Intelligence%20in%20Language%20Agents.md) | - |
 | 2024 | WWW | An In-depth Investigation of User Response Simulation for Conversational Search | [查看](https://dl.acm.org/doi/10.1145/3589334.3645447) | [摘要](paper/US-WWW-2024-An%20In-depth%20Investigation%20of%20User%20Response%20Simulation%20for%20Conversational%20Search.md) | [代码](https://anonymous.4open.science/r/UserSimulation-7091) |
+| 2024 | AAAI | Adversarial Socialbots Modeling Based on Structural Information Principles | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/27793) | [摘要](paper/SN-AAAI-2024-Adversarial%20Socialbots%20Modeling%20Based%20on%20Structural%20Information%20Principles.md) | [代码](https://github.com/SELGroup/SIASM) |
+| 2024 | arXiv | Strength Lies in Differences! Improving Strategy Planning for Non-collaborative Dialogues via Diversified User Simulation | [查看](https://arxiv.org/pdf/2403.06769v3.pdf) | [摘要](paper/DWM-arXiv-2024-Strength%20Lies%20in%20Differences!%20Improving%20Strategy%20Planning%20for%20Non-collaborative%20Dialogues%20via%20Diversified%20User%20Simulation.md) | - |
 | 2025 | SIGDIAL | Generating Diverse Personas for User Simulators to Test Interview Dialogue Systems | [查看](-) | [摘要](paper/US-SIGDIAL-2025-Generating%20Diverse%20Personas%20for%20User%20Simulators%20to%20Test%20Interview%20Dialogue%20Systems.md) | - |
 | 2025 | SIGIR | Simulating Before Planning- Constructing Intrinsic User World Model for User-Tailored Dialogue Policy Planning | [查看](https://doi.org/10.1145/3726302.3730084) | [摘要](paper/US-SIGIR-2025-Simulating%20Before%20Planning-%20Constructing%20Intrinsic%20User%20World%20Model%20for%20User-Tailored%20Dialogue%20Policy%20Planning.md) | - |
 | 2025 | SIGIR | Theory and Toolkits for User Simulation in the Era of Generative AI- User Modeling, Synthetic Data Generation, and System Evaluation | [查看](https://doi.org/10.1145/3726302.3731697) | [摘要](paper/US-SIGIR-2025-Theory%20and%20Toolkits%20for%20User%20Simulation%20in%20the%20Era%20of%20Generative%20AI-%20User%20Modeling%2C%20Synthetic%20Data%20Generation%2C%20and%20System%20Evaluation.md) | - |
 | 2025 | WWW | A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems | [查看](https://doi.org/10.1145/3696410.3714858) | [摘要](paper/US-WWW-2025-A%20LLM-based%20Controllable%2C%20Scalable%2C%20Human-Involved%20User%20Simulator%20Framework%20for%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/zlxxlz1026/CSHI) |
 | 2025 | NIPS | Goal Alignment in LLM-Based User Simulators for Conversational AI | [查看](-) | [摘要](paper/US-NIPS-2025-Goal%20Alignment%20in%20LLM-Based%20User%20Simulators%20for%20Conversational%20AI.md) | [代码](https://github.com/Shuhaibm/user_simulator_goal_alignment) |
-| 2026 | arXiv | User Simulation in the Era of Generative AI- User Modeling, Synthetic Data Generation, and System Evaluation | [查看](-) | [摘要](paper/US-arXiv-2026-User%20Simulation%20in%20the%20Era%20of%20Generative%20AI-%20User%20Modeling%2C%20Synthetic%20Data%20Generation%2C%20and%20System%20Evaluation.md) | - |
+
+</details>
+
+<a id="rlhf"></a>
+### RLHF：RL & Alignment
+
+<details>
+<summary>📖 展开论文列表(12 篇)</summary>
+
+| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
+| --- | --- | --- | --- | --- | --- |
+| 2023 | NIPS | Direct Preference Optimization- Your Language Model is Secretly a Reward Model | [查看](https://arxiv.org/abs/2305.18290) | [摘要](paper/RLHF-NIPS-2023-Direct%20Preference%20Optimization-%20Your%20Language%20Model%20is%20Secretly%20a%20Reward%20Model.md) | - |
+| 2024 | ICML | RLAIF vs. RLHF- Scaling Reinforcement Learning from Human Feedback with AI Feed | [查看](https://arxiv.org/abs/2309.00267v3) | [摘要](paper/RLHF-ICML-2024-RLAIF%20vs.%20RLHF-%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feed.md) | - |
+| 2025 | arXiv | DCPO- Dynamic Clipping Policy Optimization | [查看](https://arxiv.org/abs/2509.02333v2) | [摘要](paper/RLHF-arXiv-2025-DCPO-%20Dynamic%20Clipping%20Policy%20Optimization.md) | [代码](https://github.com/lime-RL/DCPO) |
+| 2025 | arXiv | Group Sequence Policy Optimization | [查看](https://arxiv.org/abs/2507.18071v2) | [摘要](paper/RLHF-arXiv-2025-Group%20Sequence%20Policy%20Optimization.md) | - |
+| 2025 | COLING | MCA-Model-Based Causal RL for Efficient Dialogue Policy | [查看](https://aclanthology.org/2025.coling-main.490/) | [摘要](paper/DWM-COLING-2025-MCA-Model-Based-Causal-RL-for-Efficient-Dialogue-Policy.md) | - |
+| 2025 | NeurIPS | World Models Should Prioritize the Unification of Physical and Social Dynamics | [查看](https://arxiv.org/pdf/2510.21219/) | [摘要](paper/DWM-NeurIPS-2025-World-Models-Should-Prioritize-the-Unification-of-Physical-and-Social-Dynamics.md) | - |
+| 2025 | EMNLP | Dream to Chat: Model-based Reinforcement Learning on Dialogues with User Belief Modeling | [查看](https://arxiv.org/abs/2508.16876) | [摘要](paper/DWM-arxiv-2025-Dream%20to%20Chat%3A%20Model-based%20Reinforcement%20Learning%20on%20Dialogues%20with%20User%20Belief%20Modeling.md) | - |
+| 2025 | arxiv | Enhancing User Engagement in Socially-Driven Dialogue through Interactive LLM Alignments | [查看](https://arxiv.org/abs/2506.21497v1) | [摘要](paper/DWM-ARXIV-2025-Enhancing-User-Engagement-in-Socially-Driven-Dialogue-through-Interactive-LLM-Alignments.md) | - |
+| 2025 | arxiv | MAPO: Mixed Advantage Policy Optimization for Long-Horizon Multi-Turn Dialogue | [查看](https://arxiv.org/pdf/2603.06194) | [摘要](paper/PD-arxiv-2025-MAPO%3A%20Mixed%20Advantage%20Policy%20Optimization%20for%20Long-Horizon%20Multi-Turn%20Dialogue.md) | - |
+| 2026 | ICLR | Toward Evaluative Thinking: Meta-Policy Optimization with Evolving Reward Models | [查看](https://arxiv.org/pdf/2504.20157) | [摘要](paper/RLHF-ICLR-2026-Toward-Evaluative-Thinking-Meta-Policy-Optimization-with-Evolving-Reward-Models.md) | - |
+| 2026 | arXiv | Better LLM Reasoning via Dual-Play | [查看](https://arxiv.org/abs/2511.11881v3) | [摘要](paper/DWM-arXiv-2026-Better%20LLM%20Reasoning%20via%20Dual-Play.md) | [代码](https://hcy123902.github.io/PasoDoble/) |
+| 2026 | ICLR | TreeSearch for LLM Agent Reinforcement Learning | [查看](https://arxiv.org/abs/2509.21240) | [摘要](paper/PD-ICLR-2026-TreeSearch%20for%20LLM%20Agent%20Reinforcement%20Learning.md) | [代码](https://github.com/AMAP-ML/Tree-GRPO) |
+
+</details>
+
+<a id="data"></a>
+### Data：Benchmark & Evaluation
+
+<details>
+<summary>📖 展开论文列表(12 篇)</summary>
+
+| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
+| --- | --- | --- | --- | --- | --- |
+| 2024 | ACL | Evaluating Intention Detection Capability of Large Language Models in Persuasive Dialogues | [查看](https://aclanthology.org/2024.acl-long.90.pdf) | [摘要](paper/ToM+Data-ACL-2024-Evaluating%20Intention%20Detection%20Capability%20of%20Large%20Language%20Models%20in%20Persuasive%20Dialogues.md) | [代码](https://github.com/Syuko4omi/LLM_intention_detection_public) |
+| 2024 | ICML | Agent-as-a-Judge- Evaluate Agents with Agents | [查看](https://arxiv.org/abs/2410.10934) | [摘要](paper/Data-ICML-2024-Agent-as-a-Judge-%20Evaluate%20Agents%20with%20Agents.md) | [代码](https://github.com/metauto-ai/agent-as-a-judge) |
+| 2025 | AAAI | MuMA-ToM- Multi-modal Multi-Agent Theory of Mind | [查看](https://arxiv.org/abs/2408.12574) | [摘要](paper/ToM+Data-AAAI-2025-MuMA-ToM-%20Multi-modal%20Multi-Agent%20Theory%20of%20Mind.md) | [代码](https://scai.cs.jhu.edu/projects/MuMA-ToM/) |
+| 2025 | AAAI | ToMATO: Verbalizing the Mental States of Role-Playing LLMs for Benchmarking Theory of Mind | [查看](https://arxiv.org/abs/2501.08838) | [摘要](paper/ToM+Data-AAAI-2025-ToMATO-%20Verbalizing%20the%20Mental%20States%20of%20Role-Playing%20LLMs%20for%20Benchmarking%20Theory%20of%20Mind.md) | [代码](https://github.com/nttmdlab-nlp/ToMATO) |
+| 2025 | ACL | Towards Dynamic Theory of Mind- Evaluating LLM Adaptation to Temporal Evolution of Human States | [查看](https://arxiv.org/abs/2505.17663) | [摘要](paper/ToM+Data-ACL-2025-Towards%20Dynamic%20Theory%20of%20Mind-%20Evaluating%20LLM%20Adaptation%20to%20Temporal%20Evolution%20of%20Human%20States.md) | [代码](https://github.com/GAIR-NLP/DynToM) |
+| 2025 | EMNLP | MOMENT S- A Comprehensive Multimodal Benchmark for Theory of Mind | [查看](https://aclanthology.org/2025.findings-emnlp.1230.pdf) | [摘要](paper/ToM+Data-EMNLP-2025-MOMENT%20S-%20A%20Comprehensive%20Multimodal%20Benchmark%20for%20Theory%20of%20Mind.md) | [代码](https://github.com/villacu/MoMentS) |
+| 2025 | ICLR | Explore theory of mind: program-guided adversarial data generation for theory of mind reasoning | [查看](https://arxiv.org/abs/2412.12175) | [摘要](paper/ToM+Data-ICLR-2025-Explore%20Theory%20of%20Mind-%20PROGRAM-GUIDED%20ADVERSARIAL%20DATA%20GENERATION%20FOR%20THEORY%20OF%20MIND%20REASONING.md) | [代码](https://github.com/facebookresearch/exploretom) |
+| 2025 | NAACL | Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLM Communication | [查看](https://aclanthology.org/2025.naacl-main.287/) | [摘要](paper/Data-NAACL-2025-Communication%20Makes%20Perfect%3A%20Persuasion%20Dataset%20Construction%20via%20Multi-LLM%20Communication.md) | [代码](https://github.com/HF-heaven/LLM-based_persuasion_simulator) |
+| 2026 | AAAI | RecToM: A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems | [查看](https://arxiv.org/abs/2511.22275) | [摘要](paper/ToM+Data-AAAI-2026-RecToM-%20A%20Benchmark%20for%20Evaluating%20Machine%20Theory%20of%20Mind%20in%20LLM-based%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/CGCL-codes/RecToM) |
+| 2026 | arXiv | EnactToM- An Evolving Benchmark for Functional Theory of Mind in Embodied Agents | [查看](https://arxiv.org/abs/2605.09826) | [摘要](paper/ToM+Data-arXiv-2026-EnactToM-%20An%20Evolving%20Benchmark%20for%20Functional%20Theory%20of%20Mind%20in%20Embodied%20Agents.md) | [代码](https://enact-tom.github.io/) |
+| 2026 | arXiv | Large language model psychometrics- A systematic review of evaluation, validation, and enhancement | [查看](https://arxiv.org/abs/2505.08245) | [摘要](paper/Data-arXiv-2026-Large%20language%20model%20psychometrics-%20A%20systematic%20review%20of%20evaluation%2C%20validation%2C%20and%20enhancement.md) | [代码](https://github.com/valuebyte-ai/Awesome-LLM-Psychometrics) |
+| 2026 | WWW | ES-MemEval- Benchmarking Conversational Agents on Personalized Long-Term Emotional Support | [查看](https://doi.org/10.1145/3774904.3792143) | [摘要](paper/Data-WWW-2026-ES-MemEval-%20Benchmarking%20Conversational%20Agents%20on%20Personalized%20Long-Term%20Emotional%20Support.md) | [代码](https://github.com/slptongji/ES-MemEval) |
+
+</details>
+
 ---
 
 ## 📁 仓库结构
@@ -230,6 +281,7 @@ git checkout -b 分支名
 [方向]-[会议/期刊名]-[年份]-[论文名(完整的名字而不是缩写)].md
 示例: Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md
 研究方向请参考 README.md, 倘若是其中没有的，请手动添加，并在命名时使用新增的方向名称。
+当前方向前缀：ToM、PD、ED、Recommend、US、Memory、RLHF、Data。
 \image 下的文件命名为 [年]-[月]-[日]-[编号]-[姓名缩写].png
 示例：2024010101mmh.png
 ```
