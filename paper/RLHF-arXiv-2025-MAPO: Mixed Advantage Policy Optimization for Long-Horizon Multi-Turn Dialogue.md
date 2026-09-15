@@ -1,4 +1,4 @@
-# PD-arXiv-2025-MAPO: Mixed Advantage Policy Optimization for Long-Horizon Multi-Turn Dialogue
+# RLHF-arXiv-2025-MAPO: Mixed Advantage Policy Optimization for Long-Horizon Multi-Turn Dialogue
 
 *论文下载地址（可选）：[https://arxiv.org/pdf/2603.06194](https://arxiv.org/pdf/2603.06194)*
 

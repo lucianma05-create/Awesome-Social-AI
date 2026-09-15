@@ -1,4 +1,4 @@
-# PD-ACL-2025-Enhancing Persuasive Dialogue Agents by Synthesizing Cross-Disciplinary Communication Strategies
+# PD-EMNLP-2025-Enhancing Persuasive Dialogue Agents by Synthesizing Cross-Disciplinary Communication Strategies
 *论文下载地址：https://arxiv.org/abs/2602.22696*
 
 *代码是否开源：未提及*

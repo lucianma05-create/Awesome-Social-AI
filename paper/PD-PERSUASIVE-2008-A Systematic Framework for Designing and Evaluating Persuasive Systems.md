@@ -1,7 +1,7 @@
 # PD-PERSUASIVE-2008-A Systematic Framework for Designing and Evaluating Persuasive Systems
 > 说明：本文档内容默认使用中文生成（论文标题与必要专有名词除外）。
 
-*论文下载地址：未提及*
+*论文下载地址：[https://doi.org/10.1007/978-3-540-68504-3_15](https://doi.org/10.1007/978-3-540-68504-3_15)*
 
 *代码是否开源：未提及*
 

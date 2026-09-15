@@ -1,6 +1,6 @@
 # PD-EMNLP-2025-Profiling-LLM-Copyright-Infringement-Risks-under-Adversarial-Persuasive-Prompting.md
 *论文下载地址（可选）：[https://aclanthology.org/2025.findings-emnlp.855/]*
-*代码是否开源：是 [https://github.com/Rongite/Persuasion]*
+*代码是否开源：是 https://github.com/Rongite/Persuasion*
 *分享人：马明晖*
 
 ## 一句话总结内容

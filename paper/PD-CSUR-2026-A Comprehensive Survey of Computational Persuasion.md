@@ -1,4 +1,4 @@
-# PD-CSUR-2026-Must Read- A Comprehensive Survey of Computational Persuasion
+# PD-CSUR-2026-A Comprehensive Survey of Computational Persuasion
 > 说明：本文档内容默认使用中文生成（论文标题与必要专有名词除外）。
 
 *论文下载地址：https://dl.acm.org/doi/10.1145/3800687*

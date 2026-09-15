@@ -1,4 +1,4 @@
-# PD-ICLR-2026-TreeSearch for LLM Agent Reinforcement Learning
+# RLHF-ICLR-2026-TreeSearch for LLM Agent Reinforcement Learning
 
 *论文下载地址（可选）：[https://arxiv.org/abs/2509.21240](https://arxiv.org/abs/2509.21240)*
 

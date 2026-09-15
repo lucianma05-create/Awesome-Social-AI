@@ -1,5 +1,5 @@
 # ToM-COBS-2019-Theory-of-Mind-as-Inverse-Reinforcement-Learning
-*论文下载地址（可选）：[https://arxiv.org/]*
+*论文下载地址（可选）：[https://doi.org/10.1016/j.cobeha.2019.04.010](https://doi.org/10.1016/j.cobeha.2019.04.010)*
 *代码是否开源：否*
 *分享人：马明晖*
 
