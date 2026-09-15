@@ -4,15 +4,15 @@
 
 [![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://github.com/sindresorhus/awesome)
 [![License](https://img.shields.io/badge/License-Apache%202.0-red?style=for-the-badge&logo=apache&logoColor=white)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Papers](https://img.shields.io/github/directory-file-count/lucianma05-create/Social-AI-Group/paper?type=file&extension=md&label=Papers&color=2ea44f&style=for-the-badge)](paper)
-[![Views](https://komarev.com/ghpvc/?username=lucianma05-create&repo=Social-AI-Group&label=Views&color=orange&style=for-the-badge)](https://github.com/lucianma05-create/Social-AI-Group)
+[![Papers](https://img.shields.io/github/directory-file-count/lucianma05-create/Awesome-Social-AI/paper?type=file&extension=md&label=Papers&color=2ea44f&style=for-the-badge)](paper)
+[![Views](https://komarev.com/ghpvc/?username=lucianma05-create&repo=Awesome-Social-AI&label=Views&color=orange&style=for-the-badge)](https://github.com/lucianma05-create/Awesome-Social-AI)
 </div>
 
 ## 📊 方向概览
 
 | 方向 | 论文数 | 核心主题 |
 | --- | --- | --- |
-| [PD：Persuasion & Negotiation](#pd) | 35 | 说服、谈判等非合作对话的策略规划与优化 |
+| [PD：Persuasion & Negotiation](#pd) | 35 | 说服、谈判等策略性对话的研究、方法与评测 |
 | [ED：Empathetic Dialogue Systems](#ed) | 13 | 共情对话、情感支持与心理辅导 |
 | [Recommend：Recommender Systems](#recommend) | 18 | 对话式推荐系统 |
 | [ToM：Theory of Mind](#tom) | 18 | 心智建模、意图与信念推理 |
@@ -41,11 +41,11 @@
 | 2024 | ICLR | Plug-and-Play Policy Planner for LLM-Powered Dialogue Agents | [查看](https://arxiv.org/pdf/2311.00262.pdf) | [摘要](paper/PD-ICLR-2024-Plug-and-Play%20Policy%20Planner%20for%20LLM-Powered%20Dialogue%20Agents.md) | [代码](https://github.com/dengyang17/PPDPP) |
 | 2025 | Science | Durably reducing conspiracy beliefs through dialogues with AI | [查看](https://www.science.org/doi/10.1126/science.adq1814) | [摘要](paper/PD-Science-2025-Durably%20reducing%20conspiracy%20beliefs%20through%20dialogues%20with%20AI.md) | - |
 | 2025 | Science | The Levers of Political Persuasion | [查看](https://www.science.org/doi/10.1126/science.aea3884) | [摘要](paper/PD-Science-2025-The%20Levers%20of%20Political%20Persuasion.md) | [代码](https://github.com/kobihackenburg/scaling-conversational-AI) |
-| 2025 | ACL | Battling against Tough Resister- Strategy Planning with Adversarial Game for Non-collaborative Dialogues | [查看](-) | [摘要](paper/PD-ACL-2025-Battling%20against%20Tough%20Resister-%20Strategy%20Planning%20with%20Adversarial%20Game%20for%20Non-collaborative%20Dialogues.md) | - |
+| 2025 | ACL | Battling against Tough Resister- Strategy Planning with Adversarial Game for Non-collaborative Dialogues | [查看](https://aclanthology.org/2025.acl-long.184/) | [摘要](paper/PD-ACL-2025-Battling%20against%20Tough%20Resister-%20Strategy%20Planning%20with%20Adversarial%20Game%20for%20Non-collaborative%20Dialogues.md) | - |
 | 2025 | TACL | Human Choice Prediction in Language-based Persuasion Games- Simulation-based Off-Policy Evaluation | [查看](https://doi.org/10.1162/TACL.a.16) | [摘要](paper/PD-TACL-2025-Human%20Choice%20Prediction%20in%20Language-based%20Persuasion%20Games-%20Simulation-based%20Off-Policy%20Evaluation.md) | [代码](https://github.com/eilamshapira/HumanChoicePrediction) |
 | 2025 | EMNLP | Enhancing LLM-Based Persuasion Simulations with Cultural and Speaker-Specific Information | [查看](https://aclanthology.org/2025.findings-emnlp.808) | [摘要](paper/PD-EMNLP-2025-Enhancing%20LLM-Based%20Persuasion%20Simulations%20with%20Cultural%20and%20Speaker-Specific%20Information.md) | [代码](https://github.com/HF-heaven/Cross-Cultural-Persuasion-Simulations) |
 | 2025 | EMNLP | Enhancing Persuasive Dialogue Agents by Synthesizing Cross-Disciplinary Communication Strategies | [查看](https://aclanthology.org/2025.emnlp-industry.158/) | [摘要](paper/PD-EMNLP-2025-Enhancing%20Persuasive%20Dialogue%20Agents%20by%20Synthesizing%20Cross-Disciplinary%20Communication%20Strategies.md) | - |
-| 2025 | ACL | Teaching models to balance resisting and accepting persuasion | [查看](-) | [摘要](paper/PD-ACL-2025-Teaching%20models%20to%20balance%20resisting%20and%20accepting%20persuasion.md) | - |
+| 2025 | NAACL | Teaching models to balance resisting and accepting persuasion | [查看](https://aclanthology.org/2025.naacl-long.412/) | [摘要](paper/PD-NAACL-2025-Teaching%20models%20to%20balance%20resisting%20and%20accepting%20persuasion.md) | [代码](https://github.com/esteng/persuasion_balanced_training) |
 | 2025 | arXiv | LLM Can be a Dangerous Persuader- Empirical Study of Persuasion Safety in Large Language Models | [查看](https://arxiv.org/abs/2504.10430) | [摘要](paper/PD-arXiv-2025-LLM%20Can%20be%20a%20Dangerous%20Persuader-%20Empirical%20Study%20of%20Persuasion%20Safety%20in%20Large%20Language%20Models.md) | [代码](https://github.com/PLUM-Lab/PersuSafety) |
 | 2025 | EMNLP | PRINCIPLES- Synthetic Strategy Memory for Proactive Dialogue Agents | [查看](https://arxiv.org/abs/2509.17459) | [摘要](paper/PD-EMNLP-2025-PRINCIPLES-%20Synthetic%20Strategy%20Memory%20for%20Proactive%20Dialogue%20Agents.md) | [代码](https://huggingface.co/spaces/kimnamssya/Principles) |
 | 2025 | NeurIPS | Persuade Me if You Can- A Framework for Evaluating Persuasion Effectiveness and Susceptibility Among Large Language Models | [查看](https://arxiv.org/abs/2503.01829) | [摘要](paper/PD-NeurIPS-2025-Persuade%20Me%20if%20You%20Can-%20A%20Framework%20for%20Evaluating%20Persuasion%20Effectiveness%20and%20Susceptibility%20Among%20Large%20Language%20Models.md) | [代码](https://beyzabozdag.github.io/PMIYC/) |
@@ -86,7 +86,7 @@
 | 2025 | ACL | PsyDial- A Large-scale Long-term Conversational Dataset for Mental Health Support | [查看](https://aclanthology.org/2025.acl-long.1049/) | [摘要](paper/ED-ACL-2025-PsyDial:%20A%20Large-scale%20Long-term%20Conversational%20Dataset%20for%20Mental%20Health%20Support.md) | [代码](https://github.com/qiuhuachuan/PsyDial) |
 | 2025 | arXiv | Reinforcement Learning with Verifiable Emotion Rewards for Empathetic Agents | [查看](https://arxiv.org/abs/2507.03112v1) | [摘要](paper/ED-arXiv-2025-Reinforcement%20Learning%20with%20Verifiable%20Emotion%20Rewards%20for%20Empathetic%20Agents.md) | [代码](https://github.com/Tencent/DigitalHuman/tree/main/RLVER) |
 | 2025 | arXiv | SAGE- Steering and Refining Dialog Generation with State-Action Augmentation | [查看](https://arxiv.org/abs/2503.03040) | [摘要](paper/ED-arXiv-2025-SAGE-%20Steering%20and%20Refining%20Dialog%20Generation%20with%20State-Action%20Augmentation.md) | [代码](https://github.com/apple/ml-sage-dialog-gen) |
-| 2025 | ACL | Beyond Verbal Cues: Emotional Contagion Graph Network for Causal Emotion Entailment | [查看](-) | [摘要](paper/ED-ACL-2025-Beyond%20Verbal%20Cues%3A%20Emotional%20Contagion%20Graph%20Network%20for%20Causal%20Emotion%20Entailment.md) | - |
+| 2025 | ACL | Beyond Verbal Cues: Emotional Contagion Graph Network for Causal Emotion Entailment | [查看](https://aclanthology.org/2025.findings-acl.88/) | [摘要](paper/ED-ACL-2025-Beyond%20Verbal%20Cues%3A%20Emotional%20Contagion%20Graph%20Network%20for%20Causal%20Emotion%20Entailment.md) | [代码](https://github.com/Yu-Fangxu/ECGN) |
 | 2025 | EMNLP | Chain of Strategy Optimization Makes Large Language Models Better Emotional Supporter | [查看](https://arxiv.org/abs/2503.05362) | [摘要](paper/ED-EMNLP-2025-Chain%20of%20Strategy%20Optimization%20Makes%20Large%20Language%20Models%20Better%20Emotional%20Supporter.md) | [代码](https://github.com/XingYuSSS/CSO) |
 | 2026 | arXiv | Affective Flow Language Model for Emotional Support Conversation | [查看](https://arxiv.org/abs/2602.08826v1) | [摘要](paper/ED-arXiv-2026-Affective%20Flow%20Language%20Model%20for%20Emotional%20Support%20Conversation.md) | [代码](https://github.com/chzou25-lgtm/AffectiveFlow) |
 | 2026 | arXiv | EMPA: Evaluating Persona-Aligned Empathy as a Process | [查看](https://arxiv.org/abs/2603.00552) | [摘要](paper/ED-arXiv-2026-EMPA:%20Evaluating%20Persona-Aligned%20Empathy%20as%20a%20Process.md) | [代码](https://github.com/KAYA-HAI/EMPA-Benchmark-EPMSandbox) |
@@ -105,21 +105,21 @@
 | 2020 | ACL | Towards Conversational Recommendation over Multi-Type Dialogs | [查看](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial) | [摘要](paper/Recommend-ACL-2020-Towards%20Conversational%20Recommendation%20over%20Multi-Type%20Dialogs.md) | [代码](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial) |
 | 2021 | ACL | RevCore- Review-augmented Conversational Recommendation | [查看](https://aclanthology.org/2021.findings-acl.104/) | [摘要](paper/Recommend-ACL-2021-RevCore-%20Review-augmented%20Conversational%20Recommendation.md) | [代码](https://github.com/JD-AI-Research-NLP/RevCore) |
 | 2023 | KDD | Improving conversational recommendation systems via counterfactual data simulation | [查看](https://dl.acm.org/doi/10.1145/3580305.3599387) | [摘要](paper/Recommend-KDD-2023-Improving%20conversational%20recommendation%20systems%20via%20counterfactual%20data%20simulation.md) | [代码](https://github.com/RUCAIBox/CFCRS) |
-| 2023 | EMNLP | Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models | [查看](-) | [摘要](paper/Recommend-EMNLP-2023-Rethinking%20the%20Evaluation%20for%20Conversational%20Recommendation%20in%20the%20Era%20of%20Large%20Language%20Models.md) | [代码](https://github.com/RUCAIBox/iEvaLM-CRS) |
+| 2023 | EMNLP | Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models | [查看](https://aclanthology.org/2023.emnlp-main.621/) | [摘要](paper/Recommend-EMNLP-2023-Rethinking%20the%20Evaluation%20for%20Conversational%20Recommendation%20in%20the%20Era%20of%20Large%20Language%20Models.md) | [代码](https://github.com/RUCAIBox/iEvaLM-CRS) |
 | 2024 | EMNLP | Beyond Persuasion: Towards Conversational Recommender System with Credible Explanations | [查看](https://aclanthology.org/2024.findings-emnlp.247) | [摘要](paper/Recommend-EMNLP-2024-Beyond%20Persuasion%3A%20Towards%20Conversational%20Recommender%20System%20with%20Credible%20Explanations.md) | [代码](https://github.com/mumen798/PC-CRS) |
 | 2024 | WWW | How Reliable is Your Simulator- Analysis on the Limitations of Current LLM-based User Simulators for Conversational Recommendation | [查看](https://doi.org/10.1145/3589335.3651955) | [摘要](paper/Recommend-WWW-2024-How%20Reliable%20is%20Your%20Simulator-%20Analysis%20on%20the%20Limitations%20of%20Current%20LLM-based%20User%20Simulators%20for%20Conversational%20Recommendation.md) | [代码](https://github.com/RUCAIBox/iEvaLM-CRS/) |
-| 2024 | ACL | LLM-REDIAL: A Large-Scale Dataset for Conversational Recommender Systems Created from User Behaviors with LLMs | [查看](-) | [摘要](paper/Recommend-ACL-2024-LLM-REDIAL%3A%20A%20Large-Scale%20Dataset%20for%20Conversational%20Recommender%20Systems%20Created%20from%20User%20Behaviors%20with%20LLMs.md) | [代码](https://github.com/LitGreenhand/LLM-Redial) |
+| 2024 | ACL | LLM-REDIAL: A Large-Scale Dataset for Conversational Recommender Systems Created from User Behaviors with LLMs | [查看](https://aclanthology.org/2024.findings-acl.529/) | [摘要](paper/Recommend-ACL-2024-LLM-REDIAL%3A%20A%20Large-Scale%20Dataset%20for%20Conversational%20Recommender%20Systems%20Created%20from%20User%20Behaviors%20with%20LLMs.md) | [代码](https://github.com/LitGreenhand/LLM-Redial) |
 | 2024 | arXiv | Reindex-Then-Adapt- Improving Large Language Models for Conversational Recommendation | [查看](https://arxiv.org/abs/2405.12119) | [摘要](paper/Recommend-arXiv-2024-Reindex-Then-Adapt-%20Improving%20Large%20Language%20Models%20for%20Conversational%20Recommendation.md) | - |
 | 2025 | TKDE | A Causal-Based Attribute Selection Strategy for Conversational Recommender Systems | [查看](https://ieeexplore.ieee.org/abstract/document/10891447) | [摘要](paper/Recommend-TKDE-2025-A%20Causal-Based%20Attribute%20Selection%20Strategy%20for%20Conversational%20Recommender%20Systems.md) | - |
 | 2025 | WWW | Bridging Conversational and Collaborative Signals for Conversational Recommendation | [查看](https://doi.org/10.1145/3701716.3715486) | [摘要](paper/Recommend-WWW-2025-Bridging%20Conversational%20and%20Collaborative%20Signals%20for%20Conversational%20Recommendation.md) | - |
 | 2025 | WWW | Collaborative Retrieval for Large Language Model-based Conversational Recommender Systems | [查看](https://dl.acm.org/doi/10.1145/3589334.3645347) | [摘要](paper/Recommend-WWW-2025-Collaborative%20Retrieval%20for%20Large%20Language%20Model-based%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/yaochenzhu/CRAG) |
 | 2025 | WWW | Towards Efficient Conversational Recommendations- Expected Value of Information Meets Bandit Learning | [查看](https://doi.org/10.1145/3696410.3714773) | [摘要](paper/Recommend-WWW-2025-Towards%20Efficient%20Conversational%20Recommendations-%20Expected%20Value%20of%20Information%20Meets%20Bandit%20Learning.md) | - |
 | 2025 | arXiv | A Framework for Generating Conversational Recommendation Datasets from Behavioral Interactions | [查看](https://arxiv.org/abs/2506.17285) | [摘要](paper/Recommend-arXiv-2025-A%20Framework%20for%20Generating%20Conversational%20Recommendation%20Datasets%20from%20Behavioral%20Interactions.md) | - |
-| 2025 | EMNLP | LLM-based Conversational Recommendation Agents with Collaborative Verbalized Experience | [查看](-) | [摘要](paper/Recommend-EMNLP-2025-LLM-based%20Conversational%20Recommendation%20Agents%20with%20Collaborative%20Verbalized%20Experience.md) | [代码](https://github.com/yaochenzhu/CRAVE) |
+| 2025 | EMNLP | LLM-based Conversational Recommendation Agents with Collaborative Verbalized Experience | [查看](https://aclanthology.org/2025.findings-emnlp.119/) | [摘要](paper/Recommend-EMNLP-2025-LLM-based%20Conversational%20Recommendation%20Agents%20with%20Collaborative%20Verbalized%20Experience.md) | [代码](https://github.com/yaochenzhu/CRAVE) |
 | 2025 | EMNLP | Towards Personalized Conversational Sales Agents | [查看](https://arxiv.org/abs/2504.08754) | [摘要](paper/Recommend-EMNLP-2025-Towards%20Personalized%20Conversational%20Sales%20Agents.md) | - |
 | 2026 | WWW | Not All Information Brings Benefits- Personalization-Driven Agent Debate for Conversational Recommendation | [查看](https://doi.org/10.1145/3774904.3792152) | [摘要](paper/Recommend-WWW-2026-Not%20All%20Information%20Brings%20Benefits-%20Personalization-Driven%20Agent%20Debate%20for%20Conversational%20Recommendation.md) | - |
 | 2026 | WWW | Optimizing Multi-Turn Interactive Recommendation Agents via Generative Intrinsic Motivation | [查看](https://doi.org/10.1145/3774904.3792209) | [摘要](paper/Recommend-WWW-2026-Optimizing%20Multi-Turn%20Interactive%20Recommendation%20Agents%20via%20Generative%20Intrinsic%20Motivation.md) | [代码](https://github.com/XueyangFeng/GIMO) |
-| 2026 | arXiv | User Simulator-Guided Multi-Turn Preference Optimization for Reasoning LLM-based Conversational Recommendation | [查看](-) | [摘要](paper/Recommend-arXiv-2026-User%20Simulator-Guided%20Multi-Turn%20Preference%20Optimization%20for%20Reasoning%20LLM-based%20Conversational%20Recommendation.md) | - |
+| 2026 | arXiv | User Simulator-Guided Multi-Turn Preference Optimization for Reasoning LLM-based Conversational Recommendation | [查看](https://arxiv.org/abs/2604.03671) | [摘要](paper/Recommend-arXiv-2026-User%20Simulator-Guided%20Multi-Turn%20Preference%20Optimization%20for%20Reasoning%20LLM-based%20Conversational%20Recommendation.md) | - |
 
 </details>
 
@@ -161,9 +161,9 @@
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
 | 2023 | UIST | Generative Agents- Interactive Simulacra of Human Behavior | [查看](https://doi.org/10.1145/3586183.3606763) | [摘要](paper/Memory-UIST-2023-Generative%20Agents-%20Interactive%20Simulacra%20of%20Human%20Behavior.md) | [代码](https://github.com/joonspk-research/generative_agents) |
-| 2025 | arXiv | A-Mem: Agentic Memory for LLM Agents | [查看](https://arxiv.org/abs/2502.12110) | [摘要](https://github.com/lucianma05-create/Social-AI-Group/blob/main/paper/Memory-arXiv-2025-A-Mem%3A%20Agentic%20Memory%20for%20LLM%20Agents.md) | [代码](https://github.com/WujiangXu/AgenticMemory) |
+| 2025 | arXiv | A-Mem: Agentic Memory for LLM Agents | [查看](https://arxiv.org/abs/2502.12110) | [摘要](https://github.com/lucianma05-create/Awesome-Social-AI/blob/main/paper/Memory-arXiv-2025-A-Mem%3A%20Agentic%20Memory%20for%20LLM%20Agents.md) | [代码](https://github.com/WujiangXu/AgenticMemory) |
 | 2025 | arXiv | Evo-Memory- Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory | [查看](https://arxiv.org/abs/2511.20857) | [摘要](paper/Memory-arXiv-2025-Evo-Memory-%20Benchmarking%20LLM%20Agent%20Test-time%20Learning%20with%20Self-Evolving%20Memory.md) | [代码](https://github.com/WujiangXu/AgenticMemory) |
-| 2025 | arXiv | Remember Me, Refine Me- A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution | [查看](https://arxiv.org/abs/2512.10696) | [摘要](https://github.com/lucianma05-create/Social-AI-Group/blob/main/paper/Memory-arXiv-2025-Remember%20Me%2C%20Refine%20Me-%20A%20Dynamic%20Procedural%20Memory%20Framework%20for%20Experience-Driven%20Agent%20Evolution.md) | [代码](https://github.com/agentscope-ai/ReMe) |
+| 2025 | arXiv | Remember Me, Refine Me- A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution | [查看](https://arxiv.org/abs/2512.10696) | [摘要](https://github.com/lucianma05-create/Awesome-Social-AI/blob/main/paper/Memory-arXiv-2025-Remember%20Me%2C%20Refine%20Me-%20A%20Dynamic%20Procedural%20Memory%20Framework%20for%20Experience-Driven%20Agent%20Evolution.md) | [代码](https://github.com/agentscope-ai/ReMe) |
 | 2026 | ICLR | MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent | [查看](https://arxiv.org/abs/2507.02259) | [摘要](paper/Memory-ICLR-2026-MemAgent%3A%20Reshaping%20Long-Context%20LLM%20with%20Multi-Conv%20RL-based%20Memory%20Agent.md) | - |
 | 2026 | ICLR | ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory | [查看](https://proceedings.iclr.cc/paper_files/paper/2026/hash/980ea04d23d1f6908964eba2a74afe45-Abstract-Conference.html) | [摘要](paper/Memory-ICLR-2026-ReasoningBank%3A%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md) | [代码](https://github.com/google-research/reasoning-bank) |
 
@@ -183,11 +183,11 @@
 | 2024 | WWW | An In-depth Investigation of User Response Simulation for Conversational Search | [查看](https://dl.acm.org/doi/10.1145/3589334.3645447) | [摘要](paper/US-WWW-2024-An%20In-depth%20Investigation%20of%20User%20Response%20Simulation%20for%20Conversational%20Search.md) | [代码](https://anonymous.4open.science/r/UserSimulation-7091) |
 | 2024 | AAAI | Adversarial Socialbots Modeling Based on Structural Information Principles | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/27793) | [摘要](paper/US-AAAI-2024-Adversarial%20Socialbots%20Modeling%20Based%20on%20Structural%20Information%20Principles.md) | [代码](https://github.com/SELGroup/SIASM) |
 | 2024 | arXiv | Strength Lies in Differences! Improving Strategy Planning for Non-collaborative Dialogues via Diversified User Simulation | [查看](https://arxiv.org/pdf/2403.06769v3.pdf) | [摘要](paper/US-arXiv-2024-Strength%20Lies%20in%20Differences!%20Improving%20Strategy%20Planning%20for%20Non-collaborative%20Dialogues%20via%20Diversified%20User%20Simulation.md) | - |
-| 2025 | SIGDIAL | Generating Diverse Personas for User Simulators to Test Interview Dialogue Systems | [查看](-) | [摘要](paper/US-SIGDIAL-2025-Generating%20Diverse%20Personas%20for%20User%20Simulators%20to%20Test%20Interview%20Dialogue%20Systems.md) | - |
+| 2025 | SIGDIAL | Generating Diverse Personas for User Simulators to Test Interview Dialogue Systems | [查看](https://aclanthology.org/2025.sigdial-1.54/) | [摘要](paper/US-SIGDIAL-2025-Generating%20Diverse%20Personas%20for%20User%20Simulators%20to%20Test%20Interview%20Dialogue%20Systems.md) | - |
 | 2025 | SIGIR | Simulating Before Planning- Constructing Intrinsic User World Model for User-Tailored Dialogue Policy Planning | [查看](https://doi.org/10.1145/3726302.3730084) | [摘要](paper/US-SIGIR-2025-Simulating%20Before%20Planning-%20Constructing%20Intrinsic%20User%20World%20Model%20for%20User-Tailored%20Dialogue%20Policy%20Planning.md) | - |
 | 2025 | SIGIR | Theory and Toolkits for User Simulation in the Era of Generative AI- User Modeling, Synthetic Data Generation, and System Evaluation | [查看](https://doi.org/10.1145/3726302.3731697) | [摘要](paper/US-SIGIR-2025-Theory%20and%20Toolkits%20for%20User%20Simulation%20in%20the%20Era%20of%20Generative%20AI-%20User%20Modeling%2C%20Synthetic%20Data%20Generation%2C%20and%20System%20Evaluation.md) | - |
 | 2025 | WWW | A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems | [查看](https://doi.org/10.1145/3696410.3714858) | [摘要](paper/US-WWW-2025-A%20LLM-based%20Controllable%2C%20Scalable%2C%20Human-Involved%20User%20Simulator%20Framework%20for%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/zlxxlz1026/CSHI) |
-| 2025 | NeurIPS | Goal Alignment in LLM-Based User Simulators for Conversational AI | [查看](-) | [摘要](paper/US-NeurIPS-2025-Goal%20Alignment%20in%20LLM-Based%20User%20Simulators%20for%20Conversational%20AI.md) | [代码](https://github.com/Shuhaibm/user_simulator_goal_alignment) |
+| 2025 | NeurIPS | Goal Alignment in LLM-Based User Simulators for Conversational AI | [查看](https://arxiv.org/abs/2507.20152) | [摘要](paper/US-NeurIPS-2025-Goal%20Alignment%20in%20LLM-Based%20User%20Simulators%20for%20Conversational%20AI.md) | [代码](https://github.com/Shuhaibm/user_simulator_goal_alignment) |
 
 </details>
 
@@ -242,11 +242,11 @@
 ## 📁 仓库结构
 
 ```
-Social-AI-Group/
+Awesome-Social-AI/
 ├── image/              # 存放论文相关的图片、图表等
-├── paper/              # 论文摘要（main）
+├── paper/              # 论文摘要（main，按 8 个方向前缀命名）
 ├── Example.md          # 论文摘要的撰写范例
-└── ReadMe.md           # 本说明文件
+└── README.md           # 本说明文件
 ```
 
 ---
@@ -257,12 +257,12 @@ Social-AI-Group/
 ### 1. Fork & Clone
 Fork 本仓库到你的 GitHub 账户，然后克隆到本地。
 ```
-git clone https://github.com/你的用户名/Social-AI-Group.git && cd Social-AI-Group
+git clone https://github.com/你的用户名/Awesome-Social-AI.git && cd Awesome-Social-AI
 ```
 
 ### 2. 添加原始仓库为 upstream
 ```
-git remote add upstream https://github.com/lucianma05-create/Social-AI-Group.git
+git remote add upstream https://github.com/lucianma05-create/Awesome-Social-AI.git
 ```
 
 ### 3. 每次准备撰写新摘要前，请先同步主分支并创建一个独立分支：
@@ -275,27 +275,32 @@ git pull upstream main
 ```
 git checkout -b 分支名
 ```
-### 3. 命名规范
+### 4. 命名规范
 ```
 \paper 下的文件名请严格按照以下格式命名，以便于检索和管理：
 [方向]-[会议/期刊名]-[年份]-[论文名(完整的名字而不是缩写)].md
 示例: Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md
-研究方向请参考 README.md, 倘若是其中没有的，请手动添加，并在命名时使用新增的方向名称。
+研究方向请从当前 8 个方向中选择最接近的归类；确需新增方向时，请先在组内讨论后再添加。
 当前方向前缀：ToM、PD、ED、Recommend、US、Memory、RLHF、Data。
 \image 下的文件命名为 [年]-[月]-[日]-[编号]-[姓名缩写].png
 示例：2024010101mmh.png
 ```
-### 4. 填写内容
+### 5. 填写内容
 a. 参照 Example.md 中的模板，填写论文的各项信息，确保内容精炼、准确。 
 
 b. 或者可以使用我们专门开发的 [Auto-Summary](https://github.com/lucianma05-create/Auto-Summary), 请在自动化生成后进行必要的人工校对和修改。
 
-### 5. 修改 README.md
+### 6. 修改 README.md
 参照 README.md 中的表格，增加新论文的链接、摘要和代码；可以用以下提示词提示codex或copilot进行自动化填充：
 ```
 请根据 paper 目录新增的 .md 文件，按 README.md 里现有表格格式补全相应方向的行，填 链接、摘要、代码 字段，缺失用 - 
 ```
-### 6. 提交、同步与推送
+或运行仓库自带的同步脚本，自动把 paper/ 目录的新论文填入表格：
+```
+python scripts/update_readme.py --dry-run   # 预览改动
+python scripts/update_readme.py             # 应用改动
+```
+### 7. 提交、同步与推送
 1) 暂存并提交本地更改
 ```
 git add .
@@ -305,7 +310,7 @@ git commit -m "你的提交信息，例如：Add summary for [论文名]"
 ```
 git push origin 分支名
 ```
-### 7. 发起 Pull Request
+### 8. 发起 Pull Request
 ```
 向本仓库的主分支发起一个 Pull Request (PR)，并等待审核合并。
 ```
