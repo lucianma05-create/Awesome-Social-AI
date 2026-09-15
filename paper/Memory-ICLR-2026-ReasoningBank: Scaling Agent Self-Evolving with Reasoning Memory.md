@@ -1,7 +1,7 @@
-# Memory-arXiv-2025-ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory
+# Memory-ICLR-2026-ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory
 *论文下载地址：https://arxiv.org/abs/2509.25140*
 
-*代码是否开源：未提及*
+*代码是否开源：是 https://github.com/google-research/reasoning-bank*
 
 *分享人：自动生成*
 
