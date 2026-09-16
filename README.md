@@ -66,10 +66,8 @@
 ## 📚 论文列表
 
 <a id="pd"></a>
-### Persuasion & Negotiation
-
 <details>
-<summary>📖 论文列表 · 35 篇(点击展开)</summary>
+<summary>📖 Persuasion & Negotiation · 35 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -112,10 +110,8 @@
 </details>
 
 <a id="ed"></a>
-### Empathy & Emotional Support
-
 <details>
-<summary>📖 论文列表 · 13 篇(点击展开)</summary>
+<summary>📖 Empathy & Emotional Support · 13 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -136,10 +132,8 @@
 </details>
 
 <a id="recommend"></a>
-### Conversational Recommendation
-
 <details>
-<summary>📖 论文列表 · 18 篇(点击展开)</summary>
+<summary>📖 Conversational Recommendation · 18 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -165,10 +159,8 @@
 </details>
 
 <a id="coop"></a>
-### Cooperation & Collaboration
-
 <details>
-<summary>📖 论文列表 · 5 篇(点击展开)</summary>
+<summary>📖 Cooperation & Collaboration · 5 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -181,10 +173,8 @@
 </details>
 
 <a id="tom"></a>
-### Theory of Mind
-
 <details>
-<summary>📖 论文列表 · 18 篇(点击展开)</summary>
+<summary>📖 Theory of Mind · 18 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -210,10 +200,8 @@
 </details>
 
 <a id="emotion"></a>
-### Emotion Understanding
-
 <details>
-<summary>📖 论文列表 · 5 篇(点击展开)</summary>
+<summary>📖 Emotion Understanding · 5 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -226,10 +214,8 @@
 </details>
 
 <a id="norms"></a>
-### Social Norms & Morality
-
 <details>
-<summary>📖 论文列表 · 6 篇(点击展开)</summary>
+<summary>📖 Social Norms & Morality · 6 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -243,10 +229,8 @@
 </details>
 
 <a id="memory"></a>
-### Agent Memory
-
 <details>
-<summary>📖 论文列表 · 7 篇(点击展开)</summary>
+<summary>📖 Agent Memory · 7 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -261,10 +245,8 @@
 </details>
 
 <a id="rlhf"></a>
-### Reinforcement Learning & Alignment
-
 <details>
-<summary>📖 论文列表 · 12 篇(点击展开)</summary>
+<summary>📖 Reinforcement Learning & Alignment · 12 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -284,10 +266,8 @@
 </details>
 
 <a id="us"></a>
-### User Simulation & Interactive Environments
-
 <details>
-<summary>📖 论文列表 · 11 篇(点击展开)</summary>
+<summary>📖 User Simulation & Interactive Environments · 11 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -306,10 +286,8 @@
 </details>
 
 <a id="data"></a>
-### Benchmark & Evaluation
-
 <details>
-<summary>📖 论文列表 · 20 篇(点击展开)</summary>
+<summary>📖 Benchmark & Evaluation · 20 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |

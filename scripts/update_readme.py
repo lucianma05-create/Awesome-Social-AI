@@ -295,28 +295,33 @@ def find_new_papers(paper_dir: str, readme_path: str) -> list:
     return new_papers
 
 
-def find_section_boundaries(lines: list, section_heading: str) -> Optional[tuple]:
+def find_section_boundaries(lines: list, section_key: str,
+                            section_heading: str) -> Optional[tuple]:
     """
     Find the start and end line indices for a section's table in README.md.
 
-    A section starts with "### <heading>" and its table continues until
-    the next "### " heading or the "---" separator.
+    A section starts with "<a id=\"key\"></a>" (or, legacy, "### <heading>");
+    its table header row is the "| 年份 |" line shortly after.
 
     Returns (table_header_line, last_data_line) or None.
     """
+    anchor = '<a id="{}"></a>'.format(section_key.lower())
     section_start = None
     for i, line in enumerate(lines):
-        if line.strip().startswith("### " + section_heading):
+        if line.strip() == anchor or line.strip().startswith("### " + section_heading):
             section_start = i
             break
 
     if section_start is None:
         return None
 
-    # The table header is 2 lines after the section heading
-    # (one blank line, then the header row)
-    header_line = section_start + 2
-    if header_line >= len(lines):
+    # Scan forward for the table header row (handles both anchor and heading layouts)
+    header_line = None
+    for j in range(section_start + 1, min(section_start + 8, len(lines))):
+        if lines[j].strip().startswith("| 年份"):
+            header_line = j
+            break
+    if header_line is None:
         return None
 
     # Find the end of this section's table
@@ -365,7 +370,7 @@ def format_row(info: dict) -> str:
 
 
 def sync_summary_counts(lines):
-    """Recompute <summary>📖 展开论文列表(N 篇)</summary> labels from actual row counts."""
+    """Recompute "<summary>📖 <name> · N 篇</summary>" counts from actual row counts."""
     text = "".join(lines)
     anchors = [m.start() for m in re.finditer(r'<a id="\w+"></a>', text)]
     bounds = anchors + [len(text)]
@@ -374,12 +379,17 @@ def sync_summary_counts(lines):
         block = text[a:b]
         rows = [l for l in block.splitlines()
                 if l.startswith("| ") and "---" not in l and "| 年份" not in l]
-        new_block, c = re.subn(r'<summary>📖 论文列表 · \d+ 篇\(点击展开\)</summary>',
-                               f'<summary>📖 论文列表 · {len(rows)} 篇(点击展开)</summary>',
-                               block, count=1)
-        if c and new_block != block:
-            changed += 1
-            text = text[:a] + new_block + text[b:]
+        out_lines = []
+        for l in block.splitlines(keepends=True):
+            if l.startswith("<summary>📖 ") and " 篇</summary>" in l:
+                name = l[len("<summary>📖 "):].rsplit(" · ", 1)[0]
+                new_l = f"<summary>📖 {name} · {len(rows)} 篇</summary>\n"
+                if new_l != l:
+                    changed += 1
+                out_lines.append(new_l)
+            else:
+                out_lines.append(l)
+        text = text[:a] + "".join(out_lines) + text[b:]
     return text.splitlines(keepends=True), changed
 
 
@@ -447,7 +457,7 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
     sections_not_found = []
 
     for heading, papers in papers_by_section.items():
-        boundaries = find_section_boundaries(lines, heading)
+        boundaries = find_section_boundaries(lines, paper["canonical_dir"], heading)
         if boundaries is None:
             sections_not_found.append((heading, papers))
             continue
