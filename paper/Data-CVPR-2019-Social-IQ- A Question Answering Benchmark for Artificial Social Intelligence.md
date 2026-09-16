@@ -1,2 +1,0 @@
-# Data-CVPR-2019-Social-IQ- A Question Answering Benchmark for Artificial Social Intelligence
-*论文下载地址：[https://openaccess.thecvf.com/content_CVPR_2019/html/Zadeh_Social-IQ_A_Question_Answering_Benchmark_for_Artificial_Social_Intelligence_CVPR_2019_paper.html](https://openaccess.thecvf.com/content_CVPR_2019/html/Zadeh_Social-IQ_A_Question_Answering_Benchmark_for_Artificial_Social_Intelligence_CVPR_2019_paper.html)*
