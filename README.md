@@ -5,27 +5,76 @@
 [![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://github.com/sindresorhus/awesome)
 [![License](https://img.shields.io/badge/License-Apache%202.0-red?style=for-the-badge&logo=apache&logoColor=white)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Papers](https://img.shields.io/github/directory-file-count/lucianma05-create/Awesome-Social-AI/paper?type=file&extension=md&label=Papers&color=2ea44f&style=for-the-badge)](paper)
+[![Summaries](https://img.shields.io/badge/Summaries-121-007ec6?style=for-the-badge)](README.md)
 [![Views](https://komarev.com/ghpvc/?username=lucianma05-create&repo=Awesome-Social-AI&label=Views&color=orange&style=for-the-badge)](https://github.com/lucianma05-create/Awesome-Social-AI)
 </div>
 
-## 📊 方向概览
+**我们精心收集整理社交人工智能(Social AI)领域的研究论文,并持续更新论文的中文摘要,从而支持快速了解该领域的代表性工作。仓库将不断更新,追踪社交 AI 前沿。欢迎 Follow 和 Star!⭐**
 
-| 方向 | 论文数 | 核心主题 |
-| --- | --- | --- |
-| [PD：Persuasion & Negotiation](#pd) | 35 | 说服、谈判等策略性对话的研究、方法与评测 |
-| [ED：Empathy & Emotional Support](#ed) | 13 | 共情对话、情感支持与心理辅导 |
-| [Recommend：Recommender Systems](#recommend) | 18 | 对话式推荐系统 |
-| [ToM：Theory of Mind](#tom) | 18 | 心智建模、意图与信念推理 |
-| [Memory：Agent Memory](#memory) | 6 | 智能体长期记忆与经验演化 |
-| [US：User Simulation & Interactive Environments](#us) | 11 | 用户模拟、交互环境与仿真 |
-| [RL & Alignment](#rlhf) | 12 | 强化学习训练与对齐方法 |
-| [Data：Benchmark & Evaluation](#data) | 12 | 基准测试、数据集与评测 |
-| **总计** | **125** | |
+<a id="social-ai"></a>
+## 🎯 范畴与结构
 
+**Social AI** 是研究与构建具备社会智能的 AI 系统的领域。社会智能指智能体在社交情境中的三组能力:社交理解(感知情绪、意图、信念、关系、规范与多方动态)、社交推理(心智建模、归因与策略规划)、社交行动(说服、谈判、共情支持、建立信任)。
+
+本仓库按四层结构组织:
+
+- **任务层 · 社交任务**
+  - [Persuasion & Negotiation](#pd) — 说服、谈判等策略性对话的研究、方法与评测
+  - [Empathy & Emotional Support](#ed) — 共情对话、情感支持与心理辅导
+  - [Conversational Recommendation](#recommend) — 对话式推荐系统
+  - [Cooperation & Collaboration](#coop) — 合作、协作与多方共识构建
+- **能力层 · 社交认知**
+  - [Theory of Mind](#tom) — 心智建模、意图与信念推理
+  - [Emotion Understanding](#emotion) — 情绪识别、归因与情绪推理
+  - [Social Norms & Morality](#norms) — 社会规范、道德判断与价值对齐
+  - [Agent Memory](#memory) — 智能体长期记忆与经验演化
+- **方法层 · 支撑技术**
+  - [Reinforcement Learning & Alignment](#rlhf) — 强化学习训练与对齐方法
+- **资源层 · 研究基础设施**
+  - [User Simulation & Interactive Environments](#us) — 用户模拟、交互环境与仿真
+  - [Benchmark & Evaluation](#data) — 基准测试、数据集与评测
+
+不收录:计算社会科学 / "AI for social science" 类工作。方法层的通用强化学习与对齐技术,以"支撑社交智能体的基础方法"身份收录;与社交无关、亦不服务于社交智能体的技术不收录。
+
+**参考论文:**
+> 1. [Towards Social AI: A Survey on Understanding Social Interactions](https://arxiv.org/abs/2409.15316)
+> 2. [Advancing Social Intelligence in AI Agents: Technical Challenges and Open Questions](https://aclanthology.org/2024.emnlp-main.1143/)
+
+<a id="toc"></a>
+## 📑 目录
+
+- [🌐 Awesome Social AI](https://github.com/lucianma05-create/Awesome-Social-AI)
+  - [🎯 范畴与结构](#social-ai)
+  - [📑 目录](#toc)
+  - [📚 论文列表](#papers)
+    - [Persuasion & Negotiation](#pd)
+    - [Empathy & Emotional Support](#ed)
+    - [Conversational Recommendation](#recommend)
+    - [Cooperation & Collaboration](#coop)
+    - [Theory of Mind](#tom)
+    - [Emotion Understanding](#emotion)
+    - [Social Norms & Morality](#norms)
+    - [Agent Memory](#memory)
+    - [Reinforcement Learning & Alignment](#rlhf)
+    - [User Simulation & Interactive Environments](#us)
+    - [Benchmark & Evaluation](#data)
+  - [📁 仓库结构](#repo-structure)
+  - [✍️ 如何贡献](#contributing)
+    - [1. Fork & Clone](#1-fork--clone)
+    - [2. 添加原始仓库为 upstream](#2-添加原始仓库为-upstream)
+    - [3. 同步主分支并创建独立分支](#3-每次准备撰写新摘要前请先同步主分支并创建一个独立分支)
+    - [4. 命名规范](#4-命名规范)
+    - [5. 填写内容](#5-填写内容)
+    - [6. 修改 README.md](#6-修改-readmemd)
+    - [7. 提交、同步与推送](#7-提交同步与推送)
+    - [8. 发起 Pull Request](#8-发起-pull-request)
+  - [🧠 关于我们](#about)
+
+<a id="papers"></a>
 ## 📚 论文列表
 
 <a id="pd"></a>
-### PD：Persuasion & Negotiation
+### Persuasion & Negotiation
 
 <details>
 <summary>📖 展开论文列表(35 篇)</summary>
@@ -71,7 +120,7 @@
 </details>
 
 <a id="ed"></a>
-### ED：Empathy & Emotional Support
+### Empathy & Emotional Support
 
 <details>
 <summary>📖 展开论文列表(13 篇)</summary>
@@ -95,7 +144,7 @@
 </details>
 
 <a id="recommend"></a>
-### Recommend：Recommender Systems
+### Conversational Recommendation
 
 <details>
 <summary>📖 展开论文列表(18 篇)</summary>
@@ -123,8 +172,24 @@
 
 </details>
 
+<a id="coop"></a>
+### Cooperation & Collaboration
+
+<details>
+<summary>📖 展开论文列表(5 篇)</summary>
+
+| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
+| --- | --- | --- | --- | --- | --- |
+| 2022 | Science | Human-level play in the game of Diplomacy by combining language models with strategic reasoning | [查看](https://doi.org/10.1126/science.ade9097) | [摘要](paper/Coop-Science-2022-Human-level%20play%20in%20the%20game%20of%20Diplomacy%20by%20combining%20language%20models%20with%20strategic%20reasoning.md) | - |
+| 2024 | ICLR | Building Cooperative Embodied Agents Modularly with Large Language Models | [查看](https://mlanthology.org/iclr/2024/zhang2024iclr-building/) | [摘要](paper/Coop-ICLR-2024-Building%20Cooperative%20Embodied%20Agents%20Modularly%20with%20Large%20Language%20Models.md) | - |
+| 2024 | TACL | Decision-Oriented Dialogue for Human-AI Collaboration | [查看](https://aclanthology.org/2024.tacl-1.50/) | [摘要](paper/Coop-TACL-2024-Decision-Oriented%20Dialogue%20for%20Human-AI%20Collaboration.md) | - |
+| 2024 | ICML | Should we be going MAD- A Look at Multi-Agent Debate Strategies for LLMs | [查看](https://arxiv.org/abs/2311.17371) | [摘要](paper/Coop-ICML-2024-Should%20we%20be%20going%20MAD-%20A%20Look%20at%20Multi-Agent%20Debate%20Strategies%20for%20LLMs.md) | [代码](https://github.com/instadeepai/DebateLLM) |
+| 2024 | ACL | Your Co-Workers Matter- Evaluating Collaborative Capabilities of Language Models in Blocks World | [查看](https://aclanthology.org/2024.findings-acl.294/) | [摘要](paper/Coop-ACL-2024-Your%20Co-Workers%20Matter-%20Evaluating%20Collaborative%20Capabilities%20of%20Language%20Models%20in%20Blocks%20World.md) | - |
+
+</details>
+
 <a id="tom"></a>
-### ToM：Theory of Mind
+### Theory of Mind
 
 <details>
 <summary>📖 展开论文列表(18 篇)</summary>
@@ -152,11 +217,44 @@
 
 </details>
 
-<a id="memory"></a>
-### Memory：Agent Memory
+<a id="emotion"></a>
+### Emotion Understanding
+
+<details>
+<summary>📖 展开论文列表(5 篇)</summary>
+
+| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
+| --- | --- | --- | --- | --- | --- |
+| 2019 | AAAI | DialogueRNN- An Attentive RNN for Emotion Detection in Conversations | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/4657) | [摘要](paper/Emotion-AAAI-2019-DialogueRNN-%20An%20Attentive%20RNN%20for%20Emotion%20Detection%20in%20Conversations.md) | - |
+| 2019 | ACL | MELD- A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations | [查看](https://aclanthology.org/P19-1050/) | [摘要](paper/Emotion-ACL-2019-MELD-%20A%20Multimodal%20Multi-Party%20Dataset%20for%20Emotion%20Recognition%20in%20Conversations.md) | - |
+| 2021 | AAAI | COSMIC- COmmonSense knowledge for eMotion Identification in Conversations | [查看](https://arxiv.org/abs/2010.02795) | [摘要](paper/Emotion-AAAI-2021-COSMIC-%20COmmonSense%20knowledge%20for%20eMotion%20Identification%20in%20Conversations.md) | - |
+| 2023 | arXiv | InstructERC- Reforming Emotion Recognition in Conversation with Multi-task Retrieval-Augmented Large Language Models | [查看](https://arxiv.org/abs/2309.11911) | [摘要](paper/Emotion-arXiv-2023-InstructERC-%20Reforming%20Emotion%20Recognition%20in%20Conversation%20with%20Multi-task%20Retrieval-Augmented%20Large%20Language%20Models.md) | - |
+| 2025 | arXiv | Do LLMs Feel- Teaching Emotion Recognition with Prompts, Retrieval, and Curriculum Learning | [查看](https://arxiv.org/abs/2511.07061) | [摘要](paper/Emotion-arXiv-2025-Do%20LLMs%20Feel-%20Teaching%20Emotion%20Recognition%20with%20Prompts,%20Retrieval,%20and%20Curriculum%20Learning.md) | - |
+
+</details>
+
+<a id="norms"></a>
+### Social Norms & Morality
 
 <details>
 <summary>📖 展开论文列表(6 篇)</summary>
+
+| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
+| --- | --- | --- | --- | --- | --- |
+| 2020 | EMNLP | Social Chemistry 101- Learning to Reason about Social and Moral Norms | [查看](https://aclanthology.org/2020.emnlp-main.48/) | [摘要](paper/Norms-EMNLP-2020-Social%20Chemistry%20101-%20Learning%20to%20Reason%20about%20Social%20and%20Moral%20Norms.md) | - |
+| 2021 | arXiv | Delphi- Towards Machine Ethics and Norms | [查看](https://arxiv.org/abs/2110.07574) | [摘要](paper/Norms-arXiv-2021-Delphi-%20Towards%20Machine%20Ethics%20and%20Norms.md) | - |
+| 2022 | ACL | The Moral Integrity Corpus- A Benchmark for Ethical Dialogue Systems | [查看](https://arxiv.org/abs/2204.03021) | [摘要](paper/Norms-ACL-2022-The%20Moral%20Integrity%20Corpus-%20A%20Benchmark%20for%20Ethical%20Dialogue%20Systems.md) | [代码](https://github.com/SALT-NLP/mic) |
+| 2023 | ICML | Do the Rewards Justify the Means- Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark | [查看](https://arxiv.org/abs/2304.03279) | [摘要](paper/Norms-ICML-2023-Do%20the%20Rewards%20Justify%20the%20Means-%20Measuring%20Trade-Offs%20Between%20Rewards%20and%20Ethical%20Behavior%20in%20the%20MACHIAVELLI%20Benchmark.md) | - |
+| 2023 | ACL | NormBank- A Knowledge Bank of Situational Social Norms | [查看](https://arxiv.org/abs/2305.17008) | [摘要](paper/Norms-ACL-2023-NormBank-%20A%20Knowledge%20Bank%20of%20Situational%20Social%20Norms.md) | [代码](https://github.com/SALT-NLP/normbank) |
+| 2024 | arXiv | CultureBank- An Online Community-Driven Knowledge Base Towards Culturally Aware Language Technologies | [查看](https://arxiv.org/abs/2404.15238) | [摘要](paper/Norms-arXiv-2024-CultureBank-%20An%20Online%20Community-Driven%20Knowledge%20Base%20Towards%20Culturally%20Aware%20Language%20Technologies.md) | [代码](https://github.com/SALT-NLP/CultureBank) |
+
+</details>
+
+<a id="memory"></a>
+### Agent Memory
+
+<details>
+<summary>📖 展开论文列表(7 篇)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -166,33 +264,12 @@
 | 2025 | arXiv | Remember Me, Refine Me- A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution | [查看](https://arxiv.org/abs/2512.10696) | [摘要](https://github.com/lucianma05-create/Awesome-Social-AI/blob/main/paper/Memory-arXiv-2025-Remember%20Me%2C%20Refine%20Me-%20A%20Dynamic%20Procedural%20Memory%20Framework%20for%20Experience-Driven%20Agent%20Evolution.md) | [代码](https://github.com/agentscope-ai/ReMe) |
 | 2026 | ICLR | MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent | [查看](https://arxiv.org/abs/2507.02259) | [摘要](paper/Memory-ICLR-2026-MemAgent%3A%20Reshaping%20Long-Context%20LLM%20with%20Multi-Conv%20RL-based%20Memory%20Agent.md) | - |
 | 2026 | ICLR | ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory | [查看](https://proceedings.iclr.cc/paper_files/paper/2026/hash/980ea04d23d1f6908964eba2a74afe45-Abstract-Conference.html) | [摘要](paper/Memory-ICLR-2026-ReasoningBank%3A%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md) | [代码](https://github.com/google-research/reasoning-bank) |
-
-</details>
-
-<a id="us"></a>
-### US：User Simulation & Interactive Environments
-
-<details>
-<summary>📖 展开论文列表(11 篇)</summary>
-
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2006 | KER | A Survey of Statistical User Simulation Techniques for RL Dialogue Management | [查看](https://doi.org/10.1017/S0269888906000944) | [摘要](paper/US-KER-2006-A-Survey-of-Statistical-User-Simulation-Techniques-for-RL-Dialogue-Management.md) | - |
-| 2023 | TOIS | Metaphorical User Simulators for Evaluating Task-oriented Dialogue Systems | [查看](https://doi.org/10.1145/3596510) | [摘要](paper/US-TOIS-2023-Metaphorical%20User%20Simulators%20for%20Evaluating%20Task-oriented%20Dialogue%20Systems.md) | [代码](http://github.com/sunnweiwei/MetaSim); [代码](https://github.com/Superbooming/simtester) |
-| 2024 | ICLR | SOTOPIA- Interactive Evaluation for Social Intelligence in Language Agents | [查看](https://arxiv.org/abs/2310.11667) | [摘要](paper/US-ICLR-2024-SOTOPIA-%20Interactive%20Evaluation%20for%20Social%20Intelligence%20in%20Language%20Agents.md) | - |
-| 2024 | WWW | An In-depth Investigation of User Response Simulation for Conversational Search | [查看](https://dl.acm.org/doi/10.1145/3589334.3645447) | [摘要](paper/US-WWW-2024-An%20In-depth%20Investigation%20of%20User%20Response%20Simulation%20for%20Conversational%20Search.md) | [代码](https://anonymous.4open.science/r/UserSimulation-7091) |
-| 2024 | AAAI | Adversarial Socialbots Modeling Based on Structural Information Principles | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/27793) | [摘要](paper/US-AAAI-2024-Adversarial%20Socialbots%20Modeling%20Based%20on%20Structural%20Information%20Principles.md) | [代码](https://github.com/SELGroup/SIASM) |
-| 2024 | arXiv | Strength Lies in Differences! Improving Strategy Planning for Non-collaborative Dialogues via Diversified User Simulation | [查看](https://arxiv.org/pdf/2403.06769v3.pdf) | [摘要](paper/US-arXiv-2024-Strength%20Lies%20in%20Differences!%20Improving%20Strategy%20Planning%20for%20Non-collaborative%20Dialogues%20via%20Diversified%20User%20Simulation.md) | - |
-| 2025 | SIGDIAL | Generating Diverse Personas for User Simulators to Test Interview Dialogue Systems | [查看](https://aclanthology.org/2025.sigdial-1.54/) | [摘要](paper/US-SIGDIAL-2025-Generating%20Diverse%20Personas%20for%20User%20Simulators%20to%20Test%20Interview%20Dialogue%20Systems.md) | - |
-| 2025 | SIGIR | Simulating Before Planning- Constructing Intrinsic User World Model for User-Tailored Dialogue Policy Planning | [查看](https://doi.org/10.1145/3726302.3730084) | [摘要](paper/US-SIGIR-2025-Simulating%20Before%20Planning-%20Constructing%20Intrinsic%20User%20World%20Model%20for%20User-Tailored%20Dialogue%20Policy%20Planning.md) | - |
-| 2025 | SIGIR | Theory and Toolkits for User Simulation in the Era of Generative AI- User Modeling, Synthetic Data Generation, and System Evaluation | [查看](https://doi.org/10.1145/3726302.3731697) | [摘要](paper/US-SIGIR-2025-Theory%20and%20Toolkits%20for%20User%20Simulation%20in%20the%20Era%20of%20Generative%20AI-%20User%20Modeling%2C%20Synthetic%20Data%20Generation%2C%20and%20System%20Evaluation.md) | - |
-| 2025 | WWW | A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems | [查看](https://doi.org/10.1145/3696410.3714858) | [摘要](paper/US-WWW-2025-A%20LLM-based%20Controllable%2C%20Scalable%2C%20Human-Involved%20User%20Simulator%20Framework%20for%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/zlxxlz1026/CSHI) |
-| 2025 | NeurIPS | Goal Alignment in LLM-Based User Simulators for Conversational AI | [查看](https://arxiv.org/abs/2507.20152) | [摘要](paper/US-NeurIPS-2025-Goal%20Alignment%20in%20LLM-Based%20User%20Simulators%20for%20Conversational%20AI.md) | [代码](https://github.com/Shuhaibm/user_simulator_goal_alignment) |
+| 2023 | arXiv | MemoryBank- Enhancing Large Language Models with Long-Term Memory | [查看](https://arxiv.org/abs/2305.10250) | [摘要](paper/Memory-arXiv-2023-MemoryBank-%20Enhancing%20Large%20Language%20Models%20with%20Long-Term%20Memory.md) | [代码](https://github.com/zhongwanjun/memorybank-siliconfriend) |
 
 </details>
 
 <a id="rlhf"></a>
-### RL & Alignment
+### Reinforcement Learning & Alignment
 
 <details>
 <summary>📖 展开论文列表(12 篇)</summary>
@@ -214,11 +291,33 @@
 
 </details>
 
-<a id="data"></a>
-### Data：Benchmark & Evaluation
+<a id="us"></a>
+### User Simulation & Interactive Environments
 
 <details>
-<summary>📖 展开论文列表(12 篇)</summary>
+<summary>📖 展开论文列表(11 篇)</summary>
+
+| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
+| --- | --- | --- | --- | --- | --- |
+| 2006 | KER | A Survey of Statistical User Simulation Techniques for RL Dialogue Management | [查看](https://doi.org/10.1017/S0269888906000944) | [摘要](paper/US-KER-2006-A-Survey-of-Statistical-User-Simulation-Techniques-for-RL-Dialogue-Management.md) | - |
+| 2023 | TOIS | Metaphorical User Simulators for Evaluating Task-oriented Dialogue Systems | [查看](https://doi.org/10.1145/3596510) | [摘要](paper/US-TOIS-2023-Metaphorical%20User%20Simulators%20for%20Evaluating%20Task-oriented%20Dialogue%20Systems.md) | [代码](http://github.com/sunnweiwei/MetaSim); [代码](https://github.com/Superbooming/simtester) |
+| 2024 | ICLR | SOTOPIA- Interactive Evaluation for Social Intelligence in Language Agents | [查看](https://arxiv.org/abs/2310.11667) | [摘要](paper/US-ICLR-2024-SOTOPIA-%20Interactive%20Evaluation%20for%20Social%20Intelligence%20in%20Language%20Agents.md) | - |
+| 2024 | WWW | An In-depth Investigation of User Response Simulation for Conversational Search | [查看](https://dl.acm.org/doi/10.1145/3589334.3645447) | [摘要](paper/US-WWW-2024-An%20In-depth%20Investigation%20of%20User%20Response%20Simulation%20for%20Conversational%20Search.md) | [代码](https://anonymous.4open.science/r/UserSimulation-7091) |
+| 2024 | AAAI | Adversarial Socialbots Modeling Based on Structural Information Principles | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/27793) | [摘要](paper/US-AAAI-2024-Adversarial%20Socialbots%20Modeling%20Based%20on%20Structural%20Information%20Principles.md) | [代码](https://github.com/SELGroup/SIASM) |
+| 2024 | arXiv | Strength Lies in Differences! Improving Strategy Planning for Non-collaborative Dialogues via Diversified User Simulation | [查看](https://arxiv.org/pdf/2403.06769v3.pdf) | [摘要](paper/US-arXiv-2024-Strength%20Lies%20in%20Differences!%20Improving%20Strategy%20Planning%20for%20Non-collaborative%20Dialogues%20via%20Diversified%20User%20Simulation.md) | - |
+| 2025 | SIGDIAL | Generating Diverse Personas for User Simulators to Test Interview Dialogue Systems | [查看](https://aclanthology.org/2025.sigdial-1.54/) | [摘要](paper/US-SIGDIAL-2025-Generating%20Diverse%20Personas%20for%20User%20Simulators%20to%20Test%20Interview%20Dialogue%20Systems.md) | - |
+| 2025 | SIGIR | Simulating Before Planning- Constructing Intrinsic User World Model for User-Tailored Dialogue Policy Planning | [查看](https://doi.org/10.1145/3726302.3730084) | [摘要](paper/US-SIGIR-2025-Simulating%20Before%20Planning-%20Constructing%20Intrinsic%20User%20World%20Model%20for%20User-Tailored%20Dialogue%20Policy%20Planning.md) | - |
+| 2025 | SIGIR | Theory and Toolkits for User Simulation in the Era of Generative AI- User Modeling, Synthetic Data Generation, and System Evaluation | [查看](https://doi.org/10.1145/3726302.3731697) | [摘要](paper/US-SIGIR-2025-Theory%20and%20Toolkits%20for%20User%20Simulation%20in%20the%20Era%20of%20Generative%20AI-%20User%20Modeling%2C%20Synthetic%20Data%20Generation%2C%20and%20System%20Evaluation.md) | - |
+| 2025 | WWW | A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems | [查看](https://doi.org/10.1145/3696410.3714858) | [摘要](paper/US-WWW-2025-A%20LLM-based%20Controllable%2C%20Scalable%2C%20Human-Involved%20User%20Simulator%20Framework%20for%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/zlxxlz1026/CSHI) |
+| 2025 | NeurIPS | Goal Alignment in LLM-Based User Simulators for Conversational AI | [查看](https://arxiv.org/abs/2507.20152) | [摘要](paper/US-NeurIPS-2025-Goal%20Alignment%20in%20LLM-Based%20User%20Simulators%20for%20Conversational%20AI.md) | [代码](https://github.com/Shuhaibm/user_simulator_goal_alignment) |
+
+</details>
+
+<a id="data"></a>
+### Benchmark & Evaluation
+
+<details>
+<summary>📖 展开论文列表(20 篇)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -234,11 +333,20 @@
 | 2026 | arXiv | EnactToM- An Evolving Benchmark for Functional Theory of Mind in Embodied Agents | [查看](https://arxiv.org/abs/2605.09826) | [摘要](paper/Data-arXiv-2026-EnactToM-%20An%20Evolving%20Benchmark%20for%20Functional%20Theory%20of%20Mind%20in%20Embodied%20Agents.md) | [代码](https://enact-tom.github.io/) |
 | 2026 | arXiv | Large language model psychometrics- A systematic review of evaluation, validation, and enhancement | [查看](https://arxiv.org/abs/2505.08245) | [摘要](paper/Data-arXiv-2026-Large%20language%20model%20psychometrics-%20A%20systematic%20review%20of%20evaluation%2C%20validation%2C%20and%20enhancement.md) | [代码](https://github.com/valuebyte-ai/Awesome-LLM-Psychometrics) |
 | 2026 | WWW | ES-MemEval- Benchmarking Conversational Agents on Personalized Long-Term Emotional Support | [查看](https://doi.org/10.1145/3774904.3792143) | [摘要](paper/Data-WWW-2026-ES-MemEval-%20Benchmarking%20Conversational%20Agents%20on%20Personalized%20Long-Term%20Emotional%20Support.md) | [代码](https://github.com/slptongji/ES-MemEval) |
+| 2019 | CVPR | Social-IQ- A Question Answering Benchmark for Artificial Social Intelligence | [查看](https://openaccess.thecvf.com/content_CVPR_2019/html/Zadeh_Social-IQ_A_Question_Answering_Benchmark_for_Artificial_Social_Intelligence_CVPR_2019_paper.html) | [摘要](paper/Data-CVPR-2019-Social-IQ-%20A%20Question%20Answering%20Benchmark%20for%20Artificial%20Social%20Intelligence.md) | - |
+| 2023 | ICCV | Social-IQ 2.0 Challenge- Benchmarking Multimodal Social Understanding | [查看](https://cmu-multicomp-lab.github.io/social-iq-2.0/) | [摘要](paper/Data-ICCV-2023-Social-IQ%202.0%20Challenge-%20Benchmarking%20Multimodal%20Social%20Understanding.md) | [代码](https://github.com/abwilf/Social-IQ-2.0-Challenge) |
+| 2025 | ACL | DICE-BENCH- Evaluating the Tool-Use Capabilities of Large Language Models in Multi-Round, Multi-Party Dialogues | [查看](-) | [摘要](paper/Data-ACL-2025-DICE-BENCH-%20Evaluating%20the%20Tool-Use%20Capabilities%20of%20Large%20Language%20Models%20in%20Multi-Round,%20Multi-Party%20Dialogues.md) | [代码](https://github.com/snuhcc/DICE-Bench) |
+| 2025 | ACL | In Search of the Lost Arch in Dialogue- A Dependency Dialogue Acts Corpus for Multi-Party Dialogues | [查看](https://aclanthology.org/2025.findings-acl.1032/) | [摘要](paper/Data-ACL-2025-In%20Search%20of%20the%20Lost%20Arch%20in%20Dialogue-%20A%20Dependency%20Dialogue%20Acts%20Corpus%20for%20Multi-Party%20Dialogues.md) | - |
+| 2025 | NAACL | WHoW- A Cross-domain Approach for Analysing Conversation Moderation | [查看](https://aclanthology.org/2025.naacl-long.105/) | [摘要](paper/Data-NAACL-2025-WHoW-%20A%20Cross-domain%20Approach%20for%20Analysing%20Conversation%20Moderation.md) | - |
+| 2025 | arXiv | You need to MIMIC to get FAME- Solving Meeting Transcript Scarcity with Multi-Agent Conversations | [查看](https://arxiv.org/abs/2502.13001) | [摘要](paper/Data-arXiv-2025-You%20need%20to%20MIMIC%20to%20get%20FAME-%20Solving%20Meeting%20Transcript%20Scarcity%20with%20Multi-Agent%20Conversations.md) | - |
+| 2026 | arXiv | PIVOTSBench- Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models | [查看](https://arxiv.org/abs/2606.23092) | [摘要](paper/Data-arXiv-2026-PIVOTSBench-%20Evaluating%20Fine-Grained%20Interpersonal%20Relationship%20Reasoning%20in%20Multimodal%20Large%20Language%20Models.md) | - |
+| 2026 | arXiv | TIDES- A Longitudinal Bilingual Dataset for Modeling Multi-Party Social Dynamics | [查看](https://arxiv.org/abs/2608.01724) | [摘要](paper/Data-arXiv-2026-TIDES-%20A%20Longitudinal%20Bilingual%20Dataset%20for%20Modeling%20Multi-Party%20Social%20Dynamics.md) | - |
 
 </details>
 
 ---
 
+<a id="repo-structure"></a>
 ## 📁 仓库结构
 
 ```
@@ -251,6 +359,7 @@ Awesome-Social-AI/
 
 ---
 
+<a id="contributing"></a>
 ## ✍️ 如何贡献
 我们鼓励所有成员积极贡献自己阅读的论文摘要，请严格遵循以下步骤：
 
@@ -281,7 +390,7 @@ git checkout -b 分支名
 [方向]-[会议/期刊名]-[年份]-[论文名(完整的名字而不是缩写)].md
 示例: Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md
 研究方向请从当前 8 个方向中选择最接近的归类；确需新增方向时，请先在组内讨论后再添加。
-当前方向前缀：ToM、PD、ED、Recommend、US、Memory、RLHF、Data。
+当前方向前缀：PD、ED、Recommend、Coop、ToM、Emotion、Norms、Memory、RLHF、US、Data。
 \image 下的文件命名为 [年]-[月]-[日]-[编号]-[姓名缩写].png
 示例：2024010101mmh.png
 ```
@@ -316,6 +425,7 @@ git push origin 分支名
 ```
 ---
 
+<a id="about"></a>
 ## 🧠 关于我们
 
 本仓库由 NWPU Crowd-HMT-Lab Social-AI-Group 维护。

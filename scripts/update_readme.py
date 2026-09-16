@@ -21,23 +21,29 @@ from urllib.parse import unquote
 
 # Direction prefix → README section heading (the ### heading line text)
 DIRECTION_MAP = {
-    "Data":      "Data：Benchmark & Evaluation",
-    "ED":        "ED：Empathy & Emotional Support",
-    "Memory":    "Memory：Agent Memory",
-    "PD":        "PD：Persuasion & Negotiation",
-    "Recommend": "Recommend：Recommender Systems",
-    "Recommned": "Recommend：Recommender Systems",
-    "Recommeend":"Recommend：Recommender Systems",
-    "RLHF":      "RL & Alignment",
-    "ToM":       "ToM：Theory of Mind",
-    "US":        "US：User Simulation & Interactive Environments",
+    "Data":      "Benchmark & Evaluation",
+    "Coop":      "Cooperation & Collaboration",
+    "ED":        "Empathy & Emotional Support",
+    "Emotion":   "Emotion Understanding",
+    "Memory":    "Agent Memory",
+    "Norms":     "Social Norms & Morality",
+    "PD":        "Persuasion & Negotiation",
+    "Recommend": "Conversational Recommendation",
+    "Recommned": "Conversational Recommendation",
+    "Recommeend":"Conversational Recommendation",
+    "RLHF":      "Reinforcement Learning & Alignment",
+    "ToM":       "Theory of Mind",
+    "US":        "User Simulation & Interactive Environments",
 }
 
 # Canonical direction label to use in table entries (for dedup)
 CANONICAL_DIRECTION = {
     "Data":       "Data",
+    "Coop":       "Coop",
     "ED":         "ED",
+    "Emotion":    "Emotion",
     "Memory":     "Memory",
+    "Norms":      "Norms",
     "PD":         "PD",
     "Recommend":  "Recommend",
     "Recommned":  "Recommend",
@@ -358,6 +364,25 @@ def format_row(info: dict) -> str:
     return f"| {info['year']} | {info['venue']} | {info['title']} | {link_text} | {summary_text} | {code_text} |\n"
 
 
+def sync_summary_counts(lines):
+    """Recompute <summary>📖 展开论文列表(N 篇)</summary> labels from actual row counts."""
+    text = "".join(lines)
+    anchors = [m.start() for m in re.finditer(r'<a id="\w+"></a>', text)]
+    bounds = anchors + [len(text)]
+    changed = 0
+    for a, b in zip(bounds, bounds[1:]):
+        block = text[a:b]
+        rows = [l for l in block.splitlines()
+                if l.startswith("| ") and "---" not in l and "| 年份" not in l]
+        new_block, c = re.subn(r'<summary>📖 展开论文列表\(\d+ 篇\)</summary>',
+                               f'<summary>📖 展开论文列表({len(rows)} 篇)</summary>',
+                               block, count=1)
+        if c and new_block != block:
+            changed += 1
+            text = text[:a] + new_block + text[b:]
+    return text.splitlines(keepends=True), changed
+
+
 def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> list:
     """
     Main function: update README.md with new papers.
@@ -366,7 +391,17 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
     """
     new_papers = find_new_papers(paper_dir, readme_path)
     if not new_papers:
-        print("No new papers found to add.")
+        with open(readme_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        synced, n = sync_summary_counts(lines)
+        if n and not dry_run:
+            with open(readme_path, "w", encoding="utf-8") as f:
+                f.writelines(synced)
+            print(f"No new papers found to add. Synced {n} summary count(s).")
+        elif n:
+            print(f"No new papers found to add. [DRY RUN] Would sync {n} summary count(s).")
+        else:
+            print("No new papers found to add. Summary counts up to date.")
         return []
 
     with open(readme_path, "r", encoding="utf-8") as f:
@@ -413,14 +448,18 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
         print(f"Warning: section '{heading}' not found in README.md. "
               f"Cannot add: {', '.join(papers_list)}", file=sys.stderr)
 
+    lines, n_synced = sync_summary_counts(lines)
     if not dry_run:
         with open(readme_path, "w", encoding="utf-8") as f:
             f.writelines(lines)
-        print(f"Updated {readme_path} with {len(new_papers)} new paper(s).")
+        print(f"Updated {readme_path} with {len(new_papers)} new paper(s). "
+              f"Synced {n_synced} summary count(s).")
     else:
         print(f"[DRY RUN] Would update {readme_path} with {len(new_papers)} new paper(s):")
         for p in new_papers:
             print(f"  [{p['canonical_dir']}] {p['year']} | {p['venue']} | {p['title']}")
+        if n_synced:
+            print(f"[DRY RUN] Would sync {n_synced} summary count(s).")
 
     return new_papers
 
