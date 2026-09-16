@@ -467,9 +467,8 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
             continue
         papers_by_section.setdefault(heading, []).append(paper)
 
-    # We need to insert papers from the bottom up to preserve line numbers
-    # Collect all insertion operations first
-    insertions = []  # List of (line_number, rows_to_insert)
+    # Collect all insertion operations first (section data region start, end, rows)
+    insertions = []  # List of (first_data_line, last_data_line, rows_to_insert)
     sections_not_found = []
 
     for heading, papers in papers_by_section.items():
@@ -478,19 +477,23 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
             sections_not_found.append((heading, papers))
             continue
 
-        _, last_data_line = boundaries
-        # Insert after the last existing data row
-        insert_after = last_data_line
+        first_data_line, last_data_line = boundaries
         new_rows = [format_row(p) for p in papers]
-        insertions.append((insert_after, new_rows))
+        insertions.append((first_data_line, last_data_line, new_rows))
 
     # Sort insertions by line number (descending) so we can insert from bottom up
+    def row_year(l):
+        m = re.match(r"\| (\d{4}) \|", l)
+        return int(m.group(1)) if m else 9999
+
     insertions.sort(key=lambda x: x[0], reverse=True)
 
-    # Apply insertions
-    for insert_after, new_rows in insertions:
-        for row in reversed(new_rows):
-            lines.insert(insert_after + 1, row)
+    # Splice: merge existing + new rows, stable-sorted by year (new after same-year existing)
+    for first_data_line, last_data_line, new_rows in insertions:
+        existing = lines[first_data_line + 1: last_data_line + 1]
+        merged = [(l, 0) for l in existing] + [(l, 1) for l in new_rows]
+        merged.sort(key=lambda x: (row_year(x[0]), x[1]))
+        lines[first_data_line + 1: last_data_line + 1] = [l for l, _ in merged]
 
     # Handle sections not found — print warning
     for heading, papers in sections_not_found:
