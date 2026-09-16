@@ -4,7 +4,7 @@
 
 [![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://github.com/sindresorhus/awesome)
 [![License](https://img.shields.io/badge/License-Apache%202.0-red?style=for-the-badge&logo=apache&logoColor=white)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Papers](https://img.shields.io/github/directory-file-count/lucianma05-create/Awesome-Social-AI/paper?type=file&extension=md&label=Papers&color=2ea44f&style=for-the-badge)](paper)
+[![Papers](https://img.shields.io/badge/Papers-214-2ea44f?style=for-the-badge)](paper)
 [![Summaries](https://img.shields.io/badge/Summaries-121-007ec6?style=for-the-badge)](README.md)
 [![Views](https://komarev.com/ghpvc/?username=lucianma05-create&repo=Awesome-Social-AI&label=Views&color=orange&style=for-the-badge)](https://github.com/lucianma05-create/Awesome-Social-AI)
 </div>
@@ -67,7 +67,7 @@
 
 <a id="pd"></a>
 <details>
-<summary>🗣️ <b>Persuasion & Negotiation</b> · 35 篇</summary>
+<summary>🗣️ <b>Persuasion & Negotiation</b> · 41 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -106,12 +106,18 @@
 | 2026 | ICLR | RebuttalAgent: Strategic Persuasion in Academic Rebuttal via Theory of Mind | [查看](https://arxiv.org/abs/2601.15715) | [摘要](paper/PD-ICLR-2026-RebuttalAgent%3A%20Strategic%20Persuasion%20in%20Academic%20Rebuttal%20via%20Theory%20of%20Mind.md) | [代码](https://github.com/Zhitao-He/RebuttalAgent) |
 | 2026 | ICLR | Towards Strategic Persuasion with Language Models | [查看](https://arxiv.org/abs/2509.22989v2) | [摘要](paper/PD-ICLR-2026-Towards%20Strategic%20Persuasion%20with%20Language%20Models.md) | - |
 | 2026 | arXiv | METRO: Towards Strategy Induction from Expert Dialogue Transcripts for Non-collaborative Dialogues | [查看](https://arxiv.org/pdf/2604.11427v3.pdf) | [摘要](paper/PD-arXiv-2026-METRO:%20Towards%20Strategy%20Induction%20from%20Expert%20Dialogue%20Transcripts%20for%20Non-collaborative%20Dialogues.md) | [代码](https://github.com/Humphrey-0125/METRO) |
+| 2024 | ACL | How Johnny Can Persuade LLMs to Jailbreak Them: Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs | [查看](https://aclanthology.org/2024.acl-long.773/) | - | [代码](https://github.com/CHATS-lab/persuasive_jailbreaker) |
+| 2024 | ACL | Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method | [查看](https://aclanthology.org/2024.findings-acl.213/) | - | [代码](https://github.com/TianXiaSJTU/AmazonPriceHistory) |
+| 2024 | EMNLP | NegotiationToM: A Benchmark for Stress-testing Machine Theory of Mind on Negotiation Surrounding | [查看](https://aclanthology.org/2024.findings-emnlp.244/) | - | [代码](https://github.com/HKUST-KnowComp/NegotiationToM) |
+| 2024 | ICML | Debating with More Persuasive LLMs Leads to More Truthful Answers | [查看](https://proceedings.mlr.press/v235/khan24a.html) | - | [代码](https://github.com/ucl-dark/llm_debate) |
+| 2024 | NeurIPS | Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation | [查看](https://papers.nips.cc/paper_files/paper/2024/hash/984dd3db213db2d1454a163b65b84d08-Abstract-Datasets_and_Benchmarks_Track.html) | - | [代码](https://github.com/S-Abdelnabi/LLM-Deliberation) |
+| 2026 | ICLR | Strategic Planning and Rationalizing on Trees Make LLMs Better Debaters | [查看](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ee3ce0121939f42098cdefd3ea025bf1-Abstract-Conference.html) | - | [代码](https://github.com/LeiLiLab/TreeDebater) |
 
 </details>
 
 <a id="ed"></a>
 <details>
-<summary>❤️‍🩹 <b>Empathy & Emotional Support</b> · 13 篇</summary>
+<summary>❤️‍🩹 <b>Empathy & Emotional Support</b> · 19 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -128,12 +134,18 @@
 | 2026 | arXiv | Affective Flow Language Model for Emotional Support Conversation | [查看](https://arxiv.org/abs/2602.08826v1) | [摘要](paper/ED-arXiv-2026-Affective%20Flow%20Language%20Model%20for%20Emotional%20Support%20Conversation.md) | [代码](https://github.com/chzou25-lgtm/AffectiveFlow) |
 | 2026 | arXiv | EMPA: Evaluating Persona-Aligned Empathy as a Process | [查看](https://arxiv.org/abs/2603.00552) | [摘要](paper/ED-arXiv-2026-EMPA:%20Evaluating%20Persona-Aligned%20Empathy%20as%20a%20Process.md) | [代码](https://github.com/KAYA-HAI/EMPA-Benchmark-EPMSandbox) |
 | 2026 | ACL | You Never Know a Person, You Only Know Their Defenses- Detecting Levels of Psychological Defense Mechanisms in Supportive Conversations | [查看](https://aclanthology.org/2026.findings-acl.708/) | - | - |
+| 2021 | ACL | Towards Emotional Support Dialog Systems | [查看](https://aclanthology.org/2021.acl-long.269/) | - | [代码](https://github.com/thu-coai/Emotional-Support-Conversation) |
+| 2023 | ACL | TransESC: Smoothing Emotional Support Conversation via Turn-Level State Transition | [查看](https://aclanthology.org/2023.findings-acl.420/) | - | [代码](https://github.com/circle-hit/TransESC) |
+| 2024 | ACL | Can Large Language Models be Good Emotional Supporter? Mitigating Preference Bias on Emotional Support Conversation | [查看](https://aclanthology.org/2024.acl-long.813/) | - | [代码](https://github.com/1eastar/EmotionalSupport) |
+| 2024 | ACL | ESCoT: Towards Interpretable Emotional Support Dialogue Systems | [查看](https://aclanthology.org/2024.acl-long.723/) | - | [代码](https://github.com/TeigenZhang/ESCoT) |
+| 2025 | CHI | Customizing Emotional Support: How Do Individuals Construct and Interact With LLM-Powered Chatbots | [查看](https://doi.org/10.1145/3706598.3713453) | - | - |
+| 2025 | NAACL | EmoDynamiX: Emotional Support Dialogue Strategy Prediction by Modelling MiXed Emotions and Discourse Dynamics | [查看](https://aclanthology.org/2025.naacl-long.81/) | - | [代码](https://github.com/cw-wan/EmoDynamiX-v2) |
 
 </details>
 
 <a id="recommend"></a>
 <details>
-<summary>🛍️ <b>Conversational Recommendation</b> · 18 篇</summary>
+<summary>🛍️ <b>Conversational Recommendation</b> · 24 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -155,12 +167,18 @@
 | 2026 | WWW | Not All Information Brings Benefits- Personalization-Driven Agent Debate for Conversational Recommendation | [查看](https://doi.org/10.1145/3774904.3792152) | [摘要](paper/Recommend-WWW-2026-Not%20All%20Information%20Brings%20Benefits-%20Personalization-Driven%20Agent%20Debate%20for%20Conversational%20Recommendation.md) | - |
 | 2026 | WWW | Optimizing Multi-Turn Interactive Recommendation Agents via Generative Intrinsic Motivation | [查看](https://doi.org/10.1145/3774904.3792209) | [摘要](paper/Recommend-WWW-2026-Optimizing%20Multi-Turn%20Interactive%20Recommendation%20Agents%20via%20Generative%20Intrinsic%20Motivation.md) | [代码](https://github.com/XueyangFeng/GIMO) |
 | 2026 | arXiv | User Simulator-Guided Multi-Turn Preference Optimization for Reasoning LLM-based Conversational Recommendation | [查看](https://arxiv.org/abs/2604.03671) | [摘要](paper/Recommend-arXiv-2026-User%20Simulator-Guided%20Multi-Turn%20Preference%20Optimization%20for%20Reasoning%20LLM-based%20Conversational%20Recommendation.md) | - |
+| 2023 | CIKM | Large Language Models as Zero-Shot Conversational Recommenders | [查看](https://doi.org/10.1145/3583780.3614949) | - | [代码](https://github.com/AaronHeee/LLMs-as-Zero-Shot-Conversational-RecSys) |
+| 2024 | ACL | Pearl: A Review-driven Persona-Knowledge Grounded Conversational Recommendation Dataset | [查看](https://aclanthology.org/2024.findings-acl.65/) | - | [代码](https://github.com/kkmjkim/PEARL) |
+| 2024 | EMNLP | Mitigating Matthew Effect: Multi-Hypergraph Boosted Multi-Interest Self-Supervised Learning for Conversational Recommendation | [查看](https://aclanthology.org/2024.emnlp-main.86/) | - | [代码](https://github.com/zysensmile/HiCore) |
+| 2024 | SIGIR | Broadening the View: Demonstration-augmented Prompt Learning for Conversational Recommendation | [查看](https://doi.org/10.1145/3626772.3657755) | - | - |
+| 2025 | NAACL | Empowering Retrieval-based Conversational Recommendation with Contrasting User Preferences | [查看](https://aclanthology.org/2025.naacl-long.392/) | - | [代码](https://github.com/kookeej/CORAL) |
+| 2026 | ICLR | Rank-GRPO: Training LLM-based Conversational Recommender Systems with Reinforcement Learning | [查看](https://arxiv.org/abs/2510.20150) | - | [代码](https://github.com/yaochenzhu/Rank-GRPO) |
 
 </details>
 
 <a id="coop"></a>
 <details>
-<summary>🤝 <b>Cooperation & Collaboration</b> · 5 篇</summary>
+<summary>🤝 <b>Cooperation & Collaboration</b> · 11 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -169,12 +187,18 @@
 | 2024 | TACL | Decision-Oriented Dialogue for Human-AI Collaboration | [查看](https://aclanthology.org/2024.tacl-1.50/) | - | - |
 | 2024 | ICML | Should we be going MAD- A Look at Multi-Agent Debate Strategies for LLMs | [查看](https://arxiv.org/abs/2311.17371) | - | [代码](https://github.com/instadeepai/DebateLLM) |
 | 2024 | ACL | Your Co-Workers Matter- Evaluating Collaborative Capabilities of Language Models in Blocks World | [查看](https://aclanthology.org/2024.findings-acl.294/) | - | - |
+| 2022 | CHI | AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts | [查看](https://doi.org/10.1145/3491102.3517582) | - | - |
+| 2024 | ACL | Exploring Collaboration Mechanisms for LLM Agents: A Social Psychology View | [查看](https://aclanthology.org/2024.acl-long.782/) | - | [代码](https://github.com/zjunlp/MachineSoM) |
+| 2024 | ICLR | MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework | [查看](https://arxiv.org/abs/2308.00352) | - | [代码](https://github.com/FoundationAgents/MetaGPT) |
+| 2024 | NeurIPS | Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents | [查看](https://arxiv.org/abs/2404.16698) | - | [代码](https://github.com/giorgiopiatti/govsim) |
+| 2024 | Science | AI can help humans find common ground in democratic deliberation | [查看](https://doi.org/10.1126/science.adq2852) | - | [代码](https://github.com/google-deepmind/habermas_machine) |
+| 2025 | Nature Human Behaviour | Playing repeated games with large language models | [查看](https://doi.org/10.1038/s41562-025-02172-y) | - | [代码](https://github.com/eliaka/repeatedgames) |
 
 </details>
 
 <a id="tom"></a>
 <details>
-<summary>💭 <b>Theory of Mind</b> · 18 篇</summary>
+<summary>💭 <b>Theory of Mind</b> · 19 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -196,12 +220,13 @@
 | 2026 | arXiv | UserHarness- Harnessing User Minds for Stronger Agent Theory-of-Mind | [查看](https://arxiv.org/abs/2605.27721) | [摘要](paper/ToM-arXiv-2026-UserHarness-%20Harnessing%20User%20Minds%20for%20Stronger%20Agent%20Theory-of-Mind.md) | - |
 | 2026 | CVPR | Video-Only ToM- Enhancing Theory of Mind in Multimodal Large Language Models | [查看](https://arxiv.org/abs/2603.24484) | [摘要](paper/ToM-CVPR-2026-Video-Only%20ToM-%20Enhancing%20Theory%20of%20Mind%20in%20Multimodal%20Large%20Language%20Models.md) | [代码](https://founce.github.io/VisionToM/) |
 | 2026 | EACL | Let's Put Ourselves in Sally's Shoes: Shoes of Others Prefilling Improves Theory of Mind in LLMs | [查看](https://aclanthology.org/2026.findings-eacl.6/) | [摘要](paper/ToM-EACL-2026-Lets-Put-Ourselves-in-Sallys-Shoes-Shoes-of-Others-Prefilling-Improves-Theory-of-Mind-in-LLMs.md) | - |
+| 2024 | ACL | Think Twice: Perspective-Taking Improves Large Language Models' Theory-of-Mind Capabilities | [查看](https://aclanthology.org/2024.acl-long.451/) | - | [代码](https://github.com/shawnsihyunlee/simulatedtom) |
 
 </details>
 
 <a id="emotion"></a>
 <details>
-<summary>🎭 <b>Emotion Understanding</b> · 5 篇</summary>
+<summary>🎭 <b>Emotion Understanding</b> · 10 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -210,12 +235,17 @@
 | 2021 | AAAI | COSMIC- COmmonSense knowledge for eMotion Identification in Conversations | [查看](https://arxiv.org/abs/2010.02795) | - | - |
 | 2023 | arXiv | InstructERC- Reforming Emotion Recognition in Conversation with Multi-task Retrieval-Augmented Large Language Models | [查看](https://arxiv.org/abs/2309.11911) | - | - |
 | 2025 | arXiv | Do LLMs Feel- Teaching Emotion Recognition with Prompts, Retrieval, and Curriculum Learning | [查看](https://arxiv.org/abs/2511.07061) | - | - |
+| 2023 | AAAI | Knowledge-Bridged Causal Interaction Network for Causal Emotion Entailment | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/26641) | - | [代码](https://github.com/circle-hit/KBCIN) |
+| 2024 | KDD | EmoLLMs: A Series of Emotional Large Language Models and Annotation Tools for Comprehensive Affective Analysis | [查看](https://arxiv.org/abs/2401.08508) | - | [代码](https://github.com/lzw108/EmoLLMs) |
+| 2024 | NAACL | TelME: Teacher-leading Multimodal Fusion Network for Emotion Recognition in Conversation | [查看](https://aclanthology.org/2024.naacl-long.5/) | - | [代码](https://github.com/yuntaeyang/TelME) |
+| 2024 | NeurIPS | Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning | [查看](https://proceedings.neurips.cc/paper_files/paper/2024/hash/c7f43ada17acc234f568dc66da527418-Abstract-Conference.html) | - | [代码](https://github.com/ZebangCheng/Emotion-LLaMA) |
+| 2025 | ACL | CoE: A Clue of Emotion Framework for Emotion Recognition in Conversations | [查看](https://aclanthology.org/2025.acl-long.1148/) | - | - |
 
 </details>
 
 <a id="norms"></a>
 <details>
-<summary>⚖️ <b>Social Norms & Morality</b> · 6 篇</summary>
+<summary>⚖️ <b>Social Norms & Morality</b> · 12 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -225,12 +255,18 @@
 | 2023 | ICML | Do the Rewards Justify the Means- Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark | [查看](https://arxiv.org/abs/2304.03279) | - | - |
 | 2023 | ACL | NormBank- A Knowledge Bank of Situational Social Norms | [查看](https://arxiv.org/abs/2305.17008) | - | [代码](https://github.com/SALT-NLP/normbank) |
 | 2024 | arXiv | CultureBank- An Online Community-Driven Knowledge Base Towards Culturally Aware Language Technologies | [查看](https://arxiv.org/abs/2404.15238) | - | [代码](https://github.com/SALT-NLP/CultureBank) |
+| 2021 | ICLR | Aligning AI With Shared Human Values | [查看](https://arxiv.org/abs/2008.02275) | - | [代码](https://github.com/hendrycks/ethics) |
+| 2022 | NeurIPS | When to Make Exceptions: Exploring Language Models as Accounts of Human Moral Judgment | [查看](https://arxiv.org/abs/2210.01478) | - | [代码](https://github.com/feradauto/MoralCoT) |
+| 2023 | NeurIPS | Evaluating the Moral Beliefs Encoded in LLMs | [查看](https://arxiv.org/abs/2307.14324) | - | [代码](https://github.com/ninodimontalcino/moralchoice) |
+| 2024 | AAAI | Value Kaleidoscope: Engaging AI with Pluralistic Human Values, Rights, and Duties | [查看](https://arxiv.org/abs/2309.00779) | - | [代码](https://github.com/tsor13/kaleido) |
+| 2025 | NAACL | NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models | [查看](https://aclanthology.org/2025.naacl-long.120/) | - | [代码](https://github.com/Akhila-Yerukola/NormAd) |
+| 2025 | Science Advances | Emergent social conventions and collective bias in LLM populations | [查看](https://doi.org/10.1126/sciadv.adu9368) | - | [代码](https://github.com/Ariel-Flint-Ashery/AI-norms) |
 
 </details>
 
 <a id="memory"></a>
 <details>
-<summary>💾 <b>Agent Memory</b> · 7 篇</summary>
+<summary>💾 <b>Agent Memory</b> · 11 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -241,12 +277,16 @@
 | 2026 | ICLR | MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent | [查看](https://arxiv.org/abs/2507.02259) | [摘要](paper/Memory-ICLR-2026-MemAgent%3A%20Reshaping%20Long-Context%20LLM%20with%20Multi-Conv%20RL-based%20Memory%20Agent.md) | - |
 | 2026 | ICLR | ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory | [查看](https://proceedings.iclr.cc/paper_files/paper/2026/hash/980ea04d23d1f6908964eba2a74afe45-Abstract-Conference.html) | [摘要](paper/Memory-ICLR-2026-ReasoningBank%3A%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md) | [代码](https://github.com/google-research/reasoning-bank) |
 | 2023 | arXiv | MemoryBank- Enhancing Large Language Models with Long-Term Memory | [查看](https://arxiv.org/abs/2305.10250) | - | [代码](https://github.com/zhongwanjun/memorybank-siliconfriend) |
+| 2023 | NeurIPS | Reflexion: Language Agents with Verbal Reinforcement Learning | [查看](https://arxiv.org/abs/2303.11366) | - | [代码](https://github.com/noahshinn/reflexion) |
+| 2024 | AAAI | ExpeL: LLM Agents Are Experiential Learners | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/29936) | - | [代码](https://github.com/LeapLabTHU/ExpeL) |
+| 2024 | NeurIPS | HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models | [查看](https://arxiv.org/abs/2405.14831) | - | [代码](https://github.com/OSU-NLP-Group/HippoRAG) |
+| 2025 | ICLR | Human-inspired Episodic Memory for Infinite Context LLMs | [查看](https://arxiv.org/abs/2407.09450) | - | [代码](https://github.com/em-llm/EM-LLM-model) |
 
 </details>
 
 <a id="rlhf"></a>
 <details>
-<summary>🤖 <b>Reinforcement Learning & Alignment</b> · 12 篇</summary>
+<summary>🤖 <b>Reinforcement Learning & Alignment</b> · 18 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -262,12 +302,18 @@
 | 2026 | ICLR | Toward Evaluative Thinking: Meta-Policy Optimization with Evolving Reward Models | [查看](https://arxiv.org/pdf/2504.20157) | [摘要](paper/RLHF-ICLR-2026-Toward-Evaluative-Thinking-Meta-Policy-Optimization-with-Evolving-Reward-Models.md) | - |
 | 2026 | arXiv | Better LLM Reasoning via Dual-Play | [查看](https://arxiv.org/abs/2511.11881v3) | [摘要](paper/RLHF-arXiv-2026-Better%20LLM%20Reasoning%20via%20Dual-Play.md) | [代码](https://hcy123902.github.io/PasoDoble/) |
 | 2026 | ICLR | TreeSearch for LLM Agent Reinforcement Learning | [查看](https://arxiv.org/abs/2509.21240) | [摘要](paper/RLHF-ICLR-2026-TreeSearch%20for%20LLM%20Agent%20Reinforcement%20Learning.md) | [代码](https://github.com/AMAP-ML/Tree-GRPO) |
+| 2022 | NeurIPS | The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games | [查看](https://arxiv.org/abs/2103.01955) | - | [代码](https://github.com/marlbenchmark/on-policy) |
+| 2022 | NeurIPS | Training language models to follow instructions with human feedback | [查看](https://arxiv.org/abs/2203.02155) | - | - |
+| 2024 | ICLR | Let's Verify Step by Step | [查看](https://arxiv.org/abs/2305.20050) | - | [代码](https://github.com/openai/prm800k) |
+| 2024 | ICML | ArCHer: Training Language Model Agents via Hierarchical Multi-Turn RL | [查看](https://arxiv.org/abs/2402.19446) | - | [代码](https://github.com/YifeiZhou02/ArCHer) |
+| 2024 | ICML | KTO: Model Alignment as Prospect Theoretic Optimization | [查看](https://arxiv.org/abs/2402.01306) | - | [代码](https://github.com/ContextualAI/HALOs) |
+| 2025 | ICML | VinePPO: Refining Credit Assignment in RL Training of LLMs | [查看](https://arxiv.org/abs/2410.01679) | - | [代码](https://github.com/McGill-NLP/VinePPO) |
 
 </details>
 
 <a id="us"></a>
 <details>
-<summary>🕹️ <b>User Simulation & Interactive Environments</b> · 11 篇</summary>
+<summary>🕹️ <b>User Simulation & Interactive Environments</b> · 16 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -282,12 +328,17 @@
 | 2025 | SIGIR | Theory and Toolkits for User Simulation in the Era of Generative AI- User Modeling, Synthetic Data Generation, and System Evaluation | [查看](https://doi.org/10.1145/3726302.3731697) | [摘要](paper/US-SIGIR-2025-Theory%20and%20Toolkits%20for%20User%20Simulation%20in%20the%20Era%20of%20Generative%20AI-%20User%20Modeling%2C%20Synthetic%20Data%20Generation%2C%20and%20System%20Evaluation.md) | - |
 | 2025 | WWW | A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems | [查看](https://doi.org/10.1145/3696410.3714858) | [摘要](paper/US-WWW-2025-A%20LLM-based%20Controllable%2C%20Scalable%2C%20Human-Involved%20User%20Simulator%20Framework%20for%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/zlxxlz1026/CSHI) |
 | 2025 | NeurIPS | Goal Alignment in LLM-Based User Simulators for Conversational AI | [查看](https://arxiv.org/abs/2507.20152) | [摘要](paper/US-NeurIPS-2025-Goal%20Alignment%20in%20LLM-Based%20User%20Simulators%20for%20Conversational%20AI.md) | [代码](https://github.com/Shuhaibm/user_simulator_goal_alignment) |
+| 2024 | ACL | PlatoLM: Teaching LLMs in Multi-Round Dialogue via a User Simulator | [查看](https://aclanthology.org/2024.acl-long.424/) | - | [代码](https://github.com/FreedomIntelligence/PlatoLM) |
+| 2024 | arXiv | LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals | [查看](https://arxiv.org/abs/2411.10109) | - | [代码](https://github.com/StanfordHCI/genagents) |
+| 2024 | arXiv | OASIS: Open Agent Social Interaction Simulations with One Million Agents | [查看](https://arxiv.org/abs/2411.11581) | - | [代码](https://github.com/camel-ai/oasis) |
+| 2025 | ICLR | τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains | [查看](https://arxiv.org/abs/2406.12045) | - | [代码](https://github.com/sierra-research/tau-bench) |
+| 2026 | CSUR | From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents | [查看](https://doi.org/10.1145/3800683) | - | [代码](https://github.com/FudanDISC/SocialAgent) |
 
 </details>
 
 <a id="data"></a>
 <details>
-<summary>📊 <b>Benchmark & Evaluation</b> · 20 篇</summary>
+<summary>📊 <b>Benchmark & Evaluation</b> · 33 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -311,6 +362,19 @@
 | 2025 | arXiv | You need to MIMIC to get FAME- Solving Meeting Transcript Scarcity with Multi-Agent Conversations | [查看](https://arxiv.org/abs/2502.13001) | - | - |
 | 2026 | arXiv | PIVOTSBench- Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models | [查看](https://arxiv.org/abs/2606.23092) | - | - |
 | 2026 | arXiv | TIDES- A Longitudinal Bilingual Dataset for Modeling Multi-Party Social Dynamics | [查看](https://arxiv.org/abs/2608.01724) | - | - |
+| 2023 | EMNLP | FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions | [查看](https://aclanthology.org/2023.emnlp-main.890/) | - | [代码](https://github.com/skywalker023/fantom) |
+| 2023 | NeurIPS | Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena | [查看](https://arxiv.org/abs/2306.05685) | - | [代码](https://github.com/lm-sys/FastChat) |
+| 2023 | NeurIPS | Understanding Social Reasoning in Language Models with Language Models | [查看](https://arxiv.org/abs/2306.15448) | - | [代码](https://github.com/cicl-stanford/procedural-evals-tom) |
+| 2024 | ACL | Evaluating Very Long-Term Conversational Memory of LLM Agents | [查看](https://aclanthology.org/2024.acl-long.747/) | - | [代码](https://github.com/snap-research/locomo) |
+| 2024 | ACL | MM-SOC: Benchmarking Multimodal Large Language Models in Social Media Platforms | [查看](https://aclanthology.org/2024.findings-acl.370/) | - | [代码](https://github.com/claws-lab/MMSoc) |
+| 2024 | ACL | MMToM-QA: Multimodal Theory of Mind Question Answering | [查看](https://aclanthology.org/2024.acl-long.851/) | - | [代码](https://github.com/chuanyangjin/MMToM-QA) |
+| 2024 | ACL | OpenToM: A Comprehensive Benchmark for Evaluating Theory-of-Mind Reasoning Capabilities of Large Language Models | [查看](https://aclanthology.org/2024.acl-long.466/) | - | [代码](https://github.com/seacowx/OpenToM) |
+| 2024 | ACL | SocialBench: Sociality Evaluation of Role-Playing Conversational Agents | [查看](https://aclanthology.org/2024.findings-acl.125/) | - | [代码](https://github.com/X-PLUG/SocialBench) |
+| 2024 | ACL | ToMBench: Benchmarking Theory of Mind in Large Language Models | [查看](https://aclanthology.org/2024.acl-long.847/) | - | [代码](https://github.com/zhchen18/ToMBench) |
+| 2024 | ICLR | Who is ChatGPT? Benchmarking LLMs' Psychological Portrayal Using PsychoBench | [查看](https://arxiv.org/abs/2310.01386) | - | [代码](https://github.com/CUHK-ARISE/PsychoBench) |
+| 2025 | EMNLP | PersonaGym: Evaluating Persona Agents and LLMs | [查看](https://arxiv.org/abs/2407.18416) | - | [代码](https://github.com/vsamuel2003/PersonaGym) |
+| 2025 | ICLR | LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory | [查看](https://arxiv.org/abs/2410.10813) | - | [代码](https://github.com/xiaowu0162/LongMemEval) |
+| 2026 | ICLR | MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models | [查看](https://proceedings.iclr.cc/paper_files/paper/2026/hash/50d277e84b2bcbaadcd84548a87e8cc4-Abstract-Conference.html) | - | [代码](https://github.com/QwenAudio/MME-Emotion) |
 
 </details>
 

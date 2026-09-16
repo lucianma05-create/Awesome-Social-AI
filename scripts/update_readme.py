@@ -395,6 +395,17 @@ def sync_summary_counts(lines):
 
 
 
+
+def sync_paper_badge(lines):
+    """Count total paper rows across sections and sync the Papers badge."""
+    text = "".join(lines)
+    total = len(re.findall(r"^\| \d{4} \|", text, flags=re.M))
+    new_text, n = re.subn(r"(Papers-)\d+", rf"\g<1>{total}", text)
+    if n and new_text != text:
+        return new_text.splitlines(keepends=True), total
+    return lines, total
+
+
 def sync_summary_badge(lines, paper_dir):
     """Count paper files containing a 一句话总结 heading and sync the Summaries badge."""
     summarized = 0
@@ -423,11 +434,13 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
             lines = f.readlines()
         synced, n = sync_summary_counts(lines)
         badge_lines, n_sum = sync_summary_badge(synced, paper_dir)
+        paper_lines, n_paper = sync_paper_badge(badge_lines)
         if not dry_run:
             with open(readme_path, "w", encoding="utf-8") as f:
-                f.writelines(badge_lines)
-            if n or badge_lines != synced:
-                print(f"No new papers found to add. Synced {n} summary count(s), badge {n_sum}.")
+                f.writelines(paper_lines)
+            if n or badge_lines != synced or paper_lines != badge_lines:
+                print(f"No new papers found to add. Synced {n} summary count(s), "
+                      f"badge {n_sum}, papers {n_paper}.")
             else:
                 print("No new papers found to add. Summary counts up to date.")
         else:
@@ -435,7 +448,9 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
                 print(f"No new papers found to add. [DRY RUN] Would sync {n} summary count(s).")
             if badge_lines != synced:
                 print(f"No new papers found to add. [DRY RUN] Would sync badge to {n_sum}.")
-            if not n and badge_lines == synced:
+            if paper_lines != badge_lines:
+                print(f"No new papers found to add. [DRY RUN] Would sync Papers badge to {n_paper}.")
+            if not n and badge_lines == synced and paper_lines == badge_lines:
                 print("No new papers found to add. Summary counts up to date.")
         return []
 
@@ -485,11 +500,12 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
 
     lines, n_synced = sync_summary_counts(lines)
     lines, n_badge = sync_summary_badge(lines, paper_dir)
+    lines, n_paper = sync_paper_badge(lines)
     if not dry_run:
         with open(readme_path, "w", encoding="utf-8") as f:
             f.writelines(lines)
         print(f"Updated {readme_path} with {len(new_papers)} new paper(s). "
-              f"Synced {n_synced} summary count(s), badge {n_badge}.")
+              f"Synced {n_synced} summary count(s), badge {n_badge}, papers {n_paper}.")
     else:
         print(f"[DRY RUN] Would update {readme_path} with {len(new_papers)} new paper(s):")
         for p in new_papers:
