@@ -13,12 +13,12 @@
 | 方向 | 论文数 | 核心主题 |
 | --- | --- | --- |
 | [PD：Persuasion & Negotiation](#pd) | 35 | 说服、谈判等策略性对话的研究、方法与评测 |
-| [ED：Empathetic Dialogue Systems](#ed) | 13 | 共情对话、情感支持与心理辅导 |
+| [ED：Empathy & Emotional Support](#ed) | 13 | 共情对话、情感支持与心理辅导 |
 | [Recommend：Recommender Systems](#recommend) | 18 | 对话式推荐系统 |
 | [ToM：Theory of Mind](#tom) | 18 | 心智建模、意图与信念推理 |
 | [Memory：Agent Memory](#memory) | 6 | 智能体长期记忆与经验演化 |
-| [US：User Simulator](#us) | 11 | 用户模拟、交互环境与仿真 |
-| [RLHF：RL & Alignment](#rlhf) | 12 | 强化学习训练与对齐方法 |
+| [US：User Simulation & Interactive Environments](#us) | 11 | 用户模拟、交互环境与仿真 |
+| [RL & Alignment](#rlhf) | 12 | 强化学习训练与对齐方法 |
 | [Data：Benchmark & Evaluation](#data) | 12 | 基准测试、数据集与评测 |
 | **总计** | **125** | |
 
@@ -71,7 +71,7 @@
 </details>
 
 <a id="ed"></a>
-### ED：Empathetic Dialogue Systems
+### ED：Empathy & Emotional Support
 
 <details>
 <summary>📖 展开论文列表(13 篇)</summary>
@@ -170,7 +170,7 @@
 </details>
 
 <a id="us"></a>
-### US：User Simulator
+### US：User Simulation & Interactive Environments
 
 <details>
 <summary>📖 展开论文列表(11 篇)</summary>
@@ -192,7 +192,7 @@
 </details>
 
 <a id="rlhf"></a>
-### RLHF：RL & Alignment
+### RL & Alignment
 
 <details>
 <summary>📖 展开论文列表(12 篇)</summary>

@@ -22,15 +22,15 @@ from urllib.parse import unquote
 # Direction prefix → README section heading (the ### heading line text)
 DIRECTION_MAP = {
     "Data":      "Data：Benchmark & Evaluation",
-    "ED":        "ED：Empathetic Dialogue Systems",
+    "ED":        "ED：Empathy & Emotional Support",
     "Memory":    "Memory：Agent Memory",
     "PD":        "PD：Persuasion & Negotiation",
     "Recommend": "Recommend：Recommender Systems",
     "Recommned": "Recommend：Recommender Systems",
     "Recommeend":"Recommend：Recommender Systems",
-    "RLHF":      "RLHF：RL & Alignment",
+    "RLHF":      "RL & Alignment",
     "ToM":       "ToM：Theory of Mind",
-    "US":        "US：User Simulator",
+    "US":        "US：User Simulation & Interactive Environments",
 }
 
 # Canonical direction label to use in table entries (for dedup)
