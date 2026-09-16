@@ -60,14 +60,6 @@
     - [Benchmark & Evaluation](#data)
   - [📁 仓库结构](#repo-structure)
   - [✍️ 如何贡献](#contributing)
-    - [1. Fork & Clone](#1-fork--clone)
-    - [2. 添加原始仓库为 upstream](#2-添加原始仓库为-upstream)
-    - [3. 同步主分支并创建独立分支](#3-每次准备撰写新摘要前请先同步主分支并创建一个独立分支)
-    - [4. 命名规范](#4-命名规范)
-    - [5. 填写内容](#5-填写内容)
-    - [6. 修改 README.md](#6-修改-readmemd)
-    - [7. 提交、同步与推送](#7-提交同步与推送)
-    - [8. 发起 Pull Request](#8-发起-pull-request)
   - [🧠 关于我们](#about)
 
 <a id="papers"></a>
@@ -77,7 +69,7 @@
 ### Persuasion & Negotiation
 
 <details>
-<summary>📖 展开论文列表(35 篇)</summary>
+<summary>📖 论文列表 · 35 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -123,7 +115,7 @@
 ### Empathy & Emotional Support
 
 <details>
-<summary>📖 展开论文列表(13 篇)</summary>
+<summary>📖 论文列表 · 13 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -147,7 +139,7 @@
 ### Conversational Recommendation
 
 <details>
-<summary>📖 展开论文列表(18 篇)</summary>
+<summary>📖 论文列表 · 18 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -176,7 +168,7 @@
 ### Cooperation & Collaboration
 
 <details>
-<summary>📖 展开论文列表(5 篇)</summary>
+<summary>📖 论文列表 · 5 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -192,7 +184,7 @@
 ### Theory of Mind
 
 <details>
-<summary>📖 展开论文列表(18 篇)</summary>
+<summary>📖 论文列表 · 18 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -221,7 +213,7 @@
 ### Emotion Understanding
 
 <details>
-<summary>📖 展开论文列表(5 篇)</summary>
+<summary>📖 论文列表 · 5 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -237,7 +229,7 @@
 ### Social Norms & Morality
 
 <details>
-<summary>📖 展开论文列表(6 篇)</summary>
+<summary>📖 论文列表 · 6 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -254,7 +246,7 @@
 ### Agent Memory
 
 <details>
-<summary>📖 展开论文列表(7 篇)</summary>
+<summary>📖 论文列表 · 7 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -272,7 +264,7 @@
 ### Reinforcement Learning & Alignment
 
 <details>
-<summary>📖 展开论文列表(12 篇)</summary>
+<summary>📖 论文列表 · 12 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -295,7 +287,7 @@
 ### User Simulation & Interactive Environments
 
 <details>
-<summary>📖 展开论文列表(11 篇)</summary>
+<summary>📖 论文列表 · 11 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -317,7 +309,7 @@
 ### Benchmark & Evaluation
 
 <details>
-<summary>📖 展开论文列表(20 篇)</summary>
+<summary>📖 论文列表 · 20 篇(点击展开)</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |

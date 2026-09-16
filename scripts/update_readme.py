@@ -374,13 +374,30 @@ def sync_summary_counts(lines):
         block = text[a:b]
         rows = [l for l in block.splitlines()
                 if l.startswith("| ") and "---" not in l and "| 年份" not in l]
-        new_block, c = re.subn(r'<summary>📖 展开论文列表\(\d+ 篇\)</summary>',
-                               f'<summary>📖 展开论文列表({len(rows)} 篇)</summary>',
+        new_block, c = re.subn(r'<summary>📖 论文列表 · \d+ 篇\(点击展开\)</summary>',
+                               f'<summary>📖 论文列表 · {len(rows)} 篇(点击展开)</summary>',
                                block, count=1)
         if c and new_block != block:
             changed += 1
             text = text[:a] + new_block + text[b:]
     return text.splitlines(keepends=True), changed
+
+
+
+def sync_summary_badge(lines, paper_dir):
+    """Count paper files containing a 一句话总结 heading and sync the Summaries badge."""
+    summarized = 0
+    for f in os.listdir(paper_dir):
+        if not f.endswith(".md"):
+            continue
+        with open(os.path.join(paper_dir, f), "r", encoding="utf-8") as fh:
+            if re.search(r"^## 一句话总结", fh.read(), flags=re.M):
+                summarized += 1
+    text = "".join(lines)
+    new_text, n = re.subn(r"(Summaries-)\d+", rf"\g<1>{summarized}", text)
+    if n and new_text != text:
+        return new_text.splitlines(keepends=True), summarized
+    return lines, summarized
 
 
 def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> list:
@@ -394,14 +411,21 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
         with open(readme_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
         synced, n = sync_summary_counts(lines)
-        if n and not dry_run:
+        badge_lines, n_sum = sync_summary_badge(synced, paper_dir)
+        if not dry_run:
             with open(readme_path, "w", encoding="utf-8") as f:
-                f.writelines(synced)
-            print(f"No new papers found to add. Synced {n} summary count(s).")
-        elif n:
-            print(f"No new papers found to add. [DRY RUN] Would sync {n} summary count(s).")
+                f.writelines(badge_lines)
+            if n or badge_lines != synced:
+                print(f"No new papers found to add. Synced {n} summary count(s), badge {n_sum}.")
+            else:
+                print("No new papers found to add. Summary counts up to date.")
         else:
-            print("No new papers found to add. Summary counts up to date.")
+            if n:
+                print(f"No new papers found to add. [DRY RUN] Would sync {n} summary count(s).")
+            if badge_lines != synced:
+                print(f"No new papers found to add. [DRY RUN] Would sync badge to {n_sum}.")
+            if not n and badge_lines == synced:
+                print("No new papers found to add. Summary counts up to date.")
         return []
 
     with open(readme_path, "r", encoding="utf-8") as f:
@@ -449,11 +473,12 @@ def update_readme(readme_path: str, paper_dir: str, dry_run: bool = False) -> li
               f"Cannot add: {', '.join(papers_list)}", file=sys.stderr)
 
     lines, n_synced = sync_summary_counts(lines)
+    lines, n_badge = sync_summary_badge(lines, paper_dir)
     if not dry_run:
         with open(readme_path, "w", encoding="utf-8") as f:
             f.writelines(lines)
         print(f"Updated {readme_path} with {len(new_papers)} new paper(s). "
-              f"Synced {n_synced} summary count(s).")
+              f"Synced {n_synced} summary count(s), badge {n_badge}.")
     else:
         print(f"[DRY RUN] Would update {readme_path} with {len(new_papers)} new paper(s):")
         for p in new_papers:
