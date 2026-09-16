@@ -67,7 +67,7 @@
 
 <a id="pd"></a>
 <details>
-<summary>📖 <b>Persuasion & Negotiation</b> · 35 篇</summary>
+<summary>🗣️ <b>Persuasion & Negotiation</b> · 35 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -111,7 +111,7 @@
 
 <a id="ed"></a>
 <details>
-<summary>📖 <b>Empathy & Emotional Support</b> · 13 篇</summary>
+<summary>❤️‍🩹 <b>Empathy & Emotional Support</b> · 13 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -133,7 +133,7 @@
 
 <a id="recommend"></a>
 <details>
-<summary>📖 <b>Conversational Recommendation</b> · 18 篇</summary>
+<summary>🛍️ <b>Conversational Recommendation</b> · 18 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -160,7 +160,7 @@
 
 <a id="coop"></a>
 <details>
-<summary>📖 <b>Cooperation & Collaboration</b> · 5 篇</summary>
+<summary>🤝 <b>Cooperation & Collaboration</b> · 5 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -174,7 +174,7 @@
 
 <a id="tom"></a>
 <details>
-<summary>📖 <b>Theory of Mind</b> · 18 篇</summary>
+<summary>💭 <b>Theory of Mind</b> · 18 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -201,7 +201,7 @@
 
 <a id="emotion"></a>
 <details>
-<summary>📖 <b>Emotion Understanding</b> · 5 篇</summary>
+<summary>🎭 <b>Emotion Understanding</b> · 5 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -215,7 +215,7 @@
 
 <a id="norms"></a>
 <details>
-<summary>📖 <b>Social Norms & Morality</b> · 6 篇</summary>
+<summary>⚖️ <b>Social Norms & Morality</b> · 6 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -230,7 +230,7 @@
 
 <a id="memory"></a>
 <details>
-<summary>📖 <b>Agent Memory</b> · 7 篇</summary>
+<summary>💾 <b>Agent Memory</b> · 7 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -246,7 +246,7 @@
 
 <a id="rlhf"></a>
 <details>
-<summary>📖 <b>Reinforcement Learning & Alignment</b> · 12 篇</summary>
+<summary>🤖 <b>Reinforcement Learning & Alignment</b> · 12 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -267,7 +267,7 @@
 
 <a id="us"></a>
 <details>
-<summary>📖 <b>User Simulation & Interactive Environments</b> · 11 篇</summary>
+<summary>🕹️ <b>User Simulation & Interactive Environments</b> · 11 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |
@@ -287,7 +287,7 @@
 
 <a id="data"></a>
 <details>
-<summary>📖 <b>Benchmark & Evaluation</b> · 20 篇</summary>
+<summary>📊 <b>Benchmark & Evaluation</b> · 20 篇</summary>
 
 | 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
 | --- | --- | --- | --- | --- | --- |

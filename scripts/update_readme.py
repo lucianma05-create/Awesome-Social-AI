@@ -381,9 +381,10 @@ def sync_summary_counts(lines):
                 if l.startswith("| ") and "---" not in l and "| 年份" not in l]
         out_lines = []
         for l in block.splitlines(keepends=True):
-            if l.startswith("<summary>📖 ") and " 篇</summary>" in l:
-                name = l[len("<summary>📖 "):].rsplit(" · ", 1)[0]
-                new_l = f"<summary>📖 {name} · {len(rows)} 篇</summary>\n"
+            if l.startswith("<summary>") and " 篇</summary>" in l:
+                inner = l[len("<summary>"):].strip()
+                prefix = inner.rsplit(" · ", 1)[0]
+                new_l = f"<summary>{prefix} · {len(rows)} 篇</summary>\n"
                 if new_l != l:
                     changed += 1
                 out_lines.append(new_l)
