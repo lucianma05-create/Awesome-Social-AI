@@ -15,6 +15,29 @@
 
 **我们精心收集整理面向对话智能体的社交人工智能（Social AI）研究论文，并持续更新中文摘要，支持快速了解这一领域的代表性工作。仓库将不断更新，追踪相关前沿。欢迎 Follow 和 Star!⭐**
 
+<a id="toc"></a>
+## 📑 目录
+
+- [🌐 Awesome Social AI](https://github.com/lucianma05-create/Awesome-Social-AI)
+  - [📑 目录](#toc)
+  - [🎯 范畴与结构](#social-ai)
+  - [📚 论文列表](#papers)
+    - [Persuasion & Negotiation](#pd)
+    - [Empathy & Emotional Support](#ed)
+    - [Conversational Recommendation](#recommend)
+    - [Cooperation & Collaboration](#coop)
+    - [Theory of Mind](#tom)
+    - [Affect & Social Perception](#emotion)
+    - [Social Context, Norms & Morality](#norms)
+    - [Social Memory & Adaptation](#memory)
+    - [Learning, Planning & Alignment](#rlhf)
+    - [User Simulation & Interactive Environments](#us)
+    - [Benchmark & Evaluation](#data)
+  - [🏷️ 关键词体系](#keywords)
+  - [📁 仓库结构](#repo-structure)
+  - [✍️ 如何贡献](#contributing)
+  - [🧠 关于我们](#about)
+
 <a id="social-ai"></a>
 ## 🎯 范畴与结构
 
@@ -52,29 +75,6 @@
 **参考论文:**
 > 1. [Towards Social AI: A Survey on Understanding Social Interactions](https://arxiv.org/abs/2409.15316)
 > 2. [Advancing Social Intelligence in AI Agents: Technical Challenges and Open Questions](https://aclanthology.org/2024.emnlp-main.1143/)
-
-<a id="toc"></a>
-## 📑 目录
-
-- [🌐 Awesome Social AI](https://github.com/lucianma05-create/Awesome-Social-AI)
-  - [🎯 范畴与结构](#social-ai)
-  - [📑 目录](#toc)
-  - [📚 论文列表](#papers)
-    - [Persuasion & Negotiation](#pd)
-    - [Empathy & Emotional Support](#ed)
-    - [Conversational Recommendation](#recommend)
-    - [Cooperation & Collaboration](#coop)
-    - [Theory of Mind](#tom)
-    - [Affect & Social Perception](#emotion)
-    - [Social Context, Norms & Morality](#norms)
-    - [Social Memory & Adaptation](#memory)
-    - [Learning, Planning & Alignment](#rlhf)
-    - [User Simulation & Interactive Environments](#us)
-    - [Benchmark & Evaluation](#data)
-  - [🏷️ 关键词体系](#keywords)
-  - [📁 仓库结构](#repo-structure)
-  - [✍️ 如何贡献](#contributing)
-  - [🧠 关于我们](#about)
 
 <a id="papers"></a>
 ## 📚 论文列表
@@ -273,6 +273,8 @@
 
 
 
+
+
 </details>
 
 <a id="ed"></a>
@@ -365,6 +367,8 @@
   - Publisher: `ACL 2026`
   - Keywords: `Dataset` · `Support` · `Mental-State Modeling` · `Relationship & Role` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -500,6 +504,8 @@
 
 
 
+
+
 </details>
 
 <a id="coop"></a>
@@ -547,6 +553,8 @@
   - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
   - Code: [GitHub / Project](https://github.com/eliaka/repeatedgames)
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -658,6 +666,8 @@
 
 
 
+
+
 </details>
 
 <a id="emotion"></a>
@@ -700,6 +710,8 @@
   - Publisher: `arXiv 2025`
   - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Social Perception` · `Retrieval` · `Supervised Learning` · `Multi-turn`
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -775,6 +787,8 @@
 
 
 
+
+
 </details>
 
 <a id="memory"></a>
@@ -832,6 +846,8 @@
   - Code: [GitHub / Project](https://github.com/google-research/reasoning-bank)
   - Summary: [Summary](paper/Memory-ICLR-2026-ReasoningBank:%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md)
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -936,6 +952,8 @@
 
 
 
+
+
 </details>
 
 <a id="us"></a>
@@ -1014,6 +1032,8 @@
   - Keywords: `Survey` · `General Interaction` · `Social Context` · `Multi-party`
   - Code: [GitHub / Project](https://github.com/FudanDISC/SocialAgent)
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -1171,6 +1191,8 @@
   - Publisher: `arXiv 2026`
   - Keywords: `Dataset` · `Coordination` · `Social Context` · `Interaction Management` · `Multi-party` · `Relationship & Role` · `Supervised Learning` · `Longitudinal`
 <!-- CATALOGUE:END -->
+
+
 
 
 
