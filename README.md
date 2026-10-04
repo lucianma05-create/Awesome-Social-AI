@@ -85,7 +85,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="pd"></a>
 <details>
-<summary>🗣️ <b>Persuasion & Negotiation</b> · 41 papers</summary>
+<summary>🗣️ <b>Persuasion & Negotiation</b> · 43 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [A Systematic Framework for Designing and Evaluating Persuasive Systems](https://doi.org/10.1007/978-3-540-68504-3_15)
@@ -145,6 +145,10 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `ACL 2025`
   - Keywords: `Method` · `Influence` · `Mental-State Modeling` · `Interaction Management` · `Multi-party` · `RL` · `Self-play` · `Planning` · `Multi-turn`
   - Summary: [Summary](paper/PD-ACL-2025-Battling%20against%20Tough%20Resister-%20Strategy%20Planning%20with%20Adversarial%20Game%20for%20Non-collaborative%20Dialogues.md)
+- [Communication is All You Need: Persuasion Dataset Construction via Multi-LLM Communication](https://aclanthology.org/2025.naacl-long.203/)
+  - Publisher: `NAACL 2025`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Norms & Morality` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/HF-heaven/LLM-based_persuasion_simulator)
 - [Disagreements in Reasoning: How a Model's Thinking Process Dictates Persuasion in Multi-Agent Systems](https://arxiv.org/abs/2503.09999)
   - Publisher: `arXiv 2025`
   - Keywords: `Evaluation` · `General Interaction`
@@ -184,6 +188,9 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Keywords: `Evaluation` · `Influence` · `Mental-State Modeling` · `Norms & Morality` · `User Simulation`
   - Code: [GitHub / Project](https://github.com/PLUM-Lab/PersuSafety)
   - Summary: [Summary](paper/PD-arXiv-2025-LLM%20Can%20be%20a%20Dangerous%20Persuader-%20Empirical%20Study%20of%20Persuasion%20Safety%20in%20Large%20Language%20Models.md)
+- [Measuring and Benchmarking Large Language Models' Capabilities to Generate Persuasive Language](https://aclanthology.org/2025.naacl-long.506/)
+  - Publisher: `NAACL 2025`
+  - Keywords: `Dataset` · `Influence` · `Affect` · `Supervised Learning`
 - [Persuade Me if You Can- A Framework for Evaluating Persuasion Effectiveness and Susceptibility Among Large Language Models](https://arxiv.org/abs/2503.01829)
   - Publisher: `NeurIPS 2025`
   - Keywords: `Evaluation` · `Influence` · `Interaction Management` · `Relationship & Role` · `Norms & Morality` · `Multi-turn`
@@ -280,11 +287,12 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="ed"></a>
 <details>
-<summary>❤️‍🩹 <b>Empathy & Emotional Support</b> · 19 papers</summary>
+<summary>❤️‍🩹 <b>Empathy & Emotional Support</b> · 22 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [Towards Emotional Support Dialog Systems](https://aclanthology.org/2021.acl-long.269/)
@@ -338,6 +346,12 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `NAACL 2025`
   - Keywords: `Method` · `Support` · `Affect` · `Interaction Management` · `Supervised Learning`
   - Code: [GitHub / Project](https://github.com/cw-wan/EmoDynamiX-v2)
+- [Feel the Difference? A Comparative Analysis of Emotional Arcs in Real and LLM-Generated CBT Sessions](https://arxiv.org/abs/2508.20764)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Evaluation` · `Support` · `Affect` · `Relationship & Role`
+- [Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support](https://aclanthology.org/2025.emnlp-main.1094/)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Support` · `Affect` · `Mental-State Modeling` · `Supervised Learning`
 - [PsyDial- A Large-scale Long-term Conversational Dataset for Mental Health Support](https://aclanthology.org/2025.acl-long.1049/)
   - Publisher: `ACL 2025`
   - Keywords: `Dataset` · `Support` · `Affect` · `Relationship & Role` · `Retrieval` · `Longitudinal`
@@ -358,6 +372,9 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Keywords: `Method` · `General Interaction` · `Affect` · `Interaction Management` · `Planning` · `Longitudinal`
   - Code: [GitHub / Project](https://github.com/apple/ml-sage-dialog-gen)
   - Summary: [Summary](paper/ED-arXiv-2025-SAGE-%20Steering%20and%20Refining%20Dialog%20Generation%20with%20State-Action%20Augmentation.md)
+- [The Pursuit of Empathy: Evaluating Small Language Models for PTSD Dialogue Support](https://aclanthology.org/2025.emnlp-main.1573/)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Dataset` · `Support` · `Affect` · `Personalization` · `Supervised Learning`
 - [Affective Flow Language Model for Emotional Support Conversation](https://arxiv.org/abs/2602.08826v1)
   - Publisher: `arXiv 2026`
   - Keywords: `Method` · `Support` · `Affect` · `Interaction Management` · `Supervised Learning` · `Preference Optimization` · `Multi-turn`
@@ -388,11 +405,12 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="recommend"></a>
 <details>
-<summary>🛍️ <b>Conversational Recommendation</b> · 24 papers</summary>
+<summary>🛍️ <b>Conversational Recommendation</b> · 25 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [Towards Conversational Recommendation over Multi-Type Dialogs](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial)
@@ -475,6 +493,9 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Keywords: `Method` · `Recommendation` · `Social Memory & Adaptation` · `Personalization` · `Retrieval`
   - Code: [GitHub / Project](https://github.com/yaochenzhu/CRAVE)
   - Summary: [Summary](paper/Recommend-EMNLP-2025-LLM-based%20Conversational%20Recommendation%20Agents%20with%20Collaborative%20Verbalized%20Experience.md)
+- [MSCRS: Multi-modal Semantic Graph Prompt Learning Framework for Conversational Recommender Systems](https://arxiv.org/abs/2504.10921)
+  - Publisher: `SIGIR 2025`
+  - Keywords: `Method` · `Recommendation` · `Social Perception` · `Supervised Learning` · `Retrieval`
 - [Towards Efficient Conversational Recommendations- Expected Value of Information Meets Bandit Learning](https://doi.org/10.1145/3696410.3714773)
   - Publisher: `WWW 2025`
   - Keywords: `Method` · `Recommendation` · `Interaction Management` · `RL` · `Multi-turn`
@@ -517,11 +538,12 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="coop"></a>
 <details>
-<summary>🤝 <b>Cooperation & Collaboration</b> · 11 papers</summary>
+<summary>🤝 <b>Cooperation & Collaboration</b> · 12 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts](https://doi.org/10.1145/3491102.3517582)
@@ -559,6 +581,9 @@ Excluded: pure computational social science / "AI for social science" work, pure
 - [Your Co-Workers Matter- Evaluating Collaborative Capabilities of Language Models in Blocks World](https://aclanthology.org/2024.findings-acl.294/)
   - Publisher: `ACL 2024`
   - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Interaction Management` · `Multi-party` · `Planning`
+- [LLM Strategic Reasoning: Agentic Study through Behavioral Game Theory](https://arxiv.org/abs/2502.20432)
+  - Publisher: `NeurIPS 2025`
+  - Keywords: `Evaluation` · `Coordination` · `Mental-State Modeling` · `Norms & Morality`
 - [Playing repeated games with large language models](https://doi.org/10.1038/s41562-025-02172-y)
   - Publisher: `Nature Human Behaviour 2025`
   - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
@@ -580,11 +605,12 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="tom"></a>
 <details>
-<summary>💭 <b>Theory of Mind</b> · 19 papers</summary>
+<summary>💭 <b>Theory of Mind</b> · 20 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [Bayesian Theory of Mind- Modeling Joint Belief-Desire Attribution](https://www.semanticscholar.org/paper/Explore-Theory-of-Mind:-Program-guided-adversarial-Sclar-Yu/3c52a1e1c3dc0ef5e1e638e11bbc3a2f09900dc6)
@@ -603,6 +629,9 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `NeurIPS 2025`
   - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Social Perception` · `Embodied` · `Planning`
   - Summary: [Summary](paper/ToM-NeurIPS-2025-AutoToM-%20Scaling%20Model-based%20Mental%20Inference%20via%20Automated%20Agent%20Modeling.md)
+- [Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models](https://arxiv.org/abs/2407.07086)
+  - Publisher: `ICLR 2025`
+  - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Social Context` · `Social Memory & Adaptation` · `Multi-party` · `Planning` · `RL`
 - [Machine Theory of Mind Needs Machine Validation](https://aclanthology.org/2025.findings-acl.951.pdf)
   - Publisher: `ACL 2025`
   - Keywords: `Evaluation` · `General Interaction` · `Mental-State Modeling`
@@ -685,6 +714,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="emotion"></a>
@@ -743,11 +773,12 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="norms"></a>
 <details>
-<summary>⚖️ <b>Social Context, Norms & Morality</b> · 12 papers</summary>
+<summary>⚖️ <b>Social Context, Norms & Morality</b> · 15 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [Social Chemistry 101- Learning to Reason about Social and Moral Norms](https://aclanthology.org/2020.emnlp-main.48/)
@@ -791,11 +822,22 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `Science Advances 2025`
   - Keywords: `Method` · `Coordination` · `Social Context` · `Multi-party` · `Self-play`
   - Code: [GitHub / Project](https://github.com/Ariel-Flint-Ashery/AI-norms)
+- [Mind the Value-Action Gap: Do LLMs Act in Alignment with Their Values?](https://aclanthology.org/2025.emnlp-main.154/)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Evaluation` · `General Interaction` · `Social Context` · `Culture`
+- [Multiple LLM Agents Debate for Equitable Cultural Alignment](https://aclanthology.org/2025.acl-long.1210/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Context` · `Culture` · `Norms & Morality` · `Self-play`
+  - Code: [GitHub / Project](https://github.com/dayeonki/cultural_debate)
 - [NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models](https://aclanthology.org/2025.naacl-long.120/)
   - Publisher: `NAACL 2025`
   - Keywords: `Evaluation` · `General Interaction` · `Social Context` · `Culture` · `Norms & Morality`
   - Code: [GitHub / Project](https://github.com/Akhila-Yerukola/NormAd)
+- [The Discordance Between Embedded Ethics and Cultural Inference in Large Language Models](https://aclanthology.org/2025.emnlp-main.743/)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Context` · `Mental-State Modeling` · `Culture` · `Norms & Morality` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -816,7 +858,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="memory"></a>
 <details>
-<summary>💾 <b>Social Memory & Adaptation</b> · 11 papers</summary>
+<summary>💾 <b>Social Memory & Adaptation</b> · 14 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [Generative Agents- Interactive Simulacra of Human Behavior](https://doi.org/10.1145/3586183.3606763)
@@ -850,15 +892,24 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Keywords: `Benchmark` · `General Interaction` · `Social Memory & Adaptation`
   - Code: [GitHub / Project](https://github.com/WujiangXu/AgenticMemory)
   - Summary: [Summary](paper/Memory-arXiv-2025-Evo-Memory-%20Benchmarking%20LLM%20Agent%20Test-time%20Learning%20with%20Self-Evolving%20Memory.md)
+- [Hello again! LLM-powered personalized agent for long-term dialogue](https://aclanthology.org/2025.naacl-long.272/)
+  - Publisher: `NAACL 2025`
+  - Keywords: `Method` · `Support` · `Social Memory & Adaptation` · `Social Perception` · `Mental-State Modeling` · `Personalization` · `Retrieval` · `Longitudinal`
 - [Human-inspired Episodic Memory for Infinite Context LLMs](https://arxiv.org/abs/2407.09450)
   - Publisher: `ICLR 2025`
   - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Retrieval`
   - Code: [GitHub / Project](https://github.com/em-llm/EM-LLM-model)
+- [In Prospect and Retrospect: Reflective Memory Management for Long-term Personalized Dialogue Agents](https://aclanthology.org/2025.acl-long.413/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Interaction Management` · `Personalization` · `RL` · `Retrieval` · `Longitudinal`
 - [Remember Me, Refine Me- A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution](https://arxiv.org/abs/2512.10696)
   - Publisher: `arXiv 2025`
   - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Retrieval`
   - Code: [GitHub / Project](https://github.com/agentscope-ai/ReMe)
   - Summary: [Summary](paper/Memory-arXiv-2025-Remember%20Me%2C%20Refine%20Me-%20A%20Dynamic%20Procedural%20Memory%20Framework%20for%20Experience-Driven%20Agent%20Evolution.md)
+- [SHARE: Shared memory-aware open-domain long-term dialogue dataset constructed from movie script](https://aclanthology.org/2025.acl-long.704/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Dataset` · `General Interaction` · `Social Memory & Adaptation` · `Relationship & Role` · `Longitudinal`
 - [MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent](https://arxiv.org/abs/2507.02259)
   - Publisher: `ICLR 2026`
   - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `RL`
@@ -885,11 +936,12 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="rlhf"></a>
 <details>
-<summary>🤖 <b>Learning, Planning & Alignment</b> · 18 papers</summary>
+<summary>🤖 <b>Learning, Planning & Alignment</b> · 19 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games](https://arxiv.org/abs/2103.01955)
@@ -944,6 +996,10 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `COLING 2025`
   - Keywords: `Method` · `General Interaction` · `Interaction Management` · `Social Context` · `RL` · `Planning`
   - Summary: [Summary](paper/RLHF-COLING-2025-MCA-Model-Based-Causal-RL-for-Efficient-Dialogue-Policy.md)
+- [Moral Alignment for LLM Agents](https://arxiv.org/abs/2410.01639)
+  - Publisher: `ICLR 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Context` · `Norms & Morality` · `RL` · `Reward Modeling`
+  - Code: [GitHub / Project](https://github.com/liza-tennant/LLM_morality)
 - [VinePPO: Refining Credit Assignment in RL Training of LLMs](https://arxiv.org/abs/2410.01679)
   - Publisher: `ICML 2025`
   - Keywords: `Method` · `General Interaction` · `RL`
@@ -983,11 +1039,12 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="us"></a>
 <details>
-<summary>🕹️ <b>User Simulation & Interactive Environments</b> · 16 papers</summary>
+<summary>🕹️ <b>User Simulation & Interactive Environments</b> · 19 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [A Survey of Statistical User Simulation Techniques for RL Dialogue Management](https://doi.org/10.1017/S0269888906000944)
@@ -1044,6 +1101,13 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Keywords: `Method` · `General Interaction` · `Interaction Management` · `User Simulation` · `Multi-turn`
   - Code: [GitHub / Project](https://github.com/Shuhaibm/user_simulator_goal_alignment)
   - Summary: [Summary](paper/US-NeurIPS-2025-Goal%20Alignment%20in%20LLM-Based%20User%20Simulators%20for%20Conversational%20AI.md)
+- [Know You First and Be You Better: Modeling Human-Like User Simulators via Implicit Profiles](https://aclanthology.org/2025.acl-long.1025/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Mental-State Modeling` · `Personalization` · `Supervised Learning` · `RL` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/wangkevin02/USP)
+- [Preference Tree with Look-Ahead: Training Goal-Oriented Dialogue with Virtual Patient](https://openreview.net/forum?id=fTVhWlzCuk)
+  - Publisher: `ICLR 2025`
+  - Keywords: `Method` · `Support` · `Affect` · `Interaction Management` · `Personalization` · `Planning` · `Preference Optimization` · `User Simulation` · `Multi-turn`
 - [Simulating Before Planning- Constructing Intrinsic User World Model for User-Tailored Dialogue Policy Planning](https://doi.org/10.1145/3726302.3730084)
   - Publisher: `SIGIR 2025`
   - Keywords: `Method` · `General Interaction` · `Social Context` · `Personalization` · `Planning`
@@ -1056,6 +1120,10 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `ICLR 2025`
   - Keywords: `Benchmark` · `General Interaction` · `Interaction Management` · `User Simulation`
   - Code: [GitHub / Project](https://github.com/sierra-research/tau-bench)
+- [Flipping the Dialogue: Training and Evaluating User Language Models](https://arxiv.org/abs/2510.06552)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `User Simulation` · `Supervised Learning` · `Multi-turn`
+  - Code: [GitHub / Project](https://huggingface.co/microsoft/UserLM-8b)
 - [From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents](https://doi.org/10.1145/3800683)
   - Publisher: `CSUR 2026`
   - Keywords: `Survey` · `General Interaction` · `Social Context` · `Multi-party`
@@ -1077,11 +1145,12 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="data"></a>
 <details>
-<summary>📊 <b>Benchmark & Evaluation</b> · 33 papers</summary>
+<summary>📊 <b>Benchmark & Evaluation</b> · 34 papers</summary>
 
 <!-- CATALOGUE:START -->
 - [Social-IQ- A Question Answering Benchmark for Artificial Social Intelligence](https://openaccess.thecvf.com/content_CVPR_2019/html/Zadeh_Social-IQ_A_Question_Answering_Benchmark_for_Artificial_Social_Intelligence_CVPR_2019_paper.html)
@@ -1176,6 +1245,10 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `EMNLP 2025`
   - Keywords: `Evaluation` · `General Interaction` · `Social Context` · `Personalization`
   - Code: [GitHub / Project](https://github.com/vsamuel2003/PersonaGym)
+- [SocialEval: Evaluating Social Intelligence of Large Language Models](https://aclanthology.org/2025.acl-long.1496/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Benchmark` · `General Interaction` · `Social Perception` · `Mental-State Modeling`
+  - Code: [GitHub / Project](https://github.com/thu-coai/SocialEval)
 - [ToMATO: Verbalizing the Mental States of Role-Playing LLMs for Benchmarking Theory of Mind](https://arxiv.org/abs/2501.08838)
   - Publisher: `AAAI 2025`
   - Keywords: `Benchmark` · `General Interaction` · `Mental-State Modeling` · `Relationship & Role`
@@ -1223,6 +1296,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `arXiv 2026`
   - Keywords: `Dataset` · `Coordination` · `Social Context` · `Interaction Management` · `Multi-party` · `Relationship & Role` · `Supervised Learning` · `Longitudinal`
 <!-- CATALOGUE:END -->
+
 
 
 

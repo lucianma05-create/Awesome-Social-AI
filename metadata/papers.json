@@ -497,7 +497,7 @@
       "auto_tag_version": "1.0.0",
       "llm_tagging_error": {
         "model": "deepseek-v4-pro",
-        "rejected_at": "2026-10-04",
+        "rejected_at": "2026-10-05",
         "reason": "unverifiable capabilities evidence '情绪' does not appear in SOURCE"
       }
     },
@@ -19506,6 +19506,1870 @@
         "source_url": "https://api.openalex.org/works",
         "tagged_at": "2026-10-04"
       }
+    },
+    "communication-is-all-you-need-persuasion-dataset-construct-2025": {
+      "title": "Communication is All You Need: Persuasion Dataset Construction via Multi-LLM Communication",
+      "year": 2025,
+      "venue": "NAACL",
+      "paper_url": "https://aclanthology.org/2025.naacl-long.203/",
+      "code_url": "https://github.com/HF-heaven/LLM-based_persuasion_simulator",
+      "summary_path": null,
+      "primary_section": "influence-negotiation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Large Language Models (LLMs) have shown proficiency in generating persuasive dialogue, yet concerns about the fluency and sophistication of their outputs persist. This paper presents a multi-LLM communication framework designed to enhance the generation of persuasive data automatically. This framework facilitates the efficient production of high-quality, diverse linguistic content with minimal human oversight. Through extensive evaluations, we demonstrate that the generated data excels in naturalness, linguistic diversity, and the strategic use of persuasion, even in complex scenarios involving social taboos. The framework also proves adept at generalizing across novel contexts. Our results highlight the framework’s potential to significantly advance research in both computational and social science domains concerning persuasive communication.",
+      "abstract_source": "https://aclanthology.org/2025.naacl-long.203/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "Influence",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Context"
+      ],
+      "contexts": [
+        "Norms & Morality"
+      ],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.naacl-long.203/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-LLM communication framework'.",
+          "quote_offset": [
+            185,
+            218
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'persuasive dialogue'.",
+          "quote_offset": [
+            66,
+            85
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'complex scenarios involving social taboos'.",
+          "quote_offset": [
+            574,
+            615
+          ]
+        },
+        {
+          "tag": "Norms & Morality",
+          "source": "abstract",
+          "rationale": "Source quote: 'social taboos'.",
+          "quote_offset": [
+            602,
+            615
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-LLM communication'.",
+          "quote_offset": [
+            185,
+            208
+          ]
+        }
+      ]
+    },
+    "measuring-and-benchmarking-large-language-models-capabilit-2025": {
+      "title": "Measuring and Benchmarking Large Language Models' Capabilities to Generate Persuasive Language",
+      "year": 2025,
+      "venue": "NAACL",
+      "paper_url": "https://aclanthology.org/2025.naacl-long.506/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "influence-negotiation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "We are exposed to much information trying to influence us, such as teaser messages, debates, politically framed news, and propaganda — all of which use persuasive language. With the recent interest in Large Language Models (LLMs), we study the ability of LLMs to produce persuasive text. As opposed to prior work which focuses on particular domains or types of persuasion, we conduct a general study across various domains to measure and benchmark to what degree LLMs produce persuasive language - both when explicitly instructed to rewrite text to be more or less persuasive and when only instructed to paraphrase. We construct the new dataset Persuasive-Pairs of pairs of a short text and its rewrite by an LLM to amplify or diminish persuasive language. We multi-annotate the pairs on a relative scale for persuasive language: a valuable resource in itself, and for training a regression model to score and benchmark persuasive language, including for new LLMs across domains. In our analysis, we find that different ‘personas’ in LLaMA3’s system prompt change persuasive language substantially, even when only instructed to paraphrase.",
+      "abstract_source": "https://aclanthology.org/2025.naacl-long.506/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Dataset",
+      "goal": "Influence",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Affect"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.naacl-long.506/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We construct the new dataset Persuasive-Pairs'.",
+          "quote_offset": [
+            616,
+            661
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'produce persuasive text'.",
+          "quote_offset": [
+            263,
+            286
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Affect",
+          "source": "abstract",
+          "rationale": "Source quote: 'persuasive language'.",
+          "quote_offset": [
+            152,
+            171
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'training a regression model'.",
+          "quote_offset": [
+            869,
+            896
+          ]
+        }
+      ]
+    },
+    "the-pursuit-of-empathy-evaluating-small-language-models-fo-2025": {
+      "title": "The Pursuit of Empathy: Evaluating Small Language Models for PTSD Dialogue Support",
+      "year": 2025,
+      "venue": "EMNLP",
+      "paper_url": "https://aclanthology.org/2025.emnlp-main.1573/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "support-care",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "This paper investigates the capacity of small language models (0.5B-5B parameters) to generate empathetic responses for individuals with PTSD. We introduce Trauma-Informed Dialogue for Empathy (TIDE), a novel dataset comprising 10,000 two-turn conversations across 500 diverse, clinically-grounded PTSD personas ( https://huggingface.co/datasets/yenopoya/TIDE ). Using frontier model outputs as ground truth, we evaluate eight small LLMs in zero-shot settings and after fine-tuning. Fine-tuning enhances empathetic capabilities, improving cosine similarity and perceived empathy, although gains vary across emotional scenarios and smaller models exhibit a “knowledge transfer ceiling.” As expected, Claude Sonnet 3.5 consistently outperforms all models, but surprisingly, the smaller models often approach human-rated empathy levels. Demographic analyses showed that older adults favored responses that validated distress before offering support (p = .004), while graduate-educated users preferred emotionally layered replies in specific scenarios. Gender-based differences were minimal (p > 0.15), suggesting the feasibility of broadly empathetic model designs. This work offers insights into building resource-efficient, emotionally intelligent systems for mental health support.",
+      "abstract_source": "https://aclanthology.org/2025.emnlp-main.1573/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Dataset",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Affect"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.emnlp-main.1573/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We introduce Trauma-Informed Dialogue for Empathy (TIDE), a novel dataset'.",
+          "quote_offset": [
+            143,
+            216
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'generate empathetic responses for individuals with PTSD'.",
+          "quote_offset": [
+            86,
+            141
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Affect",
+          "source": "abstract",
+          "rationale": "Source quote: 'generate empathetic responses'.",
+          "quote_offset": [
+            86,
+            115
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: '500 diverse, clinically-grounded PTSD personas'.",
+          "quote_offset": [
+            265,
+            311
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'after fine-tuning'.",
+          "quote_offset": [
+            464,
+            481
+          ]
+        }
+      ]
+    },
+    "look-beyond-feeling-unveiling-latent-needs-from-implicit-e-2025": {
+      "title": "Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support",
+      "year": 2025,
+      "venue": "EMNLP",
+      "paper_url": "https://aclanthology.org/2025.emnlp-main.1094/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "support-care",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "In recent years, Large Language Models (LLMs) have made significant progress in emotional support dialogue. However, there are two major challenges for LLM-based support systems. First, users may be hesitant to fully disclose their emotions at the outset. Second, direct probing or excessive questioning can induce discomfort or even resistance. To bridge this gap, we propose COCOON, a proactive emotional support framework that leverages principles of active listening to uncover implicit user needs. We design a multi-stage data curation pipeline and an annotation mechanism for support strategies. Based on this framework, we build COCOON-Llama3, a fine-tuned large language model, and evaluate it using both standard metrics and psychological scales. Experimental results indicate that our model more effectively elicits implicit emotional needs and delivers empathetic support compared to existing baselines, suggesting its utility for building more inclusive emotional support dialogue systems.",
+      "abstract_source": "https://aclanthology.org/2025.emnlp-main.1094/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Affect",
+        "Mental-State Modeling"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.emnlp-main.1094/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose COCOON, a proactive emotional support framework'.",
+          "quote_offset": [
+            366,
+            424
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'proactive emotional support framework'.",
+          "quote_offset": [
+            387,
+            424
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Affect",
+          "source": "abstract",
+          "rationale": "Source quote: 'delivers empathetic support'.",
+          "quote_offset": [
+            855,
+            882
+          ]
+        },
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'uncover implicit user needs'.",
+          "quote_offset": [
+            474,
+            501
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'a fine-tuned large language model'.",
+          "quote_offset": [
+            651,
+            684
+          ]
+        }
+      ]
+    },
+    "feel-the-difference-a-comparative-analysis-of-emotional-ar-2025": {
+      "title": "Feel the Difference? A Comparative Analysis of Emotional Arcs in Real and LLM-Generated CBT Sessions",
+      "year": 2025,
+      "venue": "EMNLP",
+      "paper_url": "https://arxiv.org/abs/2508.20764",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "support-care",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Synthetic therapy dialogues generated by large language models (LLMs) are increasingly used in mental health NLP to simulate counseling scenarios, train models, and supplement limited real-world data. However, it remains unclear whether these synthetic conversations capture the nuanced emotional dynamics of real therapy. In this work, we introduce RealCBT, a dataset of authentic cognitive behavioral therapy (CBT) dialogues, and conduct the first comparative analysis of emotional arcs between real and LLM-generated CBT sessions. We adapt the Utterance Emotion Dynamics framework to analyze fine-grained affective trajectories across valence, arousal, and dominance dimensions. Our analysis spans both full dialogues and individual speaker roles (counselor and client), using real sessions from the RealCBT dataset and synthetic dialogues from the CACTUS dataset. We find that while synthetic dialogues are fluent and structurally coherent, they diverge from real conversations in key emotional properties: real sessions exhibit greater emotional variability, more emotion-laden language, and more authentic patterns of reactivity and regulation. Moreover, emotional arc similarity remains low across all pairings, with especially weak alignment between real and synthetic speakers. These findings underscore the limitations of current LLM-generated therapy data and highlight the importance of emotional fidelity in mental health applications. To support future research, our dataset RealCBT is released at https://gitlab.com/xiaoyi.wang/realcbt-dataset.",
+      "abstract_source": "https://arxiv.org/abs/2508.20764",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Evaluation",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Affect"
+      ],
+      "contexts": [
+        "Relationship & Role"
+      ],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2508.20764",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'comparative analysis of emotional arcs'.",
+          "quote_offset": [
+            450,
+            488
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'cognitive behavioral therapy (CBT) dialogues'.",
+          "quote_offset": [
+            382,
+            426
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Affect",
+          "source": "abstract",
+          "rationale": "Source quote: 'emotional arcs'.",
+          "quote_offset": [
+            474,
+            488
+          ]
+        },
+        {
+          "tag": "Relationship & Role",
+          "source": "abstract",
+          "rationale": "Source quote: 'individual speaker roles (counselor and client)'.",
+          "quote_offset": [
+            725,
+            772
+          ]
+        }
+      ]
+    },
+    "hypothetical-minds-scaffolding-theory-of-mind-for-multi-ag-2025": {
+      "title": "Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models",
+      "year": 2025,
+      "venue": "ICLR",
+      "paper_url": "https://arxiv.org/abs/2407.07086",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "mental-state-modeling",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract_fetch_error": "unavailable_from_configured_sources",
+      "abstract": "Multi-agent reinforcement learning (MARL) methods struggle with the non-stationarity of multi-agent systems and fail to adaptively learn online when tested with novel agents. Here, we leverage large language models (LLMs) to create an autonomous agent that can handle these challenges. Our agent, Hypothetical Minds, consists of a cognitively-inspired architecture, featuring modular components for perception, memory, and hierarchical planning over two levels of abstraction. We introduce the Theory of Mind module that scaffolds the high-level planning process by generating hypotheses about other agents' strategies in natural language. It then evaluates and iteratively refines these hypotheses by reinforcing hypotheses that make correct predictions about the other agents' behavior. Hypothetical Minds significantly improves performance over previous LLM-agent and RL baselines on a range of competitive, mixed motive, and collaborative domains in the Melting Pot benchmark, including both dyadic and population-based environments. Additionally, comparisons against LLM-agent baselines and ablations reveal the importance of hypothesis evaluation and refinement for succeeding on complex scenarios.",
+      "abstract_source": "https://arxiv.org/abs/2407.07086",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context",
+        "Social Memory & Adaptation"
+      ],
+      "contexts": [
+        "Multi-party"
+      ],
+      "approaches": [
+        "Planning",
+        "RL"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2407.07086",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'Hypothetical Minds, consists of a cognitively-inspired architecture'.",
+          "quote_offset": [
+            297,
+            364
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'competitive, mixed motive, and collaborative domains'.",
+          "quote_offset": [
+            898,
+            950
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'Theory of Mind module'.",
+          "quote_offset": [
+            494,
+            515
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'generating hypotheses about other agents' strategies'.",
+          "quote_offset": [
+            566,
+            618
+          ]
+        },
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'iteratively refines these hypotheses'.",
+          "quote_offset": [
+            662,
+            698
+          ]
+        },
+        {
+          "tag": "Multi-party",
+          "source": "abstract",
+          "rationale": "Source quote: 'dyadic and population-based environments'.",
+          "quote_offset": [
+            996,
+            1036
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'hierarchical planning over two levels of abstraction'.",
+          "quote_offset": [
+            423,
+            475
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'reinforcing hypotheses that make correct predictions'.",
+          "quote_offset": [
+            702,
+            754
+          ]
+        }
+      ]
+    },
+    "llm-strategic-reasoning-agentic-study-through-behavioral-g-2025": {
+      "title": "LLM Strategic Reasoning: Agentic Study through Behavioral Game Theory",
+      "year": 2025,
+      "venue": "NeurIPS",
+      "paper_url": "https://arxiv.org/abs/2502.20432",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "cooperation-coordination",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Strategic decision-making involves interactive reasoning where agents adapt their choices in response to others, yet existing evaluations of large language models (LLMs) often emphasize Nash Equilibrium (NE) approximation, overlooking the mechanisms driving their strategic choices. To bridge this gap, we introduce an evaluation framework grounded in behavioral game theory, disentangling reasoning capability from contextual effects. Testing 22 state-of-the-art LLMs, we find that GPT-o3-mini, GPT-o1, and DeepSeek-R1 dominate most games yet also demonstrate that the model scale alone does not determine performance. In terms of prompting enhancement, Chain-of-Thought (CoT) prompting is not universally effective, as it increases strategic reasoning only for models at certain levels while providing limited gains elsewhere. Additionally, we investigate the impact of encoded demographic features on the models, observing that certain assignments impact the decision-making pattern. For instance, GPT-4o shows stronger strategic reasoning with female traits than males, while Gemma assigns higher reasoning levels to heterosexual identities compared to other sexual orientations, indicating inherent biases. These findings underscore the need for ethical standards and contextual alignment to balance improved reasoning with fairness.",
+      "abstract_source": "https://arxiv.org/abs/2502.20432",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Evaluation",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Norms & Morality"
+      ],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2502.20432",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'evaluation framework grounded in behavioral game theory'.",
+          "quote_offset": [
+            319,
+            374
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'Strategic decision-making involves interactive reasoning'.",
+          "quote_offset": [
+            0,
+            56
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'interactive reasoning where agents adapt their choices in response to others'.",
+          "quote_offset": [
+            35,
+            111
+          ]
+        },
+        {
+          "tag": "Norms & Morality",
+          "source": "abstract",
+          "rationale": "Source quote: 'ethical standards and contextual alignment'.",
+          "quote_offset": [
+            1251,
+            1293
+          ]
+        }
+      ]
+    },
+    "multiple-llm-agents-debate-for-equitable-cultural-alignmen-2025": {
+      "title": "Multiple LLM Agents Debate for Equitable Cultural Alignment",
+      "year": 2025,
+      "venue": "ACL",
+      "paper_url": "https://aclanthology.org/2025.acl-long.1210/",
+      "code_url": "https://github.com/dayeonki/cultural_debate",
+      "summary_path": null,
+      "primary_section": "social-context-norms-morality",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Large Language Models (LLMs) need to adapt their predictions to diverse cultural contexts to benefit diverse communities across the world. While previous efforts have focused on single-LLM, single-turn approaches, we propose to exploit the complementary strengths of multiple LLMs to promote cultural adaptability. We introduce a Multi-Agent Debate framework, where two LLM-based agents debate over a cultural scenario and collaboratively reach a final decision. We propose two variants: one where either LLM agents exclusively debate and another where they dynamically choose between self-reflection and debate during their turns. We evaluate these approaches on 7 open-weight LLMs (and 21 LLM combinations) using the NormAd-ETI benchmark for social etiquette norms in 75 countries. Experiments show that debate improves both overall accuracy and cultural group parity over single-LLM baselines. Notably, multi-agent debate enables relatively small LLMs (7-9B) to achieve accuracies comparable to that of a much larger model (27B parameters).",
+      "abstract_source": "https://aclanthology.org/2025.acl-long.1210/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Context"
+      ],
+      "contexts": [
+        "Culture",
+        "Norms & Morality"
+      ],
+      "approaches": [
+        "Self-play"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.acl-long.1210/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We introduce a Multi-Agent Debate framework'.",
+          "quote_offset": [
+            315,
+            358
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'collaboratively reach a final decision'.",
+          "quote_offset": [
+            423,
+            461
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'adapt their predictions to diverse cultural contexts'.",
+          "quote_offset": [
+            37,
+            89
+          ]
+        },
+        {
+          "tag": "Culture",
+          "source": "abstract",
+          "rationale": "Source quote: 'diverse cultural contexts'.",
+          "quote_offset": [
+            64,
+            89
+          ]
+        },
+        {
+          "tag": "Norms & Morality",
+          "source": "abstract",
+          "rationale": "Source quote: 'social etiquette norms'.",
+          "quote_offset": [
+            744,
+            766
+          ]
+        },
+        {
+          "tag": "Self-play",
+          "source": "abstract",
+          "rationale": "Source quote: 'two LLM-based agents debate'.",
+          "quote_offset": [
+            366,
+            393
+          ]
+        }
+      ]
+    },
+    "mind-the-value-action-gap-do-llms-act-in-alignment-with-th-2025": {
+      "title": "Mind the Value-Action Gap: Do LLMs Act in Alignment with Their Values?",
+      "year": 2025,
+      "venue": "EMNLP",
+      "paper_url": "https://aclanthology.org/2025.emnlp-main.154/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "social-context-norms-morality",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Existing research assesses LLMs’ values by analyzing their stated inclinations, overlooking potential discrepancies between stated values and actions—termed the “Value-Action Gap.” This study introduces ValueActionLens, a framework to evaluate the alignment between LLMs’ stated values and their value-informed actions. The framework includes a dataset of 14.8k value-informed actions across 12 cultures and 11 social topics, along with two tasks measuring alignment through three metrics. Experiments show substantial misalignment between LLM-generated value statements and their actions, with significant variations across scenarios and models. Misalignments reveal potential harms, highlighting risks in relying solely on stated values to predict behavior. The findings stress the need for context-aware evaluations of LLM values and the value-action gaps.",
+      "abstract_source": "https://aclanthology.org/2025.emnlp-main.154/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Evaluation",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Context"
+      ],
+      "contexts": [
+        "Culture"
+      ],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.emnlp-main.154/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'a framework to evaluate the alignment'.",
+          "quote_offset": [
+            220,
+            257
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'value-informed actions'.",
+          "quote_offset": [
+            296,
+            318
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'across 12 cultures and 11 social topics'.",
+          "quote_offset": [
+            385,
+            424
+          ]
+        },
+        {
+          "tag": "Culture",
+          "source": "abstract",
+          "rationale": "Source quote: 'across 12 cultures'.",
+          "quote_offset": [
+            385,
+            403
+          ]
+        }
+      ]
+    },
+    "the-discordance-between-embedded-ethics-and-cultural-infer-2025": {
+      "title": "The Discordance Between Embedded Ethics and Cultural Inference in Large Language Models",
+      "year": 2025,
+      "venue": "EMNLP",
+      "paper_url": "https://aclanthology.org/2025.emnlp-main.743/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "social-context-norms-morality",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Effective interactions between artificial intelligence (AI) and humans require an equitable and accurate representation of diverse cultures. It is known that current AI, particularly large language models (LLMs), possesses some degrees of cultural knowledge but not without limitations. We present a framework aimed at understanding the origin of these limitations. We hypothesize that there is a fundamental discordance between embedded ethics—how LLMs represent right versus wrong, and cultural inference—how LLMs infer cultural knowledge, specifically cultural norms. We demonstrate this by extracting low-dimensional subspaces that embed ethical principles of LLMs based on established benchmarks. We then show that how LLMs make errors in culturally distinctive scenarios significantly correlates with how they represent cultural norms with respect to these embedded ethics subspaces. Furthermore, we show that coercing cultural norms to be more aligned with the embedded ethics increases LLM performance in cultural inference. Our analyses of 12 language models, two large-scale cultural benchmarks spanning 75 countries and two ethical datasets indicate that 1) the ethics-culture discordance tends to be exacerbated in instruct-tuned models, and 2) how current LLMs represent ethics can impose limitations on their adaptation to diverse cultures particularly pertaining to non-Western and low-income regions.",
+      "abstract_source": "https://aclanthology.org/2025.emnlp-main.743/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Context",
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Culture",
+        "Norms & Morality"
+      ],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.emnlp-main.743/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We present a framework'.",
+          "quote_offset": [
+            287,
+            309
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'Effective interactions between artificial intelligence (AI) and humans'.",
+          "quote_offset": [
+            0,
+            70
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'how LLMs infer cultural knowledge, specifically cultural norms'.",
+          "quote_offset": [
+            507,
+            569
+          ]
+        },
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'how LLMs represent right versus wrong'.",
+          "quote_offset": [
+            445,
+            482
+          ]
+        },
+        {
+          "tag": "Culture",
+          "source": "abstract",
+          "rationale": "Source quote: 'diverse cultures'.",
+          "quote_offset": [
+            123,
+            139
+          ]
+        },
+        {
+          "tag": "Norms & Morality",
+          "source": "abstract",
+          "rationale": "Source quote: 'cultural norms'.",
+          "quote_offset": [
+            555,
+            569
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'instruct-tuned models'.",
+          "quote_offset": [
+            1227,
+            1248
+          ]
+        }
+      ]
+    },
+    "mscrs-multi-modal-semantic-graph-prompt-learning-framework-2025": {
+      "title": "MSCRS: Multi-modal Semantic Graph Prompt Learning Framework for Conversational Recommender Systems",
+      "year": 2025,
+      "venue": "SIGIR",
+      "paper_url": "https://arxiv.org/abs/2504.10921",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "conversational-recommendation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Conversational Recommender Systems (CRSs) aim to provide personalized recommendations by interacting with users through conversations. Most existing studies of CRS focus on extracting user preferences from conversational contexts. However, due to the short and sparse nature of conversational contexts, it is difficult to fully capture user preferences by conversational contexts only. We argue that multi-modal semantic information can enrich user preference expressions from diverse dimensions (e.g., a user preference for a certain movie may stem from its magnificent visual effects and compelling storyline). In this paper, we propose a multi-modal semantic graph prompt learning framework for CRS, named MSCRS. First, we extract textual and image features of items mentioned in the conversational contexts. Second, we capture higher-order semantic associations within different semantic modalities (collaborative, textual, and image) by constructing modality-specific graph structures. Finally, we propose an innovative integration of multi-modal semantic graphs with prompt learning, harnessing the power of large language models to comprehensively explore high-dimensional semantic relationships. Experimental results demonstrate that our proposed method significantly improves accuracy in item recommendation, as well as generates more natural and contextually relevant content in response generation.",
+      "abstract_source": "https://arxiv.org/abs/2504.10921",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "Recommendation",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Perception"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Supervised Learning",
+        "Retrieval"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2504.10921",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'propose a multi-modal semantic graph prompt learning framework'.",
+          "quote_offset": [
+            631,
+            693
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'provide personalized recommendations'.",
+          "quote_offset": [
+            49,
+            85
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Perception",
+          "source": "abstract",
+          "rationale": "Source quote: 'extracting user preferences from conversational contexts'.",
+          "quote_offset": [
+            173,
+            229
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'prompt learning'.",
+          "quote_offset": [
+            668,
+            683
+          ]
+        },
+        {
+          "tag": "Retrieval",
+          "source": "abstract",
+          "rationale": "Source quote: 'extract textual and image features of items'.",
+          "quote_offset": [
+            726,
+            769
+          ]
+        }
+      ]
+    },
+    "in-prospect-and-retrospect-reflective-memory-management-fo-2025": {
+      "title": "In Prospect and Retrospect: Reflective Memory Management for Long-term Personalized Dialogue Agents",
+      "year": 2025,
+      "venue": "ACL",
+      "paper_url": "https://aclanthology.org/2025.acl-long.413/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "social-memory-adaptation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Large Language Models (LLMs) have made significant progress in open-ended dialogue, yet their inability to retain and retrieve relevant information from long-term interactions limits their effectiveness in applications requiring sustained personalization. External memory mechanisms have been proposed to address this limitation, enabling LLMs to maintain conversational continuity. However, existing approaches struggle with two key challenges. First, rigid memory granularity fails to capture the natural semantic structure of conversations, leading to fragmented and incomplete representations. Second, fixed retrieval mechanisms cannot adapt to diverse dialogue contexts and user interaction patterns. In this work, we propose Reflective Memory Management (RMM), a novel mechanism for long-term dialogue agents, integrating forward- and backward-looking reflections: (1) Prospective Reflection, which dynamically summarizes interactions across granularities—utterances, turns, and sessions—into a personalized memory bank for effective future retrieval, and (2) Retrospective Reflection, which iteratively refines the retrieval in an online reinforcement learning (RL) manner based on LLMs’ cited evidence. Experiments show that RMM demonstrates consistent improvement across various metrics and benchmarks. For example, RMM shows more than 10% accuracy improvement over the baseline without memory management on the LongMemEval dataset.",
+      "abstract_source": "https://aclanthology.org/2025.acl-long.413/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Longitudinal",
+      "capabilities": [
+        "Social Memory & Adaptation",
+        "Interaction Management"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "RL",
+        "Retrieval"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.acl-long.413/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose Reflective Memory Management (RMM), a novel mechanism'.",
+          "quote_offset": [
+            720,
+            784
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'open-ended dialogue'.",
+          "quote_offset": [
+            63,
+            82
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'long-term interactions'.",
+          "quote_offset": [
+            153,
+            175
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'retain and retrieve relevant information from long-term interactions'.",
+          "quote_offset": [
+            107,
+            175
+          ]
+        },
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'maintain conversational continuity'.",
+          "quote_offset": [
+            347,
+            381
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'sustained personalization'.",
+          "quote_offset": [
+            229,
+            254
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'online reinforcement learning (RL)'.",
+          "quote_offset": [
+            1138,
+            1172
+          ]
+        },
+        {
+          "tag": "Retrieval",
+          "source": "abstract",
+          "rationale": "Source quote: 'effective future retrieval'.",
+          "quote_offset": [
+            1030,
+            1056
+          ]
+        }
+      ]
+    },
+    "hello-again-llm-powered-personalized-agent-for-long-term-d-2025": {
+      "title": "Hello again! LLM-powered personalized agent for long-term dialogue",
+      "year": 2025,
+      "venue": "NAACL",
+      "paper_url": "https://aclanthology.org/2025.naacl-long.272/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "social-memory-adaptation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Open-domain dialogue systems have seen remarkable advancements with the development of large language models (LLMs). Nonetheless, most existing dialogue systems predominantly focus on brief single-session interactions, neglecting the real-world demands for long-term companionship and personalized interactions with chatbots. Crucial to addressing this real-world need are event summary and persona management, which enable reasoning for appropriate long-term dialogue responses. Recent progress in the human-like cognitive and reasoning capabilities of LLMs suggests that LLM-based agents could significantly enhance automated perception, decision-making, and problem-solving. In response to this potential, we introduce a model-agnostic framework, the Long-term Dialogue Agent (LD-Agent), which incorporates three independently tunable modules dedicated to event perception, persona extraction, and response generation. For the event memory module, long and short-term memory banks are employed to separately focus on historical and ongoing sessions, while a topic-based retrieval mechanism is introduced to enhance the accuracy of memory retrieval. Furthermore, the persona module conducts dynamic persona modeling for both users and agents. The integration of retrieved memories and extracted personas is subsequently fed into the generator to induce appropriate responses. The effectiveness, generality, and cross-domain capabilities of LD-Agent are empirically demonstrated across various illustrative benchmarks, models, and tasks. The code is released at https://github.com/leolee99/LD-Agent .",
+      "abstract_source": "https://aclanthology.org/2025.naacl-long.272/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Longitudinal",
+      "capabilities": [
+        "Social Memory & Adaptation",
+        "Social Perception",
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "Retrieval"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.naacl-long.272/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we introduce a model-agnostic framework'.",
+          "quote_offset": [
+            709,
+            748
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'long-term companionship and personalized interactions'.",
+          "quote_offset": [
+            257,
+            310
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'long-term dialogue responses'.",
+          "quote_offset": [
+            450,
+            478
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'long and short-term memory banks'.",
+          "quote_offset": [
+            951,
+            983
+          ]
+        },
+        {
+          "tag": "Social Perception",
+          "source": "abstract",
+          "rationale": "Source quote: 'event perception'.",
+          "quote_offset": [
+            859,
+            875
+          ]
+        },
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'persona extraction'.",
+          "quote_offset": [
+            877,
+            895
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'personalized interactions'.",
+          "quote_offset": [
+            285,
+            310
+          ]
+        },
+        {
+          "tag": "Retrieval",
+          "source": "abstract",
+          "rationale": "Source quote: 'topic-based retrieval mechanism'.",
+          "quote_offset": [
+            1061,
+            1092
+          ]
+        }
+      ]
+    },
+    "share-shared-memory-aware-open-domain-long-term-dialogue-d-2025": {
+      "title": "SHARE: Shared memory-aware open-domain long-term dialogue dataset constructed from movie script",
+      "year": 2025,
+      "venue": "ACL",
+      "paper_url": "https://aclanthology.org/2025.acl-long.704/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "social-memory-adaptation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Shared memories between two individuals strengthen their bond and are crucial for facilitating their ongoing conversations. This study aims to make long-term dialogue more engaging by leveraging these shared memories. To this end, we introduce a new long-term dialogue dataset named SHARE, constructed from movie scripts, which are a rich source of shared memories among various relationships. Our dialogue dataset contains the summaries of persona information and events of two individuals, as explicitly revealed in their conversation, along with implicitly extractable shared memories. We also introduce EPISODE, a long-term dialogue framework based on SHARE that utilizes shared experiences between individuals. Through experiments using SHARE, we demonstrate that shared memories between two individuals make long-term dialogues more engaging and sustainable, and that EPISODE effectively manages shared memories during dialogue. Our dataset and code are available at https://github.com/e1kim/SHARE .",
+      "abstract_source": "https://aclanthology.org/2025.acl-long.704/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Dataset",
+      "goal": "General Interaction",
+      "horizon": "Longitudinal",
+      "capabilities": [
+        "Social Memory & Adaptation"
+      ],
+      "contexts": [
+        "Relationship & Role"
+      ],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.acl-long.704/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we introduce a new long-term dialogue dataset named SHARE'.",
+          "quote_offset": [
+            231,
+            288
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'make long-term dialogue more engaging'.",
+          "quote_offset": [
+            143,
+            180
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'long-term dialogue'.",
+          "quote_offset": [
+            148,
+            166
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'EPISODE effectively manages shared memories during dialogue'.",
+          "quote_offset": [
+            874,
+            933
+          ]
+        },
+        {
+          "tag": "Relationship & Role",
+          "source": "abstract",
+          "rationale": "Source quote: 'shared memories among various relationships'.",
+          "quote_offset": [
+            349,
+            392
+          ]
+        }
+      ]
+    },
+    "know-you-first-and-be-you-better-modeling-human-like-user-2025": {
+      "title": "Know You First and Be You Better: Modeling Human-Like User Simulators via Implicit Profiles",
+      "year": 2025,
+      "venue": "ACL",
+      "paper_url": "https://aclanthology.org/2025.acl-long.1025/",
+      "code_url": "https://github.com/wangkevin02/USP",
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "User simulators are crucial for replicating human interactions with dialogue systems, supporting both collaborative training and automatic evaluation, especially for large language models (LLMs). However, current role-playing methods face challenges such as a lack of utterance-level authenticity and user-level diversity, often hindered by role confusion and dependence on predefined profiles of well-known figures. In contrast, direct simulation focuses solely on text, neglecting implicit user traits like personality and conversation-level consistency. To address these issues, we introduce the User Simulator with Implicit Profiles (USP), a framework that infers implicit user profiles from human-machine interactions to simulate personalized and realistic dialogues. We first develop an LLM-driven extractor with a comprehensive profile schema, then refine the simulation using conditional supervised fine-tuning and reinforcement learning with cycle consistency, optimizing at both the utterance and conversation levels. Finally, a diverse profile sampler captures the distribution of real-world user profiles. Experimental results show that USP outperforms strong baselines in terms of authenticity and diversity while maintaining comparable consistency. Additionally, using USP to evaluate LLM on dynamic multi-turn aligns well with mainstream benchmarks, demonstrating its effectiveness in real-world applications.",
+      "abstract_source": "https://aclanthology.org/2025.acl-long.1025/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Multi-turn",
+      "capabilities": [
+        "Social Memory & Adaptation",
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "Supervised Learning",
+        "RL"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.acl-long.1025/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we introduce the User Simulator with Implicit Profiles (USP), a framework'.",
+          "quote_offset": [
+            582,
+            655
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate personalized and realistic dialogues'.",
+          "quote_offset": [
+            726,
+            771
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'dynamic multi-turn'.",
+          "quote_offset": [
+            1306,
+            1324
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'conversation-level consistency'.",
+          "quote_offset": [
+            525,
+            555
+          ]
+        },
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'implicit user traits like personality'.",
+          "quote_offset": [
+            483,
+            520
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate personalized and realistic dialogues'.",
+          "quote_offset": [
+            726,
+            771
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'conditional supervised fine-tuning'.",
+          "quote_offset": [
+            884,
+            918
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'reinforcement learning with cycle consistency'.",
+          "quote_offset": [
+            923,
+            968
+          ]
+        }
+      ]
+    },
+    "flipping-the-dialogue-training-and-evaluating-user-languag-2026": {
+      "title": "Flipping the Dialogue: Training and Evaluating User Language Models",
+      "year": 2026,
+      "venue": "ICLR",
+      "paper_url": "https://arxiv.org/abs/2510.06552",
+      "code_url": "https://huggingface.co/microsoft/UserLM-8b",
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Conversations with LMs involve two participants: a human user leading the conversation, and an LM assistant responding to the user's request. To satisfy this specific role, LMs are post-trained to be helpful assistants -- optimized to produce exhaustive and well-structured responses, free of ambiguity and grammar errors. User utterances, on the other hand, are rarely perfected, with each user phrasing requests in unique ways, sometimes putting in partial effort at each turn and refining on the fly. To evaluate LM performance in realistic settings, prior work simulated users in multi-turn conversations, often by prompting an LM originally trained to be a helpful assistant to act as a user. However, we show that assistant LMs make for poor user simulators, with the surprising finding that better assistants yield worse simulators. Instead, we introduce purpose-built User Language Models (User LMs) - models post-trained to simulate human users in multi-turn conversations. Through various evaluations, we show how User LMs align better with human behavior and achieve better simulation robustness than existing simulation methods. When leveraging User LMs to simulate coding and math conversations, the performance of a strong assistant (GPT-4o) drops from 74.6% to 57.4%, confirming that more realistic simulation environments lead to assistant struggles as they fail to cope with the nuances of users in multi-turn setups.",
+      "abstract_source": "https://arxiv.org/abs/2510.06552",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Multi-turn",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "User Simulation",
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2510.06552",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'purpose-built User Language Models'.",
+          "quote_offset": [
+            862,
+            896
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate human users in multi-turn conversations'.",
+          "quote_offset": [
+            933,
+            981
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-turn conversations'.",
+          "quote_offset": [
+            584,
+            608
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'refining on the fly'.",
+          "quote_offset": [
+            483,
+            502
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate human users'.",
+          "quote_offset": [
+            933,
+            953
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'post-trained'.",
+          "quote_offset": [
+            181,
+            193
+          ]
+        }
+      ]
+    },
+    "preference-tree-with-look-ahead-training-goal-oriented-dia-2025": {
+      "title": "Preference Tree with Look-Ahead: Training Goal-Oriented Dialogue with Virtual Patient",
+      "year": 2025,
+      "venue": "ICLR",
+      "paper_url": "https://openreview.net/forum?id=fTVhWlzCuk",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract_fetch_error": "unavailable_from_configured_sources",
+      "abstract": "Preference Tree Optimization (PTO) develops dialogue systems for multi-turn, goal-oriented conversation in specialized domains with limited data, targeting Motivational Interviewing (MI). At each turn, the agent generates N candidate responses; each branch runs a look-ahead simulation of K future steps alternating between the agent and a virtual patient, and an oracle evaluator scores each branch on MI principles, empathy, and goal progression. The best and worst responses form preference pairs, and the agent is refined iteratively via Direct Preference Optimization, bridging search-based and score-based paradigms. Models trained with PTO outperform baselines on session satisfaction and working alliance; deeper look-ahead yields more stable, higher-scoring strategies.",
+      "abstract_source": "ICLR 2025 OpenReview (condensed from search index; verify against paper)",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Multi-turn",
+      "capabilities": [
+        "Affect",
+        "Interaction Management"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "Planning",
+        "Preference Optimization",
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "ICLR 2025 OpenReview (condensed from search index; verify against paper)",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'Preference Tree Optimization (PTO) develops dialogue systems'.",
+          "quote_offset": [
+            0,
+            60
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'targeting Motivational Interviewing (MI)'.",
+          "quote_offset": [
+            146,
+            186
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-turn, goal-oriented conversation'.",
+          "quote_offset": [
+            65,
+            103
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Affect",
+          "source": "abstract",
+          "rationale": "Source quote: 'empathy'.",
+          "quote_offset": [
+            418,
+            425
+          ]
+        },
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'goal progression'.",
+          "quote_offset": [
+            431,
+            447
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'virtual patient'.",
+          "quote_offset": [
+            340,
+            355
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'look-ahead simulation'.",
+          "quote_offset": [
+            264,
+            285
+          ]
+        },
+        {
+          "tag": "Preference Optimization",
+          "source": "abstract",
+          "rationale": "Source quote: 'Direct Preference Optimization'.",
+          "quote_offset": [
+            542,
+            572
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'virtual patient'.",
+          "quote_offset": [
+            340,
+            355
+          ]
+        }
+      ]
+    },
+    "socialeval-evaluating-social-intelligence-of-large-languag-2025": {
+      "title": "SocialEval: Evaluating Social Intelligence of Large Language Models",
+      "year": 2025,
+      "venue": "ACL",
+      "paper_url": "https://aclanthology.org/2025.acl-long.1496/",
+      "code_url": "https://github.com/thu-coai/SocialEval",
+      "summary_path": null,
+      "primary_section": "datasets-benchmarks-evaluation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "LLMs exhibit promising Social Intelligence (SI) in modeling human behavior, raising the need to evaluate LLMs’ SI and their discrepancy with humans. SI equips humans with interpersonal abilities to behave wisely in navigating social interactions to achieve social goals. This presents an operational evaluation paradigm: outcome-oriented goal achievement evaluation and process-oriented interpersonal ability evaluation, which existing work fails to address. To this end, we propose SocialEval, a script-based bilingual SI benchmark, integrating outcome- and process-oriented evaluation by manually crafting narrative scripts. Each script is structured as a world tree that contains plot lines driven by interpersonal ability, providing a comprehensive view of how LLMs navigate social interactions. Experiments show that LLMs fall behind humans on both SI evaluations, exhibit prosociality, and prefer more positive social behaviors, even if they lead to goal failure. Analysis of LLMs’ formed representation space and neuronal activations reveals that LLMs have developed ability-specific functional partitions akin to the human brain.",
+      "abstract_source": "https://aclanthology.org/2025.acl-long.1496/",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Benchmark",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Perception",
+        "Mental-State Modeling"
+      ],
+      "contexts": [],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.acl-long.1496/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'SocialEval, a script-based bilingual SI benchmark'.",
+          "quote_offset": [
+            483,
+            532
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'navigating social interactions to achieve social goals'.",
+          "quote_offset": [
+            215,
+            269
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Perception",
+          "source": "abstract",
+          "rationale": "Source quote: 'interpersonal ability evaluation'.",
+          "quote_offset": [
+            387,
+            419
+          ]
+        },
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'modeling human behavior'.",
+          "quote_offset": [
+            51,
+            74
+          ]
+        }
+      ]
+    },
+    "moral-alignment-for-llm-agents-2025": {
+      "title": "Moral Alignment for LLM Agents",
+      "year": 2025,
+      "venue": "ICLR",
+      "paper_url": "https://arxiv.org/abs/2410.01639",
+      "code_url": "https://github.com/liza-tennant/LLM_morality",
+      "summary_path": null,
+      "primary_section": "learning-planning-alignment",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract": "Decision-making agents based on pre-trained Large Language Models (LLMs) are increasingly being deployed across various domains of human activity. While their applications are currently rather specialized, several research efforts are underway to develop more generalist agents. As LLM-based systems become more agentic, their influence on human activity will grow and their transparency will decrease. Consequently, developing effective methods for aligning them to human values is vital. The prevailing practice in alignment often relies on human preference data (e.g., in RLHF or DPO), in which values are implicit, opaque and are essentially deduced from relative preferences over different model outputs. In this work, instead of relying on human feedback, we introduce the design of reward functions that explicitly and transparently encode core human values for Reinforcement Learning-based fine-tuning of foundation agent models. Specifically, we use intrinsic rewards for the moral alignment of LLM agents. We evaluate our approach using the traditional philosophical frameworks of Deontological Ethics and Utilitarianism, quantifying moral rewards for agents in terms of actions and consequences on the Iterated Prisoner's Dilemma (IPD) environment. We also show how moral fine-tuning can be deployed to enable an agent to unlearn a previously developed selfish strategy. Finally, we find that certain moral strategies learned on the IPD game generalize to several other matrix game environments. In summary, we demonstrate that fine-tuning with intrinsic rewards is a promising general solution for aligning LLM agents to human values, and it might represent a more transparent and cost-effective alternative to currently predominant alignment techniques.",
+      "abstract_source": "https://arxiv.org/abs/2410.01639",
+      "abstract_retrieved_at": "2026-10-04",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Context"
+      ],
+      "contexts": [
+        "Norms & Morality"
+      ],
+      "approaches": [
+        "RL",
+        "Reward Modeling"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2410.01639",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we introduce the design of reward functions'.",
+          "quote_offset": [
+            762,
+            805
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'aligning them to human values'.",
+          "quote_offset": [
+            450,
+            479
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'moral alignment of LLM agents'.",
+          "quote_offset": [
+            985,
+            1014
+          ]
+        },
+        {
+          "tag": "Norms & Morality",
+          "source": "abstract",
+          "rationale": "Source quote: 'moral alignment'.",
+          "quote_offset": [
+            985,
+            1000
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'Reinforcement Learning-based fine-tuning'.",
+          "quote_offset": [
+            869,
+            909
+          ]
+        },
+        {
+          "tag": "Reward Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'design of reward functions'.",
+          "quote_offset": [
+            779,
+            805
+          ]
+        }
+      ]
     }
   }
 }
