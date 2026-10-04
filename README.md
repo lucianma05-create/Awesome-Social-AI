@@ -2,6 +2,10 @@
 
 # 🌐 Awesome Social AI
 
+> A curated collection of research on socially intelligent conversational agents.
+>
+> 聚焦能够理解社会情境、推理他人状态、开展恰当交互并从长期互动中适应的对话智能体。
+
 [![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://github.com/sindresorhus/awesome)
 [![License](https://img.shields.io/badge/License-Apache%202.0-red?style=for-the-badge&logo=apache&logoColor=white)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Papers](https://img.shields.io/badge/Papers-214-2ea44f?style=for-the-badge)](paper)
@@ -9,14 +13,23 @@
 [![Views](https://komarev.com/ghpvc/?username=lucianma05-create&repo=Awesome-Social-AI&label=Views&color=orange&style=for-the-badge)](https://github.com/lucianma05-create/Awesome-Social-AI)
 </div>
 
-**我们精心收集整理社交人工智能(Social AI)领域的研究论文,并持续更新论文的中文摘要,从而支持快速了解该领域的代表性工作。仓库将不断更新,追踪社交 AI 前沿。欢迎 Follow 和 Star!⭐**
+**我们精心收集整理面向对话智能体的社交人工智能（Social AI）研究论文，并持续更新中文摘要，支持快速了解这一领域的代表性工作。仓库将不断更新，追踪相关前沿。欢迎 Follow 和 Star!⭐**
 
 <a id="social-ai"></a>
 ## 🎯 范畴与结构
 
-**Social AI** 是研究与构建具备社会智能的 AI 系统的领域。社会智能指智能体在社交情境中的三组能力:社交理解(感知情绪、意图、信念、关系、规范与多方动态)、社交推理(心智建模、归因与策略规划)、社交行动(说服、谈判、共情支持、建立信任)。
+**Social AI** 是研究与构建能够在动态社会情境中与人类或其他智能体进行恰当交互的 AI 系统的领域。本仓库聚焦其面向**对话智能体**的部分：语言交互为主要载体；多模态或具身工作仅在其明确服务于交互式社会智能体时收录。
 
-本仓库按四层结构组织:
+这里的社会智能包含四组相互作用的能力：
+
+- **社会感知与理解**：从语言及非语言线索中识别情绪、意图、信念、关系、角色和群体动态；
+- **社会情境建模与推理**：结合规范、文化、关系、任务和互动历史，推断他者状态、共同基础及行动后果；
+- **社会行动与交互**：以沟通、协作、支持、协调或影响等方式实现社会目标，并维持恰当关系；
+- **社会学习与适应**：利用交互反馈和长期社会记忆，调整对用户、关系和情境的理解与行为。
+
+这一定义参考了社会感知、社会知识、社会记忆、社会推理、心智建模与社会交互等研究脉络。参见 [Mathur et al., 2024](https://aclanthology.org/2024.emnlp-main.1143/) 与 [Ziems et al., 2024](https://aclanthology.org/2024.findings-acl.163/)。
+
+论文以一个**主入口**便于浏览，并使用可交叉的 **Keywords** 描述目标、能力、情境和方法。主入口是仓库的信息组织方式，不代表互斥的理论层级：
 
 - **任务层 · 社交任务**
   - [Persuasion & Negotiation](#pd) — 说服、谈判等策略性对话的研究、方法与评测
@@ -25,16 +38,16 @@
   - [Cooperation & Collaboration](#coop) — 合作、协作与多方共识构建
 - **能力层 · 社交认知**
   - [Theory of Mind](#tom) — 心智建模、意图与信念推理
-  - [Emotion Understanding](#emotion) — 情绪识别、归因与情绪推理
-  - [Social Norms & Morality](#norms) — 社会规范、道德判断与价值对齐
-  - [Agent Memory](#memory) — 智能体长期记忆与经验演化
+  - [Affect & Social Perception](#emotion) — 情感状态、社会线索与情绪推理
+  - [Social Context, Norms & Morality](#norms) — 角色、关系、文化、规范与道德情境
+  - [Social Memory & Adaptation](#memory) — 长期社会记忆、个性化与互动适应
 - **方法层 · 支撑技术**
-  - [Reinforcement Learning & Alignment](#rlhf) — 强化学习训练与对齐方法
+  - [Learning, Planning & Alignment](#rlhf) — 服务社会适应的学习、规划与对齐方法
 - **资源层 · 研究基础设施**
   - [User Simulation & Interactive Environments](#us) — 用户模拟、交互环境与仿真
   - [Benchmark & Evaluation](#data) — 基准测试、数据集与评测
 
-不收录:计算社会科学 / "AI for social science" 类工作。方法层的通用强化学习与对齐技术,以"支撑社交智能体的基础方法"身份收录;与社交无关、亦不服务于社交智能体的技术不收录。
+不收录：纯计算社会科学 / “AI for social science” 工作，纯静态情绪分类、纯视觉 ToM、纯通用 RL 或对齐工作。若一项工作明确服务于对话式或交互式社会智能体，则可作为例外收录。
 
 **参考论文:**
 > 1. [Towards Social AI: A Survey on Understanding Social Interactions](https://arxiv.org/abs/2409.15316)
@@ -52,12 +65,13 @@
     - [Conversational Recommendation](#recommend)
     - [Cooperation & Collaboration](#coop)
     - [Theory of Mind](#tom)
-    - [Emotion Understanding](#emotion)
-    - [Social Norms & Morality](#norms)
-    - [Agent Memory](#memory)
-    - [Reinforcement Learning & Alignment](#rlhf)
+    - [Affect & Social Perception](#emotion)
+    - [Social Context, Norms & Morality](#norms)
+    - [Social Memory & Adaptation](#memory)
+    - [Learning, Planning & Alignment](#rlhf)
     - [User Simulation & Interactive Environments](#us)
     - [Benchmark & Evaluation](#data)
+  - [🏷️ 关键词体系](#keywords)
   - [📁 仓库结构](#repo-structure)
   - [✍️ 如何贡献](#contributing)
   - [🧠 关于我们](#about)
@@ -65,53 +79,199 @@
 <a id="papers"></a>
 ## 📚 论文列表
 
+> 本目录由 `metadata/papers.json` 自动生成，并以 Awesome-RLHF 风格逐条呈现论文信息：Publisher、Keywords、Code 与 Summary。标题行保持简洁；关键词作为独立字段展示，后文的受控词表与映射统一定义其含义。仅已有仓库中文笔记的论文显示 Summary 链接；缺少笔记时省略该字段。完整词表、定义和审核规则见 [metadata/KEYWORDS.md](metadata/KEYWORDS.md)。
+
 <a id="pd"></a>
 <details>
 <summary>🗣️ <b>Persuasion & Negotiation</b> · 41 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2008 | PERSUASIVE | A Systematic Framework for Designing and Evaluating Persuasive Systems | [查看](https://doi.org/10.1007/978-3-540-68504-3_15) | [摘要](paper/PD-PERSUASIVE-2008-A%20Systematic%20Framework%20for%20Designing%20and%20Evaluating%20Persuasive%20Systems.md) | - |
-| 2008 | - | Measure Of Belief Change as an Evaluation of Persuasion | [查看](https://www.researchgate.net/publication/228964262_Measure_Of_Belief_Change_as_an_Evaluation_of_Persuasion) | [摘要](paper/PD-%E6%9C%AA%E6%8F%90%E5%8F%8A-2008-Measure%20Of%20Belief%20Change%20as%20an%20Evaluation%20of%20Persuasion.md) | - |
-| 2014 | COLING | Reinforcement Learning of Cooperative Persuasive Dialogue Policies using Framing | [查看](https://aclanthology.org/C14-1161/) | [摘要](paper/PD-COLING-2014-Reinforcement-Learning-of-Cooperative-Persuasive-Dialogue-Policies-using-Framing.md) | - |
-| 2017 | HCI | Persuasive Argumentation and Emotions- An Empirical Evaluation with Users | [查看](https://doi.org/10.1007/978-3-319-58071-5_50) | [摘要](paper/PD-HCI-2017-Persuasive%20Argumentation%20and%20Emotions-%20An%20Empirical%20Evaluation%20with%20Users.md) | - |
-| 2023 | ArgComp | Strategic argumentation dialogues for persuasion- Framework and experiments based on modelling the beliefs and concerns of the persuadee | [查看](https://doi.org/10.3233/AAC-210005) | [摘要](paper/PD-ArgComp-2023-Strategic%20argumentation%20dialogues%20for%20persuasion-%20Framework%20and%20experiments%20based%20on%20modelling%20the%20beliefs%20and%20concerns%20of%20the%20persuadee.md) | - |
-| 2023 | arXiv | Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback | [查看](https://arxiv.org/abs/2305.10142) | [摘要](paper/PD-arXiv-2023-Improving-Language-Model-Negotiation-with-Self-Play-and-In-Context-Learning-from-AI-Feedback.md) | - |
-| 2024 | ICLR | Plug-and-Play Policy Planner for LLM-Powered Dialogue Agents | [查看](https://arxiv.org/pdf/2311.00262.pdf) | [摘要](paper/PD-ICLR-2024-Plug-and-Play%20Policy%20Planner%20for%20LLM-Powered%20Dialogue%20Agents.md) | [代码](https://github.com/dengyang17/PPDPP) |
-| 2024 | ACL | How Johnny Can Persuade LLMs to Jailbreak Them: Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs | [查看](https://aclanthology.org/2024.acl-long.773/) | - | [代码](https://github.com/CHATS-lab/persuasive_jailbreaker) |
-| 2024 | ACL | Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method | [查看](https://aclanthology.org/2024.findings-acl.213/) | - | [代码](https://github.com/TianXiaSJTU/AmazonPriceHistory) |
-| 2024 | EMNLP | NegotiationToM: A Benchmark for Stress-testing Machine Theory of Mind on Negotiation Surrounding | [查看](https://aclanthology.org/2024.findings-emnlp.244/) | - | [代码](https://github.com/HKUST-KnowComp/NegotiationToM) |
-| 2024 | ICML | Debating with More Persuasive LLMs Leads to More Truthful Answers | [查看](https://proceedings.mlr.press/v235/khan24a.html) | - | [代码](https://github.com/ucl-dark/llm_debate) |
-| 2024 | NeurIPS | Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation | [查看](https://papers.nips.cc/paper_files/paper/2024/hash/984dd3db213db2d1454a163b65b84d08-Abstract-Datasets_and_Benchmarks_Track.html) | - | [代码](https://github.com/S-Abdelnabi/LLM-Deliberation) |
-| 2025 | Science | Durably reducing conspiracy beliefs through dialogues with AI | [查看](https://www.science.org/doi/10.1126/science.adq1814) | [摘要](paper/PD-Science-2025-Durably%20reducing%20conspiracy%20beliefs%20through%20dialogues%20with%20AI.md) | - |
-| 2025 | Science | The Levers of Political Persuasion | [查看](https://www.science.org/doi/10.1126/science.aea3884) | [摘要](paper/PD-Science-2025-The%20Levers%20of%20Political%20Persuasion.md) | [代码](https://github.com/kobihackenburg/scaling-conversational-AI) |
-| 2025 | ACL | Battling against Tough Resister- Strategy Planning with Adversarial Game for Non-collaborative Dialogues | [查看](https://aclanthology.org/2025.acl-long.184/) | [摘要](paper/PD-ACL-2025-Battling%20against%20Tough%20Resister-%20Strategy%20Planning%20with%20Adversarial%20Game%20for%20Non-collaborative%20Dialogues.md) | - |
-| 2025 | TACL | Human Choice Prediction in Language-based Persuasion Games- Simulation-based Off-Policy Evaluation | [查看](https://doi.org/10.1162/TACL.a.16) | [摘要](paper/PD-TACL-2025-Human%20Choice%20Prediction%20in%20Language-based%20Persuasion%20Games-%20Simulation-based%20Off-Policy%20Evaluation.md) | [代码](https://github.com/eilamshapira/HumanChoicePrediction) |
-| 2025 | EMNLP | Enhancing LLM-Based Persuasion Simulations with Cultural and Speaker-Specific Information | [查看](https://aclanthology.org/2025.findings-emnlp.808) | [摘要](paper/PD-EMNLP-2025-Enhancing%20LLM-Based%20Persuasion%20Simulations%20with%20Cultural%20and%20Speaker-Specific%20Information.md) | [代码](https://github.com/HF-heaven/Cross-Cultural-Persuasion-Simulations) |
-| 2025 | EMNLP | Enhancing Persuasive Dialogue Agents by Synthesizing Cross-Disciplinary Communication Strategies | [查看](https://aclanthology.org/2025.emnlp-industry.158/) | [摘要](paper/PD-EMNLP-2025-Enhancing%20Persuasive%20Dialogue%20Agents%20by%20Synthesizing%20Cross-Disciplinary%20Communication%20Strategies.md) | - |
-| 2025 | NAACL | Teaching models to balance resisting and accepting persuasion | [查看](https://aclanthology.org/2025.naacl-long.412/) | - | [代码](https://github.com/esteng/persuasion_balanced_training) |
-| 2025 | arXiv | LLM Can be a Dangerous Persuader- Empirical Study of Persuasion Safety in Large Language Models | [查看](https://arxiv.org/abs/2504.10430) | [摘要](paper/PD-arXiv-2025-LLM%20Can%20be%20a%20Dangerous%20Persuader-%20Empirical%20Study%20of%20Persuasion%20Safety%20in%20Large%20Language%20Models.md) | [代码](https://github.com/PLUM-Lab/PersuSafety) |
-| 2025 | EMNLP | PRINCIPLES- Synthetic Strategy Memory for Proactive Dialogue Agents | [查看](https://arxiv.org/abs/2509.17459) | [摘要](paper/PD-EMNLP-2025-PRINCIPLES-%20Synthetic%20Strategy%20Memory%20for%20Proactive%20Dialogue%20Agents.md) | [代码](https://huggingface.co/spaces/kimnamssya/Principles) |
-| 2025 | NeurIPS | Persuade Me if You Can- A Framework for Evaluating Persuasion Effectiveness and Susceptibility Among Large Language Models | [查看](https://arxiv.org/abs/2503.01829) | [摘要](paper/PD-NeurIPS-2025-Persuade%20Me%20if%20You%20Can-%20A%20Framework%20for%20Evaluating%20Persuasion%20Effectiveness%20and%20Susceptibility%20Among%20Large%20Language%20Models.md) | [代码](https://beyzabozdag.github.io/PMIYC/) |
-| 2025 | AAAI | Simulation-free hierarchical latent policy planning for proactive dialogues | [查看](https://arxiv.org/abs/2412.14584) | [摘要](paper/PD-AAAI-2025-Simulation-free%20hierarchical%20latent%20policy%20planning%20for%20proactive%20dialogues.md) | - |
-| 2025 | arXiv | ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind | [查看](https://arxiv.org/abs/2505.22961) | [摘要](paper/PD-arXiv-2025-ToMAP%3A%20Training%20Opponent-Aware%20LLM%20Persuaders%20with%20Theory%20of%20Mind.md) | [代码](https://github.com/ulab-uiuc/ToMAP) |
-| 2025 | ACL | EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via RL | [查看](https://aclanthology.org/2025.acl-long.747/) | [摘要](paper/PD-ACL-2025-EPO-Explicit-Policy-Optimization-for-Strategic-Reasoning-in-LLMs-via-RL.md) | - |
-| 2025 | arXiv | Disagreements in Reasoning: How a Model's Thinking Process Dictates Persuasion in Multi-Agent Systems | [查看](https://arxiv.org/abs/2503.09999) | [摘要](paper/PD-arXiv-2025-Disagreements-in-Reasoning-How-a-Model%E2%80%99s-Thinking-Process-Dictates-Persuasion-in-Multi-Agent-Systems.md) | - |
-| 2025 | arXiv | EvoEmo: Evolved Emotional Policies for Adversarial LLM Agents in Multi-Turn Price Negotiation | [查看](https://arxiv.org/abs/2502.07483) | [摘要](paper/PD-arXiv-2025-EvoEmo-Evolved-Emotional-Policies-for-Adversarial-LLM-Agents-in-Multi-Turn-Price-Negotiation.md) | - |
-| 2025 | arXiv | From Simulation to Strategy: Automating Personalized Interaction Planning for Conversational Agents | [查看](https://arxiv.org/abs/2502.13289) | [摘要](paper/PD-arXiv-2025-From-Simulation-to-Strategy-Automating-Personalized-Interaction-Planning-for-Conversational-Agents.md) | - |
-| 2025 | arXiv | Persuasion Should be Double-Blind: A Multi-Domain Dialogue Dataset With Faithfulness Based on Causal Theory of Mind | [查看](https://arxiv.org/abs/2501.10832) | [摘要](paper/PD-arXiv-2025-Persuasion-Should-be-Double-Blind-A-Multi-Domain-Dialogue-Dataset-With-Faithfulness-Based-on-Causal-Theory-of-Mind.md) | - |
-| 2025 | arXiv | Verbalized Bayesian Persuasion | [查看](https://arxiv.org/abs/2503.15477) | [摘要](paper/PD-arXiv-2025-Verbalized-Bayesian-Persuasion.md) | - |
-| 2025 | EMNLP | Persuasion-Dynamics in LLMs: Investigating Robustness and Adaptability in Knowledge and Safety with DuET-PD | [查看](https://aclanthology.org/2025.emnlp-main.81/) | [摘要](paper/PD-EMNLP-2025-Persuasion-Dynamics-in-LLMs-Investigating-Robustness-and-Adaptability-in-Knowledge-and-Safety-with-DuET-PD.md) | - |
-| 2025 | EMNLP | Profiling LLM Copyright Infringement Risks under Adversarial Persuasive Prompting | [查看](https://aclanthology.org/2025.findings-emnlp.855/) | [摘要](paper/PD-EMNLP-2025-Profiling-LLM-Copyright-Infringement-Risks-under-Adversarial-Persuasive-Prompting.md) | [代码](https://github.com/Rongite/Persuasion) |
-| 2025 | CSUR | Persuasive Conversational Agents for Environmental Sustainability: A Survey | [查看](https://doi.org/10.1145/3774751) | [摘要](paper/PD-CSUR-2025-Persuasive-Conversational-Agents-for-Environmental-Sustainability-A-Survey.md) | - |
-| 2025 | ACL | ASTRO: Automatic Strategy Optimization For Non-Cooperative Dialogues | [查看](https://aclanthology.org/2025.findings-acl.22.pdf) | [摘要](paper/PD-ACL-2025-ASTRO:%20Automatic%20Strategy%20Optimization%20For%20Non-Cooperative%20Dialogues.md) | [代码](https://github.com/SCUNLP/ASTRO) |
-| 2026 | arXiv | One Model, All Roles- Multi-Turn, Multi-Agent Self-Play Reinforcement Learning for Conversational Social Intelligence | [查看](https://arxiv.org/abs/2602.03109) | - | - |
-| 2026 | arXiv | Personality-Aware Reinforcement Learning for Persuasive Dialogue with LLM-Driven Simulation | [查看](https://arxiv.org/abs/2601.06877) | [摘要](paper/PD-arXiv-2026-Personality-Aware-Reinforcement-Learning-for-Persuasive-Dialogue-with-LLM-Driven-Simulation.md) | - |
-| 2026 | CSUR | A Comprehensive Survey of Computational Persuasion | [查看](https://dl.acm.org/doi/10.1145/3800687) | [摘要](paper/PD-CSUR-2026-A%20Comprehensive%20Survey%20of%20Computational%20Persuasion.md) | [代码](https://github.com/beyzabozdag/PersuasionSurvey) |
-| 2026 | ICLR | RebuttalAgent: Strategic Persuasion in Academic Rebuttal via Theory of Mind | [查看](https://arxiv.org/abs/2601.15715) | [摘要](paper/PD-ICLR-2026-RebuttalAgent%3A%20Strategic%20Persuasion%20in%20Academic%20Rebuttal%20via%20Theory%20of%20Mind.md) | [代码](https://github.com/Zhitao-He/RebuttalAgent) |
-| 2026 | ICLR | Towards Strategic Persuasion with Language Models | [查看](https://arxiv.org/abs/2509.22989v2) | [摘要](paper/PD-ICLR-2026-Towards%20Strategic%20Persuasion%20with%20Language%20Models.md) | - |
-| 2026 | arXiv | METRO: Towards Strategy Induction from Expert Dialogue Transcripts for Non-collaborative Dialogues | [查看](https://arxiv.org/pdf/2604.11427v3.pdf) | [摘要](paper/PD-arXiv-2026-METRO:%20Towards%20Strategy%20Induction%20from%20Expert%20Dialogue%20Transcripts%20for%20Non-collaborative%20Dialogues.md) | [代码](https://github.com/Humphrey-0125/METRO) |
-| 2026 | ICLR | Strategic Planning and Rationalizing on Trees Make LLMs Better Debaters | [查看](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ee3ce0121939f42098cdefd3ea025bf1-Abstract-Conference.html) | - | [代码](https://github.com/LeiLiLab/TreeDebater) |
+<!-- CATALOGUE:START -->
+- [A Systematic Framework for Designing and Evaluating Persuasive Systems](https://doi.org/10.1007/978-3-540-68504-3_15)
+  - Publisher: `PERSUASIVE 2008`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Relationship & Role`
+  - Summary: [Summary](paper/PD-PERSUASIVE-2008-A%20Systematic%20Framework%20for%20Designing%20and%20Evaluating%20Persuasive%20Systems.md)
+- [Measure Of Belief Change as an Evaluation of Persuasion](https://www.researchgate.net/publication/228964262_Measure_Of_Belief_Change_as_an_Evaluation_of_Persuasion)
+  - Keywords: `Evaluation` · `Influence`
+  - Summary: [Summary](paper/PD-%E6%9C%AA%E6%8F%90%E5%8F%8A-2008-Measure%20Of%20Belief%20Change%20as%20an%20Evaluation%20of%20Persuasion.md)
+- [Reinforcement Learning of Cooperative Persuasive Dialogue Policies using Framing](https://aclanthology.org/C14-1161/)
+  - Publisher: `COLING 2014`
+  - Keywords: `Method` · `Influence` · `Social Context` · `RL` · `User Simulation` · `Reward Modeling`
+  - Summary: [Summary](paper/PD-COLING-2014-Reinforcement-Learning-of-Cooperative-Persuasive-Dialogue-Policies-using-Framing.md)
+- [Persuasive Argumentation and Emotions- An Empirical Evaluation with Users](https://doi.org/10.1007/978-3-319-58071-5_50)
+  - Publisher: `HCI 2017`
+  - Keywords: `Method` · `Influence` · `Social Context`
+  - Summary: [Summary](paper/PD-HCI-2017-Persuasive%20Argumentation%20and%20Emotions-%20An%20Empirical%20Evaluation%20with%20Users.md)
+- [Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback](https://arxiv.org/abs/2305.10142)
+  - Publisher: `arXiv 2023`
+  - Keywords: `Method` · `Coordination` · `Social Memory & Adaptation` · `Relationship & Role` · `Self-play` · `Multi-turn`
+  - Summary: [Summary](paper/PD-arXiv-2023-Improving-Language-Model-Negotiation-with-Self-Play-and-In-Context-Learning-from-AI-Feedback.md)
+- [Strategic argumentation dialogues for persuasion- Framework and experiments based on modelling the beliefs and concerns of the persuadee](https://doi.org/10.3233/AAC-210005)
+  - Publisher: `ArgComp 2023`
+  - Keywords: `Method` · `Influence` · `Mental-State Modeling` · `Interaction Management` · `Personalization` · `Planning` · `Multi-turn`
+  - Summary: [Summary](paper/PD-ArgComp-2023-Strategic%20argumentation%20dialogues%20for%20persuasion-%20Framework%20and%20experiments%20based%20on%20modelling%20the%20beliefs%20and%20concerns%20of%20the%20persuadee.md)
+- [Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation](https://papers.nips.cc/paper_files/paper/2024/hash/984dd3db213db2d1454a163b65b84d08-Abstract-Datasets_and_Benchmarks_Track.html)
+  - Publisher: `NeurIPS 2024`
+  - Keywords: `Benchmark` · `Coordination` · `Interaction Management` · `Social Perception` · `Multi-party` · `Relationship & Role` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/S-Abdelnabi/LLM-Deliberation)
+- [Debating with More Persuasive LLMs Leads to More Truthful Answers](https://proceedings.mlr.press/v235/khan24a.html)
+  - Publisher: `ICML 2024`
+  - Keywords: `Evaluation` · `Influence` · `Mental-State Modeling` · `Self-play`
+  - Code: [GitHub / Project](https://github.com/ucl-dark/llm_debate)
+- [How Johnny Can Persuade LLMs to Jailbreak Them: Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs](https://aclanthology.org/2024.acl-long.773/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Norms & Morality` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/CHATS-lab/persuasive_jailbreaker)
+- [Measuring Bargaining Abilities of LLMs: A Benchmark and A Buyer-Enhancement Method](https://aclanthology.org/2024.findings-acl.213/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Method` · `Coordination` · `Interaction Management` · `Relationship & Role` · `Planning`
+  - Code: [GitHub / Project](https://github.com/TianXiaSJTU/AmazonPriceHistory)
+- [NegotiationToM: A Benchmark for Stress-testing Machine Theory of Mind on Negotiation Surrounding](https://aclanthology.org/2024.findings-emnlp.244/)
+  - Publisher: `EMNLP 2024`
+  - Keywords: `Benchmark` · `Coordination` · `Mental-State Modeling` · `Relationship & Role`
+  - Code: [GitHub / Project](https://github.com/HKUST-KnowComp/NegotiationToM)
+- [Plug-and-Play Policy Planner for LLM-Powered Dialogue Agents](https://arxiv.org/pdf/2311.00262.pdf)
+  - Publisher: `ICLR 2024`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `Supervised Learning` · `RL` · `Self-play`
+  - Code: [GitHub / Project](https://github.com/dengyang17/PPDPP)
+  - Summary: [Summary](paper/PD-ICLR-2024-Plug-and-Play%20Policy%20Planner%20for%20LLM-Powered%20Dialogue%20Agents.md)
+- [ASTRO: Automatic Strategy Optimization For Non-Cooperative Dialogues](https://aclanthology.org/2025.findings-acl.22.pdf)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `Influence` · `Interaction Management` · `Planning` · `RL` · `Self-play`
+  - Code: [GitHub / Project](https://github.com/SCUNLP/ASTRO)
+  - Summary: [Summary](paper/PD-ACL-2025-ASTRO:%20Automatic%20Strategy%20Optimization%20For%20Non-Cooperative%20Dialogues.md)
+- [Battling against Tough Resister- Strategy Planning with Adversarial Game for Non-collaborative Dialogues](https://aclanthology.org/2025.acl-long.184/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `Influence` · `Mental-State Modeling` · `Interaction Management` · `Multi-party` · `RL` · `Self-play` · `Planning` · `Multi-turn`
+  - Summary: [Summary](paper/PD-ACL-2025-Battling%20against%20Tough%20Resister-%20Strategy%20Planning%20with%20Adversarial%20Game%20for%20Non-collaborative%20Dialogues.md)
+- [Disagreements in Reasoning: How a Model's Thinking Process Dictates Persuasion in Multi-Agent Systems](https://arxiv.org/abs/2503.09999)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Evaluation` · `General Interaction`
+  - Summary: [Summary](paper/PD-arXiv-2025-Disagreements-in-Reasoning-How-a-Model%E2%80%99s-Thinking-Process-Dictates-Persuasion-in-Multi-Agent-Systems.md)
+- [Durably reducing conspiracy beliefs through dialogues with AI](https://www.science.org/doi/10.1126/science.adq1814)
+  - Publisher: `Science 2025`
+  - Keywords: `Evaluation` · `Influence` · `Interaction Management` · `Multi-turn`
+  - Summary: [Summary](paper/PD-Science-2025-Durably%20reducing%20conspiracy%20beliefs%20through%20dialogues%20with%20AI.md)
+- [Enhancing LLM-Based Persuasion Simulations with Cultural and Speaker-Specific Information](https://aclanthology.org/2025.findings-emnlp.808)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Culture` · `Relationship & Role` · `Planning`
+  - Code: [GitHub / Project](https://github.com/HF-heaven/Cross-Cultural-Persuasion-Simulations)
+  - Summary: [Summary](paper/PD-EMNLP-2025-Enhancing%20LLM-Based%20Persuasion%20Simulations%20with%20Cultural%20and%20Speaker-Specific%20Information.md)
+- [Enhancing Persuasive Dialogue Agents by Synthesizing Cross-Disciplinary Communication Strategies](https://aclanthology.org/2025.emnlp-industry.158/)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Planning`
+  - Summary: [Summary](paper/PD-EMNLP-2025-Enhancing%20Persuasive%20Dialogue%20Agents%20by%20Synthesizing%20Cross-Disciplinary%20Communication%20Strategies.md)
+- [EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via RL](https://aclanthology.org/2025.acl-long.747/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Context` · `RL` · `Reward Modeling` · `Self-play` · `Multi-turn`
+  - Summary: [Summary](paper/PD-ACL-2025-EPO-Explicit-Policy-Optimization-for-Strategic-Reasoning-in-LLMs-via-RL.md)
+- [EvoEmo: Evolved Emotional Policies for Adversarial LLM Agents in Multi-Turn Price Negotiation](https://arxiv.org/abs/2502.07483)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction`
+  - Summary: [Summary](paper/PD-arXiv-2025-EvoEmo-Evolved-Emotional-Policies-for-Adversarial-LLM-Agents-in-Multi-Turn-Price-Negotiation.md)
+- [From Simulation to Strategy: Automating Personalized Interaction Planning for Conversational Agents](https://arxiv.org/abs/2502.13289)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Dataset` · `General Interaction` · `Supervised Learning`
+  - Summary: [Summary](paper/PD-arXiv-2025-From-Simulation-to-Strategy-Automating-Personalized-Interaction-Planning-for-Conversational-Agents.md)
+- [Human Choice Prediction in Language-based Persuasion Games- Simulation-based Off-Policy Evaluation](https://doi.org/10.1162/TACL.a.16)
+  - Publisher: `TACL 2025`
+  - Keywords: `Method` · `Influence` · `Mental-State Modeling` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/eilamshapira/HumanChoicePrediction)
+  - Summary: [Summary](paper/PD-TACL-2025-Human%20Choice%20Prediction%20in%20Language-based%20Persuasion%20Games-%20Simulation-based%20Off-Policy%20Evaluation.md)
+- [LLM Can be a Dangerous Persuader- Empirical Study of Persuasion Safety in Large Language Models](https://arxiv.org/abs/2504.10430)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Evaluation` · `Influence` · `Mental-State Modeling` · `Norms & Morality` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/PLUM-Lab/PersuSafety)
+  - Summary: [Summary](paper/PD-arXiv-2025-LLM%20Can%20be%20a%20Dangerous%20Persuader-%20Empirical%20Study%20of%20Persuasion%20Safety%20in%20Large%20Language%20Models.md)
+- [Persuade Me if You Can- A Framework for Evaluating Persuasion Effectiveness and Susceptibility Among Large Language Models](https://arxiv.org/abs/2503.01829)
+  - Publisher: `NeurIPS 2025`
+  - Keywords: `Evaluation` · `Influence` · `Interaction Management` · `Relationship & Role` · `Norms & Morality` · `Multi-turn`
+  - Code: [GitHub / Project](https://beyzabozdag.github.io/PMIYC/)
+  - Summary: [Summary](paper/PD-NeurIPS-2025-Persuade%20Me%20if%20You%20Can-%20A%20Framework%20for%20Evaluating%20Persuasion%20Effectiveness%20and%20Susceptibility%20Among%20Large%20Language%20Models.md)
+- [Persuasion Should be Double-Blind: A Multi-Domain Dialogue Dataset With Faithfulness Based on Causal Theory of Mind](https://arxiv.org/abs/2501.10832)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `User Simulation`
+  - Summary: [Summary](paper/PD-arXiv-2025-Persuasion-Should-be-Double-Blind-A-Multi-Domain-Dialogue-Dataset-With-Faithfulness-Based-on-Causal-Theory-of-Mind.md)
+- [Persuasion-Dynamics in LLMs: Investigating Robustness and Adaptability in Knowledge and Safety with DuET-PD](https://aclanthology.org/2025.emnlp-main.81/)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Norms & Morality` · `Preference Optimization` · `Multi-turn`
+  - Summary: [Summary](paper/PD-EMNLP-2025-Persuasion-Dynamics-in-LLMs-Investigating-Robustness-and-Adaptability-in-Knowledge-and-Safety-with-DuET-PD.md)
+- [Persuasive Conversational Agents for Environmental Sustainability: A Survey](https://doi.org/10.1145/3774751)
+  - Publisher: `CSUR 2025`
+  - Keywords: `Survey` · `Influence`
+  - Summary: [Summary](paper/PD-CSUR-2025-Persuasive-Conversational-Agents-for-Environmental-Sustainability-A-Survey.md)
+- [PRINCIPLES- Synthetic Strategy Memory for Proactive Dialogue Agents](https://arxiv.org/abs/2509.17459)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Support` · `Interaction Management` · `Self-play` · `Retrieval`
+  - Code: [GitHub / Project](https://huggingface.co/spaces/kimnamssya/Principles)
+  - Summary: [Summary](paper/PD-EMNLP-2025-PRINCIPLES-%20Synthetic%20Strategy%20Memory%20for%20Proactive%20Dialogue%20Agents.md)
+- [Profiling LLM Copyright Infringement Risks under Adversarial Persuasive Prompting](https://aclanthology.org/2025.findings-emnlp.855/)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Influence` · `Planning`
+  - Code: [GitHub / Project](https://github.com/Rongite/Persuasion)
+  - Summary: [Summary](paper/PD-EMNLP-2025-Profiling-LLM-Copyright-Infringement-Risks-under-Adversarial-Persuasive-Prompting.md)
+- [Simulation-free hierarchical latent policy planning for proactive dialogues](https://arxiv.org/abs/2412.14584)
+  - Publisher: `AAAI 2025`
+  - Keywords: `Method` · `Support` · `Interaction Management` · `RL`
+  - Summary: [Summary](paper/PD-AAAI-2025-Simulation-free%20hierarchical%20latent%20policy%20planning%20for%20proactive%20dialogues.md)
+- [Teaching models to balance resisting and accepting persuasion](https://aclanthology.org/2025.naacl-long.412/)
+  - Publisher: `NAACL 2025`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Multi-party` · `Preference Optimization` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/esteng/persuasion_balanced_training)
+- [The Levers of Political Persuasion](https://www.science.org/doi/10.1126/science.aea3884)
+  - Publisher: `Science 2025`
+  - Keywords: `Evaluation` · `Influence` · `Social Perception` · `Personalization` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/kobihackenburg/scaling-conversational-AI)
+  - Summary: [Summary](paper/PD-Science-2025-The%20Levers%20of%20Political%20Persuasion.md)
+- [ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind](https://arxiv.org/abs/2505.22961)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `Influence` · `Mental-State Modeling` · `Relationship & Role` · `RL` · `Supervised Learning` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/ulab-uiuc/ToMAP)
+  - Summary: [Summary](paper/PD-arXiv-2025-ToMAP:%20Training%20Opponent-Aware%20LLM%20Persuaders%20with%20Theory%20of%20Mind.md)
+- [Verbalized Bayesian Persuasion](https://arxiv.org/abs/2503.15477)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `Reward Modeling` · `RL`
+  - Summary: [Summary](paper/PD-arXiv-2025-Verbalized-Bayesian-Persuasion.md)
+- [A Comprehensive Survey of Computational Persuasion](https://dl.acm.org/doi/10.1145/3800687)
+  - Publisher: `CSUR 2026`
+  - Keywords: `Survey` · `Influence`
+  - Code: [GitHub / Project](https://github.com/beyzabozdag/PersuasionSurvey)
+  - Summary: [Summary](paper/PD-CSUR-2026-A%20Comprehensive%20Survey%20of%20Computational%20Persuasion.md)
+- [METRO: Towards Strategy Induction from Expert Dialogue Transcripts for Non-collaborative Dialogues](https://arxiv.org/pdf/2604.11427v3.pdf)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `Influence` · `Interaction Management` · `Social Memory & Adaptation` · `Planning`
+  - Code: [GitHub / Project](https://github.com/Humphrey-0125/METRO)
+  - Summary: [Summary](paper/PD-arXiv-2026-METRO:%20Towards%20Strategy%20Induction%20from%20Expert%20Dialogue%20Transcripts%20for%20Non-collaborative%20Dialogues.md)
+- [One Model, All Roles- Multi-Turn, Multi-Agent Self-Play Reinforcement Learning for Conversational Social Intelligence](https://arxiv.org/abs/2602.03109)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Interaction Management` · `Multi-party` · `Norms & Morality` · `Relationship & Role` · `RL` · `Self-play` · `Multi-turn`
+- [Personality-Aware Reinforcement Learning for Persuasive Dialogue with LLM-Driven Simulation](https://arxiv.org/abs/2601.06877)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `Influence` · `Mental-State Modeling` · `Social Context` · `Personalization` · `RL` · `User Simulation` · `Retrieval` · `Multi-turn`
+  - Summary: [Summary](paper/PD-arXiv-2026-Personality-Aware-Reinforcement-Learning-for-Persuasive-Dialogue-with-LLM-Driven-Simulation.md)
+- [RebuttalAgent: Strategic Persuasion in Academic Rebuttal via Theory of Mind](https://arxiv.org/abs/2601.15715)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Method` · `Influence` · `Mental-State Modeling` · `Social Context` · `Relationship & Role` · `Supervised Learning` · `RL` · `Reward Modeling`
+  - Code: [GitHub / Project](https://github.com/Zhitao-He/RebuttalAgent)
+  - Summary: [Summary](paper/PD-ICLR-2026-RebuttalAgent:%20Strategic%20Persuasion%20in%20Academic%20Rebuttal%20via%20Theory%20of%20Mind.md)
+- [Strategic Planning and Rationalizing on Trees Make LLMs Better Debaters](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ee3ce0121939f42098cdefd3ea025bf1-Abstract-Conference.html)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Method` · `Influence` · `Interaction Management` · `Social Perception` · `Multi-party` · `Planning` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/LeiLiLab/TreeDebater)
+- [Towards Strategic Persuasion with Language Models](https://arxiv.org/abs/2509.22989v2)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Method` · `Influence` · `RL`
+  - Summary: [Summary](paper/PD-ICLR-2026-Towards%20Strategic%20Persuasion%20with%20Language%20Models.md)
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
@@ -119,27 +279,102 @@
 <details>
 <summary>❤️‍🩹 <b>Empathy & Emotional Support</b> · 19 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2021 | ACL | Towards Emotional Support Dialog Systems | [查看](https://aclanthology.org/2021.acl-long.269/) | - | [代码](https://github.com/thu-coai/Emotional-Support-Conversation) |
-| 2023 | arXiv | CharacterChat- Learning towards Conversational AI with Personalized Social Support | [查看](https://arxiv.org/abs/2308.10278) | [摘要](paper/ED-arXiv-2023-CharacterChat-%20Learning%20towards%20Conversational%20AI%20with%20Personalized%20Social%20Support.md) | [代码](https://github.com/morecry/CharacterChat) |
-| 2023 | EMNLP | SoulChat- Improving LLMs’ Empathy, Listening, and Comfort Abilities through Fine-tuning with Multi-turn Empathy Conversations | [查看](https://aclanthology.org/2023.findings-emnlp.83.pdf) | [摘要](paper/ED-EMNLP-2023-SoulChat-%20Improving%20LLMs%E2%80%99%20Empathy%2C%20Listening%2C%20and%20Comfort%20Abilities%20through%20Fine-tuning%20with%20Multi-turn%20Empathy%20Conversations.md) | [代码](https://github.com/scutcyr/SoulChat) |
-| 2023 | ACL | TransESC: Smoothing Emotional Support Conversation via Turn-Level State Transition | [查看](https://aclanthology.org/2023.findings-acl.420/) | - | [代码](https://github.com/circle-hit/TransESC) |
-| 2024 | ACL | EmoBench- Evaluating the Emotional Intelligence of Large Language Models | [查看](https://github.com/Sahandfer/EmoBench) | [摘要](paper/ED-ACL-2024-EmoBench-%20Evaluating%20the%20Emotional%20Intelligence%20of%20Large%20Language%20Models.md) | [代码](https://github.com/Sahandfer/EmoBench) |
-| 2024 | ACL | Can Large Language Models be Good Emotional Supporter? Mitigating Preference Bias on Emotional Support Conversation | [查看](https://aclanthology.org/2024.acl-long.813/) | - | [代码](https://github.com/1eastar/EmotionalSupport) |
-| 2024 | ACL | ESCoT: Towards Interpretable Emotional Support Dialogue Systems | [查看](https://aclanthology.org/2024.acl-long.723/) | - | [代码](https://github.com/TeigenZhang/ESCoT) |
-| 2025 | arXiv | Echo-N1- Affective RL Frontier | [查看](https://arxiv.org/abs/2512.00344v1) | [摘要](paper/ED-arXiv-2025-Echo-N1-%20Affective%20RL%20Frontier.md) | - |
-| 2025 | ACL | PsyDT- Using LLMs to Construct the Digital Twin of Psychological Counselor with Personalized Counseling Style for Psychological Counseling | [查看](https://arxiv.org/pdf/2412.13660) | [摘要](paper/ED-ACL-2025-PsyDT-%20Using%20LLMs%20to%20Construct%20the%20Digital%20Twin%20of%20Psychological%20Counselor%20with%20Personalized%20Counseling%20Style%20for%20Psychological%20Counseling.md) | [代码](https://github.com/scutcyr/SoulChat2.0) |
-| 2025 | ACL | PsyDial- A Large-scale Long-term Conversational Dataset for Mental Health Support | [查看](https://aclanthology.org/2025.acl-long.1049/) | [摘要](paper/ED-ACL-2025-PsyDial:%20A%20Large-scale%20Long-term%20Conversational%20Dataset%20for%20Mental%20Health%20Support.md) | [代码](https://github.com/qiuhuachuan/PsyDial) |
-| 2025 | arXiv | Reinforcement Learning with Verifiable Emotion Rewards for Empathetic Agents | [查看](https://arxiv.org/abs/2507.03112v1) | [摘要](paper/ED-arXiv-2025-Reinforcement%20Learning%20with%20Verifiable%20Emotion%20Rewards%20for%20Empathetic%20Agents.md) | [代码](https://github.com/Tencent/DigitalHuman/tree/main/RLVER) |
-| 2025 | arXiv | SAGE- Steering and Refining Dialog Generation with State-Action Augmentation | [查看](https://arxiv.org/abs/2503.03040) | [摘要](paper/ED-arXiv-2025-SAGE-%20Steering%20and%20Refining%20Dialog%20Generation%20with%20State-Action%20Augmentation.md) | [代码](https://github.com/apple/ml-sage-dialog-gen) |
-| 2025 | ACL | Beyond Verbal Cues: Emotional Contagion Graph Network for Causal Emotion Entailment | [查看](https://aclanthology.org/2025.findings-acl.88/) | - | [代码](https://github.com/Yu-Fangxu/ECGN) |
-| 2025 | EMNLP | Chain of Strategy Optimization Makes Large Language Models Better Emotional Supporter | [查看](https://arxiv.org/abs/2503.05362) | [摘要](paper/ED-EMNLP-2025-Chain%20of%20Strategy%20Optimization%20Makes%20Large%20Language%20Models%20Better%20Emotional%20Supporter.md) | [代码](https://github.com/XingYuSSS/CSO) |
-| 2025 | CHI | Customizing Emotional Support: How Do Individuals Construct and Interact With LLM-Powered Chatbots | [查看](https://doi.org/10.1145/3706598.3713453) | - | - |
-| 2025 | NAACL | EmoDynamiX: Emotional Support Dialogue Strategy Prediction by Modelling MiXed Emotions and Discourse Dynamics | [查看](https://aclanthology.org/2025.naacl-long.81/) | - | [代码](https://github.com/cw-wan/EmoDynamiX-v2) |
-| 2026 | arXiv | Affective Flow Language Model for Emotional Support Conversation | [查看](https://arxiv.org/abs/2602.08826v1) | [摘要](paper/ED-arXiv-2026-Affective%20Flow%20Language%20Model%20for%20Emotional%20Support%20Conversation.md) | [代码](https://github.com/chzou25-lgtm/AffectiveFlow) |
-| 2026 | arXiv | EMPA: Evaluating Persona-Aligned Empathy as a Process | [查看](https://arxiv.org/abs/2603.00552) | [摘要](paper/ED-arXiv-2026-EMPA:%20Evaluating%20Persona-Aligned%20Empathy%20as%20a%20Process.md) | [代码](https://github.com/KAYA-HAI/EMPA-Benchmark-EPMSandbox) |
-| 2026 | ACL | You Never Know a Person, You Only Know Their Defenses- Detecting Levels of Psychological Defense Mechanisms in Supportive Conversations | [查看](https://aclanthology.org/2026.findings-acl.708/) | - | - |
+<!-- CATALOGUE:START -->
+- [Towards Emotional Support Dialog Systems](https://aclanthology.org/2021.acl-long.269/)
+  - Publisher: `ACL 2021`
+  - Keywords: `Dataset` · `Support` · `Affect` · `Relationship & Role`
+  - Code: [GitHub / Project](https://github.com/thu-coai/Emotional-Support-Conversation)
+- [CharacterChat- Learning towards Conversational AI with Personalized Social Support](https://arxiv.org/abs/2308.10278)
+  - Publisher: `arXiv 2023`
+  - Keywords: `System` · `Support` · `Social Memory & Adaptation` · `Personalization` · `Relationship & Role` · `User Simulation` · `Retrieval`
+  - Code: [GitHub / Project](https://github.com/morecry/CharacterChat)
+  - Summary: [Summary](paper/ED-arXiv-2023-CharacterChat-%20Learning%20towards%20Conversational%20AI%20with%20Personalized%20Social%20Support.md)
+- [SoulChat- Improving LLMs’ Empathy, Listening, and Comfort Abilities through Fine-tuning with Multi-turn Empathy Conversations](https://aclanthology.org/2023.findings-emnlp.83.pdf)
+  - Publisher: `EMNLP 2023`
+  - Keywords: `Dataset` · `Support` · `Affect` · `Relationship & Role` · `Supervised Learning` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/scutcyr/SoulChat)
+  - Summary: [Summary](paper/ED-EMNLP-2023-SoulChat-%20Improving%20LLMs%E2%80%99%20Empathy%2C%20Listening%2C%20and%20Comfort%20Abilities%20through%20Fine-tuning%20with%20Multi-turn%20Empathy%20Conversations.md)
+- [TransESC: Smoothing Emotional Support Conversation via Turn-Level State Transition](https://aclanthology.org/2023.findings-acl.420/)
+  - Publisher: `ACL 2023`
+  - Keywords: `Method` · `Support` · `Affect` · `Interaction Management` · `Planning`
+  - Code: [GitHub / Project](https://github.com/circle-hit/TransESC)
+- [Can Large Language Models be Good Emotional Supporter? Mitigating Preference Bias on Emotional Support Conversation](https://aclanthology.org/2024.acl-long.813/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Evaluation` · `Support` · `Affect`
+  - Code: [GitHub / Project](https://github.com/1eastar/EmotionalSupport)
+- [EmoBench- Evaluating the Emotional Intelligence of Large Language Models](https://github.com/Sahandfer/EmoBench)
+  - Publisher: `ACL 2024`
+  - Keywords: `Benchmark` · `General Interaction` · `Affect`
+  - Code: [GitHub / Project](https://github.com/Sahandfer/EmoBench)
+  - Summary: [Summary](paper/ED-ACL-2024-EmoBench-%20Evaluating%20the%20Emotional%20Intelligence%20of%20Large%20Language%20Models.md)
+- [ESCoT: Towards Interpretable Emotional Support Dialogue Systems](https://aclanthology.org/2024.acl-long.723/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Method` · `Support` · `Affect` · `Mental-State Modeling` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/TeigenZhang/ESCoT)
+- [Beyond Verbal Cues: Emotional Contagion Graph Network for Causal Emotion Entailment](https://aclanthology.org/2025.findings-acl.88/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Social Perception` · `Planning`
+  - Code: [GitHub / Project](https://github.com/Yu-Fangxu/ECGN)
+- [Chain of Strategy Optimization Makes Large Language Models Better Emotional Supporter](https://arxiv.org/abs/2503.05362)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Support` · `Affect` · `Mental-State Modeling` · `Preference Optimization` · `Planning` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/XingYuSSS/CSO)
+  - Summary: [Summary](paper/ED-EMNLP-2025-Chain%20of%20Strategy%20Optimization%20Makes%20Large%20Language%20Models%20Better%20Emotional%20Supporter.md)
+- [Customizing Emotional Support: How Do Individuals Construct and Interact With LLM-Powered Chatbots](https://doi.org/10.1145/3706598.3713453)
+  - Publisher: `CHI 2025`
+  - Keywords: `System` · `Support` · `Social Memory & Adaptation` · `Personalization` · `Longitudinal`
+- [Echo-N1- Affective RL Frontier](https://arxiv.org/abs/2512.00344v1)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Personalization` · `RL`
+  - Summary: [Summary](paper/ED-arXiv-2025-Echo-N1-%20Affective%20RL%20Frontier.md)
+- [EmoDynamiX: Emotional Support Dialogue Strategy Prediction by Modelling MiXed Emotions and Discourse Dynamics](https://aclanthology.org/2025.naacl-long.81/)
+  - Publisher: `NAACL 2025`
+  - Keywords: `Method` · `Support` · `Affect` · `Interaction Management` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/cw-wan/EmoDynamiX-v2)
+- [PsyDial- A Large-scale Long-term Conversational Dataset for Mental Health Support](https://aclanthology.org/2025.acl-long.1049/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Dataset` · `Support` · `Affect` · `Relationship & Role` · `Retrieval` · `Longitudinal`
+  - Code: [GitHub / Project](https://github.com/qiuhuachuan/PsyDial)
+  - Summary: [Summary](paper/ED-ACL-2025-PsyDial:%20A%20Large-scale%20Long-term%20Conversational%20Dataset%20for%20Mental%20Health%20Support.md)
+- [PsyDT- Using LLMs to Construct the Digital Twin of Psychological Counselor with Personalized Counseling Style for Psychological Counseling](https://arxiv.org/pdf/2412.13660)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `Support` · `Personalization`
+  - Code: [GitHub / Project](https://github.com/scutcyr/SoulChat2.0)
+  - Summary: [Summary](paper/ED-ACL-2025-PsyDT-%20Using%20LLMs%20to%20Construct%20the%20Digital%20Twin%20of%20Psychological%20Counselor%20with%20Personalized%20Counseling%20Style%20for%20Psychological%20Counseling.md)
+- [Reinforcement Learning with Verifiable Emotion Rewards for Empathetic Agents](https://arxiv.org/abs/2507.03112v1)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `Support` · `Affect` · `Mental-State Modeling` · `RL` · `Reward Modeling` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/Tencent/DigitalHuman/tree/main/RLVER)
+  - Summary: [Summary](paper/ED-arXiv-2025-Reinforcement%20Learning%20with%20Verifiable%20Emotion%20Rewards%20for%20Empathetic%20Agents.md)
+- [SAGE- Steering and Refining Dialog Generation with State-Action Augmentation](https://arxiv.org/abs/2503.03040)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Interaction Management` · `Planning` · `Longitudinal`
+  - Code: [GitHub / Project](https://github.com/apple/ml-sage-dialog-gen)
+  - Summary: [Summary](paper/ED-arXiv-2025-SAGE-%20Steering%20and%20Refining%20Dialog%20Generation%20with%20State-Action%20Augmentation.md)
+- [Affective Flow Language Model for Emotional Support Conversation](https://arxiv.org/abs/2602.08826v1)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `Support` · `Affect` · `Interaction Management` · `Supervised Learning` · `Preference Optimization` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/chzou25-lgtm/AffectiveFlow)
+  - Summary: [Summary](paper/ED-arXiv-2026-Affective%20Flow%20Language%20Model%20for%20Emotional%20Support%20Conversation.md)
+- [EMPA: Evaluating Persona-Aligned Empathy as a Process](https://arxiv.org/abs/2603.00552)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Evaluation` · `Support` · `Social Memory & Adaptation` · `Mental-State Modeling` · `Personalization` · `User Simulation` · `Longitudinal`
+  - Code: [GitHub / Project](https://github.com/KAYA-HAI/EMPA-Benchmark-EPMSandbox)
+  - Summary: [Summary](paper/ED-arXiv-2026-EMPA:%20Evaluating%20Persona-Aligned%20Empathy%20as%20a%20Process.md)
+- [You Never Know a Person, You Only Know Their Defenses- Detecting Levels of Psychological Defense Mechanisms in Supportive Conversations](https://aclanthology.org/2026.findings-acl.708/)
+  - Publisher: `ACL 2026`
+  - Keywords: `Dataset` · `Support` · `Mental-State Modeling` · `Relationship & Role` · `Supervised Learning`
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
@@ -147,32 +382,123 @@
 <details>
 <summary>🛍️ <b>Conversational Recommendation</b> · 24 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2020 | ACL | Towards Conversational Recommendation over Multi-Type Dialogs | [查看](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial) | [摘要](paper/Recommend-ACL-2020-Towards%20Conversational%20Recommendation%20over%20Multi-Type%20Dialogs.md) | [代码](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial) |
-| 2021 | ACL | RevCore- Review-augmented Conversational Recommendation | [查看](https://aclanthology.org/2021.findings-acl.104/) | [摘要](paper/Recommend-ACL-2021-RevCore-%20Review-augmented%20Conversational%20Recommendation.md) | [代码](https://github.com/JD-AI-Research-NLP/RevCore) |
-| 2023 | KDD | Improving conversational recommendation systems via counterfactual data simulation | [查看](https://dl.acm.org/doi/10.1145/3580305.3599387) | [摘要](paper/Recommend-KDD-2023-Improving%20conversational%20recommendation%20systems%20via%20counterfactual%20data%20simulation.md) | [代码](https://github.com/RUCAIBox/CFCRS) |
-| 2023 | EMNLP | Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models | [查看](https://aclanthology.org/2023.emnlp-main.621/) | [摘要](paper/Recommend-EMNLP-2023-Rethinking%20the%20Evaluation%20for%20Conversational%20Recommendation%20in%20the%20Era%20of%20Large%20Language%20Models.md) | [代码](https://github.com/RUCAIBox/iEvaLM-CRS) |
-| 2023 | CIKM | Large Language Models as Zero-Shot Conversational Recommenders | [查看](https://doi.org/10.1145/3583780.3614949) | - | [代码](https://github.com/AaronHeee/LLMs-as-Zero-Shot-Conversational-RecSys) |
-| 2024 | EMNLP | Beyond Persuasion: Towards Conversational Recommender System with Credible Explanations | [查看](https://aclanthology.org/2024.findings-emnlp.247) | [摘要](paper/Recommend-EMNLP-2024-Beyond%20Persuasion%3A%20Towards%20Conversational%20Recommender%20System%20with%20Credible%20Explanations.md) | [代码](https://github.com/mumen798/PC-CRS) |
-| 2024 | WWW | How Reliable is Your Simulator- Analysis on the Limitations of Current LLM-based User Simulators for Conversational Recommendation | [查看](https://doi.org/10.1145/3589335.3651955) | [摘要](paper/Recommend-WWW-2024-How%20Reliable%20is%20Your%20Simulator-%20Analysis%20on%20the%20Limitations%20of%20Current%20LLM-based%20User%20Simulators%20for%20Conversational%20Recommendation.md) | [代码](https://github.com/RUCAIBox/iEvaLM-CRS/) |
-| 2024 | ACL | LLM-REDIAL: A Large-Scale Dataset for Conversational Recommender Systems Created from User Behaviors with LLMs | [查看](https://aclanthology.org/2024.findings-acl.529/) | [摘要](paper/Recommend-ACL-2024-LLM-REDIAL%3A%20A%20Large-Scale%20Dataset%20for%20Conversational%20Recommender%20Systems%20Created%20from%20User%20Behaviors%20with%20LLMs.md) | [代码](https://github.com/LitGreenhand/LLM-Redial) |
-| 2024 | arXiv | Reindex-Then-Adapt- Improving Large Language Models for Conversational Recommendation | [查看](https://arxiv.org/abs/2405.12119) | [摘要](paper/Recommend-arXiv-2024-Reindex-Then-Adapt-%20Improving%20Large%20Language%20Models%20for%20Conversational%20Recommendation.md) | - |
-| 2024 | ACL | Pearl: A Review-driven Persona-Knowledge Grounded Conversational Recommendation Dataset | [查看](https://aclanthology.org/2024.findings-acl.65/) | - | [代码](https://github.com/kkmjkim/PEARL) |
-| 2024 | EMNLP | Mitigating Matthew Effect: Multi-Hypergraph Boosted Multi-Interest Self-Supervised Learning for Conversational Recommendation | [查看](https://aclanthology.org/2024.emnlp-main.86/) | - | [代码](https://github.com/zysensmile/HiCore) |
-| 2024 | SIGIR | Broadening the View: Demonstration-augmented Prompt Learning for Conversational Recommendation | [查看](https://doi.org/10.1145/3626772.3657755) | - | - |
-| 2025 | TKDE | A Causal-Based Attribute Selection Strategy for Conversational Recommender Systems | [查看](https://ieeexplore.ieee.org/abstract/document/10891447) | [摘要](paper/Recommend-TKDE-2025-A%20Causal-Based%20Attribute%20Selection%20Strategy%20for%20Conversational%20Recommender%20Systems.md) | - |
-| 2025 | WWW | Bridging Conversational and Collaborative Signals for Conversational Recommendation | [查看](https://doi.org/10.1145/3701716.3715486) | [摘要](paper/Recommend-WWW-2025-Bridging%20Conversational%20and%20Collaborative%20Signals%20for%20Conversational%20Recommendation.md) | - |
-| 2025 | WWW | Collaborative Retrieval for Large Language Model-based Conversational Recommender Systems | [查看](https://dl.acm.org/doi/10.1145/3589334.3645347) | [摘要](paper/Recommend-WWW-2025-Collaborative%20Retrieval%20for%20Large%20Language%20Model-based%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/yaochenzhu/CRAG) |
-| 2025 | WWW | Towards Efficient Conversational Recommendations- Expected Value of Information Meets Bandit Learning | [查看](https://doi.org/10.1145/3696410.3714773) | [摘要](paper/Recommend-WWW-2025-Towards%20Efficient%20Conversational%20Recommendations-%20Expected%20Value%20of%20Information%20Meets%20Bandit%20Learning.md) | - |
-| 2025 | arXiv | A Framework for Generating Conversational Recommendation Datasets from Behavioral Interactions | [查看](https://arxiv.org/abs/2506.17285) | [摘要](paper/Recommend-arXiv-2025-A%20Framework%20for%20Generating%20Conversational%20Recommendation%20Datasets%20from%20Behavioral%20Interactions.md) | - |
-| 2025 | EMNLP | LLM-based Conversational Recommendation Agents with Collaborative Verbalized Experience | [查看](https://aclanthology.org/2025.findings-emnlp.119/) | [摘要](paper/Recommend-EMNLP-2025-LLM-based%20Conversational%20Recommendation%20Agents%20with%20Collaborative%20Verbalized%20Experience.md) | [代码](https://github.com/yaochenzhu/CRAVE) |
-| 2025 | EMNLP | Towards Personalized Conversational Sales Agents | [查看](https://arxiv.org/abs/2504.08754) | [摘要](paper/Recommend-EMNLP-2025-Towards%20Personalized%20Conversational%20Sales%20Agents.md) | - |
-| 2025 | NAACL | Empowering Retrieval-based Conversational Recommendation with Contrasting User Preferences | [查看](https://aclanthology.org/2025.naacl-long.392/) | - | [代码](https://github.com/kookeej/CORAL) |
-| 2026 | WWW | Not All Information Brings Benefits- Personalization-Driven Agent Debate for Conversational Recommendation | [查看](https://doi.org/10.1145/3774904.3792152) | [摘要](paper/Recommend-WWW-2026-Not%20All%20Information%20Brings%20Benefits-%20Personalization-Driven%20Agent%20Debate%20for%20Conversational%20Recommendation.md) | - |
-| 2026 | WWW | Optimizing Multi-Turn Interactive Recommendation Agents via Generative Intrinsic Motivation | [查看](https://doi.org/10.1145/3774904.3792209) | [摘要](paper/Recommend-WWW-2026-Optimizing%20Multi-Turn%20Interactive%20Recommendation%20Agents%20via%20Generative%20Intrinsic%20Motivation.md) | [代码](https://github.com/XueyangFeng/GIMO) |
-| 2026 | arXiv | User Simulator-Guided Multi-Turn Preference Optimization for Reasoning LLM-based Conversational Recommendation | [查看](https://arxiv.org/abs/2604.03671) | [摘要](paper/Recommend-arXiv-2026-User%20Simulator-Guided%20Multi-Turn%20Preference%20Optimization%20for%20Reasoning%20LLM-based%20Conversational%20Recommendation.md) | - |
-| 2026 | ICLR | Rank-GRPO: Training LLM-based Conversational Recommender Systems with Reinforcement Learning | [查看](https://arxiv.org/abs/2510.20150) | - | [代码](https://github.com/yaochenzhu/Rank-GRPO) |
+<!-- CATALOGUE:START -->
+- [Towards Conversational Recommendation over Multi-Type Dialogs](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial)
+  - Publisher: `ACL 2020`
+  - Keywords: `Dataset` · `Recommendation` · `Personalization`
+  - Code: [GitHub / Project](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial)
+  - Summary: [Summary](paper/Recommend-ACL-2020-Towards%20Conversational%20Recommendation%20over%20Multi-Type%20Dialogs.md)
+- [RevCore- Review-augmented Conversational Recommendation](https://aclanthology.org/2021.findings-acl.104/)
+  - Publisher: `ACL 2021`
+  - Keywords: `Method` · `Recommendation` · `Affect` · `Retrieval` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/JD-AI-Research-NLP/RevCore)
+  - Summary: [Summary](paper/Recommend-ACL-2021-RevCore-%20Review-augmented%20Conversational%20Recommendation.md)
+- [Improving conversational recommendation systems via counterfactual data simulation](https://dl.acm.org/doi/10.1145/3580305.3599387)
+  - Publisher: `KDD 2023`
+  - Keywords: `Method` · `Recommendation` · `Mental-State Modeling` · `Interaction Management` · `Personalization` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/RUCAIBox/CFCRS)
+  - Summary: [Summary](paper/Recommend-KDD-2023-Improving%20conversational%20recommendation%20systems%20via%20counterfactual%20data%20simulation.md)
+- [Large Language Models as Zero-Shot Conversational Recommenders](https://doi.org/10.1145/3583780.3614949)
+  - Publisher: `CIKM 2023`
+  - Keywords: `Method` · `Recommendation` · `Social Perception` · `Personalization` · `Retrieval`
+  - Code: [GitHub / Project](https://github.com/AaronHeee/LLMs-as-Zero-Shot-Conversational-RecSys)
+- [Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models](https://aclanthology.org/2023.emnlp-main.621/)
+  - Publisher: `EMNLP 2023`
+  - Keywords: `Evaluation` · `Recommendation` · `Interaction Management` · `User Simulation` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/RUCAIBox/iEvaLM-CRS)
+  - Summary: [Summary](paper/Recommend-EMNLP-2023-Rethinking%20the%20Evaluation%20for%20Conversational%20Recommendation%20in%20the%20Era%20of%20Large%20Language%20Models.md)
+- [Beyond Persuasion: Towards Conversational Recommender System with Credible Explanations](https://aclanthology.org/2024.findings-emnlp.247)
+  - Publisher: `EMNLP 2024`
+  - Keywords: `Method` · `Recommendation` · `Social Context` · `Planning` · `Self-play`
+  - Code: [GitHub / Project](https://github.com/mumen798/PC-CRS)
+  - Summary: [Summary](paper/Recommend-EMNLP-2024-Beyond%20Persuasion:%20Towards%20Conversational%20Recommender%20System%20with%20Credible%20Explanations.md)
+- [Broadening the View: Demonstration-augmented Prompt Learning for Conversational Recommendation](https://doi.org/10.1145/3626772.3657755)
+  - Publisher: `SIGIR 2024`
+  - Keywords: `Method` · `Recommendation` · `Social Context` · `Retrieval` · `Supervised Learning`
+- [How Reliable is Your Simulator- Analysis on the Limitations of Current LLM-based User Simulators for Conversational Recommendation](https://doi.org/10.1145/3589335.3651955)
+  - Publisher: `WWW 2024`
+  - Keywords: `Evaluation` · `Recommendation` · `Interaction Management` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/RUCAIBox/iEvaLM-CRS/)
+  - Summary: [Summary](paper/Recommend-WWW-2024-How%20Reliable%20is%20Your%20Simulator-%20Analysis%20on%20the%20Limitations%20of%20Current%20LLM-based%20User%20Simulators%20for%20Conversational%20Recommendation.md)
+- [LLM-REDIAL: A Large-Scale Dataset for Conversational Recommender Systems Created from User Behaviors with LLMs](https://aclanthology.org/2024.findings-acl.529/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Dataset` · `Recommendation` · `User Simulation` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/LitGreenhand/LLM-Redial)
+  - Summary: [Summary](paper/Recommend-ACL-2024-LLM-REDIAL:%20A%20Large-Scale%20Dataset%20for%20Conversational%20Recommender%20Systems%20Created%20from%20User%20Behaviors%20with%20LLMs.md)
+- [Mitigating Matthew Effect: Multi-Hypergraph Boosted Multi-Interest Self-Supervised Learning for Conversational Recommendation](https://aclanthology.org/2024.emnlp-main.86/)
+  - Publisher: `EMNLP 2024`
+  - Keywords: `Method` · `Recommendation` · `Social Memory & Adaptation` · `Self-play`
+  - Code: [GitHub / Project](https://github.com/zysensmile/HiCore)
+- [Pearl: A Review-driven Persona-Knowledge Grounded Conversational Recommendation Dataset](https://aclanthology.org/2024.findings-acl.65/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Dataset` · `Recommendation` · `Personalization` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/kkmjkim/PEARL)
+- [Reindex-Then-Adapt- Improving Large Language Models for Conversational Recommendation](https://arxiv.org/abs/2405.12119)
+  - Publisher: `arXiv 2024`
+  - Keywords: `Method` · `Recommendation` · `Interaction Management`
+  - Summary: [Summary](paper/Recommend-arXiv-2024-Reindex-Then-Adapt-%20Improving%20Large%20Language%20Models%20for%20Conversational%20Recommendation.md)
+- [A Causal-Based Attribute Selection Strategy for Conversational Recommender Systems](https://ieeexplore.ieee.org/abstract/document/10891447)
+  - Publisher: `TKDE 2025`
+  - Keywords: `Method` · `Recommendation` · `Social Context` · `Personalization` · `Planning`
+  - Summary: [Summary](paper/Recommend-TKDE-2025-A%20Causal-Based%20Attribute%20Selection%20Strategy%20for%20Conversational%20Recommender%20Systems.md)
+- [A Framework for Generating Conversational Recommendation Datasets from Behavioral Interactions](https://arxiv.org/abs/2506.17285)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `Recommendation` · `Interaction Management` · `Social Memory & Adaptation` · `Personalization` · `User Simulation` · `Planning` · `Multi-turn`
+  - Summary: [Summary](paper/Recommend-arXiv-2025-A%20Framework%20for%20Generating%20Conversational%20Recommendation%20Datasets%20from%20Behavioral%20Interactions.md)
+- [Bridging Conversational and Collaborative Signals for Conversational Recommendation](https://doi.org/10.1145/3701716.3715486)
+  - Publisher: `WWW 2025`
+  - Keywords: `Method` · `Recommendation`
+  - Summary: [Summary](paper/Recommend-WWW-2025-Bridging%20Conversational%20and%20Collaborative%20Signals%20for%20Conversational%20Recommendation.md)
+- [Collaborative Retrieval for Large Language Model-based Conversational Recommender Systems](https://dl.acm.org/doi/10.1145/3589334.3645347)
+  - Publisher: `WWW 2025`
+  - Keywords: `Method` · `Recommendation` · `Interaction Management` · `Personalization` · `Retrieval`
+  - Code: [GitHub / Project](https://github.com/yaochenzhu/CRAG)
+  - Summary: [Summary](paper/Recommend-WWW-2025-Collaborative%20Retrieval%20for%20Large%20Language%20Model-based%20Conversational%20Recommender%20Systems.md)
+- [Empowering Retrieval-based Conversational Recommendation with Contrasting User Preferences](https://aclanthology.org/2025.naacl-long.392/)
+  - Publisher: `NAACL 2025`
+  - Keywords: `Method` · `Recommendation` · `Affect` · `Mental-State Modeling` · `Supervised Learning` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/kookeej/CORAL)
+- [LLM-based Conversational Recommendation Agents with Collaborative Verbalized Experience](https://aclanthology.org/2025.findings-emnlp.119/)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Recommendation` · `Social Memory & Adaptation` · `Personalization` · `Retrieval`
+  - Code: [GitHub / Project](https://github.com/yaochenzhu/CRAVE)
+  - Summary: [Summary](paper/Recommend-EMNLP-2025-LLM-based%20Conversational%20Recommendation%20Agents%20with%20Collaborative%20Verbalized%20Experience.md)
+- [Towards Efficient Conversational Recommendations- Expected Value of Information Meets Bandit Learning](https://doi.org/10.1145/3696410.3714773)
+  - Publisher: `WWW 2025`
+  - Keywords: `Method` · `Recommendation` · `Interaction Management` · `RL` · `Multi-turn`
+  - Summary: [Summary](paper/Recommend-WWW-2025-Towards%20Efficient%20Conversational%20Recommendations-%20Expected%20Value%20of%20Information%20Meets%20Bandit%20Learning.md)
+- [Towards Personalized Conversational Sales Agents](https://arxiv.org/abs/2504.08754)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Mental-State Modeling` · `Personalization` · `User Simulation`
+  - Summary: [Summary](paper/Recommend-EMNLP-2025-Towards%20Personalized%20Conversational%20Sales%20Agents.md)
+- [Not All Information Brings Benefits- Personalization-Driven Agent Debate for Conversational Recommendation](https://doi.org/10.1145/3774904.3792152)
+  - Publisher: `WWW 2026`
+  - Keywords: `Method` · `Recommendation` · `Social Memory & Adaptation` · `User Simulation`
+  - Summary: [Summary](paper/Recommend-WWW-2026-Not%20All%20Information%20Brings%20Benefits-%20Personalization-Driven%20Agent%20Debate%20for%20Conversational%20Recommendation.md)
+- [Optimizing Multi-Turn Interactive Recommendation Agents via Generative Intrinsic Motivation](https://doi.org/10.1145/3774904.3792209)
+  - Publisher: `WWW 2026`
+  - Keywords: `Method` · `Recommendation` · `Interaction Management` · `RL` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/XueyangFeng/GIMO)
+  - Summary: [Summary](paper/Recommend-WWW-2026-Optimizing%20Multi-Turn%20Interactive%20Recommendation%20Agents%20via%20Generative%20Intrinsic%20Motivation.md)
+- [Rank-GRPO: Training LLM-based Conversational Recommender Systems with Reinforcement Learning](https://arxiv.org/abs/2510.20150)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Method` · `Recommendation` · `Interaction Management` · `RL` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/yaochenzhu/Rank-GRPO)
+- [User Simulator-Guided Multi-Turn Preference Optimization for Reasoning LLM-based Conversational Recommendation](https://arxiv.org/abs/2604.03671)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `Recommendation` · `Mental-State Modeling` · `Social Memory & Adaptation` · `Personalization` · `User Simulation` · `Preference Optimization` · `RL` · `Supervised Learning` · `Reward Modeling` · `Multi-turn`
+  - Summary: [Summary](paper/Recommend-arXiv-2026-User%20Simulator-Guided%20Multi-Turn%20Preference%20Optimization%20for%20Reasoning%20LLM-based%20Conversational%20Recommendation.md)
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
@@ -180,19 +506,57 @@
 <details>
 <summary>🤝 <b>Cooperation & Collaboration</b> · 11 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2022 | Science | Human-level play in the game of Diplomacy by combining language models with strategic reasoning | [查看](https://doi.org/10.1126/science.ade9097) | - | - |
-| 2022 | CHI | AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts | [查看](https://doi.org/10.1145/3491102.3517582) | - | - |
-| 2024 | ICLR | Building Cooperative Embodied Agents Modularly with Large Language Models | [查看](https://mlanthology.org/iclr/2024/zhang2024iclr-building/) | - | - |
-| 2024 | TACL | Decision-Oriented Dialogue for Human-AI Collaboration | [查看](https://aclanthology.org/2024.tacl-1.50/) | - | - |
-| 2024 | ICML | Should we be going MAD- A Look at Multi-Agent Debate Strategies for LLMs | [查看](https://arxiv.org/abs/2311.17371) | - | [代码](https://github.com/instadeepai/DebateLLM) |
-| 2024 | ACL | Your Co-Workers Matter- Evaluating Collaborative Capabilities of Language Models in Blocks World | [查看](https://aclanthology.org/2024.findings-acl.294/) | - | - |
-| 2024 | ACL | Exploring Collaboration Mechanisms for LLM Agents: A Social Psychology View | [查看](https://aclanthology.org/2024.acl-long.782/) | - | [代码](https://github.com/zjunlp/MachineSoM) |
-| 2024 | ICLR | MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework | [查看](https://arxiv.org/abs/2308.00352) | - | [代码](https://github.com/FoundationAgents/MetaGPT) |
-| 2024 | NeurIPS | Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents | [查看](https://arxiv.org/abs/2404.16698) | - | [代码](https://github.com/giorgiopiatti/govsim) |
-| 2024 | Science | AI can help humans find common ground in democratic deliberation | [查看](https://doi.org/10.1126/science.adq2852) | - | [代码](https://github.com/google-deepmind/habermas_machine) |
-| 2025 | Nature Human Behaviour | Playing repeated games with large language models | [查看](https://doi.org/10.1038/s41562-025-02172-y) | - | [代码](https://github.com/eliaka/repeatedgames) |
+<!-- CATALOGUE:START -->
+- [AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts](https://doi.org/10.1145/3491102.3517582)
+  - Publisher: `CHI 2022`
+  - Keywords: `System` · `General Interaction` · `Interaction Management`
+- [Human-level play in the game of Diplomacy by combining language models with strategic reasoning](https://doi.org/10.1126/science.ade9097)
+  - Publisher: `Science 2022`
+  - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Interaction Management` · `Multi-party` · `Planning` · `RL`
+- [AI can help humans find common ground in democratic deliberation](https://doi.org/10.1126/science.adq2852)
+  - Publisher: `Science 2024`
+  - Keywords: `Method` · `Coordination` · `Social Context` · `Multi-party` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/google-deepmind/habermas_machine)
+- [Building Cooperative Embodied Agents Modularly with Large Language Models](https://mlanthology.org/iclr/2024/zhang2024iclr-building/)
+  - Publisher: `ICLR 2024`
+  - Keywords: `Method` · `Coordination` · `Interaction Management` · `Embodied` · `Multi-party` · `Planning` · `Supervised Learning` · `Longitudinal`
+- [Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents](https://arxiv.org/abs/2404.16698)
+  - Publisher: `NeurIPS 2024`
+  - Keywords: `Method` · `Coordination` · `Social Context` · `Mental-State Modeling` · `Multi-party` · `Planning`
+  - Code: [GitHub / Project](https://github.com/giorgiopiatti/govsim)
+- [Decision-Oriented Dialogue for Human-AI Collaboration](https://aclanthology.org/2024.tacl-1.50/)
+  - Publisher: `TACL 2024`
+  - Keywords: `Method` · `Coordination` · `Interaction Management` · `Multi-party` · `Self-play` · `User Simulation`
+- [Exploring Collaboration Mechanisms for LLM Agents: A Social Psychology View](https://aclanthology.org/2024.acl-long.782/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Method` · `Coordination` · `Social Perception` · `Multi-party`
+  - Code: [GitHub / Project](https://github.com/zjunlp/MachineSoM)
+- [MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2308.00352)
+  - Publisher: `ICLR 2024`
+  - Keywords: `Method` · `Coordination` · `Interaction Management` · `Multi-party` · `Relationship & Role` · `Planning`
+  - Code: [GitHub / Project](https://github.com/FoundationAgents/MetaGPT)
+- [Should we be going MAD- A Look at Multi-Agent Debate Strategies for LLMs](https://arxiv.org/abs/2311.17371)
+  - Publisher: `ICML 2024`
+  - Keywords: `Evaluation` · `General Interaction` · `Interaction Management` · `Multi-party` · `Self-play`
+  - Code: [GitHub / Project](https://github.com/instadeepai/DebateLLM)
+- [Your Co-Workers Matter- Evaluating Collaborative Capabilities of Language Models in Blocks World](https://aclanthology.org/2024.findings-acl.294/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Interaction Management` · `Multi-party` · `Planning`
+- [Playing repeated games with large language models](https://doi.org/10.1038/s41562-025-02172-y)
+  - Publisher: `Nature Human Behaviour 2025`
+  - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
+  - Code: [GitHub / Project](https://github.com/eliaka/repeatedgames)
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
@@ -200,114 +564,377 @@
 <details>
 <summary>💭 <b>Theory of Mind</b> · 19 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2011 | CogSci | Bayesian Theory of Mind- Modeling Joint Belief-Desire Attribution | [查看](https://www.semanticscholar.org/paper/Explore-Theory-of-Mind%3A-Program-guided-adversarial-Sclar-Yu/3c52a1e1c3dc0ef5e1e638e11bbc3a2f09900dc6) | [摘要](paper/ToM-CogSci-2011-Bayesian%20Theory%20of%20Mind-%20Modeling%20Joint%20Belief-Desire%20Attribution.md) | - |
-| 2019 | COBS | Theory of Mind as Inverse Reinforcement Learning | [查看](https://doi.org/10.1016/j.cobeha.2019.04.010) | [摘要](paper/ToM-COBS-2019-Theory-of-Mind-as-Inverse-Reinforcement-Learning.md) | - |
-| 2024 | ACL | Think Twice: Perspective-Taking Improves Large Language Models' Theory-of-Mind Capabilities | [查看](https://aclanthology.org/2024.acl-long.451/) | - | [代码](https://github.com/shawnsihyunlee/simulatedtom) |
-| 2025 | ACL | Machine Theory of Mind Needs Machine Validation | [查看](https://aclanthology.org/2025.findings-acl.951.pdf) | [摘要](paper/ToM-ACL-2025-Machine%20Theory%20of%20Mind%20Needs%20Machine%20Validation.md) | - |
-| 2025 | ACL | Theory of Mind in Large Language Models- Assessment and Enhancement | [查看](https://aclanthology.org/2025.acl-long.1522.pdf) | [摘要](paper/ToM-ACL-2025-Theory%20of%20Mind%20in%20Large%20Language%20Models-%20Assessment%20and%20Enhancement.md) | - |
-| 2025 | arXiv | MINDGAMES: Do Large Language Models Have a Planning Theory of Mind? | [查看](https://arxiv.org/pdf/2507.16196v1.pdf) | [摘要](paper/ToM-arXiv-2025-MINDGAMES:%20Do%20Large%20Language%20Models%20Have%20a%20Planning%20Theory%20of%20Mind.md) | [代码](https://github.com/jlcmoore/mindgames) |
-| 2025 | arXiv | Modeling the Mental World for Embodied AI- A Comprehensive Review | [查看](https://arxiv.org/pdf/2601.02378) | [摘要](paper/ToM-arXiv-2025-Modeling%20the%20Mental%20World%20for%20Embodied%20AI-%20A%20Comprehensive%20Review.md) | - |
-| 2025 | arXiv | ToM-agent: Large Language Models as Theory of Mind Aware Generative Agents with Counterfactual Reflection | [查看](https://arxiv.org/abs/2501.15355) | [摘要](paper/ToM-arXiv-2025-ToM-agent-%20Large%20Language%20Models%20as%20Theory%20of%20Mind%20Aware%20Generative%20Agents%20with%20Counterfactual%20Reflection.md) | - |
-| 2025 | arXiv | ToM-RL: Reinforcement Learning Unlocks Theory of Mind in Small LLMs | [查看](https://arxiv.org/abs/2504.01698) | [摘要](paper/ToM-arXiv-2025-ToM-RL-Reinforcement-Learning-Unlocks-Theory-of-Mind-in-Small-LLMs.md) | [代码](https://github.com/bigai-ai/ToM-R) |
-| 2025 | ICML | Overcoming Multi-step Complexity in Multimodal Theory-of-Mind Reasoning- A Scalable Bayesian Planner | [查看](https://arxiv.org/abs/2506.01301) | [摘要](paper/ToM-ICML-2025-Overcoming%20Multi-step%20Complexity%20in%20Multimodal%20Theory-of-Mind%20Reasoning-%20A%20Scalable%20Bayesian%20Planner.md) | - |
-| 2025 | NeurIPS | AutoToM- Scaling Model-based Mental Inference via Automated Agent Modeling | [查看](https://arxiv.org/abs/2502.15676) | [摘要](paper/ToM-NeurIPS-2025-AutoToM-%20Scaling%20Model-based%20Mental%20Inference%20via%20Automated%20Agent%20Modeling.md) | - |
-| 2025 | NeurIPS | MetaMind- Modeling Human Social Thoughts with Metacognitive Multi-Agent Systems | [查看](https://arxiv.org/abs/2505.18943) | [摘要](paper/ToM-NeurIPS-2025-MetaMind-%20Modeling%20Human%20Social%20Thoughts%20with%20Metacognitive%20Multi-Agent%20Systems.md) | [代码](https://github.com/XMZhangAI/MetaMind) |
-| 2026 | AAAI | Reality vs Counterfactual- Multi-World Contrastive Reinforcement Learning for Enhancing MLLM’s Theory of Mind in Egocentric Videos | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/37162) | [摘要](paper/ToM-AAAI-2026-Reality%20vs%20Counterfactual-%20Multi-World%20Contrastive%20Reinforcement%20Learning%20for%20Enhancing%20MLLM%E2%80%99s%20Theory%20of%20Mind%20in%20Egocentric%20Videos.md) | - |
-| 2026 | arXiv | Infusing Theory of Mind into Socially Intelligent LLM Agents | [查看](https://arxiv.org/abs/2509.22887) | [摘要](paper/ToM-arXiv-2026-Infusing%20Theory%20of%20Mind%20into%20Socially%20Intelligent%20LLM%20Agents.md) | [代码](https://github.com/eujhwang/toma) |
-| 2026 | arXiv | MetaMind- General and Cognitive World Models in Multi-Agent Systems by Meta-Theory of Mind | [查看](https://arxiv.org/abs/2603.00808) | [摘要](paper/ToM-arXiv-2026-MetaMind-%20General%20and%20Cognitive%20World%20Models%20in%20Multi-Agent%20Systems%20by%20Meta-Theory%20of%20Mind.md) | - |
-| 2026 | arXiv | MindClaw- Closed-Loop Embodied Mental-State Reasoning for Precision Intervention | [查看](https://arxiv.org/abs/2606.01063) | [摘要](paper/ToM-arXiv-2026-MindClaw-%20Closed-Loop%20Embodied%20Mental-State%20Reasoning%20for%20Precision%20Intervention.md) | - |
-| 2026 | arXiv | UserHarness- Harnessing User Minds for Stronger Agent Theory-of-Mind | [查看](https://arxiv.org/abs/2605.27721) | [摘要](paper/ToM-arXiv-2026-UserHarness-%20Harnessing%20User%20Minds%20for%20Stronger%20Agent%20Theory-of-Mind.md) | - |
-| 2026 | CVPR | Video-Only ToM- Enhancing Theory of Mind in Multimodal Large Language Models | [查看](https://arxiv.org/abs/2603.24484) | [摘要](paper/ToM-CVPR-2026-Video-Only%20ToM-%20Enhancing%20Theory%20of%20Mind%20in%20Multimodal%20Large%20Language%20Models.md) | [代码](https://founce.github.io/VisionToM/) |
-| 2026 | EACL | Let's Put Ourselves in Sally's Shoes: Shoes of Others Prefilling Improves Theory of Mind in LLMs | [查看](https://aclanthology.org/2026.findings-eacl.6/) | [摘要](paper/ToM-EACL-2026-Lets-Put-Ourselves-in-Sallys-Shoes-Shoes-of-Others-Prefilling-Improves-Theory-of-Mind-in-LLMs.md) | - |
+<!-- CATALOGUE:START -->
+- [Bayesian Theory of Mind- Modeling Joint Belief-Desire Attribution](https://www.semanticscholar.org/paper/Explore-Theory-of-Mind:-Program-guided-adversarial-Sclar-Yu/3c52a1e1c3dc0ef5e1e638e11bbc3a2f09900dc6)
+  - Publisher: `CogSci 2011`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling`
+  - Summary: [Summary](paper/ToM-CogSci-2011-Bayesian%20Theory%20of%20Mind-%20Modeling%20Joint%20Belief-Desire%20Attribution.md)
+- [Theory of Mind as Inverse Reinforcement Learning](https://doi.org/10.1016/j.cobeha.2019.04.010)
+  - Publisher: `COBS 2019`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `RL`
+  - Summary: [Summary](paper/ToM-COBS-2019-Theory-of-Mind-as-Inverse-Reinforcement-Learning.md)
+- [Think Twice: Perspective-Taking Improves Large Language Models' Theory-of-Mind Capabilities](https://aclanthology.org/2024.acl-long.451/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Planning`
+  - Code: [GitHub / Project](https://github.com/shawnsihyunlee/simulatedtom)
+- [AutoToM- Scaling Model-based Mental Inference via Automated Agent Modeling](https://arxiv.org/abs/2502.15676)
+  - Publisher: `NeurIPS 2025`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Social Perception` · `Embodied` · `Planning`
+  - Summary: [Summary](paper/ToM-NeurIPS-2025-AutoToM-%20Scaling%20Model-based%20Mental%20Inference%20via%20Automated%20Agent%20Modeling.md)
+- [Machine Theory of Mind Needs Machine Validation](https://aclanthology.org/2025.findings-acl.951.pdf)
+  - Publisher: `ACL 2025`
+  - Keywords: `Evaluation` · `General Interaction` · `Mental-State Modeling`
+  - Summary: [Summary](paper/ToM-ACL-2025-Machine%20Theory%20of%20Mind%20Needs%20Machine%20Validation.md)
+- [MetaMind- Modeling Human Social Thoughts with Metacognitive Multi-Agent Systems](https://arxiv.org/abs/2505.18943)
+  - Publisher: `NeurIPS 2025`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Social Context` · `Culture` · `Norms & Morality` · `Planning`
+  - Code: [GitHub / Project](https://github.com/XMZhangAI/MetaMind)
+  - Summary: [Summary](paper/ToM-NeurIPS-2025-MetaMind-%20Modeling%20Human%20Social%20Thoughts%20with%20Metacognitive%20Multi-Agent%20Systems.md)
+- [MINDGAMES: Do Large Language Models Have a Planning Theory of Mind?](https://arxiv.org/pdf/2507.16196v1.pdf)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Evaluation` · `Influence` · `Mental-State Modeling`
+  - Code: [GitHub / Project](https://github.com/jlcmoore/mindgames)
+  - Summary: [Summary](paper/ToM-arXiv-2025-MINDGAMES:%20Do%20Large%20Language%20Models%20Have%20a%20Planning%20Theory%20of%20Mind.md)
+- [Modeling the Mental World for Embodied AI- A Comprehensive Review](https://arxiv.org/pdf/2601.02378)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Survey` · `Coordination` · `Mental-State Modeling` · `Social Context` · `Embodied`
+  - Summary: [Summary](paper/ToM-arXiv-2025-Modeling%20the%20Mental%20World%20for%20Embodied%20AI-%20A%20Comprehensive%20Review.md)
+- [Overcoming Multi-step Complexity in Multimodal Theory-of-Mind Reasoning- A Scalable Bayesian Planner](https://arxiv.org/abs/2506.01301)
+  - Publisher: `ICML 2025`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Planning`
+  - Summary: [Summary](paper/ToM-ICML-2025-Overcoming%20Multi-step%20Complexity%20in%20Multimodal%20Theory-of-Mind%20Reasoning-%20A%20Scalable%20Bayesian%20Planner.md)
+- [Theory of Mind in Large Language Models- Assessment and Enhancement](https://aclanthology.org/2025.acl-long.1522.pdf)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling`
+  - Summary: [Summary](paper/ToM-ACL-2025-Theory%20of%20Mind%20in%20Large%20Language%20Models-%20Assessment%20and%20Enhancement.md)
+- [ToM-agent: Large Language Models as Theory of Mind Aware Generative Agents with Counterfactual Reflection](https://arxiv.org/abs/2501.15355)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Social Memory & Adaptation` · `Planning`
+  - Summary: [Summary](paper/ToM-arXiv-2025-ToM-agent-%20Large%20Language%20Models%20as%20Theory%20of%20Mind%20Aware%20Generative%20Agents%20with%20Counterfactual%20Reflection.md)
+- [ToM-RL: Reinforcement Learning Unlocks Theory of Mind in Small LLMs](https://arxiv.org/abs/2504.01698)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Evaluation` · `General Interaction` · `Mental-State Modeling` · `RL` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/bigai-ai/ToM-R)
+  - Summary: [Summary](paper/ToM-arXiv-2025-ToM-RL-Reinforcement-Learning-Unlocks-Theory-of-Mind-in-Small-LLMs.md)
+- [Infusing Theory of Mind into Socially Intelligent LLM Agents](https://arxiv.org/abs/2509.22887)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Social Memory & Adaptation` · `Relationship & Role` · `Planning` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/eujhwang/toma)
+  - Summary: [Summary](paper/ToM-arXiv-2026-Infusing%20Theory%20of%20Mind%20into%20Socially%20Intelligent%20LLM%20Agents.md)
+- [Let's Put Ourselves in Sally's Shoes: Shoes of Others Prefilling Improves Theory of Mind in LLMs](https://aclanthology.org/2026.findings-eacl.6/)
+  - Publisher: `EACL 2026`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Planning`
+  - Summary: [Summary](paper/ToM-EACL-2026-Lets-Put-Ourselves-in-Sallys-Shoes-Shoes-of-Others-Prefilling-Improves-Theory-of-Mind-in-LLMs.md)
+- [MetaMind- General and Cognitive World Models in Multi-Agent Systems by Meta-Theory of Mind](https://arxiv.org/abs/2603.00808)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Social Context` · `Multi-party` · `Self-play`
+  - Summary: [Summary](paper/ToM-arXiv-2026-MetaMind-%20General%20and%20Cognitive%20World%20Models%20in%20Multi-Agent%20Systems%20by%20Meta-Theory%20of%20Mind.md)
+- [MindClaw- Closed-Loop Embodied Mental-State Reasoning for Precision Intervention](https://arxiv.org/abs/2606.01063)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `Support` · `Mental-State Modeling` · `Social Perception` · `Interaction Management` · `Embodied` · `Planning`
+  - Summary: [Summary](paper/ToM-arXiv-2026-MindClaw-%20Closed-Loop%20Embodied%20Mental-State%20Reasoning%20for%20Precision%20Intervention.md)
+- [Reality vs Counterfactual- Multi-World Contrastive Reinforcement Learning for Enhancing MLLM’s Theory of Mind in Egocentric Videos](https://ojs.aaai.org/index.php/AAAI/article/view/37162)
+  - Publisher: `AAAI 2026`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Embodied`
+  - Summary: [Summary](paper/ToM-AAAI-2026-Reality%20vs%20Counterfactual-%20Multi-World%20Contrastive%20Reinforcement%20Learning%20for%20Enhancing%20MLLM%E2%80%99s%20Theory%20of%20Mind%20in%20Egocentric%20Videos.md)
+- [UserHarness- Harnessing User Minds for Stronger Agent Theory-of-Mind](https://arxiv.org/abs/2605.27721)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling`
+  - Summary: [Summary](paper/ToM-arXiv-2026-UserHarness-%20Harnessing%20User%20Minds%20for%20Stronger%20Agent%20Theory-of-Mind.md)
+- [Video-Only ToM- Enhancing Theory of Mind in Multimodal Large Language Models](https://arxiv.org/abs/2603.24484)
+  - Publisher: `CVPR 2026`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Single-turn`
+  - Code: [GitHub / Project](https://founce.github.io/VisionToM/)
+  - Summary: [Summary](paper/ToM-CVPR-2026-Video-Only%20ToM-%20Enhancing%20Theory%20of%20Mind%20in%20Multimodal%20Large%20Language%20Models.md)
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
 <a id="emotion"></a>
 <details>
-<summary>🎭 <b>Emotion Understanding</b> · 10 篇</summary>
+<summary>🎭 <b>Affect & Social Perception</b> · 10 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2019 | AAAI | DialogueRNN- An Attentive RNN for Emotion Detection in Conversations | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/4657) | - | - |
-| 2019 | ACL | MELD- A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations | [查看](https://aclanthology.org/P19-1050/) | - | - |
-| 2021 | AAAI | COSMIC- COmmonSense knowledge for eMotion Identification in Conversations | [查看](https://arxiv.org/abs/2010.02795) | - | - |
-| 2023 | arXiv | InstructERC- Reforming Emotion Recognition in Conversation with Multi-task Retrieval-Augmented Large Language Models | [查看](https://arxiv.org/abs/2309.11911) | - | - |
-| 2023 | AAAI | Knowledge-Bridged Causal Interaction Network for Causal Emotion Entailment | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/26641) | - | [代码](https://github.com/circle-hit/KBCIN) |
-| 2024 | KDD | EmoLLMs: A Series of Emotional Large Language Models and Annotation Tools for Comprehensive Affective Analysis | [查看](https://arxiv.org/abs/2401.08508) | - | [代码](https://github.com/lzw108/EmoLLMs) |
-| 2024 | NAACL | TelME: Teacher-leading Multimodal Fusion Network for Emotion Recognition in Conversation | [查看](https://aclanthology.org/2024.naacl-long.5/) | - | [代码](https://github.com/yuntaeyang/TelME) |
-| 2024 | NeurIPS | Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning | [查看](https://proceedings.neurips.cc/paper_files/paper/2024/hash/c7f43ada17acc234f568dc66da527418-Abstract-Conference.html) | - | [代码](https://github.com/ZebangCheng/Emotion-LLaMA) |
-| 2025 | arXiv | Do LLMs Feel- Teaching Emotion Recognition with Prompts, Retrieval, and Curriculum Learning | [查看](https://arxiv.org/abs/2511.07061) | - | - |
-| 2025 | ACL | CoE: A Clue of Emotion Framework for Emotion Recognition in Conversations | [查看](https://aclanthology.org/2025.acl-long.1148/) | - | - |
+<!-- CATALOGUE:START -->
+- [DialogueRNN- An Attentive RNN for Emotion Detection in Conversations](https://ojs.aaai.org/index.php/AAAI/article/view/4657)
+  - Publisher: `AAAI 2019`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Social Context` · `Supervised Learning`
+- [MELD- A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations](https://aclanthology.org/P19-1050/)
+  - Publisher: `ACL 2019`
+  - Keywords: `Dataset` · `General Interaction` · `Affect` · `Multi-party`
+- [COSMIC- COmmonSense knowledge for eMotion Identification in Conversations](https://arxiv.org/abs/2010.02795)
+  - Publisher: `AAAI 2021`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Social Context`
+- [InstructERC- Reforming Emotion Recognition in Conversation with Multi-task Retrieval-Augmented Large Language Models](https://arxiv.org/abs/2309.11911)
+  - Publisher: `arXiv 2023`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Social Context` · `Relationship & Role` · `Retrieval` · `Supervised Learning`
+- [Knowledge-Bridged Causal Interaction Network for Causal Emotion Entailment](https://ojs.aaai.org/index.php/AAAI/article/view/26641)
+  - Publisher: `AAAI 2023`
+  - Keywords: `Method` · `Support` · `Affect` · `Social Context` · `Relationship & Role` · `Retrieval`
+  - Code: [GitHub / Project](https://github.com/circle-hit/KBCIN)
+- [EmoLLMs: A Series of Emotional Large Language Models and Annotation Tools for Comprehensive Affective Analysis](https://arxiv.org/abs/2401.08508)
+  - Publisher: `KDD 2024`
+  - Keywords: `Method` · `Support` · `Affect` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/lzw108/EmoLLMs)
+- [Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning](https://proceedings.neurips.cc/paper_files/paper/2024/hash/c7f43ada17acc234f568dc66da527418-Abstract-Conference.html)
+  - Publisher: `NeurIPS 2024`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Social Perception` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/ZebangCheng/Emotion-LLaMA)
+- [TelME: Teacher-leading Multimodal Fusion Network for Emotion Recognition in Conversation](https://aclanthology.org/2024.naacl-long.5/)
+  - Publisher: `NAACL 2024`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Multi-party` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/yuntaeyang/TelME)
+- [CoE: A Clue of Emotion Framework for Emotion Recognition in Conversations](https://aclanthology.org/2025.acl-long.1148/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Social Context` · `Relationship & Role` · `Supervised Learning`
+- [Do LLMs Feel- Teaching Emotion Recognition with Prompts, Retrieval, and Curriculum Learning](https://arxiv.org/abs/2511.07061)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Social Perception` · `Retrieval` · `Supervised Learning` · `Multi-turn`
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
 <a id="norms"></a>
 <details>
-<summary>⚖️ <b>Social Norms & Morality</b> · 12 篇</summary>
+<summary>⚖️ <b>Social Context, Norms & Morality</b> · 12 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2020 | EMNLP | Social Chemistry 101- Learning to Reason about Social and Moral Norms | [查看](https://aclanthology.org/2020.emnlp-main.48/) | - | - |
-| 2021 | arXiv | Delphi- Towards Machine Ethics and Norms | [查看](https://arxiv.org/abs/2110.07574) | - | - |
-| 2021 | ICLR | Aligning AI With Shared Human Values | [查看](https://arxiv.org/abs/2008.02275) | - | [代码](https://github.com/hendrycks/ethics) |
-| 2022 | ACL | The Moral Integrity Corpus- A Benchmark for Ethical Dialogue Systems | [查看](https://arxiv.org/abs/2204.03021) | - | [代码](https://github.com/SALT-NLP/mic) |
-| 2022 | NeurIPS | When to Make Exceptions: Exploring Language Models as Accounts of Human Moral Judgment | [查看](https://arxiv.org/abs/2210.01478) | - | [代码](https://github.com/feradauto/MoralCoT) |
-| 2023 | ICML | Do the Rewards Justify the Means- Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark | [查看](https://arxiv.org/abs/2304.03279) | - | - |
-| 2023 | ACL | NormBank- A Knowledge Bank of Situational Social Norms | [查看](https://arxiv.org/abs/2305.17008) | - | [代码](https://github.com/SALT-NLP/normbank) |
-| 2023 | NeurIPS | Evaluating the Moral Beliefs Encoded in LLMs | [查看](https://arxiv.org/abs/2307.14324) | - | [代码](https://github.com/ninodimontalcino/moralchoice) |
-| 2024 | arXiv | CultureBank- An Online Community-Driven Knowledge Base Towards Culturally Aware Language Technologies | [查看](https://arxiv.org/abs/2404.15238) | - | [代码](https://github.com/SALT-NLP/CultureBank) |
-| 2024 | AAAI | Value Kaleidoscope: Engaging AI with Pluralistic Human Values, Rights, and Duties | [查看](https://arxiv.org/abs/2309.00779) | - | [代码](https://github.com/tsor13/kaleido) |
-| 2025 | NAACL | NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models | [查看](https://aclanthology.org/2025.naacl-long.120/) | - | [代码](https://github.com/Akhila-Yerukola/NormAd) |
-| 2025 | Science Advances | Emergent social conventions and collective bias in LLM populations | [查看](https://doi.org/10.1126/sciadv.adu9368) | - | [代码](https://github.com/Ariel-Flint-Ashery/AI-norms) |
+<!-- CATALOGUE:START -->
+- [Social Chemistry 101- Learning to Reason about Social and Moral Norms](https://aclanthology.org/2020.emnlp-main.48/)
+  - Publisher: `EMNLP 2020`
+  - Keywords: `Dataset` · `General Interaction` · `Social Context` · `Norms & Morality` · `Supervised Learning`
+- [Aligning AI With Shared Human Values](https://arxiv.org/abs/2008.02275)
+  - Publisher: `ICLR 2021`
+  - Keywords: `Dataset` · `General Interaction` · `Mental-State Modeling` · `Norms & Morality`
+  - Code: [GitHub / Project](https://github.com/hendrycks/ethics)
+- [Delphi- Towards Machine Ethics and Norms](https://arxiv.org/abs/2110.07574)
+  - Publisher: `arXiv 2021`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Norms & Morality` · `Supervised Learning`
+- [The Moral Integrity Corpus- A Benchmark for Ethical Dialogue Systems](https://arxiv.org/abs/2204.03021)
+  - Publisher: `ACL 2022`
+  - Keywords: `Dataset` · `General Interaction` · `Social Context` · `Norms & Morality` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/SALT-NLP/mic)
+- [When to Make Exceptions: Exploring Language Models as Accounts of Human Moral Judgment](https://arxiv.org/abs/2210.01478)
+  - Publisher: `NeurIPS 2022`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Social Context` · `Norms & Morality` · `Planning`
+  - Code: [GitHub / Project](https://github.com/feradauto/MoralCoT)
+- [Do the Rewards Justify the Means- Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark](https://arxiv.org/abs/2304.03279)
+  - Publisher: `ICML 2023`
+  - Keywords: `Evaluation` · `General Interaction` · `Norms & Morality`
+- [Evaluating the Moral Beliefs Encoded in LLMs](https://arxiv.org/abs/2307.14324)
+  - Publisher: `NeurIPS 2023`
+  - Keywords: `Evaluation` · `General Interaction` · `Mental-State Modeling` · `Norms & Morality`
+  - Code: [GitHub / Project](https://github.com/ninodimontalcino/moralchoice)
+- [NormBank- A Knowledge Bank of Situational Social Norms](https://arxiv.org/abs/2305.17008)
+  - Publisher: `ACL 2023`
+  - Keywords: `Dataset` · `General Interaction` · `Social Context` · `Relationship & Role` · `Culture` · `Norms & Morality`
+  - Code: [GitHub / Project](https://github.com/SALT-NLP/normbank)
+- [CultureBank- An Online Community-Driven Knowledge Base Towards Culturally Aware Language Technologies](https://arxiv.org/abs/2404.15238)
+  - Publisher: `arXiv 2024`
+  - Keywords: `Dataset` · `General Interaction` · `Social Context` · `Culture` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/SALT-NLP/CultureBank)
+- [Value Kaleidoscope: Engaging AI with Pluralistic Human Values, Rights, and Duties](https://arxiv.org/abs/2309.00779)
+  - Publisher: `AAAI 2024`
+  - Keywords: `Dataset` · `General Interaction` · `Social Context` · `Mental-State Modeling` · `Norms & Morality` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/tsor13/kaleido)
+- [Emergent social conventions and collective bias in LLM populations](https://doi.org/10.1126/sciadv.adu9368)
+  - Publisher: `Science Advances 2025`
+  - Keywords: `Method` · `Coordination` · `Social Context` · `Multi-party` · `Self-play`
+  - Code: [GitHub / Project](https://github.com/Ariel-Flint-Ashery/AI-norms)
+- [NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models](https://aclanthology.org/2025.naacl-long.120/)
+  - Publisher: `NAACL 2025`
+  - Keywords: `Evaluation` · `General Interaction` · `Social Context` · `Culture` · `Norms & Morality`
+  - Code: [GitHub / Project](https://github.com/Akhila-Yerukola/NormAd)
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
 <a id="memory"></a>
 <details>
-<summary>💾 <b>Agent Memory</b> · 11 篇</summary>
+<summary>💾 <b>Social Memory & Adaptation</b> · 11 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2023 | UIST | Generative Agents- Interactive Simulacra of Human Behavior | [查看](https://doi.org/10.1145/3586183.3606763) | [摘要](paper/Memory-UIST-2023-Generative%20Agents-%20Interactive%20Simulacra%20of%20Human%20Behavior.md) | [代码](https://github.com/joonspk-research/generative_agents) |
-| 2023 | arXiv | MemoryBank- Enhancing Large Language Models with Long-Term Memory | [查看](https://arxiv.org/abs/2305.10250) | - | [代码](https://github.com/zhongwanjun/memorybank-siliconfriend) |
-| 2023 | NeurIPS | Reflexion: Language Agents with Verbal Reinforcement Learning | [查看](https://arxiv.org/abs/2303.11366) | - | [代码](https://github.com/noahshinn/reflexion) |
-| 2024 | AAAI | ExpeL: LLM Agents Are Experiential Learners | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/29936) | - | [代码](https://github.com/LeapLabTHU/ExpeL) |
-| 2024 | NeurIPS | HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models | [查看](https://arxiv.org/abs/2405.14831) | - | [代码](https://github.com/OSU-NLP-Group/HippoRAG) |
-| 2025 | arXiv | A-Mem: Agentic Memory for LLM Agents | [查看](https://arxiv.org/abs/2502.12110) | [摘要](https://github.com/lucianma05-create/Awesome-Social-AI/blob/main/paper/Memory-arXiv-2025-A-Mem%3A%20Agentic%20Memory%20for%20LLM%20Agents.md) | [代码](https://github.com/WujiangXu/AgenticMemory) |
-| 2025 | arXiv | Evo-Memory- Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory | [查看](https://arxiv.org/abs/2511.20857) | [摘要](paper/Memory-arXiv-2025-Evo-Memory-%20Benchmarking%20LLM%20Agent%20Test-time%20Learning%20with%20Self-Evolving%20Memory.md) | [代码](https://github.com/WujiangXu/AgenticMemory) |
-| 2025 | arXiv | Remember Me, Refine Me- A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution | [查看](https://arxiv.org/abs/2512.10696) | [摘要](https://github.com/lucianma05-create/Awesome-Social-AI/blob/main/paper/Memory-arXiv-2025-Remember%20Me%2C%20Refine%20Me-%20A%20Dynamic%20Procedural%20Memory%20Framework%20for%20Experience-Driven%20Agent%20Evolution.md) | [代码](https://github.com/agentscope-ai/ReMe) |
-| 2025 | ICLR | Human-inspired Episodic Memory for Infinite Context LLMs | [查看](https://arxiv.org/abs/2407.09450) | - | [代码](https://github.com/em-llm/EM-LLM-model) |
-| 2026 | ICLR | MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent | [查看](https://arxiv.org/abs/2507.02259) | [摘要](paper/Memory-ICLR-2026-MemAgent%3A%20Reshaping%20Long-Context%20LLM%20with%20Multi-Conv%20RL-based%20Memory%20Agent.md) | - |
-| 2026 | ICLR | ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory | [查看](https://proceedings.iclr.cc/paper_files/paper/2026/hash/980ea04d23d1f6908964eba2a74afe45-Abstract-Conference.html) | [摘要](paper/Memory-ICLR-2026-ReasoningBank%3A%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md) | [代码](https://github.com/google-research/reasoning-bank) |
+<!-- CATALOGUE:START -->
+- [Generative Agents- Interactive Simulacra of Human Behavior](https://doi.org/10.1145/3586183.3606763)
+  - Publisher: `UIST 2023`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Interaction Management` · `Multi-party` · `Planning`
+  - Code: [GitHub / Project](https://github.com/joonspk-research/generative_agents)
+  - Summary: [Summary](paper/Memory-UIST-2023-Generative%20Agents-%20Interactive%20Simulacra%20of%20Human%20Behavior.md)
+- [MemoryBank- Enhancing Large Language Models with Long-Term Memory](https://arxiv.org/abs/2305.10250)
+  - Publisher: `arXiv 2023`
+  - Keywords: `Method` · `Support` · `Social Memory & Adaptation` · `Affect` · `Personalization` · `Retrieval` · `Longitudinal`
+  - Code: [GitHub / Project](https://github.com/zhongwanjun/memorybank-siliconfriend)
+- [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366)
+  - Publisher: `NeurIPS 2023`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `RL`
+  - Code: [GitHub / Project](https://github.com/noahshinn/reflexion)
+- [ExpeL: LLM Agents Are Experiential Learners](https://ojs.aaai.org/index.php/AAAI/article/view/29936)
+  - Publisher: `AAAI 2024`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Retrieval`
+  - Code: [GitHub / Project](https://github.com/LeapLabTHU/ExpeL)
+- [HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models](https://arxiv.org/abs/2405.14831)
+  - Publisher: `NeurIPS 2024`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Retrieval`
+  - Code: [GitHub / Project](https://github.com/OSU-NLP-Group/HippoRAG)
+- [A-Mem: Agentic Memory for LLM Agents](https://arxiv.org/abs/2502.12110)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Retrieval` · `Longitudinal`
+  - Code: [GitHub / Project](https://github.com/WujiangXu/AgenticMemory)
+  - Summary: [Summary](paper/Memory-arXiv-2025-A-Mem:%20Agentic%20Memory%20for%20LLM%20Agents.md)
+- [Evo-Memory- Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory](https://arxiv.org/abs/2511.20857)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Benchmark` · `General Interaction` · `Social Memory & Adaptation`
+  - Code: [GitHub / Project](https://github.com/WujiangXu/AgenticMemory)
+  - Summary: [Summary](paper/Memory-arXiv-2025-Evo-Memory-%20Benchmarking%20LLM%20Agent%20Test-time%20Learning%20with%20Self-Evolving%20Memory.md)
+- [Human-inspired Episodic Memory for Infinite Context LLMs](https://arxiv.org/abs/2407.09450)
+  - Publisher: `ICLR 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Retrieval`
+  - Code: [GitHub / Project](https://github.com/em-llm/EM-LLM-model)
+- [Remember Me, Refine Me- A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution](https://arxiv.org/abs/2512.10696)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Retrieval`
+  - Code: [GitHub / Project](https://github.com/agentscope-ai/ReMe)
+  - Summary: [Summary](paper/Memory-arXiv-2025-Remember%20Me%2C%20Refine%20Me-%20A%20Dynamic%20Procedural%20Memory%20Framework%20for%20Experience-Driven%20Agent%20Evolution.md)
+- [MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent](https://arxiv.org/abs/2507.02259)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `RL`
+  - Summary: [Summary](paper/Memory-ICLR-2026-MemAgent:%20Reshaping%20Long-Context%20LLM%20with%20Multi-Conv%20RL-based%20Memory%20Agent.md)
+- [ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory](https://proceedings.iclr.cc/paper_files/paper/2026/hash/980ea04d23d1f6908964eba2a74afe45-Abstract-Conference.html)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Self-play`
+  - Code: [GitHub / Project](https://github.com/google-research/reasoning-bank)
+  - Summary: [Summary](paper/Memory-ICLR-2026-ReasoningBank:%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md)
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
 <a id="rlhf"></a>
 <details>
-<summary>🤖 <b>Reinforcement Learning & Alignment</b> · 18 篇</summary>
+<summary>🤖 <b>Learning, Planning & Alignment</b> · 18 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2022 | NeurIPS | The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games | [查看](https://arxiv.org/abs/2103.01955) | - | [代码](https://github.com/marlbenchmark/on-policy) |
-| 2022 | NeurIPS | Training language models to follow instructions with human feedback | [查看](https://arxiv.org/abs/2203.02155) | - | - |
-| 2023 | NeurIPS | Direct Preference Optimization- Your Language Model is Secretly a Reward Model | [查看](https://arxiv.org/abs/2305.18290) | [摘要](paper/RLHF-NeurIPS-2023-Direct%20Preference%20Optimization-%20Your%20Language%20Model%20is%20Secretly%20a%20Reward%20Model.md) | - |
-| 2024 | ICML | RLAIF vs. RLHF- Scaling Reinforcement Learning from Human Feedback with AI Feed | [查看](https://arxiv.org/abs/2309.00267v3) | [摘要](paper/RLHF-ICML-2024-RLAIF%20vs.%20RLHF-%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feed.md) | - |
-| 2024 | ICLR | Let's Verify Step by Step | [查看](https://arxiv.org/abs/2305.20050) | - | [代码](https://github.com/openai/prm800k) |
-| 2024 | ICML | ArCHer: Training Language Model Agents via Hierarchical Multi-Turn RL | [查看](https://arxiv.org/abs/2402.19446) | - | [代码](https://github.com/YifeiZhou02/ArCHer) |
-| 2024 | ICML | KTO: Model Alignment as Prospect Theoretic Optimization | [查看](https://arxiv.org/abs/2402.01306) | - | [代码](https://github.com/ContextualAI/HALOs) |
-| 2025 | arXiv | DCPO- Dynamic Clipping Policy Optimization | [查看](https://arxiv.org/abs/2509.02333v2) | [摘要](paper/RLHF-arXiv-2025-DCPO-%20Dynamic%20Clipping%20Policy%20Optimization.md) | [代码](https://github.com/lime-RL/DCPO) |
-| 2025 | arXiv | Group Sequence Policy Optimization | [查看](https://arxiv.org/abs/2507.18071v2) | [摘要](paper/RLHF-arXiv-2025-Group%20Sequence%20Policy%20Optimization.md) | - |
-| 2025 | COLING | MCA-Model-Based Causal RL for Efficient Dialogue Policy | [查看](https://aclanthology.org/2025.coling-main.490/) | [摘要](paper/RLHF-COLING-2025-MCA-Model-Based-Causal-RL-for-Efficient-Dialogue-Policy.md) | - |
-| 2025 | NeurIPS | World Models Should Prioritize the Unification of Physical and Social Dynamics | [查看](https://arxiv.org/pdf/2510.21219/) | [摘要](paper/RLHF-NeurIPS-2025-World-Models-Should-Prioritize-the-Unification-of-Physical-and-Social-Dynamics.md) | - |
-| 2025 | EMNLP | Dream to Chat: Model-based Reinforcement Learning on Dialogues with User Belief Modeling | [查看](https://arxiv.org/abs/2508.16876) | [摘要](paper/RLHF-EMNLP-2025-Dream%20to%20Chat%3A%20Model-based%20Reinforcement%20Learning%20on%20Dialogues%20with%20User%20Belief%20Modeling.md) | - |
-| 2025 | arXiv | Enhancing User Engagement in Socially-Driven Dialogue through Interactive LLM Alignments | [查看](https://arxiv.org/abs/2506.21497v1) | [摘要](paper/RLHF-arXiv-2025-Enhancing-User-Engagement-in-Socially-Driven-Dialogue-through-Interactive-LLM-Alignments.md) | - |
-| 2025 | arXiv | MAPO: Mixed Advantage Policy Optimization for Long-Horizon Multi-Turn Dialogue | [查看](https://arxiv.org/pdf/2603.06194) | [摘要](paper/RLHF-arXiv-2025-MAPO:%20Mixed%20Advantage%20Policy%20Optimization%20for%20Long-Horizon%20Multi-Turn%20Dialogue.md) | - |
-| 2025 | ICML | VinePPO: Refining Credit Assignment in RL Training of LLMs | [查看](https://arxiv.org/abs/2410.01679) | - | [代码](https://github.com/McGill-NLP/VinePPO) |
-| 2026 | ICLR | Toward Evaluative Thinking: Meta-Policy Optimization with Evolving Reward Models | [查看](https://arxiv.org/pdf/2504.20157) | [摘要](paper/RLHF-ICLR-2026-Toward-Evaluative-Thinking-Meta-Policy-Optimization-with-Evolving-Reward-Models.md) | - |
-| 2026 | arXiv | Better LLM Reasoning via Dual-Play | [查看](https://arxiv.org/abs/2511.11881v3) | [摘要](paper/RLHF-arXiv-2026-Better%20LLM%20Reasoning%20via%20Dual-Play.md) | [代码](https://hcy123902.github.io/PasoDoble/) |
-| 2026 | ICLR | TreeSearch for LLM Agent Reinforcement Learning | [查看](https://arxiv.org/abs/2509.21240) | [摘要](paper/RLHF-ICLR-2026-TreeSearch%20for%20LLM%20Agent%20Reinforcement%20Learning.md) | [代码](https://github.com/AMAP-ML/Tree-GRPO) |
+<!-- CATALOGUE:START -->
+- [The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games](https://arxiv.org/abs/2103.01955)
+  - Publisher: `NeurIPS 2022`
+  - Keywords: `Method` · `Coordination` · `Multi-party` · `RL`
+  - Code: [GitHub / Project](https://github.com/marlbenchmark/on-policy)
+- [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
+  - Publisher: `NeurIPS 2022`
+  - Keywords: `Method` · `General Interaction` · `Supervised Learning` · `RL` · `Reward Modeling`
+- [Direct Preference Optimization- Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290)
+  - Publisher: `NeurIPS 2023`
+  - Keywords: `Method` · `General Interaction` · `Preference Optimization`
+  - Summary: [Summary](paper/RLHF-NeurIPS-2023-Direct%20Preference%20Optimization-%20Your%20Language%20Model%20is%20Secretly%20a%20Reward%20Model.md)
+- [ArCHer: Training Language Model Agents via Hierarchical Multi-Turn RL](https://arxiv.org/abs/2402.19446)
+  - Publisher: `ICML 2024`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `RL` · `Planning` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/YifeiZhou02/ArCHer)
+- [KTO: Model Alignment as Prospect Theoretic Optimization](https://arxiv.org/abs/2402.01306)
+  - Publisher: `ICML 2024`
+  - Keywords: `Method` · `General Interaction` · `Affect` · `Preference Optimization`
+  - Code: [GitHub / Project](https://github.com/ContextualAI/HALOs)
+- [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050)
+  - Publisher: `ICLR 2024`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `Reward Modeling` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/openai/prm800k)
+- [RLAIF vs. RLHF- Scaling Reinforcement Learning from Human Feedback with AI Feed](https://arxiv.org/abs/2309.00267v3)
+  - Publisher: `ICML 2024`
+  - Keywords: `Method` · `General Interaction` · `RL` · `Reward Modeling` · `Supervised Learning`
+  - Summary: [Summary](paper/RLHF-ICML-2024-RLAIF%20vs.%20RLHF-%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feed.md)
+- [DCPO- Dynamic Clipping Policy Optimization](https://arxiv.org/abs/2509.02333v2)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `RL`
+  - Code: [GitHub / Project](https://github.com/lime-RL/DCPO)
+  - Summary: [Summary](paper/RLHF-arXiv-2025-DCPO-%20Dynamic%20Clipping%20Policy%20Optimization.md)
+- [Dream to Chat: Model-based Reinforcement Learning on Dialogues with User Belief Modeling](https://arxiv.org/abs/2508.16876)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Method` · `Support` · `Mental-State Modeling` · `Affect` · `RL` · `User Simulation`
+  - Summary: [Summary](paper/RLHF-EMNLP-2025-Dream%20to%20Chat:%20Model-based%20Reinforcement%20Learning%20on%20Dialogues%20with%20User%20Belief%20Modeling.md)
+- [Enhancing User Engagement in Socially-Driven Dialogue through Interactive LLM Alignments](https://arxiv.org/abs/2506.21497v1)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `Support` · `Interaction Management` · `Relationship & Role` · `Planning` · `Preference Optimization`
+  - Summary: [Summary](paper/RLHF-arXiv-2025-Enhancing-User-Engagement-in-Socially-Driven-Dialogue-through-Interactive-LLM-Alignments.md)
+- [Group Sequence Policy Optimization](https://arxiv.org/abs/2507.18071v2)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `RL`
+  - Summary: [Summary](paper/RLHF-arXiv-2025-Group%20Sequence%20Policy%20Optimization.md)
+- [MAPO: Mixed Advantage Policy Optimization for Long-Horizon Multi-Turn Dialogue](https://arxiv.org/pdf/2603.06194)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `RL` · `Reward Modeling` · `Multi-turn`
+  - Summary: [Summary](paper/RLHF-arXiv-2025-MAPO:%20Mixed%20Advantage%20Policy%20Optimization%20for%20Long-Horizon%20Multi-Turn%20Dialogue.md)
+- [MCA-Model-Based Causal RL for Efficient Dialogue Policy](https://aclanthology.org/2025.coling-main.490/)
+  - Publisher: `COLING 2025`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `Social Context` · `RL` · `Planning`
+  - Summary: [Summary](paper/RLHF-COLING-2025-MCA-Model-Based-Causal-RL-for-Efficient-Dialogue-Policy.md)
+- [VinePPO: Refining Credit Assignment in RL Training of LLMs](https://arxiv.org/abs/2410.01679)
+  - Publisher: `ICML 2025`
+  - Keywords: `Method` · `General Interaction` · `RL`
+  - Code: [GitHub / Project](https://github.com/McGill-NLP/VinePPO)
+- [World Models Should Prioritize the Unification of Physical and Social Dynamics](https://arxiv.org/pdf/2510.21219/)
+  - Publisher: `NeurIPS 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Context`
+  - Summary: [Summary](paper/RLHF-NeurIPS-2025-World-Models-Should-Prioritize-the-Unification-of-Physical-and-Social-Dynamics.md)
+- [Better LLM Reasoning via Dual-Play](https://arxiv.org/abs/2511.11881v3)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `Self-play`
+  - Code: [GitHub / Project](https://hcy123902.github.io/PasoDoble/)
+  - Summary: [Summary](paper/RLHF-arXiv-2026-Better%20LLM%20Reasoning%20via%20Dual-Play.md)
+- [Toward Evaluative Thinking: Meta-Policy Optimization with Evolving Reward Models](https://arxiv.org/pdf/2504.20157)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Method` · `General Interaction` · `Reward Modeling`
+  - Summary: [Summary](paper/RLHF-ICLR-2026-Toward-Evaluative-Thinking-Meta-Policy-Optimization-with-Evolving-Reward-Models.md)
+- [TreeSearch for LLM Agent Reinforcement Learning](https://arxiv.org/abs/2509.21240)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `RL` · `Planning` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/AMAP-ML/Tree-GRPO)
+  - Summary: [Summary](paper/RLHF-ICLR-2026-TreeSearch%20for%20LLM%20Agent%20Reinforcement%20Learning.md)
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
@@ -315,24 +942,88 @@
 <details>
 <summary>🕹️ <b>User Simulation & Interactive Environments</b> · 16 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2006 | KER | A Survey of Statistical User Simulation Techniques for RL Dialogue Management | [查看](https://doi.org/10.1017/S0269888906000944) | [摘要](paper/US-KER-2006-A-Survey-of-Statistical-User-Simulation-Techniques-for-RL-Dialogue-Management.md) | - |
-| 2023 | TOIS | Metaphorical User Simulators for Evaluating Task-oriented Dialogue Systems | [查看](https://doi.org/10.1145/3596510) | [摘要](paper/US-TOIS-2023-Metaphorical%20User%20Simulators%20for%20Evaluating%20Task-oriented%20Dialogue%20Systems.md) | [代码](http://github.com/sunnweiwei/MetaSim); [代码](https://github.com/Superbooming/simtester) |
-| 2024 | ICLR | SOTOPIA- Interactive Evaluation for Social Intelligence in Language Agents | [查看](https://arxiv.org/abs/2310.11667) | [摘要](paper/US-ICLR-2024-SOTOPIA-%20Interactive%20Evaluation%20for%20Social%20Intelligence%20in%20Language%20Agents.md) | - |
-| 2024 | WWW | An In-depth Investigation of User Response Simulation for Conversational Search | [查看](https://dl.acm.org/doi/10.1145/3589334.3645447) | [摘要](paper/US-WWW-2024-An%20In-depth%20Investigation%20of%20User%20Response%20Simulation%20for%20Conversational%20Search.md) | [代码](https://anonymous.4open.science/r/UserSimulation-7091) |
-| 2024 | AAAI | Adversarial Socialbots Modeling Based on Structural Information Principles | [查看](https://ojs.aaai.org/index.php/AAAI/article/view/27793) | [摘要](paper/US-AAAI-2024-Adversarial%20Socialbots%20Modeling%20Based%20on%20Structural%20Information%20Principles.md) | [代码](https://github.com/SELGroup/SIASM) |
-| 2024 | arXiv | Strength Lies in Differences! Improving Strategy Planning for Non-collaborative Dialogues via Diversified User Simulation | [查看](https://arxiv.org/pdf/2403.06769v3.pdf) | [摘要](paper/US-arXiv-2024-Strength%20Lies%20in%20Differences!%20Improving%20Strategy%20Planning%20for%20Non-collaborative%20Dialogues%20via%20Diversified%20User%20Simulation.md) | - |
-| 2024 | ACL | PlatoLM: Teaching LLMs in Multi-Round Dialogue via a User Simulator | [查看](https://aclanthology.org/2024.acl-long.424/) | - | [代码](https://github.com/FreedomIntelligence/PlatoLM) |
-| 2024 | arXiv | LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals | [查看](https://arxiv.org/abs/2411.10109) | - | [代码](https://github.com/StanfordHCI/genagents) |
-| 2024 | arXiv | OASIS: Open Agent Social Interaction Simulations with One Million Agents | [查看](https://arxiv.org/abs/2411.11581) | - | [代码](https://github.com/camel-ai/oasis) |
-| 2025 | SIGDIAL | Generating Diverse Personas for User Simulators to Test Interview Dialogue Systems | [查看](https://aclanthology.org/2025.sigdial-1.54/) | [摘要](paper/US-SIGDIAL-2025-Generating%20Diverse%20Personas%20for%20User%20Simulators%20to%20Test%20Interview%20Dialogue%20Systems.md) | - |
-| 2025 | SIGIR | Simulating Before Planning- Constructing Intrinsic User World Model for User-Tailored Dialogue Policy Planning | [查看](https://doi.org/10.1145/3726302.3730084) | [摘要](paper/US-SIGIR-2025-Simulating%20Before%20Planning-%20Constructing%20Intrinsic%20User%20World%20Model%20for%20User-Tailored%20Dialogue%20Policy%20Planning.md) | - |
-| 2025 | SIGIR | Theory and Toolkits for User Simulation in the Era of Generative AI- User Modeling, Synthetic Data Generation, and System Evaluation | [查看](https://doi.org/10.1145/3726302.3731697) | [摘要](paper/US-SIGIR-2025-Theory%20and%20Toolkits%20for%20User%20Simulation%20in%20the%20Era%20of%20Generative%20AI-%20User%20Modeling%2C%20Synthetic%20Data%20Generation%2C%20and%20System%20Evaluation.md) | - |
-| 2025 | WWW | A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems | [查看](https://doi.org/10.1145/3696410.3714858) | [摘要](paper/US-WWW-2025-A%20LLM-based%20Controllable%2C%20Scalable%2C%20Human-Involved%20User%20Simulator%20Framework%20for%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/zlxxlz1026/CSHI) |
-| 2025 | NeurIPS | Goal Alignment in LLM-Based User Simulators for Conversational AI | [查看](https://arxiv.org/abs/2507.20152) | [摘要](paper/US-NeurIPS-2025-Goal%20Alignment%20in%20LLM-Based%20User%20Simulators%20for%20Conversational%20AI.md) | [代码](https://github.com/Shuhaibm/user_simulator_goal_alignment) |
-| 2025 | ICLR | τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains | [查看](https://arxiv.org/abs/2406.12045) | - | [代码](https://github.com/sierra-research/tau-bench) |
-| 2026 | CSUR | From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents | [查看](https://doi.org/10.1145/3800683) | - | [代码](https://github.com/FudanDISC/SocialAgent) |
+<!-- CATALOGUE:START -->
+- [A Survey of Statistical User Simulation Techniques for RL Dialogue Management](https://doi.org/10.1017/S0269888906000944)
+  - Publisher: `KER 2006`
+  - Keywords: `Survey` · `General Interaction` · `User Simulation` · `RL`
+  - Summary: [Summary](paper/US-KER-2006-A-Survey-of-Statistical-User-Simulation-Techniques-for-RL-Dialogue-Management.md)
+- [Metaphorical User Simulators for Evaluating Task-oriented Dialogue Systems](https://doi.org/10.1145/3596510)
+  - Publisher: `TOIS 2023`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `User Simulation`
+  - Code: [GitHub / Project](http://github.com/sunnweiwei/MetaSim)
+  - Summary: [Summary](paper/US-TOIS-2023-Metaphorical%20User%20Simulators%20for%20Evaluating%20Task-oriented%20Dialogue%20Systems.md)
+- [Adversarial Socialbots Modeling Based on Structural Information Principles](https://ojs.aaai.org/index.php/AAAI/article/view/27793)
+  - Publisher: `AAAI 2024`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Multi-party` · `Planning`
+  - Code: [GitHub / Project](https://github.com/SELGroup/SIASM)
+  - Summary: [Summary](paper/US-AAAI-2024-Adversarial%20Socialbots%20Modeling%20Based%20on%20Structural%20Information%20Principles.md)
+- [An In-depth Investigation of User Response Simulation for Conversational Search](https://dl.acm.org/doi/10.1145/3589334.3645447)
+  - Publisher: `WWW 2024`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `User Simulation`
+  - Code: [GitHub / Project](https://anonymous.4open.science/r/UserSimulation-7091)
+  - Summary: [Summary](paper/US-WWW-2024-An%20In-depth%20Investigation%20of%20User%20Response%20Simulation%20for%20Conversational%20Search.md)
+- [LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals](https://arxiv.org/abs/2411.10109)
+  - Publisher: `arXiv 2024`
+  - Keywords: `Method` · `General Interaction` · `Social Context` · `Personalization` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/StanfordHCI/genagents)
+- [OASIS: Open Agent Social Interaction Simulations with One Million Agents](https://arxiv.org/abs/2411.11581)
+  - Publisher: `arXiv 2024`
+  - Keywords: `System` · `General Interaction` · `Social Perception` · `Multi-party` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/camel-ai/oasis)
+- [PlatoLM: Teaching LLMs in Multi-Round Dialogue via a User Simulator](https://aclanthology.org/2024.acl-long.424/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `User Simulation` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/FreedomIntelligence/PlatoLM)
+- [SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents](https://arxiv.org/abs/2310.11667)
+  - Publisher: `ICLR 2024`
+  - Keywords: `Benchmark` · `General Interaction` · `Social Perception` · `Relationship & Role` · `User Simulation`
+  - Code: [GitHub / Project](https://sotopia.world)
+  - Summary: [Summary](paper/US-ICLR-2024-SOTOPIA-%20Interactive%20Evaluation%20for%20Social%20Intelligence%20in%20Language%20Agents.md)
+- [Strength Lies in Differences! Improving Strategy Planning for Non-collaborative Dialogues via Diversified User Simulation](https://arxiv.org/pdf/2403.06769v3.pdf)
+  - Publisher: `arXiv 2024`
+  - Keywords: `Method` · `Influence` · `Social Context` · `Social Memory & Adaptation` · `Personalization` · `User Simulation` · `Self-play`
+  - Summary: [Summary](paper/US-arXiv-2024-Strength%20Lies%20in%20Differences%21%20Improving%20Strategy%20Planning%20for%20Non-collaborative%20Dialogues%20via%20Diversified%20User%20Simulation.md)
+- [A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems](https://doi.org/10.1145/3696410.3714858)
+  - Publisher: `WWW 2025`
+  - Keywords: `Method` · `Recommendation` · `Social Memory & Adaptation` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/zlxxlz1026/CSHI)
+  - Summary: [Summary](paper/US-WWW-2025-A%20LLM-based%20Controllable%2C%20Scalable%2C%20Human-Involved%20User%20Simulator%20Framework%20for%20Conversational%20Recommender%20Systems.md)
+- [Generating Diverse Personas for User Simulators to Test Interview Dialogue Systems](https://aclanthology.org/2025.sigdial-1.54/)
+  - Publisher: `SIGDIAL 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Perception` · `Personalization` · `User Simulation`
+  - Summary: [Summary](paper/US-SIGDIAL-2025-Generating%20Diverse%20Personas%20for%20User%20Simulators%20to%20Test%20Interview%20Dialogue%20Systems.md)
+- [Goal Alignment in LLM-Based User Simulators for Conversational AI](https://arxiv.org/abs/2507.20152)
+  - Publisher: `NeurIPS 2025`
+  - Keywords: `Method` · `General Interaction` · `Interaction Management` · `User Simulation` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/Shuhaibm/user_simulator_goal_alignment)
+  - Summary: [Summary](paper/US-NeurIPS-2025-Goal%20Alignment%20in%20LLM-Based%20User%20Simulators%20for%20Conversational%20AI.md)
+- [Simulating Before Planning- Constructing Intrinsic User World Model for User-Tailored Dialogue Policy Planning](https://doi.org/10.1145/3726302.3730084)
+  - Publisher: `SIGIR 2025`
+  - Keywords: `Method` · `General Interaction` · `Social Context` · `Personalization` · `Planning`
+  - Summary: [Summary](paper/US-SIGIR-2025-Simulating%20Before%20Planning-%20Constructing%20Intrinsic%20User%20World%20Model%20for%20User-Tailored%20Dialogue%20Policy%20Planning.md)
+- [Theory and Toolkits for User Simulation in the Era of Generative AI- User Modeling, Synthetic Data Generation, and System Evaluation](https://doi.org/10.1145/3726302.3731697)
+  - Publisher: `SIGIR 2025`
+  - Keywords: `Survey` · `General Interaction` · `User Simulation`
+  - Summary: [Summary](paper/US-SIGIR-2025-Theory%20and%20Toolkits%20for%20User%20Simulation%20in%20the%20Era%20of%20Generative%20AI-%20User%20Modeling%2C%20Synthetic%20Data%20Generation%2C%20and%20System%20Evaluation.md)
+- [τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045)
+  - Publisher: `ICLR 2025`
+  - Keywords: `Benchmark` · `General Interaction` · `Interaction Management` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/sierra-research/tau-bench)
+- [From Individual to Society: A Survey on Social Simulation Driven by Large Language Model-based Agents](https://doi.org/10.1145/3800683)
+  - Publisher: `CSUR 2026`
+  - Keywords: `Survey` · `General Interaction` · `Social Context` · `Multi-party`
+  - Code: [GitHub / Project](https://github.com/FudanDISC/SocialAgent)
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
@@ -340,43 +1031,176 @@
 <details>
 <summary>📊 <b>Benchmark & Evaluation</b> · 33 篇</summary>
 
-| 年份 | 会议/期刊 | 论文 | 链接 | 摘要 | 代码 |
-| --- | --- | --- | --- | --- | --- |
-| 2019 | CVPR | Social-IQ- A Question Answering Benchmark for Artificial Social Intelligence | [查看](https://openaccess.thecvf.com/content_CVPR_2019/html/Zadeh_Social-IQ_A_Question_Answering_Benchmark_for_Artificial_Social_Intelligence_CVPR_2019_paper.html) | - | - |
-| 2023 | ICCV | Social-IQ 2.0 Challenge- Benchmarking Multimodal Social Understanding | [查看](https://cmu-multicomp-lab.github.io/social-iq-2.0/) | - | [代码](https://github.com/abwilf/Social-IQ-2.0-Challenge) |
-| 2023 | EMNLP | FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions | [查看](https://aclanthology.org/2023.emnlp-main.890/) | - | [代码](https://github.com/skywalker023/fantom) |
-| 2023 | NeurIPS | Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena | [查看](https://arxiv.org/abs/2306.05685) | - | [代码](https://github.com/lm-sys/FastChat) |
-| 2023 | NeurIPS | Understanding Social Reasoning in Language Models with Language Models | [查看](https://arxiv.org/abs/2306.15448) | - | [代码](https://github.com/cicl-stanford/procedural-evals-tom) |
-| 2024 | ACL | Evaluating Intention Detection Capability of Large Language Models in Persuasive Dialogues | [查看](https://aclanthology.org/2024.acl-long.90.pdf) | [摘要](paper/Data-ACL-2024-Evaluating%20Intention%20Detection%20Capability%20of%20Large%20Language%20Models%20in%20Persuasive%20Dialogues.md) | [代码](https://github.com/Syuko4omi/LLM_intention_detection_public) |
-| 2024 | ICML | Agent-as-a-Judge- Evaluate Agents with Agents | [查看](https://arxiv.org/abs/2410.10934) | [摘要](paper/Data-ICML-2024-Agent-as-a-Judge-%20Evaluate%20Agents%20with%20Agents.md) | [代码](https://github.com/metauto-ai/agent-as-a-judge) |
-| 2024 | ACL | Evaluating Very Long-Term Conversational Memory of LLM Agents | [查看](https://aclanthology.org/2024.acl-long.747/) | - | [代码](https://github.com/snap-research/locomo) |
-| 2024 | ACL | MM-SOC: Benchmarking Multimodal Large Language Models in Social Media Platforms | [查看](https://aclanthology.org/2024.findings-acl.370/) | - | [代码](https://github.com/claws-lab/MMSoc) |
-| 2024 | ACL | MMToM-QA: Multimodal Theory of Mind Question Answering | [查看](https://aclanthology.org/2024.acl-long.851/) | - | [代码](https://github.com/chuanyangjin/MMToM-QA) |
-| 2024 | ACL | OpenToM: A Comprehensive Benchmark for Evaluating Theory-of-Mind Reasoning Capabilities of Large Language Models | [查看](https://aclanthology.org/2024.acl-long.466/) | - | [代码](https://github.com/seacowx/OpenToM) |
-| 2024 | ACL | SocialBench: Sociality Evaluation of Role-Playing Conversational Agents | [查看](https://aclanthology.org/2024.findings-acl.125/) | - | [代码](https://github.com/X-PLUG/SocialBench) |
-| 2024 | ACL | ToMBench: Benchmarking Theory of Mind in Large Language Models | [查看](https://aclanthology.org/2024.acl-long.847/) | - | [代码](https://github.com/zhchen18/ToMBench) |
-| 2024 | ICLR | Who is ChatGPT? Benchmarking LLMs' Psychological Portrayal Using PsychoBench | [查看](https://arxiv.org/abs/2310.01386) | - | [代码](https://github.com/CUHK-ARISE/PsychoBench) |
-| 2025 | AAAI | MuMA-ToM- Multi-modal Multi-Agent Theory of Mind | [查看](https://arxiv.org/abs/2408.12574) | [摘要](paper/Data-AAAI-2025-MuMA-ToM-%20Multi-modal%20Multi-Agent%20Theory%20of%20Mind.md) | [代码](https://scai.cs.jhu.edu/projects/MuMA-ToM/) |
-| 2025 | AAAI | ToMATO: Verbalizing the Mental States of Role-Playing LLMs for Benchmarking Theory of Mind | [查看](https://arxiv.org/abs/2501.08838) | [摘要](paper/Data-AAAI-2025-ToMATO-%20Verbalizing%20the%20Mental%20States%20of%20Role-Playing%20LLMs%20for%20Benchmarking%20Theory%20of%20Mind.md) | [代码](https://github.com/nttmdlab-nlp/ToMATO) |
-| 2025 | ACL | Towards Dynamic Theory of Mind- Evaluating LLM Adaptation to Temporal Evolution of Human States | [查看](https://arxiv.org/abs/2505.17663) | [摘要](paper/Data-ACL-2025-Towards%20Dynamic%20Theory%20of%20Mind-%20Evaluating%20LLM%20Adaptation%20to%20Temporal%20Evolution%20of%20Human%20States.md) | [代码](https://github.com/GAIR-NLP/DynToM) |
-| 2025 | EMNLP | MOMENT S- A Comprehensive Multimodal Benchmark for Theory of Mind | [查看](https://aclanthology.org/2025.findings-emnlp.1230.pdf) | [摘要](paper/Data-EMNLP-2025-MOMENT%20S-%20A%20Comprehensive%20Multimodal%20Benchmark%20for%20Theory%20of%20Mind.md) | [代码](https://github.com/villacu/MoMentS) |
-| 2025 | ICLR | Explore theory of mind: program-guided adversarial data generation for theory of mind reasoning | [查看](https://arxiv.org/abs/2412.12175) | [摘要](paper/Data-ICLR-2025-Explore%20Theory%20of%20Mind-%20PROGRAM-GUIDED%20ADVERSARIAL%20DATA%20GENERATION%20FOR%20THEORY%20OF%20MIND%20REASONING.md) | [代码](https://github.com/facebookresearch/exploretom) |
-| 2025 | NAACL | Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLM Communication | [查看](https://aclanthology.org/2025.naacl-main.287/) | [摘要](paper/Data-NAACL-2025-Communication%20Makes%20Perfect%3A%20Persuasion%20Dataset%20Construction%20via%20Multi-LLM%20Communication.md) | [代码](https://github.com/HF-heaven/LLM-based_persuasion_simulator) |
-| 2025 | ACL | DICE-BENCH- Evaluating the Tool-Use Capabilities of Large Language Models in Multi-Round, Multi-Party Dialogues | [查看](-) | - | [代码](https://github.com/snuhcc/DICE-Bench) |
-| 2025 | ACL | In Search of the Lost Arch in Dialogue- A Dependency Dialogue Acts Corpus for Multi-Party Dialogues | [查看](https://aclanthology.org/2025.findings-acl.1032/) | - | - |
-| 2025 | NAACL | WHoW- A Cross-domain Approach for Analysing Conversation Moderation | [查看](https://aclanthology.org/2025.naacl-long.105/) | - | - |
-| 2025 | arXiv | You need to MIMIC to get FAME- Solving Meeting Transcript Scarcity with Multi-Agent Conversations | [查看](https://arxiv.org/abs/2502.13001) | - | - |
-| 2025 | EMNLP | PersonaGym: Evaluating Persona Agents and LLMs | [查看](https://arxiv.org/abs/2407.18416) | - | [代码](https://github.com/vsamuel2003/PersonaGym) |
-| 2025 | ICLR | LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory | [查看](https://arxiv.org/abs/2410.10813) | - | [代码](https://github.com/xiaowu0162/LongMemEval) |
-| 2026 | AAAI | RecToM: A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems | [查看](https://arxiv.org/abs/2511.22275) | [摘要](paper/Data-AAAI-2026-RecToM-%20A%20Benchmark%20for%20Evaluating%20Machine%20Theory%20of%20Mind%20in%20LLM-based%20Conversational%20Recommender%20Systems.md) | [代码](https://github.com/CGCL-codes/RecToM) |
-| 2026 | arXiv | EnactToM- An Evolving Benchmark for Functional Theory of Mind in Embodied Agents | [查看](https://arxiv.org/abs/2605.09826) | [摘要](paper/Data-arXiv-2026-EnactToM-%20An%20Evolving%20Benchmark%20for%20Functional%20Theory%20of%20Mind%20in%20Embodied%20Agents.md) | [代码](https://enact-tom.github.io/) |
-| 2026 | arXiv | Large language model psychometrics- A systematic review of evaluation, validation, and enhancement | [查看](https://arxiv.org/abs/2505.08245) | [摘要](paper/Data-arXiv-2026-Large%20language%20model%20psychometrics-%20A%20systematic%20review%20of%20evaluation%2C%20validation%2C%20and%20enhancement.md) | [代码](https://github.com/valuebyte-ai/Awesome-LLM-Psychometrics) |
-| 2026 | WWW | ES-MemEval- Benchmarking Conversational Agents on Personalized Long-Term Emotional Support | [查看](https://doi.org/10.1145/3774904.3792143) | [摘要](paper/Data-WWW-2026-ES-MemEval-%20Benchmarking%20Conversational%20Agents%20on%20Personalized%20Long-Term%20Emotional%20Support.md) | [代码](https://github.com/slptongji/ES-MemEval) |
-| 2026 | arXiv | PIVOTSBench- Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models | [查看](https://arxiv.org/abs/2606.23092) | - | - |
-| 2026 | arXiv | TIDES- A Longitudinal Bilingual Dataset for Modeling Multi-Party Social Dynamics | [查看](https://arxiv.org/abs/2608.01724) | - | - |
-| 2026 | ICLR | MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models | [查看](https://proceedings.iclr.cc/paper_files/paper/2026/hash/50d277e84b2bcbaadcd84548a87e8cc4-Abstract-Conference.html) | - | [代码](https://github.com/QwenAudio/MME-Emotion) |
+<!-- CATALOGUE:START -->
+- [Social-IQ- A Question Answering Benchmark for Artificial Social Intelligence](https://openaccess.thecvf.com/content_CVPR_2019/html/Zadeh_Social-IQ_A_Question_Answering_Benchmark_for_Artificial_Social_Intelligence_CVPR_2019_paper.html)
+  - Publisher: `CVPR 2019`
+  - Keywords: `Benchmark` · `General Interaction` · `Social Perception`
+- [FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions](https://aclanthology.org/2023.emnlp-main.890/)
+  - Publisher: `EMNLP 2023`
+  - Keywords: `Benchmark` · `General Interaction` · `Mental-State Modeling` · `Multi-party` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/skywalker023/fantom)
+- [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685)
+  - Publisher: `NeurIPS 2023`
+  - Keywords: `Evaluation` · `General Interaction`
+  - Code: [GitHub / Project](https://github.com/lm-sys/FastChat)
+- [Social-IQ 2.0 Challenge- Benchmarking Multimodal Social Understanding](https://cmu-multicomp-lab.github.io/social-iq-2.0/)
+  - Publisher: `ICCV 2023`
+  - Keywords: `Benchmark` · `General Interaction` · `Social Perception`
+  - Code: [GitHub / Project](https://github.com/abwilf/Social-IQ-2.0-Challenge)
+- [Understanding Social Reasoning in Language Models with Language Models](https://arxiv.org/abs/2306.15448)
+  - Publisher: `NeurIPS 2023`
+  - Keywords: `Benchmark` · `General Interaction` · `Mental-State Modeling` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/cicl-stanford/procedural-evals-tom)
+- [Agent-as-a-Judge- Evaluate Agents with Agents](https://arxiv.org/abs/2410.10934)
+  - Publisher: `ICML 2024`
+  - Keywords: `Method` · `General Interaction`
+  - Code: [GitHub / Project](https://github.com/metauto-ai/agent-as-a-judge)
+  - Summary: [Summary](paper/Data-ICML-2024-Agent-as-a-Judge-%20Evaluate%20Agents%20with%20Agents.md)
+- [Evaluating Intention Detection Capability of Large Language Models in Persuasive Dialogues](https://aclanthology.org/2024.acl-long.90.pdf)
+  - Publisher: `ACL 2024`
+  - Keywords: `Evaluation` · `Influence` · `Mental-State Modeling` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/Syuko4omi/LLM_intention_detection_public)
+  - Summary: [Summary](paper/Data-ACL-2024-Evaluating%20Intention%20Detection%20Capability%20of%20Large%20Language%20Models%20in%20Persuasive%20Dialogues.md)
+- [Evaluating Very Long-Term Conversational Memory of LLM Agents](https://aclanthology.org/2024.acl-long.747/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Dataset` · `General Interaction` · `Social Memory & Adaptation` · `Multi-party` · `Retrieval` · `Longitudinal`
+  - Code: [GitHub / Project](https://github.com/snap-research/locomo)
+- [MM-SOC: Benchmarking Multimodal Large Language Models in Social Media Platforms](https://aclanthology.org/2024.findings-acl.370/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Benchmark` · `General Interaction` · `Social Perception` · `Multi-party` · `Supervised Learning`
+  - Code: [GitHub / Project](https://github.com/claws-lab/MMSoc)
+- [MMToM-QA: Multimodal Theory of Mind Question Answering](https://aclanthology.org/2024.acl-long.851/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Benchmark` · `General Interaction` · `Mental-State Modeling` · `Planning`
+  - Code: [GitHub / Project](https://github.com/chuanyangjin/MMToM-QA)
+- [OpenToM: A Comprehensive Benchmark for Evaluating Theory-of-Mind Reasoning Capabilities of Large Language Models](https://aclanthology.org/2024.acl-long.466/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Benchmark` · `General Interaction` · `Mental-State Modeling`
+  - Code: [GitHub / Project](https://github.com/seacowx/OpenToM)
+- [SocialBench: Sociality Evaluation of Role-Playing Conversational Agents](https://aclanthology.org/2024.findings-acl.125/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Benchmark` · `General Interaction` · `Social Perception` · `Relationship & Role` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/X-PLUG/SocialBench)
+- [ToMBench: Benchmarking Theory of Mind in Large Language Models](https://aclanthology.org/2024.acl-long.847/)
+  - Publisher: `ACL 2024`
+  - Keywords: `Benchmark` · `General Interaction` · `Mental-State Modeling`
+  - Code: [GitHub / Project](https://github.com/zhchen18/ToMBench)
+- [Who is ChatGPT? Benchmarking LLMs' Psychological Portrayal Using PsychoBench](https://arxiv.org/abs/2310.01386)
+  - Publisher: `ICLR 2024`
+  - Keywords: `Benchmark` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Relationship & Role` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/CUHK-ARISE/PsychoBench)
+- [Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLM Communication](https://aclanthology.org/2025.naacl-main.287/)
+  - Publisher: `NAACL 2025`
+  - Keywords: `Method` · `Influence` · `Interaction Management` · `Multi-party` · `Norms & Morality` · `User Simulation`
+  - Code: [GitHub / Project](https://github.com/HF-heaven/LLM-based_persuasion_simulator)
+  - Summary: [Summary](paper/Data-NAACL-2025-Communication%20Makes%20Perfect:%20Persuasion%20Dataset%20Construction%20via%20Multi-LLM%20Communication.md)
+- DICE-BENCH- Evaluating the Tool-Use Capabilities of Large Language Models in Multi-Round, Multi-Party Dialogues
+  - Publisher: `ACL 2025`
+  - Keywords: `Benchmark` · `Coordination` · `Interaction Management` · `Multi-party` · `User Simulation` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/snuhcc/DICE-Bench)
+- [Explore theory of mind: program-guided adversarial data generation for theory of mind reasoning](https://arxiv.org/abs/2412.12175)
+  - Publisher: `ICLR 2025`
+  - Keywords: `Method` · `General Interaction` · `Mental-State Modeling` · `Planning`
+  - Code: [GitHub / Project](https://github.com/facebookresearch/exploretom)
+  - Summary: [Summary](paper/Data-ICLR-2025-Explore%20Theory%20of%20Mind-%20PROGRAM-GUIDED%20ADVERSARIAL%20DATA%20GENERATION%20FOR%20THEORY%20OF%20MIND%20REASONING.md)
+- [In Search of the Lost Arch in Dialogue- A Dependency Dialogue Acts Corpus for Multi-Party Dialogues](https://aclanthology.org/2025.findings-acl.1032/)
+  - Publisher: `ACL 2025`
+  - Keywords: `Dataset` · `General Interaction` · `Interaction Management` · `Social Perception` · `Multi-party` · `Supervised Learning`
+- [LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory](https://arxiv.org/abs/2410.10813)
+  - Publisher: `ICLR 2025`
+  - Keywords: `Benchmark` · `General Interaction` · `Social Memory & Adaptation` · `Interaction Management` · `Personalization` · `Retrieval` · `Longitudinal`
+  - Code: [GitHub / Project](https://github.com/xiaowu0162/LongMemEval)
+- [MOMENT S- A Comprehensive Multimodal Benchmark for Theory of Mind](https://aclanthology.org/2025.findings-emnlp.1230.pdf)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Benchmark` · `General Interaction` · `Mental-State Modeling` · `Social Perception` · `Multi-party`
+  - Code: [GitHub / Project](https://github.com/villacu/MoMentS)
+  - Summary: [Summary](paper/Data-EMNLP-2025-MOMENT%20S-%20A%20Comprehensive%20Multimodal%20Benchmark%20for%20Theory%20of%20Mind.md)
+- [MuMA-ToM- Multi-modal Multi-Agent Theory of Mind](https://arxiv.org/abs/2408.12574)
+  - Publisher: `AAAI 2025`
+  - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Social Context` · `Multi-party` · `Embodied`
+  - Code: [GitHub / Project](https://scai.cs.jhu.edu/projects/MuMA-ToM/)
+  - Summary: [Summary](paper/Data-AAAI-2025-MuMA-ToM-%20Multi-modal%20Multi-Agent%20Theory%20of%20Mind.md)
+- [PersonaGym: Evaluating Persona Agents and LLMs](https://arxiv.org/abs/2407.18416)
+  - Publisher: `EMNLP 2025`
+  - Keywords: `Evaluation` · `General Interaction` · `Social Context` · `Personalization`
+  - Code: [GitHub / Project](https://github.com/vsamuel2003/PersonaGym)
+- [ToMATO: Verbalizing the Mental States of Role-Playing LLMs for Benchmarking Theory of Mind](https://arxiv.org/abs/2501.08838)
+  - Publisher: `AAAI 2025`
+  - Keywords: `Benchmark` · `General Interaction` · `Mental-State Modeling` · `Relationship & Role`
+  - Code: [GitHub / Project](https://github.com/nttmdlab-nlp/ToMATO)
+  - Summary: [Summary](paper/Data-AAAI-2025-ToMATO-%20Verbalizing%20the%20Mental%20States%20of%20Role-Playing%20LLMs%20for%20Benchmarking%20Theory%20of%20Mind.md)
+- [Towards Dynamic Theory of Mind- Evaluating LLM Adaptation to Temporal Evolution of Human States](https://arxiv.org/abs/2505.17663)
+  - Publisher: `ACL 2025`
+  - Keywords: `Evaluation` · `General Interaction` · `Mental-State Modeling` · `Multi-party` · `Multi-turn`
+  - Code: [GitHub / Project](https://github.com/GAIR-NLP/DynToM)
+  - Summary: [Summary](paper/Data-ACL-2025-Towards%20Dynamic%20Theory%20of%20Mind-%20Evaluating%20LLM%20Adaptation%20to%20Temporal%20Evolution%20of%20Human%20States.md)
+- [WHoW- A Cross-domain Approach for Analysing Conversation Moderation](https://aclanthology.org/2025.naacl-long.105/)
+  - Publisher: `NAACL 2025`
+  - Keywords: `Evaluation` · `Coordination` · `Interaction Management` · `Multi-party`
+- [You need to MIMIC to get FAME- Solving Meeting Transcript Scarcity with Multi-Agent Conversations](https://arxiv.org/abs/2502.13001)
+  - Publisher: `arXiv 2025`
+  - Keywords: `Dataset` · `General Interaction` · `Social Context` · `Social Perception` · `Multi-party` · `Relationship & Role` · `User Simulation`
+- [EnactToM- An Evolving Benchmark for Functional Theory of Mind in Embodied Agents](https://arxiv.org/abs/2605.09826)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Benchmark` · `Coordination` · `Mental-State Modeling` · `Social Perception` · `Embodied` · `Multi-party`
+  - Code: [GitHub / Project](https://enact-tom.github.io/)
+  - Summary: [Summary](paper/Data-arXiv-2026-EnactToM-%20An%20Evolving%20Benchmark%20for%20Functional%20Theory%20of%20Mind%20in%20Embodied%20Agents.md)
+- [ES-MemEval- Benchmarking Conversational Agents on Personalized Long-Term Emotional Support](https://doi.org/10.1145/3774904.3792143)
+  - Publisher: `WWW 2026`
+  - Keywords: `Benchmark` · `Support` · `Social Memory & Adaptation` · `Mental-State Modeling` · `Personalization` · `Longitudinal`
+  - Code: [GitHub / Project](https://github.com/slptongji/ES-MemEval)
+  - Summary: [Summary](paper/Data-WWW-2026-ES-MemEval-%20Benchmarking%20Conversational%20Agents%20on%20Personalized%20Long-Term%20Emotional%20Support.md)
+- [Large language model psychometrics- A systematic review of evaluation, validation, and enhancement](https://arxiv.org/abs/2505.08245)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Survey` · `General Interaction`
+  - Code: [GitHub / Project](https://github.com/valuebyte-ai/Awesome-LLM-Psychometrics)
+  - Summary: [Summary](paper/Data-arXiv-2026-Large%20language%20model%20psychometrics-%20A%20systematic%20review%20of%20evaluation%2C%20validation%2C%20and%20enhancement.md)
+- [MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models](https://proceedings.iclr.cc/paper_files/paper/2026/hash/50d277e84b2bcbaadcd84548a87e8cc4-Abstract-Conference.html)
+  - Publisher: `ICLR 2026`
+  - Keywords: `Benchmark` · `General Interaction` · `Affect` · `Social Perception` · `Multi-party`
+  - Code: [GitHub / Project](https://github.com/QwenAudio/MME-Emotion)
+- [PIVOTSBench- Evaluating Fine-Grained Interpersonal Relationship Reasoning in Multimodal Large Language Models](https://arxiv.org/abs/2606.23092)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Benchmark` · `General Interaction` · `Social Perception` · `Social Context` · `Relationship & Role`
+- [RecToM: A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems](https://arxiv.org/abs/2511.22275)
+  - Publisher: `AAAI 2026`
+  - Keywords: `Benchmark` · `Recommendation` · `Mental-State Modeling` · `Social Context` · `Personalization`
+  - Code: [GitHub / Project](https://github.com/CGCL-codes/RecToM)
+  - Summary: [Summary](paper/Data-AAAI-2026-RecToM-%20A%20Benchmark%20for%20Evaluating%20Machine%20Theory%20of%20Mind%20in%20LLM-based%20Conversational%20Recommender%20Systems.md)
+- [TIDES- A Longitudinal Bilingual Dataset for Modeling Multi-Party Social Dynamics](https://arxiv.org/abs/2608.01724)
+  - Publisher: `arXiv 2026`
+  - Keywords: `Dataset` · `Coordination` · `Social Context` · `Interaction Management` · `Multi-party` · `Relationship & Role` · `Supervised Learning` · `Longitudinal`
+<!-- CATALOGUE:END -->
+
+
+
+
+
+
+
+
+
+
 
 </details>
+
+---
+
+<a id="keywords"></a>
+## 🏷️ 关键词体系
+
+关键词按分面标注，不把“研究目标、社会能力、社会情境、方法、论文类型”混为同一层：
+
+| 分面 | 是否单选 | 用途 |
+| --- | --- | --- |
+| `Type` | 是 | 标明主要贡献是系统、方法、数据集、基准、评测还是综述。 |
+| `Goal` | 是 | 标明主要社会交互目标，如影响、支持、推荐或协调。 |
+| `Capability` | 否 | 标明研究涉及的社会能力，如情感、心智状态建模、社会情境或社会记忆。 |
+| `Context` | 否 | 标明个性化、角色关系、规范文化、多方或具身等情境。 |
+| `Approach` | 否 | 标明关键技术路线，如规划、RL、偏好优化或用户模拟。 |
+| `Horizon` | 是 | 区分单轮、多轮和跨会话/长期互动。 |
+
+详细词表、边界定义、证据要求和审核规则见 [metadata/KEYWORDS.md](metadata/KEYWORDS.md)。关键词迁移完成后，仓库将由元数据自动生成可交叉浏览的关键词索引。
 
 ---
 
@@ -386,7 +1210,9 @@
 ```
 Awesome-Social-AI/
 ├── image/              # 存放论文相关的图片、图表等
-├── paper/              # 论文摘要（main，按 8 个方向前缀命名）
+├── paper/              # 论文中文摘要（文件名前缀是主入口，而非完整标签）
+├── metadata/           # 受控关键词词表与论文结构化元数据
+├── scripts/            # README 同步、元数据校验等工具
 ├── Example.md          # 论文摘要的撰写范例
 └── README.md           # 本说明文件
 ```
@@ -423,7 +1249,7 @@ git checkout -b 分支名
 \paper 下的文件名请严格按照以下格式命名，以便于检索和管理：
 [方向]-[会议/期刊名]-[年份]-[论文名(完整的名字而不是缩写)].md
 示例: Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md
-研究方向请从当前 8 个方向中选择最接近的归类；确需新增方向时，请先在组内讨论后再添加。
+文件名前缀是论文的**主入口**，应从当前 11 个前缀中选择最接近的一项；它不替代关键词。确需新增前缀时，请先在组内讨论。
 当前方向前缀：PD、ED、Recommend、Coop、ToM、Emotion、Norms、Memory、RLHF、US、Data。
 \image 下的文件命名为 [年]-[月]-[日]-[编号]-[姓名缩写].png
 示例：2024010101mmh.png
@@ -431,14 +1257,19 @@ git checkout -b 分支名
 ### 5. 填写内容
 a. 参照 Example.md 中的模板，填写论文的各项信息，确保内容精炼、准确。 
 
-b. 或者可以使用我们专门开发的 [Auto-Summary](https://github.com/lucianma05-create/Auto-Summary), 请在自动化生成后进行必要的人工校对和修改。
+b. 在 `metadata/papers.json` 中为论文增加结构化记录。`type`、`goal`、`horizon` 必须单选；能力、情境和方法可多选。所有值均须来自 [关键词词表](metadata/KEYWORDS.md)，并为每个多选标签填写论文中的依据。提交前运行：
+```
+python scripts/validate_metadata.py --paper-dir paper
+```
+
+c. 或者可以使用我们专门开发的 [Auto-Summary](https://github.com/lucianma05-create/Auto-Summary), 请在自动化生成后进行必要的人工校对和修改。
 
 ### 6. 修改 README.md
-参照 README.md 中的表格，增加新论文的链接、摘要和代码；可以用以下提示词提示codex或copilot进行自动化填充：
+参照 README.md 中的嵌套条目，增加新论文的链接、摘要和代码；可以用以下提示词提示codex或copilot进行自动化填充：
 ```
-请根据 paper 目录新增的 .md 文件，按 README.md 里现有表格格式补全相应方向的行，填 链接、摘要、代码 字段，缺失用 - 
+请根据 paper 目录新增的 .md 文件，按 README.md 里现有嵌套条目格式补全相应方向的记录，填 Publisher、Code、Summary 字段，缺失用 -
 ```
-或运行仓库自带的同步脚本，自动把 paper/ 目录的新论文填入表格：
+或运行仓库自带的同步脚本，自动把 paper/ 目录的新论文填入目录：
 ```
 python scripts/update_readme.py --dry-run   # 预览改动
 python scripts/update_readme.py             # 应用改动

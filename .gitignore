@@ -1,2 +1,12 @@
 # Ignore all files in mySetup directory
 mySetup/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local tooling
+.claude/
+
+# OS
+.DS_Store
