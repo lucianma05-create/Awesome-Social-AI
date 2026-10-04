@@ -4,7 +4,7 @@
 
 > A curated collection of research on socially intelligent conversational agents.
 >
-> Focusing on conversational agents that understand social contexts, reason about others' states, engage in appropriate interactions, and adapt through long-term interaction.
+> 聚焦能够理解社会情境、推理他人状态、开展恰当交互并从长期互动中适应的对话智能体。
 
 [![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://github.com/sindresorhus/awesome)
 [![License](https://img.shields.io/badge/License-Apache%202.0-red?style=for-the-badge&logo=apache&logoColor=white)](http://www.apache.org/licenses/LICENSE-2.0)
@@ -13,17 +13,17 @@
 [![Views](https://komarev.com/ghpvc/?username=lucianma05-create&repo=Awesome-Social-AI&label=Views&color=orange&style=for-the-badge)](https://github.com/lucianma05-create/Awesome-Social-AI)
 </div>
 
-**[English](README.md)** | **[简体中文](README_CN.md)**
+**[简体中文](README_CN.md)** | **[English](README.md)**
 
-**We curate Social AI research papers for conversational agents with continuously updated Chinese summaries, helping you quickly get up to speed with representative work in this field. The repository is under active development. Follow and Star ⭐**
+**我们精心收集整理面向对话智能体的社交人工智能（Social AI）研究论文，并持续更新中文摘要，支持快速了解这一领域的代表性工作。仓库将不断更新，追踪相关前沿。欢迎 Follow 和 Star!⭐**
 
 <a id="toc"></a>
-## 📑 Table of Contents
+## 📑 目录
 
 - [🌐 Awesome Social AI](https://github.com/lucianma05-create/Awesome-Social-AI)
-  - [📑 Table of Contents](#toc)
-  - [🎯 Scope & Structure](#social-ai)
-  - [📚 Paper List](#papers)
+  - [📑 目录](#toc)
+  - [🎯 范畴与结构](#social-ai)
+  - [📚 论文列表](#papers)
     - [Persuasion & Negotiation](#pd)
     - [Empathy & Emotional Support](#ed)
     - [Conversational Recommendation](#recommend)
@@ -35,57 +35,57 @@
     - [Learning, Planning & Alignment](#rlhf)
     - [User Simulation & Interactive Environments](#us)
     - [Benchmark & Evaluation](#data)
-  - [🏷️ Keyword System](#keywords)
-  - [📁 Repository Structure](#repo-structure)
-  - [✍️ How to Contribute](#contributing)
-  - [🧠 About Us](#about)
+  - [🏷️ 关键词体系](#keywords)
+  - [📁 仓库结构](#repo-structure)
+  - [✍️ 如何贡献](#contributing)
+  - [🧠 关于我们](#about)
 
 <a id="social-ai"></a>
-## 🎯 Scope & Structure
+## 🎯 范畴与结构
 
-**Social AI** is the field of research and construction of AI systems that can interact appropriately with humans or other agents in dynamic social situations. This repository focuses on its **conversational agent** side: language interaction is the primary modality; multimodal or embodied work is included only when it explicitly serves interactive social agents.
+**Social AI** 是研究与构建能够在动态社会情境中与人类或其他智能体进行恰当交互的 AI 系统的领域。本仓库聚焦其面向**对话智能体**的部分：语言交互为主要载体；多模态或具身工作仅在其明确服务于交互式社会智能体时收录。
 
-Social intelligence here comprises four interacting groups of abilities:
+这里的社会智能包含四组相互作用的能力：
 
-- **Social perception & understanding**: recognizing emotions, intentions, beliefs, relationships, roles, and group dynamics from verbal and non-verbal cues;
-- **Social context modeling & reasoning**: combining norms, culture, relationships, tasks, and interaction history to infer others' states, common ground, and the consequences of actions;
-- **Social action & interaction**: achieving social goals through communication, collaboration, support, coordination, or influence, while maintaining appropriate relationships;
-- **Social learning & adaptation**: using interaction feedback and long-term social memory to adapt the understanding of users, relationships, and situations.
+- **社会感知与理解**：从语言及非语言线索中识别情绪、意图、信念、关系、角色和群体动态；
+- **社会情境建模与推理**：结合规范、文化、关系、任务和互动历史，推断他者状态、共同基础及行动后果；
+- **社会行动与交互**：以沟通、协作、支持、协调或影响等方式实现社会目标，并维持恰当关系；
+- **社会学习与适应**：利用交互反馈和长期社会记忆，调整对用户、关系和情境的理解与行为。
 
-This definition draws on research on social perception, social knowledge, social memory, social reasoning, mental-state modeling, and social interaction. See [Mathur et al., 2024](https://aclanthology.org/2024.emnlp-main.1143/) and [Ziems et al., 2024](https://aclanthology.org/2024.findings-acl.163/).
+这一定义参考了社会感知、社会知识、社会记忆、社会推理、心智建模与社会交互等研究脉络。参见 [Mathur et al., 2024](https://aclanthology.org/2024.emnlp-main.1143/) 与 [Ziems et al., 2024](https://aclanthology.org/2024.findings-acl.163/)。
 
-Each paper has one **primary section** for browsing plus cross-cutting **Keywords** describing its goal, capabilities, contexts, and methods. The primary section organizes the repository for browsing and does not imply a mutually exclusive theoretical hierarchy:
+论文以一个**主入口**便于浏览，并使用可交叉的 **Keywords** 描述目标、能力、情境和方法。主入口是仓库的信息组织方式，不代表互斥的理论层级：
 
-- **Task layer · Social tasks**
-  - [Persuasion & Negotiation](#pd) — research, methods, and evaluation for strategic dialogue such as persuasion and negotiation
-  - [Empathy & Emotional Support](#ed) — empathetic dialogue, emotional support, and counseling
-  - [Conversational Recommendation](#recommend) — conversational recommender systems
-  - [Cooperation & Collaboration](#coop) — cooperation, collaboration, and multi-party consensus building
-- **Capability layer · Social cognition**
-  - [Theory of Mind](#tom) — mental-state modeling, intention and belief reasoning
-  - [Affect & Social Perception](#emotion) — affective states, social cues, and emotion reasoning
-  - [Social Context, Norms & Morality](#norms) — roles, relationships, culture, norms, and moral contexts
-  - [Social Memory & Adaptation](#memory) — long-term social memory, personalization, and interaction adaptation
-- **Method layer · Supporting techniques**
-  - [Learning, Planning & Alignment](#rlhf) — learning, planning, and alignment methods serving social adaptation
-- **Resource layer · Research infrastructure**
-  - [User Simulation & Interactive Environments](#us) — user simulation, interactive environments, and simulation
-  - [Benchmark & Evaluation](#data) — benchmarks, datasets, and evaluation
+- **任务层 · 社交任务**
+  - [Persuasion & Negotiation](#pd) — 说服、谈判等策略性对话的研究、方法与评测
+  - [Empathy & Emotional Support](#ed) — 共情对话、情感支持与心理辅导
+  - [Conversational Recommendation](#recommend) — 对话式推荐系统
+  - [Cooperation & Collaboration](#coop) — 合作、协作与多方共识构建
+- **能力层 · 社交认知**
+  - [Theory of Mind](#tom) — 心智建模、意图与信念推理
+  - [Affect & Social Perception](#emotion) — 情感状态、社会线索与情绪推理
+  - [Social Context, Norms & Morality](#norms) — 角色、关系、文化、规范与道德情境
+  - [Social Memory & Adaptation](#memory) — 长期社会记忆、个性化与互动适应
+- **方法层 · 支撑技术**
+  - [Learning, Planning & Alignment](#rlhf) — 服务社会适应的学习、规划与对齐方法
+- **资源层 · 研究基础设施**
+  - [User Simulation & Interactive Environments](#us) — 用户模拟、交互环境与仿真
+  - [Benchmark & Evaluation](#data) — 基准测试、数据集与评测
 
-Excluded: pure computational social science / "AI for social science" work, pure static emotion classification, pure visual ToM, pure general RL or alignment work. Work is included as an exception when it explicitly serves conversational or interactive social agents.
+不收录：纯计算社会科学 / “AI for social science” 工作，纯静态情绪分类、纯视觉 ToM、纯通用 RL 或对齐工作。若一项工作明确服务于对话式或交互式社会智能体，则可作为例外收录。
 
-**Reference papers:**
+**参考论文:**
 > 1. [Towards Social AI: A Survey on Understanding Social Interactions](https://arxiv.org/abs/2409.15316)
 > 2. [Advancing Social Intelligence in AI Agents: Technical Challenges and Open Questions](https://aclanthology.org/2024.emnlp-main.1143/)
 
 <a id="papers"></a>
-## 📚 Paper List
+## 📚 论文列表
 
-> This catalogue is auto-generated from `metadata/papers.json` and renders each paper in the Awesome-RLHF style: Publisher, Keywords, Code, and Summary. Titles stay clean; keywords appear as a separate field whose meaning is defined by the controlled vocabulary and mapping below. A Summary link appears only when a local Chinese note exists. See [metadata/KEYWORDS.md](metadata/KEYWORDS.md) for the full vocabulary, definitions, and review policy.
+> 本目录由 `metadata/papers.json` 自动生成，并以 Awesome-RLHF 风格逐条呈现论文信息：Publisher、Keywords、Code 与 Summary。标题行保持简洁；关键词作为独立字段展示，后文的受控词表与映射统一定义其含义。仅已有仓库中文笔记的论文显示 Summary 链接；缺少笔记时省略该字段。完整词表、定义和审核规则见 [metadata/KEYWORDS.md](metadata/KEYWORDS.md)。
 
 <a id="pd"></a>
 <details>
-<summary>🗣️ <b>Persuasion & Negotiation</b> · 41 papers</summary>
+<summary>🗣️ <b>Persuasion & Negotiation</b> · 41 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [A Systematic Framework for Designing and Evaluating Persuasive Systems](https://doi.org/10.1007/978-3-540-68504-3_15)
@@ -284,7 +284,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="ed"></a>
 <details>
-<summary>❤️‍🩹 <b>Empathy & Emotional Support</b> · 19 papers</summary>
+<summary>❤️‍🩹 <b>Empathy & Emotional Support</b> · 19 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [Towards Emotional Support Dialog Systems](https://aclanthology.org/2021.acl-long.269/)
@@ -392,7 +392,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="recommend"></a>
 <details>
-<summary>🛍️ <b>Conversational Recommendation</b> · 24 papers</summary>
+<summary>🛍️ <b>Conversational Recommendation</b> · 24 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [Towards Conversational Recommendation over Multi-Type Dialogs](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/Research/ACL2020-DuRecDial)
@@ -521,7 +521,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="coop"></a>
 <details>
-<summary>🤝 <b>Cooperation & Collaboration</b> · 11 papers</summary>
+<summary>🤝 <b>Cooperation & Collaboration</b> · 11 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts](https://doi.org/10.1145/3491102.3517582)
@@ -584,7 +584,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="tom"></a>
 <details>
-<summary>💭 <b>Theory of Mind</b> · 19 papers</summary>
+<summary>💭 <b>Theory of Mind</b> · 19 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [Bayesian Theory of Mind- Modeling Joint Belief-Desire Attribution](https://www.semanticscholar.org/paper/Explore-Theory-of-Mind:-Program-guided-adversarial-Sclar-Yu/3c52a1e1c3dc0ef5e1e638e11bbc3a2f09900dc6)
@@ -689,7 +689,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="emotion"></a>
 <details>
-<summary>🎭 <b>Affect & Social Perception</b> · 10 papers</summary>
+<summary>🎭 <b>Affect & Social Perception</b> · 10 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [DialogueRNN- An Attentive RNN for Emotion Detection in Conversations](https://ojs.aaai.org/index.php/AAAI/article/view/4657)
@@ -747,7 +747,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="norms"></a>
 <details>
-<summary>⚖️ <b>Social Context, Norms & Morality</b> · 12 papers</summary>
+<summary>⚖️ <b>Social Context, Norms & Morality</b> · 12 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [Social Chemistry 101- Learning to Reason about Social and Moral Norms](https://aclanthology.org/2020.emnlp-main.48/)
@@ -816,7 +816,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="memory"></a>
 <details>
-<summary>💾 <b>Social Memory & Adaptation</b> · 11 papers</summary>
+<summary>💾 <b>Social Memory & Adaptation</b> · 11 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [Generative Agents- Interactive Simulacra of Human Behavior](https://doi.org/10.1145/3586183.3606763)
@@ -889,7 +889,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="rlhf"></a>
 <details>
-<summary>🤖 <b>Learning, Planning & Alignment</b> · 18 papers</summary>
+<summary>🤖 <b>Learning, Planning & Alignment</b> · 18 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games](https://arxiv.org/abs/2103.01955)
@@ -987,7 +987,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="us"></a>
 <details>
-<summary>🕹️ <b>User Simulation & Interactive Environments</b> · 16 papers</summary>
+<summary>🕹️ <b>User Simulation & Interactive Environments</b> · 16 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [A Survey of Statistical User Simulation Techniques for RL Dialogue Management](https://doi.org/10.1017/S0269888906000944)
@@ -1081,7 +1081,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 <a id="data"></a>
 <details>
-<summary>📊 <b>Benchmark & Evaluation</b> · 33 papers</summary>
+<summary>📊 <b>Benchmark & Evaluation</b> · 33 篇</summary>
 
 <!-- CATALOGUE:START -->
 - [Social-IQ- A Question Answering Benchmark for Artificial Social Intelligence](https://openaccess.thecvf.com/content_CVPR_2019/html/Zadeh_Social-IQ_A_Question_Answering_Benchmark_for_Artificial_Social_Intelligence_CVPR_2019_paper.html)
@@ -1244,66 +1244,66 @@ Excluded: pure computational social science / "AI for social science" work, pure
 ---
 
 <a id="keywords"></a>
-## 🏷️ Keyword System
+## 🏷️ 关键词体系
 
-Keywords are assigned along facets, so paper type, research goal, social capability, social context, and method are not conflated into one layer:
+关键词按分面标注，不把“研究目标、社会能力、社会情境、方法、论文类型”混为同一层：
 
-| Facet | Single-choice | Purpose |
+| 分面 | 是否单选 | 用途 |
 | --- | --- | --- |
-| `Type` | Yes | Whether the main contribution is a system, method, dataset, benchmark, evaluation, or survey. |
-| `Goal` | Yes | The main social interaction goal, such as influence, support, recommendation, or coordination. |
-| `Capability` | No | Social capabilities involved, such as affect, mental-state modeling, social context, or social memory. |
-| `Context` | No | Settings such as personalization, relationships & roles, norms & culture, multi-party, or embodied. |
-| `Approach` | No | Key technical routes, such as planning, RL, preference optimization, or user simulation. |
-| `Horizon` | Yes | Single-turn, multi-turn, or cross-session / long-term interaction. |
+| `Type` | 是 | 标明主要贡献是系统、方法、数据集、基准、评测还是综述。 |
+| `Goal` | 是 | 标明主要社会交互目标，如影响、支持、推荐或协调。 |
+| `Capability` | 否 | 标明研究涉及的社会能力，如情感、心智状态建模、社会情境或社会记忆。 |
+| `Context` | 否 | 标明个性化、角色关系、规范文化、多方或具身等情境。 |
+| `Approach` | 否 | 标明关键技术路线，如规划、RL、偏好优化或用户模拟。 |
+| `Horizon` | 是 | 区分单轮、多轮和跨会话/长期互动。 |
 
-See [metadata/KEYWORDS.md](metadata/KEYWORDS.md) for the full vocabulary, boundary definitions, evidence requirements, and review policy. The repository now generates a cross-browsable keyword index from the metadata.
+详细词表、边界定义、证据要求和审核规则见 [metadata/KEYWORDS.md](metadata/KEYWORDS.md)。关键词迁移完成后，仓库将由元数据自动生成可交叉浏览的关键词索引。
 
 ---
 
 <a id="repo-structure"></a>
-## 📁 Repository Structure
+## 📁 仓库结构
 
 ```
 Awesome-Social-AI/
-├── image/              # Images and figures for papers
-├── paper/              # Chinese paper summaries (filename prefix is the primary section, not the full labels)
-├── metadata/           # Controlled keyword vocabulary and structured paper metadata
-├── scripts/            # README sync, metadata validation, and other tools
-├── Example.md          # Paper summary template
-├── README.md           # This document (English)
-└── README_CN.md        # This document (简体中文)
+├── image/              # 存放论文相关的图片、图表等
+├── paper/              # 论文中文摘要（文件名前缀是主入口，而非完整标签）
+├── metadata/           # 受控关键词词表与论文结构化元数据
+├── scripts/            # README 同步、元数据校验等工具
+├── Example.md          # 论文摘要的撰写范例
+├── README.md           # 本说明文件（英文版）
+└── README_CN.md        # 本说明文件（简体中文）
 ```
 
 ---
 
 <a id="contributing"></a>
-## ✍️ How to Contribute
+## ✍️ 如何贡献
 
-Contributions are welcome! The flow is simple: fork this repository → create a branch → add papers following the conventions below → open a PR for review.
+欢迎贡献论文摘要！流程很简单：Fork 本仓库 → 新建分支 → 按下方规范添加论文 → 发起 PR 等待审核合并。
 
-### Naming conventions
+### 命名规范
 
-- Name files under `paper/` strictly as `[Section]-[Venue]-[Year]-[Full paper title].md`, e.g. `Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md`
-- The filename prefix is the paper's **primary section** — pick the closest of the 11 existing prefixes; it does not replace the keywords. Discuss in the group before adding a new prefix. Current prefixes: PD, ED, Recommend, Coop, ToM, Emotion, Norms, Memory, RLHF, US, Data
-- Name files under `image/` as `[Year]-[Month]-[Day]-[Number]-[Initials].png`, e.g. `2024010101mmh.png`
+- `paper/` 下的文件名请严格按 `[方向]-[会议/期刊名]-[年份]-[论文完整名].md` 命名，例如 `Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md`
+- 文件名前缀是论文的**主入口**，从当前 11 个前缀中选择最接近的一项，它不替代关键词；确需新增前缀时请先在组内讨论。当前前缀：PD、ED、Recommend、Coop、ToM、Emotion、Norms、Memory、RLHF、US、Data
+- `image/` 下的文件按 `[年]-[月]-[日]-[编号]-[姓名缩写].png` 命名，例如 `2024010101mmh.png`
 
-### Adding content
+### 填写内容
 
-1. Write the Chinese summary following the [Example.md](Example.md) template
-2. Add a structured record in `metadata/papers.json`: `type`, `goal`, `horizon` are single-choice; capabilities, contexts, and approaches are multi-choice. All label values must come from the [keyword vocabulary](metadata/KEYWORDS.md); add paper evidence for every multi-choice label
-3. Validate and rebuild the catalogue before committing:
+1. 参照 [Example.md](Example.md) 模板撰写中文摘要
+2. 在 `metadata/papers.json` 中新增结构化记录：`type`、`goal`、`horizon` 单选；能力、情境、方法可多选。所有标签值须来自 [关键词词表](metadata/KEYWORDS.md)，并为每个多选标签填写论文依据
+3. 提交前运行校验并重建目录：
 
 ```bash
 python scripts/validate_metadata.py --paper-dir paper
 python scripts/render_readme_catalog.py
 ```
 
-You can also use [Auto-Summary](https://github.com/lucianma05-create/Auto-Summary) to draft summaries, then proofread them manually.
+也可使用 [Auto-Summary](https://github.com/lucianma05-create/Auto-Summary) 自动生成摘要初稿，再进行人工校对。
 
 ---
 
 <a id="about"></a>
-## 🧠 About Us
+## 🧠 关于我们
 
-Maintained by the NWPU Crowd-HMT-Lab Social-AI-Group.
+本仓库由 NWPU Crowd-HMT-Lab Social-AI-Group 维护。

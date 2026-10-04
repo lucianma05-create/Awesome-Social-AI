@@ -58,10 +58,11 @@ def replace_section(text: str, anchor: str, records: list[dict]) -> str:
     start = text.index(f'<a id="{anchor}"></a>')
     end = text.index("</details>", start)
     block = text[start:end]
-    header_match = re.search(r"<summary>(.*?) · \d+ 篇</summary>", block)
+    header_match = re.search(r"<summary>(.*?) · \d+ (篇|papers)</summary>", block)
     if not header_match:
         raise ValueError(f"missing count summary for {anchor}")
-    block = block[:header_match.start()] + f"<summary>{header_match.group(1)} · {len(records)} 篇</summary>" + block[header_match.end():]
+    unit = header_match.group(2)
+    block = block[:header_match.start()] + f"<summary>{header_match.group(1)} · {len(records)} {unit}</summary>" + block[header_match.end():]
     marker_start = "<!-- CATALOGUE:START -->"
     marker_end = "<!-- CATALOGUE:END -->"
     rendered = marker_start + "\n" + "".join(entry(record) for record in records) + marker_end + "\n"
@@ -79,22 +80,24 @@ def replace_section(text: str, anchor: str, records: list[dict]) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--readme", default="README.md")
+    parser.add_argument("--readme", default=None,
+                        help="render only this file (default: README.md and README_CN.md when present)")
     parser.add_argument("--metadata", default="metadata/papers.json")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    readme_path = Path(args.readme)
-    text = readme_path.read_text(encoding="utf-8")
+    targets = [Path(args.readme)] if args.readme else [p for p in (Path("README.md"), Path("README_CN.md")) if p.exists()]
     records = json.loads(Path(args.metadata).read_text(encoding="utf-8"))["papers"].values()
-    for anchor, section in reversed(SECTION_ORDER):
-        section_records = sorted((record for record in records if record.get("primary_section") == section),
-                                 key=lambda record: (record["year"], record["title"].lower()))
-        text = replace_section(text, anchor, section_records)
-    if args.dry_run:
-        print("Would render 11 README sections from 214 catalogue records.")
-    else:
-        readme_path.write_text(text, encoding="utf-8")
-        print("Rendered 11 README sections from catalogue metadata.")
+    for readme_path in targets:
+        text = readme_path.read_text(encoding="utf-8")
+        for anchor, section in reversed(SECTION_ORDER):
+            section_records = sorted((record for record in records if record.get("primary_section") == section),
+                                     key=lambda record: (record["year"], record["title"].lower()))
+            text = replace_section(text, anchor, section_records)
+        if args.dry_run:
+            print(f"Would render 11 README sections from {len(records):d} catalogue records into {readme_path}.")
+        else:
+            readme_path.write_text(text, encoding="utf-8")
+            print(f"Rendered 11 README sections from {len(records):d} catalogue records into {readme_path}.")
 
 
 if __name__ == "__main__":
