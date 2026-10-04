@@ -275,6 +275,8 @@
 
 
 
+
+
 </details>
 
 <a id="ed"></a>
@@ -367,6 +369,8 @@
   - Publisher: `ACL 2026`
   - Keywords: `Dataset` · `Support` · `Mental-State Modeling` · `Relationship & Role` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -506,6 +510,8 @@
 
 
 
+
+
 </details>
 
 <a id="coop"></a>
@@ -553,6 +559,8 @@
   - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
   - Code: [GitHub / Project](https://github.com/eliaka/repeatedgames)
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -668,6 +676,8 @@
 
 
 
+
+
 </details>
 
 <a id="emotion"></a>
@@ -710,6 +720,8 @@
   - Publisher: `arXiv 2025`
   - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Social Perception` · `Retrieval` · `Supervised Learning` · `Multi-turn`
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -789,6 +801,8 @@
 
 
 
+
+
 </details>
 
 <a id="memory"></a>
@@ -846,6 +860,8 @@
   - Code: [GitHub / Project](https://github.com/google-research/reasoning-bank)
   - Summary: [Summary](paper/Memory-ICLR-2026-ReasoningBank:%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md)
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -954,6 +970,8 @@
 
 
 
+
+
 </details>
 
 <a id="us"></a>
@@ -1032,6 +1050,8 @@
   - Keywords: `Survey` · `General Interaction` · `Social Context` · `Multi-party`
   - Code: [GitHub / Project](https://github.com/FudanDISC/SocialAgent)
 <!-- CATALOGUE:END -->
+
+
 
 
 
@@ -1204,6 +1224,8 @@
 
 
 
+
+
 </details>
 
 ---
@@ -1243,73 +1265,28 @@ Awesome-Social-AI/
 
 <a id="contributing"></a>
 ## ✍️ 如何贡献
-我们鼓励所有成员积极贡献自己阅读的论文摘要，请严格遵循以下步骤：
 
-### 1. Fork & Clone
-Fork 本仓库到你的 GitHub 账户，然后克隆到本地。
-```
-git clone https://github.com/你的用户名/Awesome-Social-AI.git && cd Awesome-Social-AI
-```
+欢迎贡献论文摘要！流程很简单：Fork 本仓库 → 新建分支 → 按下方规范添加论文 → 发起 PR 等待审核合并。
 
-### 2. 添加原始仓库为 upstream
-```
-git remote add upstream https://github.com/lucianma05-create/Awesome-Social-AI.git
-```
+### 命名规范
 
-### 3. 每次准备撰写新摘要前，请先同步主分支并创建一个独立分支：
-1)  切换回主分支并拉取上游最新代码
-```
-git checkout main
-git pull upstream main
-```
-2) 创建并切换到一个新分支 (分支名建议反映论文内容)
-```
-git checkout -b 分支名
-```
-### 4. 命名规范
-```
-\paper 下的文件名请严格按照以下格式命名，以便于检索和管理：
-[方向]-[会议/期刊名]-[年份]-[论文名(完整的名字而不是缩写)].md
-示例: Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md
-文件名前缀是论文的**主入口**，应从当前 11 个前缀中选择最接近的一项；它不替代关键词。确需新增前缀时，请先在组内讨论。
-当前方向前缀：PD、ED、Recommend、Coop、ToM、Emotion、Norms、Memory、RLHF、US、Data。
-\image 下的文件命名为 [年]-[月]-[日]-[编号]-[姓名缩写].png
-示例：2024010101mmh.png
-```
-### 5. 填写内容
-a. 参照 Example.md 中的模板，填写论文的各项信息，确保内容精炼、准确。 
+- `paper/` 下的文件名请严格按 `[方向]-[会议/期刊名]-[年份]-[论文完整名].md` 命名，例如 `Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md`
+- 文件名前缀是论文的**主入口**，从当前 11 个前缀中选择最接近的一项，它不替代关键词；确需新增前缀时请先在组内讨论。当前前缀：PD、ED、Recommend、Coop、ToM、Emotion、Norms、Memory、RLHF、US、Data
+- `image/` 下的文件按 `[年]-[月]-[日]-[编号]-[姓名缩写].png` 命名，例如 `2024010101mmh.png`
 
-b. 在 `metadata/papers.json` 中为论文增加结构化记录。`type`、`goal`、`horizon` 必须单选；能力、情境和方法可多选。所有值均须来自 [关键词词表](metadata/KEYWORDS.md)，并为每个多选标签填写论文中的依据。提交前运行：
-```
+### 填写内容
+
+1. 参照 [Example.md](Example.md) 模板撰写中文摘要
+2. 在 `metadata/papers.json` 中新增结构化记录：`type`、`goal`、`horizon` 单选；能力、情境、方法可多选。所有标签值须来自 [关键词词表](metadata/KEYWORDS.md)，并为每个多选标签填写论文依据
+3. 提交前运行校验并重建目录：
+
+```bash
 python scripts/validate_metadata.py --paper-dir paper
+python scripts/render_readme_catalog.py
 ```
 
-c. 或者可以使用我们专门开发的 [Auto-Summary](https://github.com/lucianma05-create/Auto-Summary), 请在自动化生成后进行必要的人工校对和修改。
+也可使用 [Auto-Summary](https://github.com/lucianma05-create/Auto-Summary) 自动生成摘要初稿，再进行人工校对。
 
-### 6. 修改 README.md
-参照 README.md 中的嵌套条目，增加新论文的链接、摘要和代码；可以用以下提示词提示codex或copilot进行自动化填充：
-```
-请根据 paper 目录新增的 .md 文件，按 README.md 里现有嵌套条目格式补全相应方向的记录，填 Publisher、Code、Summary 字段，缺失用 -
-```
-或运行仓库自带的同步脚本，自动把 paper/ 目录的新论文填入目录：
-```
-python scripts/update_readme.py --dry-run   # 预览改动
-python scripts/update_readme.py             # 应用改动
-```
-### 7. 提交、同步与推送
-1) 暂存并提交本地更改
-```
-git add .
-git commit -m "你的提交信息，例如：Add summary for [论文名]"
-```
-2)  推送当前功能分支到你个人的 GitHub (origin)
-```
-git push origin 分支名
-```
-### 8. 发起 Pull Request
-```
-向本仓库的主分支发起一个 Pull Request (PR)，并等待审核合并。
-```
 ---
 
 <a id="about"></a>
