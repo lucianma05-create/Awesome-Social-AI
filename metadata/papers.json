@@ -206,7 +206,7 @@
       "summary_path": "paper/PD-PERSUASIVE-2008-A Systematic Framework for Designing and Evaluating Persuasive Systems.md",
       "primary_section": "influence-negotiation",
       "review_status": "auto_extracted",
-      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract_fetch_attempted_at": "2026-10-05",
       "abstract_fetch_error": "unavailable_from_configured_sources",
       "tag_text": "提出一个用于设计与评估说服式系统的系统框架，基于七项前提区分“用情境/用户情境”，并将原则重组为主任务支持、对话支持、系统可信度与社会支持四类共28条可操作准则。",
       "tag_text_source": "repository_summary",
@@ -288,7 +288,7 @@
       "summary_path": "paper/PD-未提及-2008-Measure Of Belief Change as an Evaluation of Persuasion.md",
       "primary_section": "influence-negotiation",
       "review_status": "auto_extracted",
-      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract_fetch_attempted_at": "2026-10-05",
       "abstract_fetch_error": "unavailable_from_configured_sources",
       "tag_text": "提出以排序变化为代理、基于Kendall τ置换距离的通用劝服评测指标，实现跨领域可比的劝服力衡量。",
       "tag_text_source": "repository_summary",
@@ -452,7 +452,7 @@
       "summary_path": "paper/PD-HCI-2017-Persuasive Argumentation and Emotions- An Empirical Evaluation with Users.md",
       "primary_section": "influence-negotiation",
       "review_status": "auto_extracted",
-      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract_fetch_attempted_at": "2026-10-05",
       "abstract_fetch_error": "unavailable_from_configured_sources",
       "tag_text": "在受控的多人辩论中采集EEG等多模态生理信号，实证检验Ethos/Logos/Pathos与参与度、工作负荷及左右脑活动的关系。",
       "tag_text_source": "repository_summary",
@@ -4232,7 +4232,7 @@
       "summary_path": "paper/ED-ACL-2024-EmoBench- Evaluating the Emotional Intelligence of Large Language Models.md",
       "primary_section": "support-care",
       "review_status": "auto_extracted",
-      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract_fetch_attempted_at": "2026-10-05",
       "abstract_fetch_error": "unavailable_from_configured_sources",
       "tag_text": "本文提出 EmoBench，一个基于心理学理论构建的中英文情感智能评测基准，用于系统评估大语言模型在情绪理解与情绪应用两方面的能力。",
       "tag_text_source": "repository_summary",
@@ -4295,7 +4295,7 @@
       },
       "abstract": "Sahand Sabour, Siyang Liu, Zheyuan Zhang, June Liu, Jinfeng Zhou, Alvionna Sunaryo, Tatia Lee, Rada Mihalcea, Minlie Huang. Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2024.",
       "abstract_source": "https://api.openalex.org/works",
-      "abstract_retrieved_at": "2026-10-04"
+      "abstract_retrieved_at": "2026-10-05"
     },
     "can-large-language-models-be-good-emotional-supporter-mitigating-prefe-2024": {
       "title": "Can Large Language Models be Good Emotional Supporter? Mitigating Preference Bias on Emotional Support Conversation",
@@ -9112,7 +9112,7 @@
       ],
       "annotated_by": "llm-abstract-extractor-v2",
       "auto_tag_version": "1.0.0",
-      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract_fetch_attempted_at": "2026-10-05",
       "abstract_fetch_error": "unavailable_from_configured_sources",
       "llm_tagging": {
         "model": "deepseek-v4-pro",
@@ -16718,7 +16718,7 @@
       "tag_text": "The Social-IQ 2.0 Challenge is designed to benchmark recent AI technologies' skills to reason about social interactions. The Social-IQ 2.0 dataset contains over 1,000 videos, accompanied with 6,000+ multiple-choice questions.",
       "tag_text_source": "primary_project",
       "tag_text_url": "https://github.com/abwilf/Social-IQ-2.0-Challenge",
-      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract_fetch_attempted_at": "2026-10-05",
       "abstract_fetch_error": "unavailable_from_configured_sources",
       "llm_tagging": {
         "model": "deepseek-v4-pro",
@@ -18257,10 +18257,10 @@
         "source_url": null,
         "tagged_at": "2026-10-04"
       },
-      "abstract_fetch_attempted_at": "2026-10-04",
+      "abstract_fetch_attempted_at": "2026-10-05",
       "abstract": "Weicheng Ma, Hefan Zhang, Ivory Yang, Shiyu Ji, Joice Chen, Farnoosh Hashemi, Shubham Mohole, Ethan Gearey, Michael Macy, Saeed Hassanpour, Soroush Vosoughi. Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers). 2025.",
       "abstract_source": "https://api.openalex.org/works",
-      "abstract_retrieved_at": "2026-10-04",
+      "abstract_retrieved_at": "2026-10-05",
       "abstract_fetch_error": "unavailable_from_configured_sources"
     },
     "dice-bench-evaluating-the-tool-use-capabilities-of-large-language-mode-2025": {
@@ -21367,6 +21367,4440 @@
           "quote_offset": [
             779,
             805
+          ]
+        }
+      ]
+    },
+    "mental-world-modeling-2026": {
+      "title": "Mental World Modeling",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2607.27201",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "mental-state-modeling",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "World models enable a predictive substrate for planning and action, yet existing formulations merely answer a physical question: what/where it is, and how will it evolve. Human behavior, however, is driven by hidden mental state (what a person believes, wants, intends, feels, and considers socially permissible), so a model that tracks the physical scene but not what each agent knows and believes about it predicts the wrong action for the right-looking scene. We formulate Mental World Modeling (MWM), a generic theoretical framework that makes mental variables core components of a world model rather than posthoc rationales: MWM aintains a coupled physical-mental world state, renders a target-specific partial observation, and simulates how candidate actions jointly update both components. We instantiate the framework in MENTIS, a training-free and fully inspectable baseline that decomposes the process into state parsing, target-observation generation, action decomposition, coupled physical and mental transition, and branch-level value evaluation. On a manually constructed, quality-controlled dataset of situated decision scenarios spanning text, image, and sounding-video stories, experiments with 8 modern LLM-based world models demonstrate that explicitly modeling the mental state is essential for predicting human decisions. Deeper analyses further expose the bottlenecks of current mental world modeling. We expect MWM as a next stage of world modeling, from simulating physical scenes to simulating the minds that act in them.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context"
+      ],
+      "contexts": [],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We formulate Mental World Modeling (MWM), a generic theoretical framework'.",
+          "quote_offset": [
+            463,
+            536
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'predicting human decisions'.",
+          "quote_offset": [
+            1315,
+            1341
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'hidden mental state (what a person believes, wants, intends, feels, and considers socially permissible)'.",
+          "quote_offset": [
+            209,
+            312
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'considers socially permissible'.",
+          "quote_offset": [
+            281,
+            311
+          ]
+        }
+      ]
+    },
+    "mind2dialogue-training-human-aware-language-models-by-simu-2026": {
+      "title": "Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2609.15972",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "mental-state-modeling",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "As language models become more capable, long-term collaboration in learning, reasoning, and decision-making calls for a deeper understanding of the people they serve. Yet training such human-aware language models faces a fundamental supervision gap because current datasets for LLM assistant training contain few if any well-informed responses explicitly grounded in users' unspoken beliefs and goals. Scaling such supervision is inherently constrained, as users' underlying states are not directly observable. We thus propose the Mind2Dialogue framework to mitigate this gap by simulating users' mental states and turning them into privileged supervision for human-aware training. Specifically, we first propose a psychology-guided simulator that preserves personal characteristics while updating mental states through interaction to generate coherent conversations. The key idea is to enforce a shared evolving mental state that drives user behavior and guides an Oracle assistant's responses. Our privileged distillation then trains models on the Oracle's well-informed responses to assist users without direct access to their mental states at deployment. Moreover, we propose to evaluate human-aware learning by combining personalization and theory of mind, examining how models understand people and act on that understanding. Training on the full Mind2Dialogue corpus improves every reported personalization metric over the corresponding Qwen, Llama, and OLMo instruction-tuned baselines, including gains of 26.6 to 40.9 percentage points in preference-following generation. The gains extend to belief and action reasoning on Qwen and Llama, beyond personalized assistance. Looking forward, Mind2Dialogue makes user simulation a foundation for genuine AI collaborators that understand beliefs and intentions behind people's words and support their long-term goals across education, work, and everyday life.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Longitudinal",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Memory & Adaptation",
+        "Social Context"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "User Simulation",
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'propose the Mind2Dialogue framework'.",
+          "quote_offset": [
+            519,
+            554
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'support their long-term goals'.",
+          "quote_offset": [
+            1840,
+            1869
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'long-term collaboration'.",
+          "quote_offset": [
+            40,
+            63
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulating users' mental states'.",
+          "quote_offset": [
+            579,
+            610
+          ]
+        },
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'updating mental states through interaction'.",
+          "quote_offset": [
+            789,
+            831
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'shared evolving mental state'.",
+          "quote_offset": [
+            897,
+            925
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'personalization and theory of mind'.",
+          "quote_offset": [
+            1226,
+            1260
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'psychology-guided simulator'.",
+          "quote_offset": [
+            715,
+            742
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'privileged distillation then trains models'.",
+          "quote_offset": [
+            1000,
+            1042
+          ]
+        }
+      ]
+    },
+    "humanlm-simulating-users-with-state-alignment-beats-respon-2026": {
+      "title": "HumanLM: Simulating Users with State Alignment Beats Response Imitation",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2603.03303",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Large Language Models (LLMs) are increasingly used to simulate how specific users respond to a given context, enabling more user-centric applications that rely on user feedback. However, existing user simulators mostly imitate surface-level patterns and language styles, which fail to reflect the underlying states of real users (e.g., beliefs and emotions). To address these limitations, we propose a novel training framework, HumanLM, which builds user simulators that accurately reflect real users. Our key insight is that, in addition to generating responses, the model should generate natural-language latent states that align with ground-truth responses through reinforcement learning. These latent states correspond to a set of psychologically grounded state dimensions that drive how real users respond. HumanLM further synthesizes these aligned latent states into responses that accurately represent real users. For extensive evaluation, we develop Humanual, a comprehensive benchmark for simulating real users based on public data. Humanual consists of six large-scale datasets with 26k users and 216k responses in total, spanning diverse tasks such as generating user responses to daily life issues, political blogs, and chat sessions with LLM assistants. Across datasets, HumanLM significantly outperforms alternative approaches, achieving an average relative improvement of 16.3% in alignment scores from an LLM judge. In a real-time simulation study with 111 participants, HumanLM achieves the highest similarity to real user responses and competitive human-likeness scores.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "RL"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose a novel training framework, HumanLM'.",
+          "quote_offset": [
+            389,
+            435
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate how specific users respond to a given context'.",
+          "quote_offset": [
+            54,
+            108
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'underlying states of real users (e.g., beliefs and emotions)'.",
+          "quote_offset": [
+            297,
+            357
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'psychologically grounded state dimensions that drive how real users respond'.",
+          "quote_offset": [
+            735,
+            810
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate how specific users respond'.",
+          "quote_offset": [
+            54,
+            89
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'through reinforcement learning'.",
+          "quote_offset": [
+            660,
+            690
+          ]
+        }
+      ]
+    },
+    "consistent-client-simulation-for-motivational-interviewing-2025": {
+      "title": "Consistent Client Simulation for Motivational Interviewing-based Counseling",
+      "year": 2025,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2502.02802",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Simulating human clients in mental health counseling is crucial for training and evaluating counselors (both human or simulated) in a scalable manner. Nevertheless, past research on client simulation did not focus on complex conversation tasks such as mental health counseling. In these tasks, the challenge is to ensure that the client's actions (i.e., interactions with the counselor) are consistent with with its stipulated profiles and negative behavior settings. In this paper, we propose a novel framework that supports consistent client simulation for mental health counseling. Our framework tracks the mental state of a simulated client, controls its state transitions, and generates for each state behaviors consistent with the client's motivation, beliefs, preferred plan to change, and receptivity. By varying the client profile and receptivity, we demonstrate that consistent simulated clients for different counseling scenarios can be effectively created. Both our automatic and expert evaluations on the generated counseling sessions also show that our client simulation method achieves higher consistency than previous methods.",
+      "abstract_source": "https://arxiv.org/abs/2502.02802",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Memory & Adaptation"
+      ],
+      "contexts": [
+        "Relationship & Role"
+      ],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2502.02802",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'propose a novel framework'.",
+          "quote_offset": [
+            486,
+            511
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'mental health counseling'.",
+          "quote_offset": [
+            28,
+            52
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'tracks the mental state'.",
+          "quote_offset": [
+            599,
+            622
+          ]
+        },
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'controls its state transitions'.",
+          "quote_offset": [
+            646,
+            676
+          ]
+        },
+        {
+          "tag": "Relationship & Role",
+          "source": "abstract",
+          "rationale": "Source quote: 'counselor'.",
+          "quote_offset": [
+            92,
+            101
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'client simulation'.",
+          "quote_offset": [
+            182,
+            199
+          ]
+        }
+      ]
+    },
+    "dialtom-a-theory-of-mind-benchmark-for-forecasting-state-d-2026": {
+      "title": "DialToM: A Theory of Mind Benchmark for Forecasting State-Driven Dialogue Trajectories",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.20443",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "datasets-benchmarks-evaluation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "We introduce DialToM, an annotated Theory of Mind (ToM) benchmark built from naturalistic human-human dialogues using a multiple-choice evaluation framework. Concurrent with recent work showing a gap between explicit mental-state inference and applied ToM in synthetic settings~\\cite{gu2024simpletom}, we establish a stricter \\emph{State-Driven Diagnostic Probe} in which models must forecast state-consistent dialogue trajectories solely from isolated mental-state profiles without dialogue context. Our evaluation reveals a systematic reasoning asymmetry -- LLMs excel at inferring mental states (Literal ToM) but struggle to leverage them for social forecasting (Functional ToM). Crucially, a domain expert achieves 100\\% accuracy on this task, proving its validity and establishing a stark human-AI capability gap. Further, a teacher-student reasoning injection probe shows that Gemini 3 Pro -- which establishes the leading baseline -- possesses robust Functional ToM capabilities for context-free forecasting that are transferable to weaker models. DialToM, its evaluation code, and dataset are publicly available at https://github.com/Stealth-py/DialToM.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Benchmark",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'DialToM, an annotated Theory of Mind (ToM) benchmark'.",
+          "quote_offset": [
+            13,
+            65
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'forecast state-consistent dialogue trajectories'.",
+          "quote_offset": [
+            384,
+            431
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'inferring mental states (Literal ToM)'.",
+          "quote_offset": [
+            574,
+            611
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'leverage them for social forecasting'.",
+          "quote_offset": [
+            628,
+            664
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'teacher-student reasoning injection probe'.",
+          "quote_offset": [
+            830,
+            871
+          ]
+        }
+      ]
+    },
+    "does-theory-of-mind-improvement-really-benefit-human-ai-in-2026": {
+      "title": "Does Theory of Mind Improvement Really Benefit Human-AI Interactions? Empirical Findings from Interactive Evaluations",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2605.15205",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "datasets-benchmarks-evaluation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract_fetch_error": "unavailable_from_configured_sources",
+      "abstract": "Improving the Theory of Mind (ToM) capability of Large Language Models (LLMs) is crucial for effective social interactions between these AI models and humans. However, the existing benchmarks often measure ToM capability improvement through story-reading, multiple-choice questions from a third-person perspective, while ignoring the first-person, dynamic, and open-ended nature of human-AI (HAI) interactions. To directly examine how ToM improvement techniques benefit HAI interactions, we first proposed the new paradigm of interactive ToM evaluation with both perspective and metric shifts. Next, following the paradigm, we conducted a systematic study of four representative ToM enhancement techniques using both four real-world datasets and a user study, covering both goal-oriented tasks (e.g., coding, math) and experience-oriented tasks (e.g., counseling). Our findings reveal that improvements on static benchmarks do not always translate to better performance in dynamic HAI interactions. This paper offers critical insights into ToM evaluation, showing the necessity of interaction-based assessments in developing next-generation, socially aware LLMs for HAI symbiosis.",
+      "abstract_source": "https://arxiv.org/abs/2605.15205",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Evaluation",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling"
+      ],
+      "contexts": [],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2605.15205",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'systematic study of four representative ToM enhancement techniques'.",
+          "quote_offset": [
+            639,
+            705
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'effective social interactions between these AI models and humans'.",
+          "quote_offset": [
+            93,
+            157
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'Theory of Mind (ToM) capability'.",
+          "quote_offset": [
+            14,
+            45
+          ]
+        }
+      ]
+    },
+    "opponent-modeling-in-negotiation-dialogues-by-related-data-2022": {
+      "title": "Opponent Modeling in Negotiation Dialogues by Related Data Adaptation",
+      "year": 2022,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2205.00344",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "influence-negotiation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Opponent modeling is the task of inferring another party's mental state within the context of social interactions.In a multi-issue negotiation, it involves inferring the relative importance that the opponent assigns to each issue under discussion, which is crucial for finding high-value deals.A practical model for this task needs to infer these priorities of the opponent on the fly based on partial dialogues as input, without needing additional annotations for training.In this work, we propose a ranker for identifying these priorities from negotiation dialogues.The model takes in a partial dialogue as input and predicts the priority order of the opponent.We further devise ways to adapt related data sources for this task to provide more explicit supervision for incorporating the opponent's preferences and offers, as a proxy to relying on granular utterance-level annotations.We show the utility of our proposed approach through extensive experiments based on two dialogue datasets.We find that the proposed data adaptations lead to strong performance in zero-shot and few-shot scenarios.Moreover, they allow the model to perform better than baselines while accessing fewer utterances from the opponent.We release our code to support future work in this direction: https://github.com/ kushalchawla/opponent-modeling.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Multi-party"
+      ],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose a ranker'.",
+          "quote_offset": [
+            488,
+            507
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'finding high-value deals'.",
+          "quote_offset": [
+            269,
+            293
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'inferring another party's mental state'.",
+          "quote_offset": [
+            33,
+            71
+          ]
+        },
+        {
+          "tag": "Multi-party",
+          "source": "abstract",
+          "rationale": "Source quote: 'opponent'.",
+          "quote_offset": [
+            0,
+            8
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'provide more explicit supervision'.",
+          "quote_offset": [
+            733,
+            766
+          ]
+        }
+      ]
+    },
+    "improving-dialog-systems-for-negotiation-with-personality-2020": {
+      "title": "Improving Dialog Systems for Negotiation with Personality Modeling",
+      "year": 2020,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2010.09954",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "influence-negotiation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "In this paper, we explore the ability to model and infer personality types of opponents, predict their responses, and use this information to adapt a dialog agent's high-level strategy in negotiation tasks. Inspired by the idea of incorporating a theory of mind (ToM) into machines, we introduce a probabilistic formulation to encapsulate the opponent's personality type during both learning and inference. We test our approach on the CraigslistBargain dataset and show that our method using ToM inference achieves a 20% higher dialog agreement rate compared to baselines on a mixed population of opponents. We also find that our model displays diverse negotiation behavior with different types of opponents.",
+      "abstract_source": "https://arxiv.org/abs/2010.09954",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2010.09954",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we introduce a probabilistic formulation'.",
+          "quote_offset": [
+            283,
+            323
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'negotiation tasks'.",
+          "quote_offset": [
+            188,
+            205
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'theory of mind (ToM)'.",
+          "quote_offset": [
+            247,
+            267
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'personality types of opponents'.",
+          "quote_offset": [
+            57,
+            87
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'personality types of opponents'.",
+          "quote_offset": [
+            57,
+            87
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'mixed population of opponents'.",
+          "quote_offset": [
+            577,
+            606
+          ]
+        }
+      ]
+    },
+    "improving-multi-turn-emotional-support-dialogue-generation-2022": {
+      "title": "Improving Multi-turn Emotional Support Dialogue Generation with Lookahead Strategy Planning",
+      "year": 2022,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2210.04242",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "support-care",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Providing Emotional Support (ES) to soothe people in emotional distress is an essential capability in social interactions.Most existing research on building ES conversation systems only considers single-turn interactions with users, which is over-simplified.In comparison, multi-turn ES conversation systems can provide ES more effectively, but face several new technical challenges, including: i) how to conduct support strategy planning that could lead to the best supporting effects; ii) how to dynamically model the user's state.In this paper, we propose a novel system named MultiESC to address these issues.For strategy planning, drawing inspiration from the A* search algorithm, we propose lookahead heuristics to estimate the future user feedback after using particular strategies, which helps to select strategies that can lead to the best long-term effects.For user state modeling, MultiESC focuses on capturing users' subtle emotional expressions and understanding their emotion causes.Extensive experiments show that MultiESC significantly outperforms competitive baselines in both strategy planning and dialogue generation.Our codes are available at https: //github.com/lwgkzl/MultiESC.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Multi-turn",
+      "capabilities": [
+        "Affect",
+        "Mental-State Modeling"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Planning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose a novel system named MultiESC'.",
+          "quote_offset": [
+            548,
+            588
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'Providing Emotional Support (ES)'.",
+          "quote_offset": [
+            0,
+            32
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-turn ES conversation systems'.",
+          "quote_offset": [
+            273,
+            307
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Affect",
+          "source": "abstract",
+          "rationale": "Source quote: 'capturing users' subtle emotional expressions'.",
+          "quote_offset": [
+            912,
+            957
+          ]
+        },
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'dynamically model the user's state'.",
+          "quote_offset": [
+            498,
+            532
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'lookahead heuristics to estimate the future user feedback'.",
+          "quote_offset": [
+            697,
+            754
+          ]
+        }
+      ]
+    },
+    "misc-a-mixed-strategy-aware-model-integrating-comet-for-em-2022": {
+      "title": "MISC: A Mixed Strategy-Aware Model integrating COMET for Emotional Support Conversation",
+      "year": 2022,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2203.13560",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "support-care",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Applying existing methods to emotional support conversation-which provides valuable assistance to people who are in need-has two major limitations: (a) they generally employ a conversation-level emotion label, which is too coarse-grained to capture user's instant mental state; (b) most of them focus on expressing empathy in the response(s) rather than gradually reducing user's distress.To address the problems, we propose a novel model MISC, which firstly infers the user's fine-grained emotional status, and then responds skillfully using a mixture of strategy.Experimental results on the benchmark dataset demonstrate the effectiveness of our method and reveal the benefits of fine-grained emotion understanding as well as mixed-up strategy modeling.Our code and data could be found in https: //github.com/morecry/MISC.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling"
+      ],
+      "contexts": [],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose a novel model MISC'.",
+          "quote_offset": [
+            414,
+            443
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'emotional support conversation'.",
+          "quote_offset": [
+            29,
+            59
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'infers the user's fine-grained emotional status'.",
+          "quote_offset": [
+            459,
+            506
+          ]
+        }
+      ]
+    },
+    "psyprobe-proactive-and-interpretable-dialogue-through-user-2026": {
+      "title": "PsyProbe: Proactive and Interpretable Dialogue through User State Modeling for Exploratory Counseling",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2601.19096",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "support-care",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Recent advances in large language models have enabled mental health dialogue systems, yet existing approaches remain predominantly reactive, lacking systematic user state modeling for proactive therapeutic exploration. We introduce PsyProbe, a dialogue system designed for the exploration phase of counseling that systematically tracks user psychological states through the PPPPPI framework (Presenting, Predisposing, Precipitating, Perpetuating, Protective, Impact) augmented with cognitive error detection. PsyProbe combines State Builder for extracting structured psychological profiles, Memory Construction for tracking information gaps, Strategy Planner for Motivational Interviewing behavioral codes, and Response Generator with Question Ideation and Critic/Revision modules to generate contextually appropriate, proactive questions. We evaluate PsyProbe with 27 participants in real-world Korean counseling scenarios, including automatic evaluation across ablation modes, user evaluation, and expert evaluation by a certified counselor. The full PsyProbe model consistently outperforms baseline and ablation modes in automatic evaluation. User evaluation demonstrates significantly increased engagement intention and improved naturalness compared to baseline. Expert evaluation shows that PsyProbe substantially improves core issue understanding and achieves question rates comparable to professional counselors, validating the effectiveness of systematic state modeling and proactive questioning for therapeutic exploration.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "System",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Memory & Adaptation",
+        "Interaction Management"
+      ],
+      "contexts": [
+        "Culture"
+      ],
+      "approaches": [
+        "Planning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We introduce PsyProbe, a dialogue system'.",
+          "quote_offset": [
+            219,
+            259
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'mental health dialogue systems'.",
+          "quote_offset": [
+            54,
+            84
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'systematic user state modeling'.",
+          "quote_offset": [
+            149,
+            179
+          ]
+        },
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'Memory Construction for tracking information gaps'.",
+          "quote_offset": [
+            591,
+            640
+          ]
+        },
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'Strategy Planner for Motivational Interviewing behavioral codes'.",
+          "quote_offset": [
+            642,
+            705
+          ]
+        },
+        {
+          "tag": "Culture",
+          "source": "abstract",
+          "rationale": "Source quote: 'real-world Korean counseling scenarios'.",
+          "quote_offset": [
+            885,
+            923
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'Strategy Planner'.",
+          "quote_offset": [
+            642,
+            658
+          ]
+        }
+      ]
+    },
+    "userlm-r1-modeling-human-reasoning-in-user-language-models-2026": {
+      "title": "UserLM-R1: Modeling Human Reasoning in User Language Models with Multi-Reward Reinforcement Learning",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2601.09215",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "User simulators serve as the critical interactive environment for agent post-training, and an ideal user simulator generalizes across domains and proactively engages in negotiation by challenging or bargaining. However, current methods exhibit two issues. They rely on static and context-unaware profiles, necessitating extensive manual redesign for new scenarios, thus limiting generalizability. Moreover, they neglect human strategic thinking, leading to vulnerability to agent manipulation. To address these issues, we propose UserLM-R1, a novel user language model with reasoning capability. Specifically, we first construct comprehensive user profiles with both static roles and dynamic scenario-specific goals for adaptation to diverse scenarios. Then, we propose a goal-driven decision-making policy to generate high-quality rationales before producing responses, and further refine the reasoning and improve strategic capabilities with supervised fine-tuning and multi-reward reinforcement learning. Extensive experimental results demonstrate that UserLM-R1 outperforms competitive baselines, particularly on the more challenging adversarial set.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context"
+      ],
+      "contexts": [
+        "Relationship & Role"
+      ],
+      "approaches": [
+        "RL",
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose UserLM-R1'.",
+          "quote_offset": [
+            519,
+            539
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'proactively engages in negotiation'.",
+          "quote_offset": [
+            146,
+            180
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'human strategic thinking'.",
+          "quote_offset": [
+            420,
+            444
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'static roles and dynamic scenario-specific goals'.",
+          "quote_offset": [
+            667,
+            715
+          ]
+        },
+        {
+          "tag": "Relationship & Role",
+          "source": "abstract",
+          "rationale": "Source quote: 'static roles'.",
+          "quote_offset": [
+            667,
+            679
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-reward reinforcement learning'.",
+          "quote_offset": [
+            971,
+            1006
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'supervised fine-tuning'.",
+          "quote_offset": [
+            944,
+            966
+          ]
+        }
+      ]
+    },
+    "humanllm-towards-personalized-understanding-and-simulation-2026": {
+      "title": "HumanLLM: Towards Personalized Understanding and Simulation of Human Nature",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2601.15793",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Motivated by the remarkable progress of large language models (LLMs) in objective tasks like mathematics and coding, there is growing interest in their potential to simulate human behavior--a capability with profound implications for transforming social science research and customer-centric business insights. However, LLMs often lack a nuanced understanding of human cognition and behavior, limiting their effectiveness in social simulation and personalized applications. We posit that this limitation stems from a fundamental misalignment: standard LLM pretraining on vast, uncontextualized web data does not capture the continuous, situated context of an individual's decisions, thoughts, and behaviors over time. To bridge this gap, we introduce HumanLLM, a foundation model designed for personalized understanding and simulation of individuals. We first construct the Cognitive Genome Dataset, a large-scale corpus curated from real-world user data on platforms like Reddit, Twitter, Blogger, and Amazon. Through a rigorous, multi-stage pipeline involving data filtering, synthesis, and quality control, we automatically extract over 5.5 million user logs to distill rich profiles, behaviors, and thinking patterns. We then formulate diverse learning tasks and perform supervised fine-tuning to empower the model to predict a wide range of individualized human behaviors, thoughts, and experiences. Comprehensive evaluations demonstrate that HumanLLM achieves superior performance in predicting user actions and inner thoughts, more accurately mimics user writing styles and preferences, and generates more authentic user profiles compared to base models. Furthermore, HumanLLM shows significant gains on out-of-domain social intelligence benchmarks, indicating enhanced generalization.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Memory & Adaptation"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we introduce HumanLLM, a foundation model'.",
+          "quote_offset": [
+            738,
+            779
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'personalized understanding and simulation of individuals'.",
+          "quote_offset": [
+            793,
+            849
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'predicting user actions and inner thoughts'.",
+          "quote_offset": [
+            1490,
+            1532
+          ]
+        },
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'distill rich profiles, behaviors, and thinking patterns'.",
+          "quote_offset": [
+            1165,
+            1220
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'personalized understanding and simulation of individuals'.",
+          "quote_offset": [
+            793,
+            849
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'perform supervised fine-tuning'.",
+          "quote_offset": [
+            1267,
+            1297
+          ]
+        }
+      ]
+    },
+    "sead-self-evolving-agent-for-multi-turn-service-dialogue-2026": {
+      "title": "SEAD: Self-Evolving Agent for Multi-Turn Service Dialogue",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2602.03548",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Large Language Models have demonstrated remarkable capabilities in open-domain dialogues.However, current methods exhibit suboptimal performance in service dialogues, as they rely on noisy, low-quality human conversation data.This limitation arises from data scarcity and the difficulty of simulating authentic, goal-oriented user behaviors.To address these issues, we propose SEAD (Self-Evolving Agent for Service Dialogue), a framework that enables agents to learn effective strategies without large-scale human annotations.SEAD decouples user modeling into two components: a Profile Controller that generates diverse user states to manage training curriculum, and a User Role-play Model that focuses on realistic role-playing.This design ensures the environment provides adaptive training scenarios rather than acting as an unfair adversary.Experiments demonstrate that SEAD significantly outperforms Open-source Foundation Models and Closed-source Commercial Models, improving task completion rate by 17.6% and dialogue efficiency by 11.1%.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management",
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "User Simulation",
+        "Self-play"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose SEAD'.",
+          "quote_offset": [
+            366,
+            381
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'goal-oriented user behaviors'.",
+          "quote_offset": [
+            312,
+            340
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'dialogue efficiency'.",
+          "quote_offset": [
+            1015,
+            1034
+          ]
+        },
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'diverse user states'.",
+          "quote_offset": [
+            612,
+            631
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'Profile Controller'.",
+          "quote_offset": [
+            578,
+            596
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'User Role-play Model'.",
+          "quote_offset": [
+            669,
+            689
+          ]
+        },
+        {
+          "tag": "Self-play",
+          "source": "abstract",
+          "rationale": "Source quote: 'Self-Evolving Agent'.",
+          "quote_offset": [
+            383,
+            402
+          ]
+        }
+      ]
+    },
+    "simulated-students-in-tutoring-dialogues-substance-or-illu-2026": {
+      "title": "Simulated Students in Tutoring Dialogues: Substance or Illusion?",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2601.04025",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "datasets-benchmarks-evaluation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract_fetch_error": "unavailable_from_configured_sources",
+      "abstract": "Advances in large language models (LLMs) enable many new innovations in education. However, evaluating the effectiveness of new technology requires real students, which is time-consuming and hard to scale up. Therefore, many recent works on LLM-powered tutoring solutions have used simulated students for both training and evaluation, often via simple prompting. Surprisingly, little work has been done to ensure or even measure the quality of simulated students. In this work, we formally define the student simulation task, propose a set of evaluation metrics that span linguistic, behavioral, and cognitive aspects, and benchmark a wide range of student simulation methods on these metrics. We experiment on a real-world math tutoring dialogue dataset, where both automated and human evaluation results show that prompting strategies for student simulation perform poorly; supervised fine-tuning and preference optimization yield much better but still limited performance, motivating future work on this challenging task.",
+      "abstract_source": "https://arxiv.org/abs/2601.04025",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Evaluation",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Relationship & Role"
+      ],
+      "approaches": [
+        "Supervised Learning",
+        "Preference Optimization"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2601.04025",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'benchmark a wide range of student simulation methods'.",
+          "quote_offset": [
+            623,
+            675
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'tutoring solutions'.",
+          "quote_offset": [
+            253,
+            271
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'cognitive aspects'.",
+          "quote_offset": [
+            600,
+            617
+          ]
+        },
+        {
+          "tag": "Relationship & Role",
+          "source": "abstract",
+          "rationale": "Source quote: 'student simulation'.",
+          "quote_offset": [
+            501,
+            519
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'supervised fine-tuning'.",
+          "quote_offset": [
+            876,
+            898
+          ]
+        },
+        {
+          "tag": "Preference Optimization",
+          "source": "abstract",
+          "rationale": "Source quote: 'preference optimization'.",
+          "quote_offset": [
+            903,
+            926
+          ]
+        }
+      ]
+    },
+    "beyond-fixed-psychological-personas-state-beats-trait-but-2026": {
+      "title": "Beyond Fixed Psychological Personas: State Beats Trait, but Language Models are State-Blind",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2601.15395",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "datasets-benchmarks-evaluation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "User interactions with language models vary due to static properties of the user (trait) and the specific context of the interaction (state). However, existing persona datasets (like PersonaChat, PANDORA etc.) capture only trait, and ignore the impact of state. We introduce Chameleon, a dataset of 5,001 contextual psychological profiles from 1,667 Reddit users, each measured across multiple contexts. Using the Chameleon dataset, we present three key findings. First, inspired by Latent State-Trait theory, we decompose variance and find that 74% is within-person(state) while only 26% is between-person (trait). Second, we find that LLMs are state-blind: they focus on trait only, and produce similar responses regardless of state. Third, we find that reward models react to user state, but inconsistently: different models favor or penalize the same users in opposite directions. We release Chameleon to support research on affective computing, personalized dialogue, and RLHF alignment.",
+      "abstract_source": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Dataset",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Affect"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "Reward Modeling"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.semanticscholar.org/graph/v1/paper/search",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We introduce Chameleon, a dataset'.",
+          "quote_offset": [
+            262,
+            295
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'User interactions with language models'.",
+          "quote_offset": [
+            0,
+            38
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Affect",
+          "source": "abstract",
+          "rationale": "Source quote: 'affective computing'.",
+          "quote_offset": [
+            929,
+            948
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'personalized dialogue'.",
+          "quote_offset": [
+            950,
+            971
+          ]
+        },
+        {
+          "tag": "Reward Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'reward models react to user state'.",
+          "quote_offset": [
+            756,
+            789
+          ]
+        }
+      ]
+    },
+    "deep-dyna-q-integrating-planning-for-task-completion-dialo-2018": {
+      "title": "Deep Dyna-Q: Integrating Planning for Task-Completion Dialogue Policy Learning",
+      "year": 2018,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/1801.06176",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "learning-planning-alignment",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Training a task-completion dialogue agent via reinforcement learning (RL) is costly because it requires many interactions with real users.One common alternative is to use a user simulator.However, a user simulator usually lacks the language complexity of human interlocutors and the biases in its design may tend to degrade the agent.To address these issues, we present Deep Dyna-Q, which to our knowledge is the first deep RL framework that integrates planning for task-completion dialogue policy learning.We incorporate into the dialogue agent a model of the environment, referred to as the world model, to mimic real user response and generate simulated experience.During dialogue policy learning, the world model is constantly updated with real user experience to approach real user behavior, and in turn, the dialogue agent is optimized using both real experience and simulated experience.The effectiveness of our approach is demonstrated on a movie-ticket booking task in both simulated and human-in-theloop settings 1 .",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "RL",
+        "Planning",
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'Deep Dyna-Q, which to our knowledge is the first deep RL framework that integrates planning for task-completion dialogue policy learning'.",
+          "quote_offset": [
+            370,
+            506
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'task-completion dialogue policy learning'.",
+          "quote_offset": [
+            466,
+            506
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'dialogue policy learning'.",
+          "quote_offset": [
+            482,
+            506
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'reinforcement learning (RL)'.",
+          "quote_offset": [
+            46,
+            73
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'integrates planning for task-completion dialogue policy learning'.",
+          "quote_offset": [
+            442,
+            506
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'use a user simulator'.",
+          "quote_offset": [
+            167,
+            187
+          ]
+        }
+      ]
+    },
+    "gentus-simulating-user-behaviour-and-language-in-task-orie-2022": {
+      "title": "GenTUS: Simulating User Behaviour and Language in Task-oriented Dialogues with Generative Transformers",
+      "year": 2022,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2208.10817",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "User simulators (USs) are commonly used to train task-oriented dialogue systems (DSs) via reinforcement learning. The interactions often take place on semantic level for efficiency, but there is still a gap from semantic actions to natural language, which causes a mismatch between training and deployment environment. Incorporating a natural language generation (NLG) module with USs during training can partly deal with this problem. However, since the policy and NLG of USs are optimised separately, these simulated user utterances may not be natural enough in a given context. In this work, we propose a generative transformer-based user simulator (GenTUS). GenTUS consists of an encoder-decoder structure, which means it can optimise both the user policy and natural language generation jointly. GenTUS generates both semantic actions and natural language utterances, preserving interpretability and enhancing language variation. In addition, by representing the inputs and outputs as word sequences and by using a large pre-trained language model we can achieve generalisability in feature representation. We evaluate GenTUS with automatic metrics and human evaluation. Our results show that GenTUS generates more natural language and is able to transfer to an unseen ontology in a zero-shot fashion. In addition, its behaviour can be further shaped with reinforcement learning opening the door to training specialised user simulators.",
+      "abstract_source": "https://arxiv.org/abs/2208.10817",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "User Simulation",
+        "RL"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2208.10817",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose a generative transformer-based user simulator'.",
+          "quote_offset": [
+            595,
+            651
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'task-oriented dialogue systems'.",
+          "quote_offset": [
+            49,
+            79
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'generates both semantic actions and natural language utterances'.",
+          "quote_offset": [
+            808,
+            871
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'generative transformer-based user simulator'.",
+          "quote_offset": [
+            608,
+            651
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'reinforcement learning'.",
+          "quote_offset": [
+            90,
+            112
+          ]
+        }
+      ]
+    },
+    "domain-independent-user-simulation-with-transformers-for-t-2021": {
+      "title": "Domain-independent User Simulation with Transformers for Task-oriented Dialogue Systems",
+      "year": 2021,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2106.08838",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Dialogue policy optimisation via reinforcement learning requires a large number of training interactions, which makes learning with real users time consuming and expensive. Many set-ups therefore rely on a user simulator instead of humans. These user simulators have their own problems. While hand-coded, rule-based user simulators have been shown to be sufficient in small, simple domains, for complex domains the number of rules quickly becomes intractable. State-of-the-art data-driven user simulators, on the other hand, are still domain-dependent. This means that adaptation to each new domain requires redesigning and retraining. In this work, we propose a domain-independent transformer-based user simulator (TUS). The structure of our TUS is not tied to a specific domain, enabling domain generalisation and learning of cross-domain user behaviour from data. We compare TUS with the state of the art using automatic as well as human evaluations. TUS can compete with rule-based user simulators on pre-defined domains and is able to generalise to unseen domains in a zero-shot fashion.",
+      "abstract_source": "https://arxiv.org/abs/2106.08838",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "User Simulation",
+        "RL"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2106.08838",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose a domain-independent transformer-based user simulator (TUS)'.",
+          "quote_offset": [
+            650,
+            720
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'Dialogue policy optimisation'.",
+          "quote_offset": [
+            0,
+            28
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'learning of cross-domain user behaviour from data'.",
+          "quote_offset": [
+            816,
+            865
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'user simulator'.",
+          "quote_offset": [
+            206,
+            220
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'Dialogue policy optimisation via reinforcement learning'.",
+          "quote_offset": [
+            0,
+            55
+          ]
+        }
+      ]
+    },
+    "enhancing-dialogue-state-tracking-models-through-llm-backe-2024": {
+      "title": "Enhancing Dialogue State Tracking Models through LLM-backed User-Agents Simulation",
+      "year": 2024,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2405.13037",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Dialogue State Tracking (DST) is designed to monitor the evolving dialogue state in the conversations and plays a pivotal role in developing task-oriented dialogue systems.However, obtaining the annotated data for the DST task is usually a costly endeavor.In this paper, we focus on employing LLMs to generate dialogue data to reduce dialogue collection and annotation costs.Specifically, GPT-4 is used to simulate the user and agent interaction, generating thousands of dialogues annotated with DST labels.Then a two-stage fine-tuning on LLaMA 2 is performed on the generated data and the real data for the DST prediction.Experimental results on two public DST benchmarks show that with the generated dialogue data, our model performs better than the baseline trained solely on real data.In addition, our approach is also capable of adapting to the dynamic demands in real-world scenarios, generating dialogues in new domains swiftly.After replacing dialogue segments in any domain with the corresponding generated ones, the model achieves comparable performance to the model trained on real data 1 .",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "User Simulation",
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'two-stage fine-tuning on LLaMA 2'.",
+          "quote_offset": [
+            514,
+            546
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'task-oriented dialogue systems'.",
+          "quote_offset": [
+            141,
+            171
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'Dialogue State Tracking'.",
+          "quote_offset": [
+            0,
+            23
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate the user and agent interaction'.",
+          "quote_offset": [
+            406,
+            445
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'two-stage fine-tuning'.",
+          "quote_offset": [
+            514,
+            535
+          ]
+        }
+      ]
+    },
+    "tom-ssi-evaluating-theory-of-mind-in-situated-social-inter-2025": {
+      "title": "ToM-SSI: Evaluating Theory of Mind in Situated Social Interactions",
+      "year": 2025,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2509.05066",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "datasets-benchmarks-evaluation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Most existing Theory of Mind (ToM) benchmarks for foundation models rely on variations of the Sally-Anne test, offering only a very limited perspective on ToM and neglecting the complexity of human social interactions. To address this gap, we propose ToM-SSI: a new benchmark specifically designed to test ToM capabilities in environments rich with social interactions and spatial dynamics. While current ToM benchmarks are limited to text-only or dyadic interactions, ToM-SSI is multimodal and includes group interactions of up to four agents that communicate and move in situated environments. This unique design allows us to study, for the first time, mixed cooperative-obstructive settings and reasoning about multiple agents'mental state in parallel, thus capturing a wider range of social cognition than existing benchmarks. Our evaluations reveal that the current models'performance is still severely limited, especially in these new tasks, highlighting critical gaps for future research.",
+      "abstract_source": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Benchmark",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Perception"
+      ],
+      "contexts": [
+        "Multi-party",
+        "Embodied"
+      ],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.semanticscholar.org/graph/v1/paper/search",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose ToM-SSI: a new benchmark'.",
+          "quote_offset": [
+            240,
+            275
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'complexity of human social interactions'.",
+          "quote_offset": [
+            178,
+            217
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'reasoning about multiple agents'mental state'.",
+          "quote_offset": [
+            698,
+            742
+          ]
+        },
+        {
+          "tag": "Social Perception",
+          "source": "abstract",
+          "rationale": "Source quote: 'multimodal and includes group interactions'.",
+          "quote_offset": [
+            480,
+            522
+          ]
+        },
+        {
+          "tag": "Multi-party",
+          "source": "abstract",
+          "rationale": "Source quote: 'group interactions of up to four agents'.",
+          "quote_offset": [
+            504,
+            543
+          ]
+        },
+        {
+          "tag": "Embodied",
+          "source": "abstract",
+          "rationale": "Source quote: 'move in situated environments'.",
+          "quote_offset": [
+            565,
+            594
+          ]
+        }
+      ]
+    },
+    "mindcraft-theory-of-mind-modeling-for-situated-dialogue-in-2021": {
+      "title": "MindCraft: Theory of Mind Modeling for Situated Dialogue in Collaborative Tasks",
+      "year": 2021,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2109.06275",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "mental-state-modeling",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "An ideal integration of autonomous agents in a human world implies that they are able to collaborate on human terms.In particular, theory of mind plays an important role in maintaining common ground during human collaboration and communication.To enable theory of mind modeling in situated interactions, we introduce a fine-grained dataset of collaborative tasks performed by pairs of human subjects in the 3D virtual blocks world of Minecraft.It provides information that captures partners' beliefs of the world and of each other as an interaction unfolds, bringing abundant opportunities to study human collaborative behaviors in situated language communication.As a first step towards our goal of developing embodied AI agents able to infer belief states of collaborative partners in situ, we build and present results on computational models for several theory of mind tasks.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Dataset",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context"
+      ],
+      "contexts": [
+        "Embodied",
+        "Multi-party"
+      ],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we introduce a fine-grained dataset'.",
+          "quote_offset": [
+            304,
+            339
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'collaborative tasks'.",
+          "quote_offset": [
+            343,
+            362
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'theory of mind modeling'.",
+          "quote_offset": [
+            254,
+            277
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'maintaining common ground'.",
+          "quote_offset": [
+            173,
+            198
+          ]
+        },
+        {
+          "tag": "Embodied",
+          "source": "abstract",
+          "rationale": "Source quote: '3D virtual blocks world'.",
+          "quote_offset": [
+            407,
+            430
+          ]
+        },
+        {
+          "tag": "Multi-party",
+          "source": "abstract",
+          "rationale": "Source quote: 'pairs of human subjects'.",
+          "quote_offset": [
+            376,
+            399
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'computational models for several theory of mind tasks'.",
+          "quote_offset": [
+            825,
+            878
+          ]
+        }
+      ]
+    },
+    "llms-and-their-limited-theory-of-mind-evaluating-mental-st-2025": {
+      "title": "LLMs and their Limited Theory of Mind: Evaluating Mental State Annotations in Situated Dialogue",
+      "year": 2025,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2509.02292",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "datasets-benchmarks-evaluation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Effective human teams excel at maintaining a consistent shared mental model (SMM) that reflects the shared understanding of individual team members about the task and what remains to be done.We present a novel, two-step framework that leverages large language models (LLMs) both as (1) generators of mental model traces from team dialogues to track the team's SMM and (2) automated detectors of discrepancies between inferred and ground truth mental model traces.We define an SMM coherence evaluation framework for this use case and apply it to six dialogues in a previously published team corpus, ultimately producing a dataset of human and LLM SMM mental model traces, a reproducible evaluation framework for SMM coherence, and an empirical assessment of LLM-based discrepancy detection.Our results reveal that while LLMs exhibit apparent coherence on straightforward natural-language trace generation tasks, they systematically err in scenarios requiring spatial reasoning or disambiguation of transcription-level disfluencies.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Evaluation",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Multi-party"
+      ],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'evaluation framework for SMM coherence'.",
+          "quote_offset": [
+            686,
+            724
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'shared mental model (SMM)'.",
+          "quote_offset": [
+            56,
+            81
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'mental model traces'.",
+          "quote_offset": [
+            300,
+            319
+          ]
+        },
+        {
+          "tag": "Multi-party",
+          "source": "abstract",
+          "rationale": "Source quote: 'team dialogues'.",
+          "quote_offset": [
+            325,
+            339
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'automated detectors of discrepancies'.",
+          "quote_offset": [
+            372,
+            408
+          ]
+        }
+      ]
+    },
+    "simulated-customers-never-walk-away-decision-fidelity-of-l-2026": {
+      "title": "Simulated Customers Never Walk Away: Decision Fidelity of LLM User Simulators Measured Against Real Purchase Outcomes",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2606.20708",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "LLM-as-user-simulation has become core infrastructure for conversational AI: agent benchmarks (tau-bench), training pipelines, and a growing body of fidelity studies all rely on LLMs role-playing the human side of dialogue. Existing frameworks measure communicative fidelity -- whether simulators talk like humans -- against ground truth from paid participants role-playing assigned goals. We argue this has a structural blind spot: when the goal is assigned, the user's willingness is exogenous, so no framework can test whether simulators make decisions like real users whose motivation is endogenous, latent, and decaying. We introduce decision fidelity -- whether a simulated population reproduces the decision-state dynamics of real users facing real, consequential choices -- and measure it on a unique testbed: 2,790 production conversations between an LLM sales agent and real customers, including 793 with verified payment outcomes. Using a teacher-forced probe protocol that holds context and instrument fixed, we find a systematic, outcome-correlated failure we call the disengagement deficit: simulators reproduce eventual buyers almost exactly (depth bias +0.09) but inflate eventual non-buyers toward the purchase frame (depth bias +0.40; d=0.38, p<0.001), halving expressed resistance (25.1% to 13.5%) and nearly doubling deliberation (21.9% to 40.1%) while fabricating no purchases. The deficit replicates across model families (DeepSeek: d=0.41, p=0.002) and resists the obvious fix: instructing the simulator that it may disengage cuts marginal bias five-fold but barely moves the outcome-conditioned contrast (d=0.34, p=0.008). Real non-buyers say \"not now\" and stop; simulated non-buyers ask about price. Evaluating or training sales and persuasion agents against such simulators overstates funnel progress exactly where it matters most -- the customers who walk away.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Evaluation",
+      "goal": "Influence",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'measure it on a unique testbed'.",
+          "quote_offset": [
+            786,
+            816
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'sales and persuasion agents'.",
+          "quote_offset": [
+            1748,
+            1775
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'motivation is endogenous, latent, and decaying'.",
+          "quote_offset": [
+            578,
+            624
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'real users facing real, consequential choices'.",
+          "quote_offset": [
+            733,
+            778
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'LLM-as-user-simulation'.",
+          "quote_offset": [
+            0,
+            22
+          ]
+        }
+      ]
+    },
+    "embracing-imperfection-simulating-students-with-diverse-co-2025": {
+      "title": "Embracing Imperfection: Simulating Students with Diverse Cognitive Levels Using LLM-based Agents",
+      "year": 2025,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2505.19997",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Large language models (LLMs) are revolutionizing education, with LLM-based agents playing a key role in simulating student behavior. A major challenge in student simulation is modeling the diverse learning patterns of students at various cognitive levels. However, current LLMs, typically trained as ``helpful assistants'', target at generating perfect responses. As a result, they struggle to simulate students with diverse cognitive abilities, as they often produce overly advanced answers, missing the natural imperfections that characterize student learning and resulting in unrealistic simulations. To address this issue, we propose a training-free framework for student simulation. We begin by constructing a cognitive prototype for each student using a knowledge graph, which captures their understanding of concepts from past learning records. This prototype is then mapped to new tasks to predict student performance. Next, we simulate student solutions based on these predictions and iteratively refine them using a beam search method to better replicate realistic mistakes. To validate our approach, we construct the \\texttt{Student\\_100} dataset, consisting of $100$ students working on Python programming and $5,000$ learning records. Experimental results show that our method consistently outperforms baseline models, achieving $100\\%$ improvement in simulation accuracy.",
+      "abstract_source": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Planning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.semanticscholar.org/graph/v1/paper/search",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'training-free framework for student simulation'.",
+          "quote_offset": [
+            640,
+            686
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate students with diverse cognitive abilities'.",
+          "quote_offset": [
+            394,
+            444
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'diverse cognitive abilities'.",
+          "quote_offset": [
+            417,
+            444
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'beam search method'.",
+          "quote_offset": [
+            1026,
+            1044
+          ]
+        }
+      ]
+    },
+    "training-turn-by-turn-verifiers-for-dialogue-tutoring-agen-2025": {
+      "title": "Training Turn-by-Turn Verifiers for Dialogue Tutoring Agents: The Curious Case of LLMs as Your Coding Tutors",
+      "year": 2025,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2502.13311",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "learning-planning-alignment",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Intelligent tutoring agents powered by large language models (LLMs) have been increasingly explored to deliver personalized knowledge in areas such as language learning and science education.However, their capabilities in guiding users to solve complex real-world tasks remain underexplored.To address this limitation, in this work, we focus on coding tutoring, a challenging problem that requires tutors to proactively guide students towards completing predefined coding tasks.We propose a novel agent workflow, Trace-and-Verify (TRAVER), which combines knowledge tracing to estimate a student's knowledge state and turn-by-turn verification to ensure effective guidance toward task completion.We introduce DICT, an automatic evaluation protocol that assesses tutor agents using controlled student simulation and code generation tests.Extensive experiments reveal the challenges of coding tutoring and demonstrate that TRAVER achieves a significantly higher success rate.Although we use code tutoring as an example in this paper, our approach can be extended beyond coding, providing valuable insights into advancing tutoring agents for human task learning.1",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We propose a novel agent workflow'.",
+          "quote_offset": [
+            478,
+            511
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'guiding users to solve complex real-world tasks'.",
+          "quote_offset": [
+            222,
+            269
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'knowledge tracing to estimate a student's knowledge state'.",
+          "quote_offset": [
+            555,
+            612
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'deliver personalized knowledge'.",
+          "quote_offset": [
+            103,
+            133
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'controlled student simulation'.",
+          "quote_offset": [
+            780,
+            809
+          ]
+        }
+      ]
+    },
+    "educationq-evaluating-llms-teaching-capabilities-through-m-2025": {
+      "title": "EducationQ: Evaluating LLMs' Teaching Capabilities Through Multi-Agent Dialogue Framework",
+      "year": 2025,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2504.14928",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "datasets-benchmarks-evaluation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Large language models (LLMs) increasingly serve as educational tools, yet evaluating their teaching capabilities remains challenging due to the resource-intensive, context-dependent, and methodologically complex nature of teacher-student interactions. We introduce EducationQ, a multi-agent dialogue framework that efficiently assesses teaching capabilities through simulated dynamic educational scenarios, featuring specialized agents for teaching, learning, and evaluation. Testing 14 LLMs across major AI Organizations (OpenAI, Meta, Google, Anthropic, and others) on 1,498 questions spanning 13 disciplines and 10 difficulty levels reveals that teaching effectiveness does not correlate linearly with model scale or general reasoning capabilities - with some smaller open-source models outperforming larger commercial counterparts in teaching contexts. This finding highlights a critical gap in current evaluations that prioritize knowledge recall over interactive pedagogy. Our mixed-methods evaluation, combining quantitative metrics with qualitative analysis and expert case studies, identifies distinct pedagogical strengths employed by top-performing models (e.g., sophisticated questioning strategies, adaptive feedback mechanisms). Human expert evaluations show 78% agreement with our automated qualitative analysis of effective teaching behaviors, validating our methodology. EducationQ demonstrates that LLMs-as-teachers require specialized optimization beyond simple scaling, suggesting next-generation educational AI prioritize targeted enhancement of specific pedagogical effectiveness.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management",
+        "Social Perception"
+      ],
+      "contexts": [
+        "Relationship & Role"
+      ],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-agent dialogue framework'.",
+          "quote_offset": [
+            279,
+            309
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'teaching capabilities'.",
+          "quote_offset": [
+            91,
+            112
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'adaptive feedback mechanisms'.",
+          "quote_offset": [
+            1212,
+            1240
+          ]
+        },
+        {
+          "tag": "Social Perception",
+          "source": "abstract",
+          "rationale": "Source quote: 'sophisticated questioning strategies'.",
+          "quote_offset": [
+            1174,
+            1210
+          ]
+        },
+        {
+          "tag": "Relationship & Role",
+          "source": "abstract",
+          "rationale": "Source quote: 'teacher-student interactions'.",
+          "quote_offset": [
+            222,
+            250
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulated dynamic educational scenarios'.",
+          "quote_offset": [
+            366,
+            405
+          ]
+        }
+      ]
+    },
+    "using-large-language-models-to-simulate-multiple-humans-an-2022": {
+      "title": "Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies",
+      "year": 2022,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2208.10264",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "We introduce a new type of test, called a Turing Experiment (TE), for evaluating to what extent a given language model, such as GPT models, can simulate different aspects of human behavior. A TE can also reveal consistent distortions in a language model's simulation of a specific human behavior. Unlike the Turing Test, which involves simulating a single arbitrary individual, a TE requires simulating a representative sample of participants in human subject research. We carry out TEs that attempt to replicate well-established findings from prior studies. We design a methodology for simulating TEs and illustrate its use to compare how well different language models are able to reproduce classic economic, psycholinguistic, and social psychology experiments: Ultimatum Game, Garden Path Sentences, Milgram Shock Experiment, and Wisdom of Crowds. In the first three TEs, the existing findings were replicated using recent models, while the last TE reveals a \"hyper-accuracy distortion\" present in some language models (including ChatGPT and GPT-4), which could affect downstream applications in education and the arts.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Evaluation",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Perception"
+      ],
+      "contexts": [],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'a new type of test'.",
+          "quote_offset": [
+            13,
+            31
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate different aspects of human behavior'.",
+          "quote_offset": [
+            144,
+            188
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Perception",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulate different aspects of human behavior'.",
+          "quote_offset": [
+            144,
+            188
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulating a representative sample of participants'.",
+          "quote_offset": [
+            392,
+            442
+          ]
+        }
+      ]
+    },
+    "user-memory-reasoning-for-conversational-recommendation-2020": {
+      "title": "User Memory Reasoning for Conversational Recommendation",
+      "year": 2020,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2006.00184",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "conversational-recommendation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "We study an end-to-end approach for conversational recommendation that dynamically manages and reasons over users' past (offline) preferences and current (online) requests through a structured and cumulative user memory knowledge graph. This formulation extends existing state tracking beyond the boundary of a single dialog to user state tracking (UST). For this study, we create a new Memory Graph (MG) Conversational Recommendation parallel corpus called MGConvRex with 7K+ human-to-human role-playing dialogs, grounded on a large-scale user memory bootstrapped from real-world user scenarios. MGConvRex captures human-level reasoning over user memory and has disjoint training/testing sets of users for zero-shot (cold-start) reasoning for recommendation. We propose a simple yet expandable formulation for constructing and updating the MG, and an end-to-end graph-based reasoning model that updates MG from unstructured utterances and predicts optimal dialog policies (eg recommendation) based on updated MG. The prediction of our proposed model inherits the graph structure, providing a natural way to explain policies. Experiments are conducted for both offline metrics and online simulation, showing competitive results.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Recommendation",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Memory & Adaptation",
+        "Interaction Management"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "Retrieval",
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We propose a simple yet expandable formulation'.",
+          "quote_offset": [
+            760,
+            806
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'conversational recommendation'.",
+          "quote_offset": [
+            36,
+            65
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'dynamically manages and reasons over users' past (offline) preferences'.",
+          "quote_offset": [
+            71,
+            141
+          ]
+        },
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'predicts optimal dialog policies'.",
+          "quote_offset": [
+            940,
+            972
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'users' past (offline) preferences'.",
+          "quote_offset": [
+            108,
+            141
+          ]
+        },
+        {
+          "tag": "Retrieval",
+          "source": "abstract",
+          "rationale": "Source quote: 'structured and cumulative user memory knowledge graph'.",
+          "quote_offset": [
+            182,
+            235
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'end-to-end graph-based reasoning model'.",
+          "quote_offset": [
+            852,
+            890
+          ]
+        }
+      ]
+    },
+    "a-survey-on-llm-based-conversational-user-simulation-2026": {
+      "title": "A Survey on LLM-based Conversational User Simulation",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.24977",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "User simulation has long played a vital role in computer science due to its potential to support a wide range of applications. Language, as the primary medium of human communication, forms the foundation of social interaction and behavior. Consequently, simulating conversational behavior has become a key area of study. Recent advancements in large language models (LLMs) have significantly catalyzed progress in this domain by enabling high-fidelity generation of synthetic user conversation. In this paper, we survey recent advancements in LLM-based conversational user simulation. We introduce a novel taxonomy covering user granularity and simulation objectives. Additionally, we systematically analyze core techniques and evaluation methodologies. We aim to keep the research community informed of the latest advancements in conversational user simulation and to further facilitate future research by identifying open challenges and organizing existing work under a unified framework.",
+      "abstract_source": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Survey",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [],
+      "contexts": [],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.semanticscholar.org/graph/v1/paper/search",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we survey recent advancements'.",
+          "quote_offset": [
+            510,
+            539
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulating conversational behavior'.",
+          "quote_offset": [
+            254,
+            288
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": []
+    },
+    "simpletom-exposing-the-gap-between-explicit-tom-inference-2024": {
+      "title": "SimpleToM: Exposing the Gap between Explicit ToM Inference and Implicit ToM Application in LLMs",
+      "year": 2024,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2410.13648",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "datasets-benchmarks-evaluation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Large language models (LLMs) are increasingly tested for a \"Theory of Mind\" (ToM) - the ability to attribute mental states to oneself and others. Yet most evaluations stop at explicit belief attribution in classical toy stories or stylized tasks, leaving open the questions of whether LLMs can implicitly apply such knowledge to predict human behavior, or to judge an observed behavior, in diverse scenarios. We introduce SimpleToM, a benchmark that advances ToM evaluation along two novel axes. First, it probes multiple levels of ToM reasoning, from mental state inference (explicit ToM) to behavior prediction and judgment (applied ToM). Second, it situates these tasks in diverse, everyday scenarios - such as supermarkets, hospitals, schools, and offices - where information asymmetries naturally arise (e.g., hidden defects in grocery store items, incomplete information in provider-patient interactions, or restricted access to locked devices). SimpleToM contains concise stories (e.g., \"The can of Pringles has moldy chips in it. Mary picks up the can in the supermarket and walks to the cashier.\"), each with three questions that test different degrees of ToM reasoning, asking models to predict: (a) mental states (\"Is Mary aware of the mold?\"), (b) behaviors (\"Will Mary pay for the chips or report the mold?\"), and (c) judgments (\"Mary paid for the chips. Was that reasonable?\"). Experiments reveal a striking gap: state-of-the-art models often reliably infer mental state (a), but fail at applying knowledge about the mental state for secondary predictions, with performance dropping sharply for behavior prediction (b) and further for behavior judgment (c). This exposes a critical fragility in LLMs' social reasoning in terms of what they know (explicit ToM) versus how well they can implicitly apply that knowledge for predictions (applied ToM).",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Benchmark",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Perception"
+      ],
+      "contexts": [
+        "Relationship & Role"
+      ],
+      "approaches": [],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We introduce SimpleToM, a benchmark'.",
+          "quote_offset": [
+            409,
+            444
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'social reasoning'.",
+          "quote_offset": [
+            1715,
+            1731
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'attribute mental states'.",
+          "quote_offset": [
+            99,
+            122
+          ]
+        },
+        {
+          "tag": "Social Perception",
+          "source": "abstract",
+          "rationale": "Source quote: 'predict human behavior'.",
+          "quote_offset": [
+            329,
+            351
+          ]
+        },
+        {
+          "tag": "Relationship & Role",
+          "source": "abstract",
+          "rationale": "Source quote: 'provider-patient interactions'.",
+          "quote_offset": [
+            880,
+            909
+          ]
+        }
+      ]
+    },
+    "theory-of-mind-for-multi-agent-collaboration-via-large-lan-2023": {
+      "title": "Theory of Mind for Multi-Agent Collaboration via Large Language Models",
+      "year": 2023,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2310.10701",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "mental-state-modeling",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "While Large Language Models (LLMs) have demonstrated impressive accomplishments in both reasoning and planning, their abilities in multi-agent collaborations remains largely unexplored.This study evaluates LLMbased agents in a multi-agent cooperative text game with Theory of Mind (ToM) inference tasks, comparing their performance with Multi-Agent Reinforcement Learning (MARL) and planning-based baselines.We observed evidence of emergent collaborative behaviors and high-order Theory of Mind capabilities among LLM-based agents.Our results reveal limitations in LLM-based agents' planning optimization due to systematic failures in managing long-horizon contexts and hallucination about the task state.We explore the use of explicit belief state representations to mitigate these issues, finding that it enhances task performance and the accuracy of ToM inferences for LLMbased agents.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Evaluation",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Perception"
+      ],
+      "contexts": [
+        "Multi-party"
+      ],
+      "approaches": [
+        "Planning",
+        "RL"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'This study evaluates LLMbased agents'.",
+          "quote_offset": [
+            185,
+            221
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-agent collaborations'.",
+          "quote_offset": [
+            131,
+            157
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'Theory of Mind (ToM) inference tasks'.",
+          "quote_offset": [
+            266,
+            302
+          ]
+        },
+        {
+          "tag": "Social Perception",
+          "source": "abstract",
+          "rationale": "Source quote: 'emergent collaborative behaviors'.",
+          "quote_offset": [
+            432,
+            464
+          ]
+        },
+        {
+          "tag": "Multi-party",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-agent cooperative text game'.",
+          "quote_offset": [
+            227,
+            260
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'planning-based baselines'.",
+          "quote_offset": [
+            383,
+            407
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'Multi-Agent Reinforcement Learning (MARL)'.",
+          "quote_offset": [
+            337,
+            378
+          ]
+        }
+      ]
+    },
+    "evaluating-large-language-models-as-generative-user-simula-2024": {
+      "title": "Evaluating Large Language Models as Generative User Simulators for Conversational Recommendation",
+      "year": 2024,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2403.09738",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Synthetic users are cost-effective proxies for real users in the evaluation of conversational recommender systems. Large language models show promise in simulating human-like behavior, raising the question of their ability to represent a diverse population of users. We introduce a new protocol to measure the degree to which language models can accurately emulate human behavior in conversational recommendation. This protocol is comprised of five tasks, each designed to evaluate a key property that a synthetic user should exhibit: choosing which items to talk about, expressing binary preferences, expressing open-ended preferences, requesting recommendations, and giving feedback. Through evaluation of baseline simulators, we demonstrate these tasks effectively reveal deviations of language models from human behavior, and offer insights on how to reduce the deviations with model selection and prompting strategies.",
+      "abstract_source": "https://arxiv.org/abs/2403.09738",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Evaluation",
+      "goal": "Recommendation",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Social Perception"
+      ],
+      "contexts": [],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://arxiv.org/abs/2403.09738",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'measure the degree to which language models can accurately emulate human behavior'.",
+          "quote_offset": [
+            298,
+            379
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'conversational recommendation'.",
+          "quote_offset": [
+            383,
+            412
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Social Perception",
+          "source": "abstract",
+          "rationale": "Source quote: 'emulate human behavior'.",
+          "quote_offset": [
+            357,
+            379
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'synthetic users'.",
+          "quote_offset": [
+            0,
+            15
+          ]
+        }
+      ]
+    },
+    "neural-user-simulation-for-corpus-based-policy-optimisatio-2018": {
+      "title": "Neural User Simulation for Corpus-based Policy Optimisation of Spoken Dialogue Systems",
+      "year": 2018,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/1805.06966",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "User Simulators are one of the major tools that enable offline training of task-oriented dialogue systems.For this task the Agenda-Based User Simulator (ABUS) is often used.The ABUS is based on handcrafted rules and its output is in semantic form.Issues arise from both properties such as limited diversity and the inability to interface a text-level belief tracker.This paper introduces the Neural User Simulator (NUS) whose behaviour is learned from a corpus and which generates natural language, hence needing a less labelled dataset than simulators generating a semantic output.In comparison to much of the past work on this topic, which evaluates user simulators on corpus-based metrics, we use the NUS to train the policy of a reinforcement learning based Spoken Dialogue System.The NUS is compared to the ABUS by evaluating the policies that were trained using the simulators.Crossmodel evaluation is performed i.e. training on one simulator and testing on the other.Furthermore, the trained policies are tested on real users.In both evaluation tasks the NUS outperformed the ABUS.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "User Simulation",
+        "RL"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'introduces the Neural User Simulator'.",
+          "quote_offset": [
+            377,
+            413
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'task-oriented dialogue systems'.",
+          "quote_offset": [
+            75,
+            105
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'train the policy of a reinforcement learning based Spoken Dialogue System'.",
+          "quote_offset": [
+            711,
+            784
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'Neural User Simulator'.",
+          "quote_offset": [
+            392,
+            413
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'reinforcement learning based Spoken Dialogue System'.",
+          "quote_offset": [
+            733,
+            784
+          ]
+        }
+      ]
+    },
+    "facilitating-multi-turn-emotional-support-conversation-wit-2023": {
+      "title": "Facilitating Multi-turn Emotional Support Conversation with Positive Emotion Elicitation: A Reinforcement Learning Approach",
+      "year": 2023,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2307.07994",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "support-care",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Emotional support conversation (ESC) aims to provide emotional support (ES) to improve one's mental state.Existing works stay at fitting grounded responses and responding strategies (e.g., question), which ignore the effect on ES and lack explicit goals to guide emotional positive transition.To this end, we introduce a new paradigm to formalize multi-turn ESC as a process of positive emotion elicitation.Addressing this task requires finely adjusting the elicitation intensity in ES as the conversation progresses while maintaining conversational goals like coherence.In this paper, we propose SUPPORTER, a mixture-of-expert-based reinforcement learning model, and well design ES and dialogue coherence rewards to guide policy's learning for responding.Experiments verify the superiority of SUPPORTER in achieving positive emotion elicitation during responding while maintaining conversational goals including coherence.",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Multi-turn",
+      "capabilities": [
+        "Affect",
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "RL",
+        "Reward Modeling"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose SUPPORTER'.",
+          "quote_offset": [
+            586,
+            606
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'provide emotional support'.",
+          "quote_offset": [
+            45,
+            70
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-turn ESC'.",
+          "quote_offset": [
+            347,
+            361
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Affect",
+          "source": "abstract",
+          "rationale": "Source quote: 'positive emotion elicitation'.",
+          "quote_offset": [
+            378,
+            406
+          ]
+        },
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'maintaining conversational goals like coherence'.",
+          "quote_offset": [
+            523,
+            570
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'reinforcement learning model'.",
+          "quote_offset": [
+            634,
+            662
+          ]
+        },
+        {
+          "tag": "Reward Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'design ES and dialogue coherence rewards'.",
+          "quote_offset": [
+            673,
+            713
+          ]
+        }
+      ]
+    },
+    "prompt-based-monte-carlo-tree-search-for-goal-oriented-dia-2023": {
+      "title": "Prompt-Based Monte-Carlo Tree Search for Goal-oriented Dialogue Policy Planning",
+      "year": 2023,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2305.13660",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "learning-planning-alignment",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Planning for goal-oriented dialogue often requires simulating future dialogue interactions and estimating task progress.Many approaches thus consider training neural networks to perform look-ahead search algorithms such as A* search and Monte Carlo Tree Search (MCTS).However, this training often requires abundant annotated data, which creates challenges when faced with noisy annotations or low-resource settings.We introduce GDP-ZERO, an approach using Open-Loop MCTS to perform goal-oriented dialogue policy planning without any model training.GDP-ZERO prompts a large language model to act as a policy prior, value function, user simulator, and system model during the tree search.We evaluate GDP-ZERO on the goal-oriented task Persua-sionForGood, and find that its responses are preferred over ChatGPT up to 59.32% of the time, and are rated more persuasive than Chat-GPT during interactive evaluations 1 .",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Influence",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Planning",
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'GDP-ZERO, an approach using Open-Loop MCTS'.",
+          "quote_offset": [
+            428,
+            470
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'goal-oriented task Persua-sionForGood'.",
+          "quote_offset": [
+            714,
+            751
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'dialogue policy planning'.",
+          "quote_offset": [
+            496,
+            520
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'Monte Carlo Tree Search'.",
+          "quote_offset": [
+            237,
+            260
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'user simulator'.",
+          "quote_offset": [
+            630,
+            644
+          ]
+        }
+      ]
+    },
+    "transferable-dialogue-systems-and-user-simulators-2021": {
+      "title": "Transferable Dialogue Systems and User Simulators",
+      "year": 2021,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2107.11904",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "One of the difficulties in training dialogue systems is the lack of training data. We explore the possibility of creating dialogue data through the interaction between a dialogue system and a user simulator. Our goal is to develop a modelling framework that can incorporate new dialogue scenarios through self-play between the two agents. In this framework, we first pre-train the two agents on a collection of source domain dialogues, which equips the agents to converse with each other via natural language. With further fine-tuning on a small amount of target domain data, the agents continue to interact with the aim of improving their behaviors using reinforcement learning with structured reward functions. In experiments on the MultiWOZ dataset, two practical transfer learning problems are investigated: 1) domain adaptation and 2) single-to-multiple domain transfer. We demonstrate that the proposed framework is highly effective in bootstrapping the performance of the two agents in transfer learning. We also show that our method leads to improvements in dialogue system performance on complete datasets.",
+      "abstract_source": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Self-play",
+        "RL",
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.semanticscholar.org/graph/v1/paper/search",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'develop a modelling framework'.",
+          "quote_offset": [
+            223,
+            252
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'converse with each other via natural language'.",
+          "quote_offset": [
+            463,
+            508
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'converse with each other via natural language'.",
+          "quote_offset": [
+            463,
+            508
+          ]
+        },
+        {
+          "tag": "Self-play",
+          "source": "abstract",
+          "rationale": "Source quote: 'self-play between the two agents'.",
+          "quote_offset": [
+            305,
+            337
+          ]
+        },
+        {
+          "tag": "RL",
+          "source": "abstract",
+          "rationale": "Source quote: 'reinforcement learning with structured reward functions'.",
+          "quote_offset": [
+            656,
+            711
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'user simulator'.",
+          "quote_offset": [
+            192,
+            206
+          ]
+        }
+      ]
+    },
+    "interpretable-difficulty-aware-knowledge-tracing-in-tutor-2026": {
+      "title": "Interpretable Difficulty-Aware Knowledge Tracing in Tutor-Student Dialogues",
+      "year": 2026,
+      "venue": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2605.01097",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "learning-planning-alignment",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Recent advances in large language models (LLMs) have led to the development of AIpowered tutoring systems that provide interactive support via dialogue.To enable these tutoring systems to provide personalized support, it is essential to assess student performance at each turn, motivating knowledge tracing (KT) in dialogue settings.However, existing dialogue-based KT approaches often ignore question difficulty and rely on opaque LLM latent representations, hindering accurate and interpretable prediction.In this work, we propose an interpretable difficulty-aware conversational KT framework that leverages LLMs to explicitly model student knowledge state and the difficulty of tutor-posed tasks at each dialogue turn.The framework incorporates the original question and the next tutor-posed task to estimate the student's knowledge state and the difficulty of the upcoming turn.It further integrates Item Response Theory to map LLM outputs into student ability and question difficulty parameters, enabling interpretable prediction of student performance grounded in cognitive theories of learning.We evaluate the framework on two tutor-student dialogue datasets.Quantitative and qualitative results show that our framework outperforms existing KT baselines, meanwhile generating interpretable outputs consistent with cognitive theory 1 .",
+      "abstract_source": "https://api.openalex.org/works",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context"
+      ],
+      "contexts": [
+        "Relationship & Role"
+      ],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://api.openalex.org/works",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose an interpretable difficulty-aware conversational KT framework'.",
+          "quote_offset": [
+            522,
+            594
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'provide personalized support'.",
+          "quote_offset": [
+            188,
+            216
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'explicitly model student knowledge state'.",
+          "quote_offset": [
+            618,
+            658
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'student knowledge state and the difficulty of tutor-posed tasks'.",
+          "quote_offset": [
+            635,
+            698
+          ]
+        },
+        {
+          "tag": "Relationship & Role",
+          "source": "abstract",
+          "rationale": "Source quote: 'tutor-student dialogue'.",
+          "quote_offset": [
+            1134,
+            1156
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'evaluate the framework on two tutor-student dialogue datasets'.",
+          "quote_offset": [
+            1104,
+            1165
+          ]
+        }
+      ]
+    },
+    "beyond-words-integrating-theory-of-mind-into-conversationa-2025": {
+      "title": "Beyond Words: Integrating Theory of Mind into Conversational Agents for Human-Like Belief, Desire, and Intention Alignment",
+      "year": 2025,
+      "venue": "Findings of ACL",
+      "paper_url": "https://aclanthology.org/2025.findings-acl.287/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "mental-state-modeling",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Natural language interaction has long served as the primary medium through which humans exchange ideas. A key enabler of this communication is the human capacity for Theory of Mind (ToM)—the ability to infer and align with the mental states of others. ToM is usually modeled as components of desires, beliefs, and intentions. Research in linguistics and psychology has shown that people oftentimes reveal their ToM through pragmatic aspects of language. Considering the advancements in natural language generation and perception that Large Language Models (LLMs) have made in recent years, a critical question arises in relation to ToM: can LLM-powered agents develop similar abilities for inferring mental states during natural language communication? This study investigates the extent to which open-source LLaMA models can represent and retain ToM-related constructs, and whether these internal representations contribute to a coherent mental state modeling in a given conversation. Additionally, we explore the potential for manipulating ToM-related information to generate more aligned responses. Empirical evaluations of LLaMA-3 models (3B and 8B) demonstrate that ToM-informed alignment improves response quality, achieving win rates of 63% and 67%, respectively. These findings suggest that integrating ToM principles can enhance alignment in LLM-based conversational agents. For further details, refer to the code repository .",
+      "abstract_source": "https://aclanthology.org/2025.findings-acl.287/",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.findings-acl.287/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'ToM-informed alignment improves response quality'.",
+          "quote_offset": [
+            1171,
+            1219
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'natural language interaction'.",
+          "quote_offset": [
+            0,
+            28
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'infer and align with the mental states of others'.",
+          "quote_offset": [
+            202,
+            250
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'coherent mental state modeling in a given conversation'.",
+          "quote_offset": [
+            930,
+            984
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'ToM-informed alignment improves response quality'.",
+          "quote_offset": [
+            1171,
+            1219
+          ]
+        }
+      ]
+    },
+    "minddial-enhancing-conversational-agents-with-theory-of-mi-2024": {
+      "title": "MindDial: Enhancing Conversational Agents with Theory-of-Mind for Common Ground Alignment and Negotiation",
+      "year": 2024,
+      "venue": "SIGDIAL",
+      "paper_url": "https://aclanthology.org/2024.sigdial-1.63/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "mental-state-modeling",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Humans talk in daily conversations while aligning and negotiating the expressed meanings or common ground. Despite the impressive conversational abilities of the large generative language models, they do not consider the individual differences in contextual understanding in a shared situated environment. In this work, we propose MindDial, a novel conversational framework that can generate situated free-form responses to align and negotiate common ground. We design an explicit mind module that can track three-level beliefs – the speaker’s belief, the speaker’s prediction of the listener’s belief, and the belief gap between the first two. Then the next response is generated to resolve the belief difference and take task-related action. Our framework is applied to both prompting and fine-tuning-based models, and is evaluated across scenarios involving both common ground alignment and negotiation. Experiments show that models with mind modeling can generate more human-like responses when aligning and negotiating common ground. The ablation study further validates the three-level belief design can aggregate information and improve task outcomes in both cooperative and negotiating settings.",
+      "abstract_source": "https://aclanthology.org/2024.sigdial-1.63/",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Coordination",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Context"
+      ],
+      "contexts": [
+        "Multi-party"
+      ],
+      "approaches": [
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2024.sigdial-1.63/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose MindDial, a novel conversational framework'.",
+          "quote_offset": [
+            320,
+            373
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'align and negotiate common ground'.",
+          "quote_offset": [
+            424,
+            457
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'track three-level beliefs'.",
+          "quote_offset": [
+            502,
+            527
+          ]
+        },
+        {
+          "tag": "Social Context",
+          "source": "abstract",
+          "rationale": "Source quote: 'individual differences in contextual understanding'.",
+          "quote_offset": [
+            221,
+            271
+          ]
+        },
+        {
+          "tag": "Multi-party",
+          "source": "abstract",
+          "rationale": "Source quote: 'speaker’s prediction of the listener’s belief'.",
+          "quote_offset": [
+            556,
+            601
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'fine-tuning-based models'.",
+          "quote_offset": [
+            791,
+            815
+          ]
+        }
+      ]
+    },
+    "small-agents-big-gains-journey-aware-and-critic-guided-sim-2026": {
+      "title": "Small Agents, Big Gains: Journey-Aware and Critic-Guided Simulation for Long-Horizon Shopping Dialogues",
+      "year": 2026,
+      "venue": "ACL Industry",
+      "paper_url": "https://aclanthology.org/2026.acl-industry.39/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Modern e-commerce assistants must go beyond simple product search to support inspiration, comparison, and tool-grounded fact-checking across non-linear shopping journeys. However, distilling these complex behaviors into efficient, deployable models is bottle-necked by a lack of post-training data: trajectories must cover diverse agentic workflows with high fidelity, yet the desired outputs are open-ended without a single ground truth. We propose a closed-loop Multi-Agent Simulation Framework to synthesize diverse, faithful, and policy-aligned shopping trajectories. The system orchestrates a journey-aware, stateful user simulator to drive exploration, a shopping agent that manages both tools and UI elements, and a critic agent that provides rubric-driven feedback to iteratively refine the data. On a domain-specific benchmark, this synthetic data enables a small model to significantly outperform same-size baselines and surpass a large-model baseline, achieving near-zero tool-calling errors with 8 × higher inference throughput.",
+      "abstract_source": "https://aclanthology.org/2026.acl-industry.39/",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management",
+        "Social Memory & Adaptation"
+      ],
+      "contexts": [
+        "Personalization"
+      ],
+      "approaches": [
+        "User Simulation",
+        "Reward Modeling"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2026.acl-industry.39/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'We propose a closed-loop Multi-Agent Simulation Framework'.",
+          "quote_offset": [
+            439,
+            496
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'support inspiration, comparison, and tool-grounded fact-checking'.",
+          "quote_offset": [
+            69,
+            133
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'manages both tools and UI elements'.",
+          "quote_offset": [
+            681,
+            715
+          ]
+        },
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'stateful user simulator'.",
+          "quote_offset": [
+            613,
+            636
+          ]
+        },
+        {
+          "tag": "Personalization",
+          "source": "abstract",
+          "rationale": "Source quote: 'journey-aware, stateful user simulator'.",
+          "quote_offset": [
+            598,
+            636
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'journey-aware, stateful user simulator'.",
+          "quote_offset": [
+            598,
+            636
+          ]
+        },
+        {
+          "tag": "Reward Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'rubric-driven feedback'.",
+          "quote_offset": [
+            750,
+            772
+          ]
+        }
+      ]
+    },
+    "foundations-of-peers-assessing-llm-role-performance-in-edu-2025": {
+      "title": "Foundations of PEERS: Assessing LLM Role Performance in Educational Simulations",
+      "year": 2025,
+      "venue": "ACL SRW",
+      "paper_url": "https://aclanthology.org/2025.acl-srw.66/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "In education, peer instruction (PI) is widely recognized as an effective active learning strategy. However, real-world evaluations of PI are often limited by logistical constraints and variability in classroom settings. This paper introduces PEERS (Peer Enhanced Educational Realistic Simulation), a simulation framework that integrates Agent-Based Modeling (ABM), Large Language Models (LLMs), and Bayesian Knowledge Tracing (BKT) to emulate student learning dynamics. As an initial step, this study focuses on evaluating whether LLM-powered agents can effectively assume the roles of teachers and students within the simulation. Human evaluations and topic-based metrics show that LLMs can generate role-consistent and contextually appropriate classroom dialogues. These results serve as a foundational milestone toward building realistic, AI-driven educational simulations. Future work will include simulating the complete PEERS framework and validating its accuracy through actual classroom-based PI sessions. This research aims to contribute a scalable, cost-effective methodology for studying instructional strategies in controlled yet realistic environments.",
+      "abstract_source": "https://aclanthology.org/2025.acl-srw.66/",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "General Interaction",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [
+        "Relationship & Role"
+      ],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.acl-srw.66/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'simulation framework'.",
+          "quote_offset": [
+            300,
+            320
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'classroom dialogues'.",
+          "quote_offset": [
+            746,
+            765
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'generate role-consistent and contextually appropriate classroom dialogues'.",
+          "quote_offset": [
+            692,
+            765
+          ]
+        },
+        {
+          "tag": "Relationship & Role",
+          "source": "abstract",
+          "rationale": "Source quote: 'assume the roles of teachers and students'.",
+          "quote_offset": [
+            566,
+            607
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'Agent-Based Modeling'.",
+          "quote_offset": [
+            337,
+            357
+          ]
+        }
+      ]
+    },
+    "stop-playing-the-guessing-game-evaluating-conversational-r-2025": {
+      "title": "Stop Playing the Guessing Game! Evaluating Conversational Recommender Systems via Target-free User Simulation",
+      "year": 2025,
+      "venue": "Findings of EMNLP",
+      "paper_url": "https://aclanthology.org/2025.findings-emnlp.1067/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "user-simulation-environments",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Recent developments in Conversational Recommender Systems (CRSs) have focused on simulating real-world interactions between users and CRSs to create more realistic evaluation environments. Despite considerable advancements, reliably assessing the capability of CRSs in eliciting user preferences remains a significant challenge. We observe that user-CRS interactions in existing evaluation protocols resemble a guessing game, as they construct target-biased simulators pre-encoded with target item knowledge, thereby allowing the CRS to shortcut the elicitation process. Moreover, we reveal that current evaluation metrics, which predominantly emphasize single-turn recall of target items, suffer from target ambiguity in multi-turn settings and overlook the intermediate process of preference elicitation. To address these issues, we introduce PEPPER, a novel CRS evaluation protocol with target-free user simulators that enable users to gradually discover their preferences through enriched interactions, along with detailed measures for comprehensively assessing the preference elicitation capabilities of CRSs. Through extensive experiments, we validate PEPPER as a reliable simulation environment and offer a thorough analysis of how effectively current CRSs perform in preference elicitation and recommendation.",
+      "abstract_source": "https://aclanthology.org/2025.findings-emnlp.1067/",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Evaluation",
+      "goal": "Recommendation",
+      "horizon": "Multi-turn",
+      "capabilities": [
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "User Simulation"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2025.findings-emnlp.1067/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'evaluation protocol'.",
+          "quote_offset": [
+            379,
+            398
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'Conversational Recommender Systems'.",
+          "quote_offset": [
+            23,
+            57
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-turn settings'.",
+          "quote_offset": [
+            722,
+            741
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'eliciting user preferences'.",
+          "quote_offset": [
+            269,
+            295
+          ]
+        },
+        {
+          "tag": "User Simulation",
+          "source": "abstract",
+          "rationale": "Source quote: 'target-free user simulators'.",
+          "quote_offset": [
+            890,
+            917
+          ]
+        }
+      ]
+    },
+    "emotion-trajectory-aware-retrieval-for-markov-driven-emoti-2026": {
+      "title": "Emotion Trajectory-aware Retrieval for Markov-driven Emotion Anticipation in LLM-based Emotional Support Conversation",
+      "year": 2026,
+      "venue": "Findings of ACL",
+      "paper_url": "https://aclanthology.org/2026.findings-acl.2127/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "support-care",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Emotional support conversation (ESC) aims to alleviate users’ psychological stress. Selecting the appropriate strategy is crucial for effective emotional support. Current strategy planner-based methods prioritize immediate responses while neglecting users’ future reactions. Some studies retrieve historical examples with similar emotions to the current utterance, then anticipating future emotions based on next-turn emotions of historical examples. However, their retrievals focus on the current emotion (i.e. a single-turn emotion state), while they ignore the evolution of user’s emotion before the current state. We argue that retrievals considering the whole emotional trajectories enables models to capture the dynamic emotional needs, thereby enhancing the anticipation of future emotions. To this end, we propose Markov-driven emotion anticipation framework with emotion trajectory-aware retrieval for LLM-based ESC, which anticipates future emotion states to guide strategy planning and achieve sustained emotional support. First, we construct a dynamic emotion memory and perform hierarchical retrieval that combines semantic matching and emotion trajectory alignment. Then, we model emotional transitions as Markov chains, leveraging trajectory-aware retrieval to estimate future emotion. Finally, we use the anticipated emotion to steer LLMs in generating candidate strategies and introduce active online learning to optimize the planner, boosting its robustness on diverse users. Experiments on two datasets with two models shows that our method excels all baselines.",
+      "abstract_source": "https://aclanthology.org/2026.findings-acl.2127/",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Affect",
+        "Mental-State Modeling"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Retrieval",
+        "Planning",
+        "Supervised Learning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2026.findings-acl.2127/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose Markov-driven emotion anticipation framework'.",
+          "quote_offset": [
+            811,
+            866
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'Emotional support conversation (ESC) aims to alleviate users’ psychological stress'.",
+          "quote_offset": [
+            0,
+            82
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Affect",
+          "source": "abstract",
+          "rationale": "Source quote: 'anticipating future emotions'.",
+          "quote_offset": [
+            370,
+            398
+          ]
+        },
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'anticipates future emotion states'.",
+          "quote_offset": [
+            932,
+            965
+          ]
+        },
+        {
+          "tag": "Retrieval",
+          "source": "abstract",
+          "rationale": "Source quote: 'emotion trajectory-aware retrieval'.",
+          "quote_offset": [
+            872,
+            906
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'guide strategy planning'.",
+          "quote_offset": [
+            969,
+            992
+          ]
+        },
+        {
+          "tag": "Supervised Learning",
+          "source": "abstract",
+          "rationale": "Source quote: 'active online learning to optimize the planner'.",
+          "quote_offset": [
+            1404,
+            1450
+          ]
+        }
+      ]
+    },
+    "planning-guided-tutoring-with-assessment-driven-memory-for-2026": {
+      "title": "Planning-Guided Tutoring with Assessment-Driven Memory for Pedagogical LLM Tutors",
+      "year": 2026,
+      "venue": "ACL",
+      "paper_url": "https://aclanthology.org/2026.acl-long.325/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "learning-planning-alignment",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Equipping Large Language Models (LLMs) with pedagogical tutoring capabilities holds significant promise for education. Existing approaches simulate tutor behaviors or preferences and use them to prompt or fine-tune LLMs for dialogue tutoring. However, such methods often fail to sustain high-quality pedagogical conversations that provide explicit stepwise scaffolding and adapt to learners’ evolving cognitive states. To address this, we propose ScaffoldLM, a planning-guided tutoring framework with an assessment-driven memory for multi-turn math dialogue tutoring. ScaffoldLM first generates a stepwise pedagogical plan from solution steps, which serves as a stable backbone for explicit scaffolding. During tutoring, the tutoring memory is updated by an assessment-driven control loop that infers the learner’s cognitive state, evaluates whether the current step target is met, and adaptively selects tutoring actions. The plan, step-level progress, inferred learner states, and dialogue history are maintained in memory to support coherent multi-turn guidance. Experiments on multi-turn math tutoring benchmarks demonstrate that ScaffoldLM substantially improves pedagogical tutoring quality over strong baselines. Code is publicly available at https://github.com/BNU-ERC-ITEA/ScaffoldLM .",
+      "abstract_source": "https://aclanthology.org/2026.acl-long.325/",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Support",
+      "horizon": "Multi-turn",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Interaction Management",
+        "Social Memory & Adaptation"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Planning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2026.acl-long.325/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose ScaffoldLM, a planning-guided tutoring framework'.",
+          "quote_offset": [
+            436,
+            495
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'pedagogical tutoring capabilities'.",
+          "quote_offset": [
+            44,
+            77
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "Source quote: 'multi-turn math dialogue tutoring'.",
+          "quote_offset": [
+            533,
+            566
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'infers the learner’s cognitive state'.",
+          "quote_offset": [
+            794,
+            830
+          ]
+        },
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'adaptively selects tutoring actions'.",
+          "quote_offset": [
+            886,
+            921
+          ]
+        },
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'tutoring memory is updated'.",
+          "quote_offset": [
+            725,
+            751
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'generates a stepwise pedagogical plan'.",
+          "quote_offset": [
+            585,
+            622
+          ]
+        }
+      ]
+    },
+    "ma2p-a-meta-cognitive-autonomous-intelligent-agents-framew-2026": {
+      "title": "MA2P: A Meta-Cognitive Autonomous Intelligent Agents Framework for Complex Persuasion",
+      "year": 2026,
+      "venue": "Findings of ACL",
+      "paper_url": "https://aclanthology.org/2026.findings-acl.1550/",
+      "code_url": null,
+      "summary_path": null,
+      "primary_section": "influence-negotiation",
+      "review_status": "auto_extracted",
+      "abstract_fetch_attempted_at": "2026-10-05",
+      "abstract": "Persuasive dialogue generation plays a vital role in decision-making, negotiation, counseling, and behavior change, yet it remains a challenging problem. In complex persuasion where the persuadee’s internal states are not expressed clearly, the persuader must interpret responses, infer the persuadee’s latent mental states (e.g., beliefs and desires), and translate them into targeted, strategy-consistent actions; however, current approaches often produce generic or weakly grounded responses even when such cues are identified. Moreover, although large language models (LLMs) can generate persuasive content, their performance varies substantially across domains due to uneven knowledge coverage and limited reasoning generalization. To address these challenges, we propose MA 2 P, a meta-cognitive autonomous intelligent agent framework for complex persuasion. Specifically, we develop an autonomous multi-agent architecture that coordinates perception management, mental-state inference, strategy execution, memory maintenance, and performance evaluation. To mitigate cross-domain performance variation, we further design a meta-cognitive configurator that selects an appropriate meta-strategy from a structured knowledge base at the outset, thereby guiding subsequent reasoning and planning. Experimental results show that our approach achieves a higher persuasion success rate than baselines.",
+      "abstract_source": "https://aclanthology.org/2026.findings-acl.1550/",
+      "abstract_retrieved_at": "2026-10-05",
+      "type": "Method",
+      "goal": "Influence",
+      "horizon": "Unspecified",
+      "capabilities": [
+        "Mental-State Modeling",
+        "Social Memory & Adaptation",
+        "Interaction Management"
+      ],
+      "contexts": [],
+      "approaches": [
+        "Planning"
+      ],
+      "annotated_by": "llm-abstract-extractor-v2",
+      "llm_tagging": {
+        "model": "deepseek-v4-pro",
+        "source_type": "abstract",
+        "source_url": "https://aclanthology.org/2026.findings-acl.1550/",
+        "tagged_at": "2026-10-05"
+      },
+      "field_evidence": [
+        {
+          "field": "primary_section",
+          "rationale": "Preserved legacy browse section during LLM reclassification.",
+          "source": "legacy README"
+        },
+        {
+          "field": "type",
+          "source": "abstract",
+          "rationale": "Source quote: 'we propose MA 2 P, a meta-cognitive autonomous intelligent agent framework'.",
+          "quote_offset": [
+            766,
+            840
+          ]
+        },
+        {
+          "field": "goal",
+          "source": "abstract",
+          "rationale": "Source quote: 'complex persuasion'.",
+          "quote_offset": [
+            157,
+            175
+          ]
+        },
+        {
+          "field": "horizon",
+          "source": "abstract",
+          "rationale": "No explicit interaction-duration evidence in source; conservative default."
+        }
+      ],
+      "evidence": [
+        {
+          "tag": "Mental-State Modeling",
+          "source": "abstract",
+          "rationale": "Source quote: 'infer the persuadee’s latent mental states'.",
+          "quote_offset": [
+            281,
+            323
+          ]
+        },
+        {
+          "tag": "Social Memory & Adaptation",
+          "source": "abstract",
+          "rationale": "Source quote: 'memory maintenance'.",
+          "quote_offset": [
+            1013,
+            1031
+          ]
+        },
+        {
+          "tag": "Interaction Management",
+          "source": "abstract",
+          "rationale": "Source quote: 'coordinates perception management, mental-state inference, strategy execution'.",
+          "quote_offset": [
+            934,
+            1011
+          ]
+        },
+        {
+          "tag": "Planning",
+          "source": "abstract",
+          "rationale": "Source quote: 'guiding subsequent reasoning and planning'.",
+          "quote_offset": [
+            1255,
+            1296
           ]
         }
       ]
