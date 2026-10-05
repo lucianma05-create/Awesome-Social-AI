@@ -8,7 +8,7 @@
 
 [![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://github.com/sindresorhus/awesome)
 [![License](https://img.shields.io/badge/License-Apache%202.0-red?style=for-the-badge&logo=apache&logoColor=white)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Papers](https://img.shields.io/badge/Papers-214-2ea44f?style=for-the-badge)](paper)
+[![Papers](https://img.shields.io/badge/Papers-233-2ea44f?style=for-the-badge)](paper)
 [![Summaries](https://img.shields.io/badge/Summaries-121-007ec6?style=for-the-badge)](README.md)
 [![Views](https://komarev.com/ghpvc/?username=lucianma05-create&repo=Awesome-Social-AI&label=Views&color=orange&style=for-the-badge)](https://github.com/lucianma05-create/Awesome-Social-AI)
 </div>
@@ -288,6 +288,7 @@
 
 
 
+
 </details>
 
 <a id="ed"></a>
@@ -389,6 +390,7 @@
   - Publisher: `ACL 2026`
   - Keywords: `Dataset` · `Support` · `Mental-State Modeling` · `Relationship & Role` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -539,6 +541,7 @@
 
 
 
+
 </details>
 
 <a id="coop"></a>
@@ -589,6 +592,7 @@
   - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
   - Code: [GitHub / Project](https://github.com/eliaka/repeatedgames)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -715,6 +719,7 @@
 
 
 
+
 </details>
 
 <a id="emotion"></a>
@@ -757,6 +762,7 @@
   - Publisher: `arXiv 2025`
   - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Social Perception` · `Retrieval` · `Supervised Learning` · `Multi-turn`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -854,6 +860,7 @@
 
 
 
+
 </details>
 
 <a id="memory"></a>
@@ -920,6 +927,7 @@
   - Code: [GitHub / Project](https://github.com/google-research/reasoning-bank)
   - Summary: [Summary](paper/Memory-ICLR-2026-ReasoningBank:%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1040,6 +1048,7 @@
 
 
 
+
 </details>
 
 <a id="us"></a>
@@ -1129,6 +1138,7 @@
   - Keywords: `Survey` · `General Interaction` · `Social Context` · `Multi-party`
   - Code: [GitHub / Project](https://github.com/FudanDISC/SocialAgent)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1296,6 +1306,7 @@
   - Publisher: `arXiv 2026`
   - Keywords: `Dataset` · `Coordination` · `Social Context` · `Interaction Management` · `Multi-party` · `Relationship & Role` · `Supervised Learning` · `Longitudinal`
 <!-- CATALOGUE:END -->
+
 
 
 

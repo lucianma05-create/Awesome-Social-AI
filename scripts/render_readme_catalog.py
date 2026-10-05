@@ -87,12 +87,15 @@ def main() -> None:
     args = parser.parse_args()
     targets = [Path(args.readme)] if args.readme else [p for p in (Path("README.md"), Path("README_CN.md")) if p.exists()]
     records = json.loads(Path(args.metadata).read_text(encoding="utf-8"))["papers"].values()
+    linked = sum(1 for record in records if has_local_note(record))
     for readme_path in targets:
         text = readme_path.read_text(encoding="utf-8")
         for anchor, section in reversed(SECTION_ORDER):
             section_records = sorted((record for record in records if record.get("primary_section") == section),
                                      key=lambda record: (record["year"], record["title"].lower()))
             text = replace_section(text, anchor, section_records)
+        text = re.sub(r"Papers-\d+-", f"Papers-{len(records)}-", text, count=1)
+        text = re.sub(r"Summaries-\d+-", f"Summaries-{linked}-", text, count=1)
         if args.dry_run:
             print(f"Would render 11 README sections from {len(records):d} catalogue records into {readme_path}.")
         else:
