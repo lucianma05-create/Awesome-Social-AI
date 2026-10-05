@@ -37,7 +37,7 @@
     - [Benchmark & Evaluation](#data)
   - [🏷️ 关键词体系](#keywords)
   - [📁 仓库结构](#repo-structure)
-  - [✍️ 如何贡献](CONTRIBUTING.md)
+  - [✍️ 如何贡献](CONTRIBUTING_CN.md)
   - [🧠 关于我们](#about)
 
 <a id="social-ai"></a>
@@ -1516,7 +1516,8 @@ Awesome-Social-AI/
 ├── metadata/           # 受控关键词词表与论文结构化元数据
 ├── scripts/            # README 同步、元数据校验等工具
 ├── Example.md          # 论文摘要的撰写范例
-├── CONTRIBUTING.md     # 贡献指南
+├── CONTRIBUTING.md     # 贡献指南（英文版）
+├── CONTRIBUTING_CN.md  # 贡献指南（简体中文）
 ├── README.md           # 本说明文件（英文版）
 └── README_CN.md        # 本说明文件（简体中文）
 ```

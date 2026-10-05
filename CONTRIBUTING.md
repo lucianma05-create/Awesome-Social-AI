@@ -1,5 +1,7 @@
 # Contributing to Awesome Social AI
 
+**[English](CONTRIBUTING.md)** | **[简体中文](CONTRIBUTING_CN.md)**
+
 Anyone interested in socially intelligent conversational agents is welcome to contribute to this repository. You can:
 
 - add new papers to the catalogue (`metadata/papers.json`) and Chinese summaries to `paper/`

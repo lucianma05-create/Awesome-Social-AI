@@ -1516,7 +1516,8 @@ Awesome-Social-AI/
 ├── metadata/           # Controlled keyword vocabulary and structured paper metadata
 ├── scripts/            # README sync, metadata validation, and other tools
 ├── Example.md          # Paper summary template
-├── CONTRIBUTING.md     # Contribution guidelines
+├── CONTRIBUTING.md     # Contribution guidelines (English)
+├── CONTRIBUTING_CN.md  # Contribution guidelines (简体中文)
 ├── README.md           # This document (English)
 └── README_CN.md        # This document (简体中文)
 ```
