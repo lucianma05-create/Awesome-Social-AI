@@ -37,7 +37,7 @@
     - [Benchmark & Evaluation](#data)
   - [🏷️ Keyword System](#keywords)
   - [📁 Repository Structure](#repo-structure)
-  - [✍️ How to Contribute](#contributing)
+  - [✍️ How to Contribute](CONTRIBUTING.md)
   - [🧠 About Us](#about)
 
 <a id="social-ai"></a>
@@ -299,6 +299,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="ed"></a>
@@ -415,6 +416,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `ACL 2026`
   - Keywords: `Dataset` · `Support` · `Mental-State Modeling` · `Relationship & Role` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -572,6 +574,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="coop"></a>
@@ -622,6 +625,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
   - Code: [GitHub / Project](https://github.com/eliaka/repeatedgames)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -770,6 +774,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="emotion"></a>
@@ -812,6 +817,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `arXiv 2025`
   - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Social Perception` · `Retrieval` · `Supervised Learning` · `Multi-turn`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -913,6 +919,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="memory"></a>
@@ -979,6 +986,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Code: [GitHub / Project](https://github.com/google-research/reasoning-bank)
   - Summary: [Summary](paper/Memory-ICLR-2026-ReasoningBank:%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1099,6 +1107,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Code: [GitHub / Project](https://github.com/AMAP-ML/Tree-GRPO)
   - Summary: [Summary](paper/RLHF-ICLR-2026-TreeSearch%20for%20LLM%20Agent%20Reinforcement%20Learning.md)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1261,6 +1270,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `arXiv 2026`
   - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Social Context` · `Relationship & Role` · `RL` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1473,6 +1483,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 ---
@@ -1505,35 +1516,10 @@ Awesome-Social-AI/
 ├── metadata/           # Controlled keyword vocabulary and structured paper metadata
 ├── scripts/            # README sync, metadata validation, and other tools
 ├── Example.md          # Paper summary template
+├── CONTRIBUTING.md     # Contribution guidelines
 ├── README.md           # This document (English)
 └── README_CN.md        # This document (简体中文)
 ```
-
----
-
-<a id="contributing"></a>
-## ✍️ How to Contribute
-
-Contributions are welcome! The flow is simple: fork this repository → create a branch → add papers following the conventions below → open a PR for review.
-
-### Naming conventions
-
-- Name files under `paper/` strictly as `[Section]-[Venue]-[Year]-[Full paper title].md`, e.g. `Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md`
-- The filename prefix is the paper's **primary section** — pick the closest of the 11 existing prefixes; it does not replace the keywords. Discuss in the group before adding a new prefix. Current prefixes: PD, ED, Recommend, Coop, ToM, Emotion, Norms, Memory, RLHF, US, Data
-- Name files under `image/` as `[Year]-[Month]-[Day]-[Number]-[Initials].png`, e.g. `2024010101mmh.png`
-
-### Adding content
-
-1. Write the Chinese summary following the [Example.md](Example.md) template
-2. Add a structured record in `metadata/papers.json`: `type`, `goal`, `horizon` are single-choice; capabilities, contexts, and approaches are multi-choice. All label values must come from the [keyword vocabulary](metadata/KEYWORDS.md); add paper evidence for every multi-choice label
-3. Validate and rebuild the catalogue before committing:
-
-```bash
-python scripts/validate_metadata.py --paper-dir paper
-python scripts/render_readme_catalog.py
-```
-
-You can also use [Auto-Summary](https://github.com/lucianma05-create/Auto-Summary) to draft summaries, then proofread them manually.
 
 ---
 

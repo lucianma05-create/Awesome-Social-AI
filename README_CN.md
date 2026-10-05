@@ -37,7 +37,7 @@
     - [Benchmark & Evaluation](#data)
   - [🏷️ 关键词体系](#keywords)
   - [📁 仓库结构](#repo-structure)
-  - [✍️ 如何贡献](#contributing)
+  - [✍️ 如何贡献](CONTRIBUTING.md)
   - [🧠 关于我们](#about)
 
 <a id="social-ai"></a>
@@ -299,6 +299,7 @@
 
 
 
+
 </details>
 
 <a id="ed"></a>
@@ -415,6 +416,7 @@
   - Publisher: `ACL 2026`
   - Keywords: `Dataset` · `Support` · `Mental-State Modeling` · `Relationship & Role` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -572,6 +574,7 @@
 
 
 
+
 </details>
 
 <a id="coop"></a>
@@ -622,6 +625,7 @@
   - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
   - Code: [GitHub / Project](https://github.com/eliaka/repeatedgames)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -770,6 +774,7 @@
 
 
 
+
 </details>
 
 <a id="emotion"></a>
@@ -812,6 +817,7 @@
   - Publisher: `arXiv 2025`
   - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Social Perception` · `Retrieval` · `Supervised Learning` · `Multi-turn`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -913,6 +919,7 @@
 
 
 
+
 </details>
 
 <a id="memory"></a>
@@ -979,6 +986,7 @@
   - Code: [GitHub / Project](https://github.com/google-research/reasoning-bank)
   - Summary: [Summary](paper/Memory-ICLR-2026-ReasoningBank:%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1099,6 +1107,7 @@
   - Code: [GitHub / Project](https://github.com/AMAP-ML/Tree-GRPO)
   - Summary: [Summary](paper/RLHF-ICLR-2026-TreeSearch%20for%20LLM%20Agent%20Reinforcement%20Learning.md)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1261,6 +1270,7 @@
   - Publisher: `arXiv 2026`
   - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Social Context` · `Relationship & Role` · `RL` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1473,6 +1483,7 @@
 
 
 
+
 </details>
 
 ---
@@ -1505,35 +1516,10 @@ Awesome-Social-AI/
 ├── metadata/           # 受控关键词词表与论文结构化元数据
 ├── scripts/            # README 同步、元数据校验等工具
 ├── Example.md          # 论文摘要的撰写范例
+├── CONTRIBUTING.md     # 贡献指南
 ├── README.md           # 本说明文件（英文版）
 └── README_CN.md        # 本说明文件（简体中文）
 ```
-
----
-
-<a id="contributing"></a>
-## ✍️ 如何贡献
-
-欢迎贡献论文摘要！流程很简单：Fork 本仓库 → 新建分支 → 按下方规范添加论文 → 发起 PR 等待审核合并。
-
-### 命名规范
-
-- `paper/` 下的文件名请严格按 `[方向]-[会议/期刊名]-[年份]-[论文完整名].md` 命名，例如 `Memory-NeurIPS-2023-Retrieval-Augmented-Generation.md`
-- 文件名前缀是论文的**主入口**，从当前 11 个前缀中选择最接近的一项，它不替代关键词；确需新增前缀时请先在组内讨论。当前前缀：PD、ED、Recommend、Coop、ToM、Emotion、Norms、Memory、RLHF、US、Data
-- `image/` 下的文件按 `[年]-[月]-[日]-[编号]-[姓名缩写].png` 命名，例如 `2024010101mmh.png`
-
-### 填写内容
-
-1. 参照 [Example.md](Example.md) 模板撰写中文摘要
-2. 在 `metadata/papers.json` 中新增结构化记录：`type`、`goal`、`horizon` 单选；能力、情境、方法可多选。所有标签值须来自 [关键词词表](metadata/KEYWORDS.md)，并为每个多选标签填写论文依据
-3. 提交前运行校验并重建目录：
-
-```bash
-python scripts/validate_metadata.py --paper-dir paper
-python scripts/render_readme_catalog.py
-```
-
-也可使用 [Auto-Summary](https://github.com/lucianma05-create/Auto-Summary) 自动生成摘要初稿，再进行人工校对。
 
 ---
 
