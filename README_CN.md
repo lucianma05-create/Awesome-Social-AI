@@ -81,7 +81,14 @@
 <a id="papers"></a>
 ## 📚 论文列表
 
-> 本目录由 `metadata/papers.json` 自动生成，并以 Awesome-RLHF 风格逐条呈现论文信息：Publisher、Keywords、Code 与 Summary。标题行保持简洁；关键词作为独立字段展示，后文的受控词表与映射统一定义其含义。仅已有仓库中文笔记的论文显示 Summary 链接；缺少笔记时省略该字段。完整词表、定义和审核规则见 [metadata/KEYWORDS.md](metadata/KEYWORDS.md)。
+```
+format:
+- [标题](论文链接)
+  - Publisher: `会议 年份`
+  - Keywords: `Type` · `Goal` · `Capability` · `Approach` · `Multi-turn`
+  - Code: [GitHub / Project](代码链接)
+  - Summary: [Summary](中文笔记链接)
+```
 
 <a id="pd"></a>
 <details>
@@ -301,6 +308,7 @@
 
 
 
+
 </details>
 
 <a id="ed"></a>
@@ -417,6 +425,7 @@
   - Publisher: `ACL 2026`
   - Keywords: `Dataset` · `Support` · `Mental-State Modeling` · `Relationship & Role` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -578,6 +587,7 @@
 
 
 
+
 </details>
 
 <a id="coop"></a>
@@ -628,6 +638,7 @@
   - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
   - Code: [GitHub / Project](https://github.com/eliaka/repeatedgames)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -780,6 +791,7 @@
 
 
 
+
 </details>
 
 <a id="emotion"></a>
@@ -822,6 +834,7 @@
   - Publisher: `arXiv 2025`
   - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Social Perception` · `Retrieval` · `Supervised Learning` · `Multi-turn`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -927,6 +940,7 @@
 
 
 
+
 </details>
 
 <a id="memory"></a>
@@ -993,6 +1007,7 @@
   - Code: [GitHub / Project](https://github.com/google-research/reasoning-bank)
   - Summary: [Summary](paper/Memory-ICLR-2026-ReasoningBank:%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1115,6 +1130,7 @@
   - Code: [GitHub / Project](https://github.com/AMAP-ML/Tree-GRPO)
   - Summary: [Summary](paper/RLHF-ICLR-2026-TreeSearch%20for%20LLM%20Agent%20Reinforcement%20Learning.md)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1279,6 +1295,7 @@
   - Publisher: `arXiv 2026`
   - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Social Context` · `Relationship & Role` · `RL` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1474,6 +1491,7 @@
   - Publisher: `arXiv 2026`
   - Keywords: `Dataset` · `Coordination` · `Social Context` · `Interaction Management` · `Multi-party` · `Relationship & Role` · `Supervised Learning` · `Longitudinal`
 <!-- CATALOGUE:END -->
+
 
 
 

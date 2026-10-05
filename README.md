@@ -81,7 +81,13 @@ Excluded: pure computational social science / "AI for social science" work, pure
 <a id="papers"></a>
 ## 📚 Paper List
 
-> This catalogue is auto-generated from `metadata/papers.json` and renders each paper in the Awesome-RLHF style: Publisher, Keywords, and Code. Titles stay clean; keywords appear as a separate field whose meaning is defined by the controlled vocabulary and mapping below. Links to the Chinese paper notes appear in the Chinese version [README_CN.md](README_CN.md). See [metadata/KEYWORDS.md](metadata/KEYWORDS.md) for the full vocabulary, definitions, and review policy.
+```
+format:
+- [title](paper link)
+  - Publisher: `venue year`
+  - Keywords: `Type` · `Goal` · `Capability` · `Approach` · `Multi-turn`
+  - Code: [GitHub / Project](code link)
+```
 
 <a id="pd"></a>
 <details>
@@ -268,6 +274,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="ed"></a>
@@ -373,6 +380,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `ACL 2026`
   - Keywords: `Dataset` · `Support` · `Mental-State Modeling` · `Relationship & Role` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -516,6 +524,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="coop"></a>
@@ -566,6 +575,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
   - Code: [GitHub / Project](https://github.com/eliaka/repeatedgames)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -700,6 +710,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="emotion"></a>
@@ -742,6 +753,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `arXiv 2025`
   - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Social Perception` · `Retrieval` · `Supervised Learning` · `Multi-turn`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -847,6 +859,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
 
 
 
+
 </details>
 
 <a id="memory"></a>
@@ -907,6 +920,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Keywords: `Method` · `General Interaction` · `Social Memory & Adaptation` · `Self-play`
   - Code: [GitHub / Project](https://github.com/google-research/reasoning-bank)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1017,6 +1031,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Keywords: `Method` · `General Interaction` · `Interaction Management` · `RL` · `Planning` · `Multi-turn`
   - Code: [GitHub / Project](https://github.com/AMAP-ML/Tree-GRPO)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1170,6 +1185,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `arXiv 2026`
   - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Social Context` · `Relationship & Role` · `RL` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1353,6 +1369,7 @@ Excluded: pure computational social science / "AI for social science" work, pure
   - Publisher: `arXiv 2026`
   - Keywords: `Dataset` · `Coordination` · `Social Context` · `Interaction Management` · `Multi-party` · `Relationship & Role` · `Supervised Learning` · `Longitudinal`
 <!-- CATALOGUE:END -->
+
 
 
 
