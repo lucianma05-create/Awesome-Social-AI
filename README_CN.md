@@ -300,6 +300,7 @@
 
 
 
+
 </details>
 
 <a id="ed"></a>
@@ -416,6 +417,7 @@
   - Publisher: `ACL 2026`
   - Keywords: `Dataset` · `Support` · `Mental-State Modeling` · `Relationship & Role` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -575,6 +577,7 @@
 
 
 
+
 </details>
 
 <a id="coop"></a>
@@ -625,6 +628,7 @@
   - Keywords: `Evaluation` · `Coordination` · `Social Context` · `Multi-party` · `Planning`
   - Code: [GitHub / Project](https://github.com/eliaka/repeatedgames)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -775,6 +779,7 @@
 
 
 
+
 </details>
 
 <a id="emotion"></a>
@@ -817,6 +822,7 @@
   - Publisher: `arXiv 2025`
   - Keywords: `Method` · `General Interaction` · `Affect` · `Mental-State Modeling` · `Social Perception` · `Retrieval` · `Supervised Learning` · `Multi-turn`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -920,6 +926,7 @@
 
 
 
+
 </details>
 
 <a id="memory"></a>
@@ -986,6 +993,7 @@
   - Code: [GitHub / Project](https://github.com/google-research/reasoning-bank)
   - Summary: [Summary](paper/Memory-ICLR-2026-ReasoningBank:%20Scaling%20Agent%20Self-Evolving%20with%20Reasoning%20Memory.md)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1107,6 +1115,7 @@
   - Code: [GitHub / Project](https://github.com/AMAP-ML/Tree-GRPO)
   - Summary: [Summary](paper/RLHF-ICLR-2026-TreeSearch%20for%20LLM%20Agent%20Reinforcement%20Learning.md)
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1270,6 +1279,7 @@
   - Publisher: `arXiv 2026`
   - Keywords: `Method` · `Coordination` · `Mental-State Modeling` · `Social Context` · `Relationship & Role` · `RL` · `Supervised Learning`
 <!-- CATALOGUE:END -->
+
 
 
 
@@ -1464,6 +1474,7 @@
   - Publisher: `arXiv 2026`
   - Keywords: `Dataset` · `Coordination` · `Social Context` · `Interaction Management` · `Multi-party` · `Relationship & Role` · `Supervised Learning` · `Longitudinal`
 <!-- CATALOGUE:END -->
+
 
 
 

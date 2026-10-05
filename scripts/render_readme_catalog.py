@@ -39,7 +39,7 @@ def has_local_note(record: dict) -> bool:
     return bool(path and Path(path).exists())
 
 
-def entry(record: dict) -> str:
+def entry(record: dict, include_summary: bool = True) -> str:
     title = record["title"].replace("]", "\\]")
     paper = link(title, record.get("paper_url")) if record.get("paper_url") else title
     fields = []
@@ -49,12 +49,12 @@ def entry(record: dict) -> str:
         fields.append(f"  - Keywords: {keywords(record)}")
     if record.get("code_url"):
         fields.append(f"  - Code: {link('GitHub / Project', record['code_url'])}")
-    if has_local_note(record):
+    if include_summary and has_local_note(record):
         fields.append(f"  - Summary: {link('Summary', quote(record['summary_path'], safe='/:'))}")
     return f"- {paper}\n" + "\n".join(fields) + "\n"
 
 
-def replace_section(text: str, anchor: str, records: list[dict]) -> str:
+def replace_section(text: str, anchor: str, records: list[dict], include_summary: bool = True) -> str:
     start = text.index(f'<a id="{anchor}"></a>')
     end = text.index("</details>", start)
     block = text[start:end]
@@ -65,7 +65,7 @@ def replace_section(text: str, anchor: str, records: list[dict]) -> str:
     block = block[:header_match.start()] + f"<summary>{header_match.group(1)} · {len(records)} {unit}</summary>" + block[header_match.end():]
     marker_start = "<!-- CATALOGUE:START -->"
     marker_end = "<!-- CATALOGUE:END -->"
-    rendered = marker_start + "\n" + "".join(entry(record) for record in records) + marker_end + "\n"
+    rendered = marker_start + "\n" + "".join(entry(record, include_summary) for record in records) + marker_end + "\n"
     if marker_start in block:
         content_start = block.index(marker_start)
         content_end = block.index(marker_end, content_start) + len(marker_end)
@@ -82,6 +82,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--readme", default=None,
                         help="render only this file (default: README.md and README_CN.md when present)")
+    parser.add_argument("--no-summary", action="store_true",
+                        help="omit Summary links; in default dual-file mode README.md omits them, README_CN.md keeps them")
     parser.add_argument("--metadata", default="metadata/papers.json")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -89,11 +91,12 @@ def main() -> None:
     records = json.loads(Path(args.metadata).read_text(encoding="utf-8"))["papers"].values()
     linked = sum(1 for record in records if has_local_note(record))
     for readme_path in targets:
+        include_summary = not args.no_summary and not (args.readme is None and readme_path.name == "README.md")
         text = readme_path.read_text(encoding="utf-8")
         for anchor, section in reversed(SECTION_ORDER):
             section_records = sorted((record for record in records if record.get("primary_section") == section),
                                      key=lambda record: (record["year"], record["title"].lower()))
-            text = replace_section(text, anchor, section_records)
+            text = replace_section(text, anchor, section_records, include_summary)
         text = re.sub(r"Papers-\d+-", f"Papers-{len(records)}-", text, count=1)
         text = re.sub(r"Summaries-\d+-", f"Summaries-{linked}-", text, count=1)
         if args.dry_run:
