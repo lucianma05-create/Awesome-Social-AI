@@ -2,8 +2,6 @@
 
 # 🌐 Awesome Social AI
 
-> A curated collection of research on socially intelligent conversational agents.
->
 > Focusing on conversational agents that understand social contexts, reason about others' states, engage in appropriate interactions, and adapt through long-term interaction.
 
 [![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://github.com/sindresorhus/awesome)
